@@ -1,0 +1,31 @@
+var express = require('express'),
+    app = express(),
+    path = require('path');
+
+// Set View Engine
+app.use(express.static('views'));
+
+// Set Views folder as normal path route
+app.set('views', path.join(__dirname, 'views'));
+
+// Serve index page
+app.get('/', function(req, res){
+  res.render('index.html');
+});
+
+var server = app.listen(process.env.PORT || 8080, process.env.IP, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log('listening at http://%s:%s', host, port);
+});
+
+////Serve HTML with mustacheExpress
+//var mustacheExpress = require('mustache-express');
+//app.engine('html', mustacheExpress());
+//app.set('view engine', 'html');
+
+////Serve ejs
+//app.set('view engine', 'ejs');
+
+////Serve standalone HTML
+//app.use(express.static('views'));

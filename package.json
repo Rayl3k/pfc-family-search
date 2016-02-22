@@ -1,0 +1,14 @@
+{
+  "name": "pfc-family-search",
+  "version": "1.0.0",
+  "description": "Study Family Search API Potential",
+  "main": "index.html",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinh15/pfc-family-search"
+  },
+  "dependencies": {
+    "express": "4.13.4",
+  }
+}
