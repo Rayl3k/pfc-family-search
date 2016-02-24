@@ -8,6 +8,10 @@ app.use(express.static('views'));
 // Set Views folder as normal path route
 app.set('views', path.join(__dirname, 'views'));
 
+// Set node_modules folder and assets folder
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
+
 // Serve index page
 app.get('/', function(req, res){
   res.render('index.html');
