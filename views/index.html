@@ -1,21 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Family Search API Potential Study</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/main.css">
-  </head>
-  <body>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-3 red">The environment is set and running!</div>
-              <div class="col-md-9">Your environment has been modified through another computer!</div>
-          </div>
-      </div>
-  </body>
-</html>
+{{> header }}
+
+<div class="container">
+    <!-- START: Greeting image -->
+    <div class="row xl-buffer">
+        <div class="col-xl-12">
+            <img src="images/familyTree2.png" class="img-responsive center-block greeting-img"/>
+        </div>
+    </div> <!-- END: greeting img -->
+
+    <!-- START: words headings -->
+    <div class="row sm-buffer">
+        <div class="col-xl-12 text-center">
+            <h1>PFC Family Search: API Study</h1>
+            <h4><em>Please log in to Family Search to start using the website</em></h4>
+        </div>
+    </div> <!-- END: word headings -->
+
+    <!-- START: log-in button -->
+    <div class="row xs-buffer">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <button id="sign-in" class="btn btn-default btn-lg btn-block">Access Family Search</button>
+        </div>
+    </div> <!-- END: log-in button -->
+</div>
+
+{{> javascripts }}
+
+<script src="assets/js/index.js"></script>
+<script src="assets/js/cookies.js"></script>
+
+{{> footer }}
+
+<script>
+  // This is a shortcut for $(document).ready()
+  $(function(){
+
+    // When the user clicks the "Sign In" button, call the `signIn` method.
+    $('#sign-in').click(signIn);
+  });
+
+  // Function is called when the user clicks the "Sign In" button.
+  function signIn(){
+
+    // Request an access token (login)
+    client.getAccessToken().then(function(accessToken){
+
+      // Display the access token
+      //$('#accessToken').text(accessToken);
+    })
+
+    // Error handling
+    .catch(function(e){
+
+    });
+  }
+</script>

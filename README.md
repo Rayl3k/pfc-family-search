@@ -29,3 +29,14 @@ heroku git:remote -a pfc-family-search
 ```
 -r other_remote_name
 ```
+
+## NODEMON
+```
+nodemon app.js
+```
+
+## Moustache Documentation
+- http://mustache.github.io/mustache.5.html
+
+## Add .js files to app.js
+- http://stackoverflow.com/questions/5797852/in-node-js-how-do-i-include-functions-from-my-other-files

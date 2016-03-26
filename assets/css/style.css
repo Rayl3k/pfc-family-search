@@ -1,0 +1,23 @@
+.xl-buffer {
+    margin-top:40px;
+}
+
+.md-buffer {
+    margin-top:30px;
+}
+
+.sm-buffer {
+    margin-top:20px;
+}
+
+.xs-buffer {
+    margin-top:10px;
+}
+
+/* ============================= */
+/* SPECIFIC PAGE CSS: Index      */
+/* ============================= */
+.greeting-img {
+    width: 400px;
+    border-bottom: 1px solid black;
+}
