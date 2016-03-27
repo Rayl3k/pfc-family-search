@@ -5,7 +5,7 @@ function signIn(){
     // Redirect the page
     $("#loading-container").fadeOut("fast");
     setTimeout(function() {
-        window.location = "http://localhost:8080/tryout";
+        window.location = document.location.protocol + '//' + document.location.host + '/tryout';
     }, 300);
   })
 
