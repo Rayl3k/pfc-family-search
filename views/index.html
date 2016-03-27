@@ -1,10 +1,11 @@
 {{> header }}
 
-<div class="container">
+<!-- START: main container -->
+<div id="main-container" class="container">
     <!-- START: Greeting image -->
     <div class="row xl-buffer">
         <div class="col-xl-12">
-            <img src="images/familyTree2.png" class="img-responsive center-block greeting-img"/>
+            <img src="/images/familyTree2.png" class="img-responsive center-block greeting-img"/>
         </div>
     </div> <!-- END: greeting img -->
 
@@ -22,7 +23,19 @@
             <button id="sign-in" class="btn btn-default btn-lg btn-block">Access Family Search</button>
         </div>
     </div> <!-- END: log-in button -->
-</div>
+</div> <!-- END: main container -->
+
+<!-- START: loading container -->
+<div id="loading-container" class="container" style="display:none;">
+    <div id="wrap" class="row">
+        <div class="col-xl-12 text-center">
+            <img src="/images/loader/Preloader_3.gif"/>
+        </div>
+        <div class="col-xl-12 text-center">
+            <h3>Please complete the Family Search log-in...</h3>
+        </div>
+    </div>
+</div> <!-- END: loading container -->
 
 {{> javascripts }}
 
@@ -30,28 +43,3 @@
 <script src="assets/js/cookies.js"></script>
 
 {{> footer }}
-
-<script>
-  // This is a shortcut for $(document).ready()
-  $(function(){
-
-    // When the user clicks the "Sign In" button, call the `signIn` method.
-    $('#sign-in').click(signIn);
-  });
-
-  // Function is called when the user clicks the "Sign In" button.
-  function signIn(){
-
-    // Request an access token (login)
-    client.getAccessToken().then(function(accessToken){
-
-      // Display the access token
-      //$('#accessToken').text(accessToken);
-    })
-
-    // Error handling
-    .catch(function(e){
-
-    });
-  }
-</script>
