@@ -1,0 +1,58 @@
+{{> header }}
+
+<div class="container" id="caca">
+    <div class="row">
+        <!-- start: NAME & SURNAME -->
+        <div class="form-group col-sm-6">
+          <label for="givenName">Given Name</label>
+          <input type="text" class="form-control" id="givenName" placeholder="given name">
+      </div>
+      <div class="form-group col-sm-6">
+          <label for="surname">Surname</label>
+          <input type="text" class="form-control" id="surname" placeholder="surname">
+      </div> <!-- end: Name & Surname -->
+
+      <p class="text-center"><button id="submit" class="btn btn-primary">Search</button></p>
+
+    </div>
+</div>
+
+{{> javascripts }}
+
+{{> footer }}
+
+
+<script>
+  // Search when the user clicks on the button.
+  $('#submit').click(function(){
+
+      var params = {
+            givenName: $('#givenName').val(),
+            surname: $('#surname').val()//,
+            //birthDate: $('#birthDate').val(),
+            //birthPlace: $('#birthPlace').val(),
+            //deathDate: $('#deathDate').val(),
+            //deathPlace: $('#deathPlace').val(),
+            //fatherGivenName: $('#fatherGivenName').val(),
+            //fatherSurname: $('#fatherSurname').val(),
+            //motherGivenName: $('#motherGivenName').val(),
+            //motherSurname: $('#motherSurname').val(),
+            //spouseGivenName: $('#spouseGivenName').val(),
+            //spouseSurname: $('#spouseSurname').val()
+          };
+
+      client.getPersonSearch(params).then(function(searchResponse){
+
+          var results = searchResponse.getSearchResults();
+          if(results.length == 0) alert("NO RESULTS");
+          else {
+              for(var i = 0; i < results.length; i++){
+                  var result = results[i];
+                  person = result.getPrimaryPerson();
+                  alert(person.getId());
+              }
+          }
+      });
+  });
+
+</script>

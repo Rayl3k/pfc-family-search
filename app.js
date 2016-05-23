@@ -37,6 +37,11 @@ app.get('/tryout', isAuthenticated, function(req, res) {
     });
 });
 
+// Search example page
+app.get('/search', isAuthenticated, function(req, res) {
+    res.render('search.html');
+});
+
 function isAuthenticated(req, res, next) {
     if(!req.cookies.FS_ACCESS_TOKEN_1) res.redirect('/');
     else next();
