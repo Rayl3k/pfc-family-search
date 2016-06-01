@@ -21,3 +21,8 @@
     width: 400px;
     border-bottom: 1px solid black;
 }
+
+a, a:hover, a:focus {
+  color: #111111 !important;
+  text-decoration: none !important;
+}

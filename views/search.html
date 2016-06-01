@@ -44,12 +44,32 @@
       client.getPersonSearch(params).then(function(searchResponse){
 
           var results = searchResponse.getSearchResults();
+          var numberResults = searchResponse.getResultsCount();
+          var context = searchResponse.getContext();
+          //alert(numberResults);
+          //alert(context);
           if(results.length == 0) alert("NO RESULTS");
           else {
               for(var i = 0; i < results.length; i++){
+                  /* tryout getPrimaryPerson */
                   var result = results[i];
                   person = result.getPrimaryPerson();
-                  alert(person.getId());
+                  birth = person.getBirth();
+                  birthPlace = birth.getNormalizedPlace();
+                  alert("Birth Place: " + birthPlace);
+
+
+                  childs = result.getChildIds();
+                  //alert(childs.length);
+                  if(childs.length > 0) {
+                      //alert("IN");
+                      children = result.getChildren();
+                      for(var j = 0; j < children.length; j++) {
+                          child = children[j];
+                          //alert(child.getId());
+                      }
+                  }
+                  //alert(person.getId());
               }
           }
       });
