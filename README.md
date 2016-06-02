@@ -41,3 +41,6 @@ nodemon app.js
 
 ## Add .js files to app.js
 - http://stackoverflow.com/questions/5797852/in-node-js-how-do-i-include-functions-from-my-other-files
+
+## other links
+https://thenounproject.com/

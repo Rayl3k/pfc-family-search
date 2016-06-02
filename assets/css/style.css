@@ -1,3 +1,11 @@
+.xxxl-buffer {
+    margin-top: 60px;
+}
+
+.xxl-buffer {
+    margin-top:50px;
+}
+
 .xl-buffer {
     margin-top:40px;
 }
@@ -32,12 +40,10 @@ li a, li a:hover, li a:focus {
 }
 
 .negativePadding {
-  width: 100%;
-  background-image: url('/images/logoBackground.jpg');
+  background-image: url('/images/logoBackgroundTransparent.png');
   background-repeat: repeat;
   background-position: center center;
   height: 400px;
-  opacity: 0.15;
 }
 
 .pageContainer {
