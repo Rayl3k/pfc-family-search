@@ -22,7 +22,24 @@
     border-bottom: 1px solid black;
 }
 
-a, a:hover, a:focus {
+.margin-bottom-0 {
+  margin-bottom: 0px;
+}
+
+li a, li a:hover, li a:focus {
   color: #111111 !important;
   text-decoration: none !important;
+}
+
+.negativePadding {
+  width: 100%;
+  background-image: url('/images/logoBackground.jpg');
+  background-repeat: repeat;
+  background-position: center center;
+  height: 400px;
+  opacity: 0.15;
+}
+
+.pageContainer {
+  height: 150px;
 }
