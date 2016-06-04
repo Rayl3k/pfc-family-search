@@ -30,9 +30,9 @@ app.get('/', function(req, res){
 });
 
 // Tryout page
-app.get('/tryout', isAuthenticated, function(req, res) {
+app.get('/home', isAuthenticated, function(req, res) {
     var products = [{"name" : "paco"}, {"name" : "porras"}, {"name" : "name3"}];
-    res.render('tryout.html', {
+    res.render('home.html', {
         product : products
     });
 });

@@ -2,8 +2,8 @@
 {{> header }}
 {{> navbar }}
 
-<!-- start: IMAGE HEADER -->
-<div class="container-fluid negativePadding">
+<!-- start: IMAGE HEADER DESKTOP -->
+<div class="container-fluid title-zone hidden-sm hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-md-12 xl-buffer">
@@ -18,11 +18,27 @@
     </div>
 </div> <!-- end: IMAGE HEADER -->
 
+<!-- start: IMAGE HEADER MOBILE -->
+<div class="container-fluid title-zone title-zone-sm visible-sm visible-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 sm-buffer">
+                <h1>TITLE SPACE</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <em><h3>Subtitle of the project. Somethign larger, but fuckin' cool</h3></em>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: IMAGE MOBILE -->
+
 <!-- start: COLUMNS ZONE -->
-<div class="container xxxl-buffer">
+<div class="container">
     <div class="row">
         <!-- start: ROW 1 -->
-        <div class="col-md-4">
+        <div class="col-md-4 xxxl-buffer hidden-sm hidden-xs">
             <div class="row">
                 <!-- column: image -->
                 <div class="col-md-12 text-center">
@@ -41,10 +57,32 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- end: ROW 1 -->
+        </div>
+
+        <!-- start: ROW 1 mobile -->
+        <div class="col-md-4 visible-sm visible-xs sm-buffer">
+            <div class="row">
+                <!-- column: image -->
+                <div class="col-sm-12 text-center">
+                    <img src="/images/aboutProject.png" width="250px" class="img-responsive center-block"/>
+                </div>
+                <!-- column: title -->
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="h3">Project Background</p>
+                    </div>
+                </div>
+                <!-- column: text -->
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p> lore ipsum megaleft asdfjasdkfjasdkf fasdfajsdkfasdf  jaksdfjadksfja skdfj askdjf askdjf aksdj faksdjf asdjfasdjewijqwieqwe qw eqwe kj asdkj fsdk jfasdkfj asdkfj asqejk we qwe </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- start: ROW 2 -->
-        <div class="col-md-4">
+        <div class="col-md-4 xxxl-buffer">
             <div class="row">
                 <!-- column: image -->
                 <div class="col-md-12 text-center">
@@ -66,7 +104,7 @@
         </div> <!-- end: ROW 2 -->
 
         <!-- start: ROW 3 -->
-        <div class="col-md-4">
+        <div class="col-md-4 xxxl-buffer">
             <div class="row">
                 <!-- column: image -->
                 <div class="col-md-12 text-center">
@@ -86,7 +124,7 @@
                 </div>
             </div>
         </div> <!-- end: ROW 3 -->
-
+    </div>
 </div> <!-- end: COLUMNS ZONE -->
 
 <!-- start: PRODUCT LOOP -->
@@ -107,8 +145,5 @@
 
 <!-- endfile includes -->
 {{> javascripts }}
-
-<script src="assets/js/index.js"></script>
-<script src="assets/js/cookies.js"></script>
 
 {{> footer }}

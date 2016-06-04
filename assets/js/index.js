@@ -5,7 +5,7 @@ function signIn(){
     // Redirect the page
     $("#loading-container").fadeOut("fast");
     setTimeout(function() {
-        window.location = document.location.protocol + '//' + document.location.host + '/tryout';
+        window.location = document.location.protocol + '//' + document.location.host + '/home';
     }, 300);
   })
 
@@ -39,7 +39,7 @@ $( document ).ready(function() {
 
     }); // -- end: sign-in button
 
-    // START: Liten on window resize to keep content aligned
+    // START: Listen on window resize to keep content aligned
     $(window).resize(function () {
         if($("#loading-container").css('display') != "none") {
             var height = $(window).height();

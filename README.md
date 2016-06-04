@@ -44,3 +44,24 @@ nodemon app.js
 
 ## other links
 https://thenounproject.com/
+
+## geocoding
+https://developers.google.com/maps/documentation/javascript/geocoding#GeocodingResults
+
+## google maps api
+https://developers.google.com/maps/documentation/javascript/reference#release-version
+
+## fitBounds
+http://stackoverflow.com/questions/19304574/center-set-zoom-of-map-to-cover-all-visible-markers
+
+## remove markers
+https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+## maps icon change
+http://stackoverflow.com/questions/2890670/google-maps-place-number-in-marker
+
+## more markers on google map
+https://code.google.com/p/google-maps-utility-library-v3/wiki/Libraries#MarkerWithLabel
+
+## marker with label
+https://www.npmjs.com/package/markerwithlabel

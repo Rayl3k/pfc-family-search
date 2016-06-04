@@ -1,6 +1,11 @@
 {{> header }}
+{{> navbar }}
 
-<div class="container" id="caca">
+<div class="container-fluid">
+    <div id="map"></div>
+</div>
+
+<div class="container xl-buffer" id="caca">
     <div class="row">
         <!-- start: NAME & SURNAME -->
         <div class="form-group col-sm-6">
@@ -18,61 +23,7 @@
 </div>
 
 {{> javascripts }}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_hCP4MhT8feEEOHAXTNue-0nNGlvWAWA&signed_in=true&callback=initMap" async defer></script>
+<script src="assets/js/geo-surnames.js"></script>
 
 {{> footer }}
-
-
-<script>
-  // Search when the user clicks on the button.
-  $('#submit').click(function(){
-
-      var params = {
-            givenName: $('#givenName').val(),
-            surname: $('#surname').val()//,
-            //birthDate: $('#birthDate').val(),
-            //birthPlace: $('#birthPlace').val(),
-            //deathDate: $('#deathDate').val(),
-            //deathPlace: $('#deathPlace').val(),
-            //fatherGivenName: $('#fatherGivenName').val(),
-            //fatherSurname: $('#fatherSurname').val(),
-            //motherGivenName: $('#motherGivenName').val(),
-            //motherSurname: $('#motherSurname').val(),
-            //spouseGivenName: $('#spouseGivenName').val(),
-            //spouseSurname: $('#spouseSurname').val()
-          };
-
-      client.getPersonSearch(params).then(function(searchResponse){
-
-          var results = searchResponse.getSearchResults();
-          var numberResults = searchResponse.getResultsCount();
-          var context = searchResponse.getContext();
-          //alert(numberResults);
-          //alert(context);
-          if(results.length == 0) alert("NO RESULTS");
-          else {
-              for(var i = 0; i < results.length; i++){
-                  /* tryout getPrimaryPerson */
-                  var result = results[i];
-                  person = result.getPrimaryPerson();
-                  birth = person.getBirth();
-                  birthPlace = birth.getNormalizedPlace();
-                  alert("Birth Place: " + birthPlace);
-
-
-                  childs = result.getChildIds();
-                  //alert(childs.length);
-                  if(childs.length > 0) {
-                      //alert("IN");
-                      children = result.getChildren();
-                      for(var j = 0; j < children.length; j++) {
-                          child = children[j];
-                          //alert(child.getId());
-                      }
-                  }
-                  //alert(person.getId());
-              }
-          }
-      });
-  });
-
-</script>
