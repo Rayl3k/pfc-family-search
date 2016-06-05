@@ -1,4 +1,4 @@
-var map;
+/*var map;
 
 // start: Initialize map
 function initMap() {
@@ -19,12 +19,12 @@ function initMap() {
 function changeMapPosition(address) {
     var geocoder = new google.maps.Geocoder();
 
-    /*var image = {
+    var image = {
             url: 'images/googleMarker.png',
             size: new google.maps.Size(85, 100),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(42, 100)
-    };*/
+    };
 
     geocoder.geocode({'address': address}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
@@ -35,8 +35,26 @@ function changeMapPosition(address) {
           });
         }
     });
+} */
+
+var geomap;
+var geomapData;
+var geomapOptions;
+
+function prepareGeomap() {
+    geomapOptions = {};
+    geomapOptions['dataMode'] = 'regions';
+    geomapOptions['width'] = '100%';
+
+    var countries = []
+    countries.push(['Country', 'Number of People']);
+    geomapData = google.visualization.arrayToDataTable(countries);
+    geomap = new google.visualization.GeoChart(document.getElementById('geomap'));
+
+    geomap.draw(geomapData, geomapOptions);
 }
 
+// Document ready function
 $( document ).ready(function() {
 
     $('#submit').click(function() {
@@ -46,9 +64,13 @@ $( document ).ready(function() {
 
         client.getPersonSearch(params).then(function(searchResponse){
             var results = searchResponse.getSearchResults();
+            var countries = [];
+            var countryNames = [];
+            var countryCounter = [];
+            countries.push(['Country', 'Number of People']);
 
-            if(results.length == 0) alert("NO RESULTS");
-            else {
+            if(results.length > 0) {
+                var tmpCountries = [];
                 for(var i = 0; i < results.length; i++){
                     /* tryout getPrimaryPerson */
                     var result = results[i];
@@ -58,17 +80,50 @@ $( document ).ready(function() {
                     if(typeof birth !== "undefined") {
                         birthPlace = birth.getNormalizedPlace();
 
-                        if(birthPlace.length > 0) {
+                        if(typeof birthPlace !== "undefined") {
                             birthParams = birthPlace.split(',');
                             lengthParams = birthParams.length;
-                            console.log(birthParams[lengthParams-1]);
-                            changeMapPosition(birthParams[lengthParams-1]);
+
+                            current = birthParams[lengthParams-1];
+                            if(countryCounter[current]) countryCounter[current] = countryCounter[current] + 1;
+                            else {
+                                countryCounter[current] = 1;
+                                countryNames.push(current);
+                            }
+
+                            console.log('Current Country: ' + current + ': ' + countryCounter[current]);
+                        }
+                        else {
+                            if(countryCounter['undefined']) countryCounter['undefined'] = countryCounter['undefined'] + 1
+                            else {
+                                countryCounter['undefined'] = 1;
+                                countryNames.push('undefined');
+                            }
                         }
                     }
-                    else alert("undefined");
-                    //alert("Birth Place: " + birthParams[lengthParams-1]);
-                }
-            }
+                    else {
+                        if(countryCounter['undefined']) countryCounter['undefined'] = countryCounter['undefined'] + 1
+                        else {
+                            countryCounter['undefined'] = 1;
+                            countryNames.push('undefined');
+                        }
+                    }
+                } // end: PERSOONS LOOP
+            } // end: results found IF-ELSE
+
+            // Create array to be passed to google geochart
+            for (var i = 0; i < countryNames.length; i++)
+                if(countryNames[i] != 'undefined') countries.push([countryNames[i], countryCounter[countryNames[i]]]);
+
+            // Log on console results to be printed in graph
+            console.log(countries);
+
+            // Clearn geomap + craete new one
+            if(geomap) geomap.clearChart();
+            geomapData = google.visualization.arrayToDataTable(countries);
+            geomap = new google.visualization.GeoChart(document.getElementById('geomap'));
+            geomap.draw(geomapData, geomapOptions);
+            
         }); //end getPersonSearch function
     }); // end onSubmit function
 });

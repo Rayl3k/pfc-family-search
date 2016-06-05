@@ -1,8 +1,12 @@
 {{> header }}
 {{> navbar }}
 
-<div class="container-fluid">
+<!--<div class="container-fluid">
     <div id="map"></div>
+</div>-->
+
+<div id="limit" class="container md-buffer">
+    <div id="geomap"></div>
 </div>
 
 <div class="container xl-buffer" id="caca">
@@ -23,7 +27,13 @@
 </div>
 
 {{> javascripts }}
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_hCP4MhT8feEEOHAXTNue-0nNGlvWAWA&signed_in=true&callback=initMap" async defer></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_hCP4MhT8feEEOHAXTNue-0nNGlvWAWA&signed_in=true&callback=initMap" async defer></script>-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="assets/js/geo-surnames.js"></script>
+<script>
+    google.charts.load('current', {'packages':['geochart']});
+    google.charts.setOnLoadCallback(prepareGeomap);
+</script>
 
 {{> footer }}

@@ -65,3 +65,12 @@ https://code.google.com/p/google-maps-utility-library-v3/wiki/Libraries#MarkerWi
 
 ## marker with label
 https://www.npmjs.com/package/markerwithlabel
+
+## geomap
+https://developers.google.com/chart/interactive/docs/gallery/geomap#overview
+
+## geocharts
+https://developers.google.com/chart/interactive/docs/gallery/geochart#text-geocharts
+
+## barcharts
+https://developers.google.com/chart/interactive/docs/gallery/barchart
