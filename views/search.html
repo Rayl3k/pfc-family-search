@@ -5,8 +5,12 @@
     <div id="map"></div>
 </div>-->
 
-<div id="limit" class="container md-buffer">
+<div class="container md-buffer">
     <div id="geomap"></div>
+</div>
+
+<div class="container xl-buffer">
+    <div id="barchart"></div>
 </div>
 
 <div class="container xl-buffer" id="caca">
@@ -32,7 +36,7 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="assets/js/geo-surnames.js"></script>
 <script>
-    google.charts.load('current', {'packages':['geochart']});
+    google.charts.load('current', {'packages':['geochart', 'corechart', 'bar']});
     google.charts.setOnLoadCallback(prepareGeomap);
 </script>
 

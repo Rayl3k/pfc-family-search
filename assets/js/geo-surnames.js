@@ -113,7 +113,8 @@ $( document ).ready(function() {
 
             // Create array to be passed to google geochart
             for (var i = 0; i < countryNames.length; i++)
-                if(countryNames[i] != 'undefined') countries.push([countryNames[i], countryCounter[countryNames[i]]]);
+                if(countryNames[i] != 'undefined')
+                    countries.push([countryNames[i], countryCounter[countryNames[i]]]);
 
             // Log on console results to be printed in graph
             console.log(countries);
@@ -123,7 +124,27 @@ $( document ).ready(function() {
             geomapData = google.visualization.arrayToDataTable(countries);
             geomap = new google.visualization.GeoChart(document.getElementById('geomap'));
             geomap.draw(geomapData, geomapOptions);
-            
+
+            // prepare barplot
+            for (var i = 0; i < countryNames.length; i++)
+                if(countryNames[i] == 'undefined') countries.push(['undefined', countryCounter[countryNames[i]]]);
+
+            var options = {
+                title: 'Amount of people born with the name: ' + $('#givenName').val(),
+                chartArea: {width: '60%'},
+                hAxis: {
+                  title: 'Amount of people',
+                  minValue: 0
+                },
+                vAxis: {
+                  title: 'Country'
+                }
+              };
+
+              var barchart = new google.visualization.BarChart(document.getElementById('barchart'));
+              barchartData = google.visualization.arrayToDataTable(countries);
+              barchart.draw(barchartData, options);
+
         }); //end getPersonSearch function
     }); // end onSubmit function
 });
