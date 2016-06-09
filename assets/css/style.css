@@ -62,5 +62,12 @@ li a, li a:hover, li a:focus {
 }
 
 /* ============================= */
-/* SPECIFIC PAGE CSS: Search     */
+/* SPECIFIC PAGE CSS: Examples   */
 /* ============================= */
+.example-search-bkg {
+    background-image: url('/images/exampleBackgroundSearch.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom: 1px solid #333333;
+    height: 300px;
+}
