@@ -74,3 +74,6 @@ https://developers.google.com/chart/interactive/docs/gallery/geochart#text-geoch
 
 ## barcharts
 https://developers.google.com/chart/interactive/docs/gallery/barchart
+
+## more code to include custom javascript in node.js
+https://howtonode.org/creating-custom-modules

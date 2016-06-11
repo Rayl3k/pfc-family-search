@@ -1,0 +1,100 @@
+<!-- start includes -->
+{{> header }}
+{{> navbar }}
+
+<!-- start: IMAGE HEADER -->
+<div class="{{background}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 xl-buffer">
+                <h1>{{title}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <em><h3>{{subtitle}}</h3></em>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 xl-buffer hidden-xs">
+                <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
+            </div>
+            <div class="col-xs-12 visible-xs">
+                <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: IMAGE HEADER -->
+
+<!-- start: PROJECT GOAL -->
+<div class="container sm-buffer">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Project goal/goals</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            {{#goal}}
+            <p>{{.}}</p>
+            {{/goal}}
+        </div>
+    </div>
+</div> <!-- end: PROJECT GOAL -->
+
+<!-- start: EXAMPLE DESCRIPTION -->
+<div class="container sm-buffer">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Project description</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            {{#description}}
+            <p>{{.}}</p>
+            {{/description}}
+        </div>
+    </div>
+</div> <!-- end: EXAMPLE DESCRIPTION -->
+
+<!-- start: REQUIREMENTS -->
+<div class="container sm-buffer">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Family Search and other requirements</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ul>
+            {{#requirements}}
+                <li>{{.}}</li>
+            {{/requirements}}
+            </ul>
+        </div>
+    </div>
+</div> <!-- end: REQUIREMENTS -->
+
+<!-- start: COMPLEXITY -->
+<div class="container sm-buffer">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Project complexity</h2>
+        </div>
+    </div>
+    <div class="row xs-buffer">
+        <div class="col-md-12">
+            <div class="progress">
+              <div class="{{complexityProgressBar}}" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="{{complexityCSS}}">
+                  {{complexity}}
+              </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: COMPLEXITY -->
+
+<!-- endfile includes -->
+{{> javascripts }}
+
+{{> footer }}

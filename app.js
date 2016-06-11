@@ -4,6 +4,9 @@ var express = require('express'),
     mustacheExpress = require('mustache-express'),
     cookieParser = require('cookie-parser');
 
+var projectProposals = require("./assets/js/projectProposals.js");
+var projectProposalsIns = new projectProposals();
+
 // =================================================== //
 // SET VIEWS AND FOLDERS
 // =================================================== //
@@ -40,6 +43,43 @@ app.get('/home', isAuthenticated, function(req, res) {
 // Search example page
 app.get('/search', isAuthenticated, function(req, res) {
     res.render('search.html');
+});
+
+app.get('/proposals', isAuthenticated, function(req, res) {
+    res.render('proposals.html');
+});
+
+// Get projectProposals page
+app.get('/proposals/:project', isAuthenticated, function(req, res) {
+
+    var caption1 = projectProposalsIns.getExample(req.params.project);
+    var name = caption1[0];
+    var title = caption1[1];
+    var subtitle = caption1[2];
+    var goal = caption1[3];
+    var requirements = caption1[4];
+    var description = caption1[5];
+    var background = caption1[6];
+    var complexity = caption1[7];
+    var complexityCSS = "width: " + complexity + "%";
+    var complexityProgressBar = ""
+
+    if(complexity < 30) {complexity = "Low Complexity"; complexityProgressBar = "progress-bar progress-bar-info";}
+    else if(complexity < 70) {complexity = "Medium Complexity"; complexityProgressBar = "progress-bar progress-bar-warning";}
+    else {complexity = "High Complexity"; complexityProgressBar = "progress-bar progress-bar-danger";}
+
+    res.render('proposalsTemplate.html', {
+        name : '/images/exampleBackgroundSearch.jpg',
+        title : title,
+        subtitle : subtitle,
+        goal: goal,
+        requirements : requirements,
+        description : description,
+        background : background,
+        complexity : complexity,
+        complexityCSS : complexityCSS,
+        complexityProgressBar : complexityProgressBar
+    });
 });
 
 function isAuthenticated(req, res, next) {
