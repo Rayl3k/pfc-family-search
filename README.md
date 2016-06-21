@@ -77,3 +77,6 @@ https://developers.google.com/chart/interactive/docs/gallery/barchart
 
 ## more code to include custom javascript in node.js
 https://howtonode.org/creating-custom-modules
+
+## darkbox / lightbox
+https://css-tricks.com/design-considerations-text-images/

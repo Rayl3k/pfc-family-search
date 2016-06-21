@@ -45,6 +45,7 @@ app.get('/search', isAuthenticated, function(req, res) {
     res.render('search.html');
 });
 
+// Get all proposals page
 app.get('/proposals', isAuthenticated, function(req, res) {
     res.render('proposals.html');
 });
@@ -60,26 +61,33 @@ app.get('/proposals/:project', isAuthenticated, function(req, res) {
     var requirements = caption1[4];
     var description = caption1[5];
     var background = caption1[6];
-    var complexity = caption1[7];
+    var backgroundText = caption1[7];
+    var complexity = caption1[8];
     var complexityCSS = "width: " + complexity + "%";
-    var complexityProgressBar = ""
+    var complexityProgressBar = "";
 
     if(complexity < 30) {complexity = "Low Complexity"; complexityProgressBar = "progress-bar progress-bar-info";}
     else if(complexity < 70) {complexity = "Medium Complexity"; complexityProgressBar = "progress-bar progress-bar-warning";}
     else {complexity = "High Complexity"; complexityProgressBar = "progress-bar progress-bar-danger";}
 
     res.render('proposalsTemplate.html', {
-        name : '/images/exampleBackgroundSearch.jpg',
+        name : name,
         title : title,
         subtitle : subtitle,
         goal: goal,
         requirements : requirements,
         description : description,
         background : background,
+        backgroundText : backgroundText,
         complexity : complexity,
         complexityCSS : complexityCSS,
         complexityProgressBar : complexityProgressBar
     });
+});
+
+// Get all examples page
+app.get('/examples', isAuthenticated, function(req, res) {
+    res.render('examples.html');
 });
 
 function isAuthenticated(req, res, next) {

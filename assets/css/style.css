@@ -67,10 +67,20 @@ li a, li a:hover, li a:focus {
 }
 
 /* ============================= */
+/* SPECIFIC PAGE CSS: EXAMPLES   */
+/* ============================= */
+.title-zone-examples {
+  background-image: url('/images/interactiveExamplesBackground.png');
+  background-repeat: repeat;
+  background-position: center center;
+  height: 400px;
+}
+
+/* ============================= */
 /* SPECIFIC PAGE CSS: PROPOSALS  */
 /* ============================= */
 .title-zone-proposals {
-  background-image: url('/images/proposals1.png');
+  background-image: url('/images/proposals.png');
   background-repeat: repeat;
   background-position: center center;
   height: 400px;
@@ -112,14 +122,38 @@ img.cropped {
 /* ============================= */
 /* SPECIFIC PAGE CSS: Examples   */
 /* ============================= */
+.darkbox-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline;
+    padding: 0.5em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.lightbox-text {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    display: inline;
+    padding: 0.5em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
 .example-search-bkg {
     background-image: url('/images/exampleBackgroundSearch.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     border-bottom: 1px solid #333333;
     height: 300px;
+    color: white;
 }
 
 .example1 {
     background-image: url('/images/exampleBackgroundSearch.jpg');
+}
+
+.name-popualarity-bkg {
+    background-image: url('/images/namesCloud.jpg');
+    background-size: cover;
 }
