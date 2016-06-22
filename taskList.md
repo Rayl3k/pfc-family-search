@@ -7,3 +7,8 @@
 
 # Implementation examples
 - Start implementing fuckin' examples
+
+
+# fonts
+- https://www.google.com/fonts#UsePlace:use/Collection:Lora
+- https://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro
