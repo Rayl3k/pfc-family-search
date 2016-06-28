@@ -2,29 +2,55 @@
 {{> header }}
 {{> navbar }}
 
-<!-- start: IMAGE HEADER -->
-<div class="{{background}}">
+<!-- ########################### -->
+<!--           TITLES            -->
+<!-- ########################### -->
+
+<!-- start: TITLE ZONE DESKTOP -->
+<div class="container-fluid example-search-bkg {{background}} hidden-xs">
     <div class="container">
+        <!-- main title -->
         <div class="row">
-            <div class="col-md-12 xl-buffer">
-                <h1><span class="{{backgroundText}}">{{title}}</span></h1>
+            <div class="col-md-12 xl-buffer text-center">
+                <h1 class="{{backgroundText}}">{{title}}</h1>
             </div>
         </div>
+        <!-- subtitle -->
         <div class="row">
-            <div class="col-md-12 xs-buffer">
-                <em><h3><span class="{{backgroundText}}">{{subtitle}}</span></h3></em>
+            <div class="col-md-12 text-center sm-buffer hidden-sm">
+                <h2 class="{{backgroundText}} text-italic">{{subtitle}}</h2>
             </div>
         </div>
+        <!-- button -->
         <div class="row">
-            <div class="col-md-12 xl-buffer hidden-xs">
-                <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
-            </div>
-            <div class="col-xs-12 visible-xs">
+            <div class="col-md-12 xl-buffer text-center">
                 <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
             </div>
         </div>
     </div>
-</div> <!-- end: IMAGE HEADER -->
+</div> <!-- end: TITLE ZONE DESKTOP -->
+
+<!-- start: TITLE ZONE MOBILE -->
+<div class="container-fluid example-search-bkg title-zone-xs {{background}} visible-xs">
+    <div class="container">
+        <!-- main title -->
+        <div class="row">
+            <div class="col-xs-12 sm-buffer text-center">
+                <h1 class="{{backgroundText}} h1-5">{{title}}</h1>
+            </div>
+        </div>
+        <!-- button -->
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: TITLE ZONE MOBILE -->
+
+<!-- ########################### -->
+<!--         MAIN CONTENT        -->
+<!-- ########################### -->
 
 <!-- start: PROJECT GOAL -->
 <div class="container sm-buffer">

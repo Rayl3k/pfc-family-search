@@ -10,7 +10,7 @@ function getExample1() {
         "the second paragraph would appear more complex although it is not. Let's try to do this shit double line, but I was not successful at all.",
         "final paragraph to make this thing a happy ending."
     ];
-    var background = "container-fluid example-search-bkg example1";
+    var background = "example1";
     var backgroundText = "lightbox-text";
     var complexity = "25";
 
@@ -30,7 +30,7 @@ function getNamesPopularity() {
         "the second paragraph would appear more complex although it is not. Let's try to do this shit double line, but I was not successful at all.",
         "final paragraph to make this thing a happy ending."
     ];
-    var background = "container-fluid example-search-bkg name-popualarity-bkg";
+    var background = "name-popualarity-bkg";
     var backgroundText = "lightbox-text";
     var complexity = "20";
 
