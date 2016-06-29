@@ -58,12 +58,54 @@ function prepareGeomap() {
 $( document ).ready(function() {
 
     $('#submit').click(function() {
+
+        var inputSurname = $('#surname').val();
+
+        /* Search for the surname and each country */
+        var countryNames = ['Afghanistan','Aland Islands','Albania','Algeria','American Samoa','Andorra','Angola','Anguilla','Antarctica','Antigua and Barbuda','Argentina','Armenia','Aruba','Australia','Austria','Azerbaijan','Bahamas','Bahrain','Bangladesh','Barbados','Belarus','Belgium','Belize','Benin','Bermuda','Bhutan','Bolivia','Bosnia and Herzegovina','Botswana','Bouvet Island','Brazil','British Virgin Islands','British Indian Ocean Territory','Brunei Darussalam','Bulgaria','Burkina Faso','Burundi','Cambodia','Cameroon','Canada','Cape Verde','Cayman Islands','Central African Republic','Chad','Chile','China','Hong Kong','Macao','Christmas Island','Cocos Islands','Colombia','Comoros','Congo','Cook Islands','Costa Rica','Côte Ivoire','Croatia','Cuba','Cyprus','Czech Republic','Denmark','Djibouti','Dominica','Dominican Republic','Ecuador','Egypt','El Salvador','Equatorial Guinea','Eritrea','Estonia','Ethiopia','Falkland Islands','Faroe Islands','Fiji','Finland','France','French Guiana','French Polynesia','French Southern Territories','Gabon','Gambia','Georgia','Germany','Ghana','Gibraltar','Greece','Greenland','Grenada','Guadeloupe','Guam','Guatemala','Guernsey','Guinea','Guinea-Bissau','Guyana','Haiti','Heard Island and Mcdonald Islands','Holy See','Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Isle of Man','Israel','Italy','Jamaica','Japan','Jersey','Jordan','Kazakhstan','Kenya','Kiribati','Korea','Kuwait','Kyrgyzstan','Lao PDR','Latvia','Lebanon','Lesotho','Liberia','Libya','Liechtenstein','Lithuania','Luxembourg','Macedonia','Madagascar','Malawi','Malaysia','Maldives','Mali','Malta','Marshall Islands','Martinique','Mauritania','Mauritius','Mayotte','Mexico','Micronesia','Moldova','Monaco','Mongolia','Montenegro','Montserrat','Morocco','Mozambique','Myanmar','Namibia','Nauru','Nepal','Netherlands','Netherlands Antilles','New Caledonia','New Zealand','Nicaragua','Niger','Nigeria','Niue','Norfolk Island','Northern Mariana Islands','Norway','Oman','Pakistan','Palau','Palestinian Territory','Panama','Papua New Guinea','Paraguay','Peru','Philippines','Pitcairn','Poland','Portugal','Puerto Rico','Qatar','Réunion','Romania','Russian Federation','Rwanda','Saint-Barthélemy','Saint Helena','Saint Kitts and Nevis','Saint Lucia','Saint-Martin','Saint Pierre and Miquelon','Saint Vincent and Grenadines','Samoa','San Marino','Sao Tome and Principe','Saudi Arabia','Senegal','Serbia','Seychelles','Sierra Leone','Singapore','Slovakia','Slovenia','Solomon Islands','Somalia','South Africa','South Georgia and the South Sandwich Islands','South Sudan','Spain','Sri Lanka','Sudan','Suriname','Svalbard and Jan Mayen Islands','Swaziland','Sweden','Switzerland','Syrian Arab Republic','Taiwan','Tajikistan','Tanzania','Thailand','Timor-Leste','Togo','Tokelau','Tonga','Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Turks and Caicos Islands','Tuvalu','Uganda','Ukraine','United Arab Emirates','United Kingdom','United States of America','United States Minor Outlying Islands','Uruguay','Uzbekistan','Vanuatu','Venezuela','Viet Nam','Virgin Islands, US','Wallis and Futuna Islands','Western Sahara','Yemen','Zambia','Zimbabwe'];
+        var countryCodes = ['AF','AX','AL','DZ','AS','AD','AO','AI','AQ','AG','AR','AM','AW','AU','AT','AZ','BS','BH','BD','BB','BY','BE','BZ','BJ','BM','BT','BO','BA','BW','BV','BR','VG','IO','BN','BG','BF','BI','KH','CM','CA','CV','KY','CF','TD','CL','CN','HK','MO','CX','CC','CO','KM','CG','CK','CR','CI','HR','CU','CY','CZ','DK','DJ','DM','DO','EC','EG','SV','GQ','ER','EE','ET','FK','FO','FJ','FI','FR','GF','PF','TF','GA','GM','GE','DE','GH','GI','GR','GL','GD','GP','GU','GT','GG','GN','GW','GY','HT','HM','VA','HN','HU','IS','IN','ID','IR','IQ','IE','IM','IL','IT','JM','JP','JE','JO','KZ','KE','KI','KR','KW','KG','LA','LV','LB','LS','LR','LY','LI','LT','LU','MK','MG','MW','MY','MV','ML','MT','MH','MQ','MR','MU','YT','MX','FM','MD','MC','MN','ME','MS','MA','MZ','MM','NA','NR','NP','NL','AN','NC','NZ','NI','NE','NG','NU','NF','MP','NO','OM','PK','PW','PS','PA','PG','PY','PE','PH','PN','PL','PT','PR','QA','RE','RO','RU','RW','BL','SH','KN','LC','MF','PM','VC','WS','SM','ST','SA','SN','RS','SC','SL','SG','SK','SI','SB','SO','ZA','GS','SS','ES','LK','SD','SR','SJ','SZ','SE','CH','SY','TW','TJ','TZ','TH','TL','TG','TK','TO','TT','TN','TR','TM','TC','TV','UG','UA','AE','GB','US','UM','UY','UZ','VU','VE','VN','VI','WF','EH','YE','ZM','ZW'];
+        var europe = ['Russia','Germany','France','United Kingdom','Italy','Spain','Ukraine','Poland','Romania','Kazakhstan','Netherlands','Belgium','Greece','Czech Republic','Portugal','Sweden','Hungary','Austria','Switzerland','Denmark','Finland','Norway','Ireland','Portugal'];
+
+        for(var k = 0; k < europe.length; k++) {
+                (function(k) {
+                    setTimeout(function() {
+                //mellor -> uk   hamilton-US
+            var params = {
+                surname: inputSurname,
+                birthPlace: europe[k]
+            }
+
+            client.getPersonSearch(params).then(function(searchResponse) {
+                //var results = searchResponse.getSearchResults();
+                var total = searchResponse.getResultsCount();
+//                console.log("Country " + europe[k] + " " + results.length);
+                console.log("Country " + europe[k] + " " + total);
+
+                /*if(results.length > 0) {
+                    for(var i = 0; i < results.length; i++){
+                        var result = results[i];
+                        person = result.getPrimaryPerson();
+                        birth = person.getBirth();
+                        console.log("Get Place: " + birth.getPlace());
+                    }
+                }*/
+            });
+        }, 2000*k); }(k));
+        }
+    });
+
+    $('#sadfasfsadf').click(function() {
         var params = {
             givenName: $('#givenName').val()
         };
 
+        console.log("param used: " + params.givenName);
+
         client.getPersonSearch(params).then(function(searchResponse){
             var results = searchResponse.getSearchResults();
+
+            console.log("Response length: " + results.length);
+
             var countries = [];
             var countryNames = [];
             var countryCounter = [];
@@ -76,6 +118,10 @@ $( document ).ready(function() {
                     var result = results[i];
                     person = result.getPrimaryPerson();
                     birth = person.getBirth();
+
+                    console.log("Person name: " + person.getDisplayName());
+                    console.log("Normalized Place: " + birth.getNormalizedPlace());
+                    console.log("Get Place: " + birth.getPlace());
 
                     if(typeof birth !== "undefined") {
                         birthPlace = birth.getNormalizedPlace();
@@ -91,7 +137,7 @@ $( document ).ready(function() {
                                 countryNames.push(current);
                             }
 
-                            console.log('Current Country: ' + current + ': ' + countryCounter[current]);
+                            //console.log('Current Country: ' + current + ': ' + countryCounter[current]);
                         }
                         else {
                             if(countryCounter['undefined']) countryCounter['undefined'] = countryCounter['undefined'] + 1
