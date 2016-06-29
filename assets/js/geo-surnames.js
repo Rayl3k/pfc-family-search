@@ -57,7 +57,7 @@ function prepareGeomap() {
 // Document ready function
 $( document ).ready(function() {
 
-    $('#submit').click(function() {
+    $('#submit2').click(function() {
 
         var inputSurname = $('#surname').val();
 
@@ -94,9 +94,12 @@ $( document ).ready(function() {
         }
     });
 
-    $('#sadfasfsadf').click(function() {
+    $('#submit').click(function() {
+        birthDate = $('#birthDate').val() + "~";
+
         var params = {
-            givenName: $('#givenName').val()
+            givenName: $('#givenName').val(),
+            birthDate: birthDate
         };
 
         console.log("param used: " + params.givenName);
@@ -122,6 +125,8 @@ $( document ).ready(function() {
                     console.log("Person name: " + person.getDisplayName());
                     console.log("Normalized Place: " + birth.getNormalizedPlace());
                     console.log("Get Place: " + birth.getPlace());
+                    console.log("Bet date: " + birth.getDate());
+                    console.log("Get formal date: " + birth.getNormalizedDate());
 
                     if(typeof birth !== "undefined") {
                         birthPlace = birth.getNormalizedPlace();
