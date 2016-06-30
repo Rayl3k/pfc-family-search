@@ -20,8 +20,6 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-
-
 // =================================================== //
 // SET ROUTER PROPERTIES
 // =================================================== //
@@ -34,10 +32,7 @@ app.get('/', function(req, res){
 
 // Tryout page
 app.get('/home', isAuthenticated, function(req, res) {
-    var products = [{"name" : "paco"}, {"name" : "porras"}, {"name" : "name3"}];
-    res.render('home.html', {
-        product : products
-    });
+    res.render('home.html');
 });
 
 // Search example page
@@ -94,8 +89,6 @@ function isAuthenticated(req, res, next) {
     if(!req.cookies.FS_ACCESS_TOKEN_1) res.redirect('/');
     else next();
 }
-
-
 
 // =================================================== //
 // SET SERVER PROPERTIES

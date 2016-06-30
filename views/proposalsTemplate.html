@@ -9,20 +9,20 @@
 <!-- start: TITLE ZONE DESKTOP -->
 <div class="container-fluid example-search-bkg {{background}} hidden-xs">
     <div class="container">
-        <!-- main title -->
         <div class="row">
+            <!-- Title -->
             <div class="col-md-12 xl-buffer text-center">
                 <h1 class="{{backgroundText}}">{{title}}</h1>
             </div>
         </div>
-        <!-- subtitle -->
         <div class="row">
+            <!-- Subtitle -->
             <div class="col-md-12 text-center sm-buffer hidden-sm">
                 <h2 class="{{backgroundText}} text-italic">{{subtitle}}</h2>
             </div>
         </div>
-        <!-- button -->
         <div class="row">
+            <!-- button: Back to Proposals -->
             <div class="col-md-12 xl-buffer text-center">
                 <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
             </div>
@@ -33,14 +33,14 @@
 <!-- start: TITLE ZONE MOBILE -->
 <div class="container-fluid example-search-bkg title-zone-xs {{background}} visible-xs">
     <div class="container">
-        <!-- main title -->
         <div class="row">
+            <!-- Title -->
             <div class="col-xs-12 sm-buffer text-center">
                 <h1 class="{{backgroundText}} h1-5">{{title}}</h1>
             </div>
         </div>
-        <!-- button -->
         <div class="row">
+            <!-- button: Back to Proposals -->
             <div class="col-xs-12 text-center">
                 <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
             </div>
@@ -52,30 +52,34 @@
 <!--         MAIN CONTENT        -->
 <!-- ########################### -->
 
-<!-- start: PROJECT GOAL -->
+<!-- start: PROJECT GOALS -->
 <div class="container sm-buffer">
     <div class="row">
+        <!-- section title: GOALS -->
         <div class="col-md-12">
             <h2>Project goal/goals</h2>
         </div>
     </div>
     <div class="row">
+        <!-- loop: Goals list -->
         <div class="col-md-12">
             {{#goal}}
             <p>{{.}}</p>
             {{/goal}}
         </div>
     </div>
-</div> <!-- end: PROJECT GOAL -->
+</div> <!-- end: PROJECT GOALS -->
 
 <!-- start: EXAMPLE DESCRIPTION -->
 <div class="container sm-buffer">
     <div class="row">
+        <!-- section title: DESCRIPTION -->
         <div class="col-md-12">
             <h2>Project description</h2>
         </div>
     </div>
     <div class="row">
+        <!-- loop: Description paragraphs -->
         <div class="col-md-12">
             {{#description}}
             <p>{{.}}</p>
@@ -86,12 +90,14 @@
 
 <!-- start: REQUIREMENTS -->
 <div class="container sm-buffer">
+    <!-- section title: REQUIREMENTS -->
     <div class="row">
         <div class="col-md-12">
             <h2>Family Search and other requirements</h2>
         </div>
     </div>
     <div class="row">
+        <!-- loop: Requirements bulletpoints -->
         <div class="col-md-12">
             <ul>
             {{#requirements}}
@@ -104,12 +110,14 @@
 
 <!-- start: COMPLEXITY -->
 <div class="container sm-buffer">
+    <!-- section title: COMPLEXITY BAR -->
     <div class="row">
         <div class="col-md-12">
             <h2>Project complexity</h2>
         </div>
     </div>
     <div class="row xs-buffer">
+        <!-- Responsive complexity bar -->
         <div class="col-md-12">
             <div class="progress">
               <div class="{{complexityProgressBar}}" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="{{complexityCSS}}">
