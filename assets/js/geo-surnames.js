@@ -21,14 +21,72 @@ function prepareGeomap() {
 // Document ready function
 $( document ).ready(function() {
 
-    // Select ALL buttons
-    $('#european-all').click(function() {
+    // ======================================== //
+    // checkboxes control
+    // ======================================== //
+    // select or deselect all
+    $('#eu-all').click(function() {
         if($(this).html().trim() == "Select All Countries") {
             $('.checkbox-eu').prop('checked', true);
             $(this).html("Deselect All Countries");
         }
         else {
             $('.checkbox-eu').prop('checked', false);
+            $(this).html("Select All Countries");
+        }
+    });
+
+    $('#na-all').click(function() {
+        if($(this).html().trim() == "Select All Countries") {
+            $('.checkbox-na').prop('checked', true);
+            $(this).html("Deselect All Countries");
+        }
+        else {
+            $('.checkbox-na').prop('checked', false);
+            $(this).html("Select All Countries");
+        }
+    });
+
+    $('#sa-all').click(function() {
+        if($(this).html().trim() == "Select All Countries") {
+            $('.checkbox-sa').prop('checked', true);
+            $(this).html("Deselect All Countries");
+        }
+        else {
+            $('.checkbox-sa').prop('checked', false);
+            $(this).html("Select All Countries");
+        }
+    });
+
+    $('#oc-all').click(function() {
+        if($(this).html().trim() == "Select All Countries") {
+            $('.checkbox-oc').prop('checked', true);
+            $(this).html("Deselect All Countries");
+        }
+        else {
+            $('.checkbox-oc').prop('checked', false);
+            $(this).html("Select All Countries");
+        }
+    });
+
+    $('#as-all').click(function() {
+        if($(this).html().trim() == "Select All Countries") {
+            $('.checkbox-as').prop('checked', true);
+            $(this).html("Deselect All Countries");
+        }
+        else {
+            $('.checkbox-as').prop('checked', false);
+            $(this).html("Select All Countries");
+        }
+    });
+
+    $('#af-all').click(function() {
+        if($(this).html().trim() == "Select All Countries") {
+            $('.checkbox-af').prop('checked', true);
+            $(this).html("Deselect All Countries");
+        }
+        else {
+            $('.checkbox-af').prop('checked', false);
             $(this).html("Select All Countries");
         }
     });
@@ -43,8 +101,18 @@ $( document ).ready(function() {
         }
     });
 
+    // ======================================== //
     // Launch surname search
+    // ======================================== //
     $('#submit').click(function() {
+
+        // Get all countries to consult
+        $(".form-checkbox").each(function(index) {
+            if($(this).is(':checked')) {
+                var country = $(this).parent().html().trim().split(">")[1];
+                alert(country);
+            }
+        });
 
         var inputSurname = $('#surname').val();
 
