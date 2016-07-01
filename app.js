@@ -7,6 +7,9 @@ var express = require('express'),
 var projectProposals = require("./assets/js/projectProposals.js");
 var projectProposalsIns = new projectProposals();
 
+var countryParameters = require("./assets/js/countryParameters.js");
+var countryParametersIns = new countryParameters();
+
 // =================================================== //
 // SET VIEWS AND FOLDERS
 // =================================================== //
@@ -37,7 +40,21 @@ app.get('/home', isAuthenticated, function(req, res) {
 
 // Search example page
 app.get('/search', isAuthenticated, function(req, res) {
-    res.render('search.html');
+    var europe = countryParametersIns.getCountries("EU");
+    var northAmerica = countryParametersIns.getCountries("NA");
+    var southAmerica = countryParametersIns.getCountries("SA");
+    var oceania = countryParametersIns.getCountries("OC");
+    var asia = countryParametersIns.getCountries("AS");
+    var africa = countryParametersIns.getCountries("AF");
+
+    res.render('search.html', {
+        europe : europe,
+        northAmerica : northAmerica,
+        southAmerica : southAmerica,
+        oceania : oceania,
+        asia : asia,
+        africa: africa
+    });
 });
 
 // Get all proposals page

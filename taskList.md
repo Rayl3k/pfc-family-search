@@ -24,3 +24,4 @@
 - 2nd world war marriages in united states: Replicate Study?¿
 - 2nd world war countries implications based on registered deaths on surraunding
   years
+- Names around the world and variants (using the name resource)

@@ -202,3 +202,27 @@ li a, li a:hover, li a:focus {
 .title-zone-xs {
     height: 300px;
 }
+
+/* ============================= */
+/* SURNAMES BY REGION            */
+/* ============================= */
+
+/* ============================= */
+/* FORMS                         */
+/* ============================= */
+.label-font {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size:20px;
+}
+
+.form-font {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    height: 40px;
+    font-size:20px;
+}
+
+.form-checkbox {
+    margin-top: 9px !important;
+}
