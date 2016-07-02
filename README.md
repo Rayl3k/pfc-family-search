@@ -80,3 +80,9 @@ https://howtonode.org/creating-custom-modules
 
 ## darkbox / lightbox
 https://css-tricks.com/design-considerations-text-images/
+
+
+
+## certification checklist
+https://familysearch.org/developers/docs/certification/authentication
+https://familysearch.org/developers/docs/certification

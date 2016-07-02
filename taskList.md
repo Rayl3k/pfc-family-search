@@ -24,4 +24,7 @@
 - 2nd world war marriages in united states: Replicate Study?¿
 - 2nd world war countries implications based on registered deaths on surraunding
   years
-- Names around the world and variants (using the name resource)
+- Names around the world and variants (using the name resource) + social media?
+- Estudi etnografic i demografic de cognoms propis i concrets: Emprant GEOAPI interna + decodificació tots els registres
+- Genealogies (reals): Study of diversity on ancestors. Relate to momondo campaign?
+- Gender related mortality / newborns based on countries & period of time.

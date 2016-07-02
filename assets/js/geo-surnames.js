@@ -1,26 +1,45 @@
+// GEOMAP: Variables
+//    geomap => map to print on the HTML
+//    geomapOptions => global options for geomap
+//    geomapCountries => ALL data for search launched
 var geomap;
-var geomapData;
 var geomapOptions;
-var countryCodes;
-var countryNames;
-var year;
+var geomapCountries;
+geomapOptions = {};
+geomapOptions['dataMode'] = 'regions';
+geomapOptions['width'] = '100%';
+// FAMILYSEARCH & ITERATION: Variables
+//    countries => Countries selected by user (HTML)
+//    years => Year or Interval of years
+//    countriesConsulted => To control when to print interval data
+//    yearsConsulted => To control when to re-enable the functionality
+//    apiDELAY => Ensure no blocking
+var countries;
+var years;
+var countriesConsulted;
+var yearsConsulted;
+var apiDELAY = 1500;
 
-function prepareGeomap() {
-    geomapOptions = {};
-    geomapOptions['dataMode'] = 'regions';
-    geomapOptions['width'] = '100%';
+/* Function to print & update data */
+function printGeomap(i) {
+    // Console log verification
+    console.log("Printing data for years: ", years[i]);
+    console.log(geomapCountries[i]);
 
-    var countries = []
-    countries.push(['Country', 'Number of People']);
-    geomapData = google.visualization.arrayToDataTable(countries);
+    // Transform required data & update counter
+    var geomapData = google.visualization.arrayToDataTable(geomapCountries[i]);
+    yearsConsulted = yearsConsulted + 1;
+
+    // Create & print map
     geomap = new google.visualization.GeoChart(document.getElementById('geomap'));
-
     geomap.draw(geomapData, geomapOptions);
+
+    // Enable button if it was last update
+    if(yearsConsulted == years.length) $('#submit').removeAttr('disabled');
 }
 
-// Document ready function
+/* Document ready function */
 $( document ).ready(function() {
-
     // ======================================== //
     // checkboxes control
     // ======================================== //
@@ -102,54 +121,142 @@ $( document ).ready(function() {
     });
 
     // ======================================== //
-    // Launch surname search
+    // CONTROL INJECTION
     // ======================================== //
-    $('#submit').click(function() {    
+    // maping of parameters to scape
+    var entityMap = {
+       "&": "&amp;",
+       "<": "&lt;",
+       ">": "&gt;",
+       '"': '&quot;',
+       "'": '&#39;',
+       "/": '&#x2F;'
+     };
 
-        // Get all countries to consult
+    // function to scape
+    function escapeHtml(string) {
+        return String(string).replace(/[&<>"'\/]/g, function (s) {
+            return entityMap[s];
+        });
+    }
+
+    // ======================================== //
+    // *** LAUNCH SURNAME SEARCH ***
+    // ======================================== //
+    $('#submit').click(function() {
+        // If the button was disabled, cancel the thing
+        if($(this).attr('disabled') == 'disabled') throw new FatalError("Another instance already running");
+
+        // Diable button and initialize content
+        $(this).attr('disabled', 'disabled');
+        countries = new Array();
+        geomapCountries = new Array();
+        years = new Array();
+        countriesConsulted = 0;
+        yearsConsulted = 0;
+
+        // Missing code to clean the current graphs, etc.
+
+        // Get all parameters and avoid injection
         $(".form-checkbox").each(function(index) {
             if($(this).is(':checked')) {
                 var country = $(this).parent().html().trim().split(">")[1];
-                alert(country);
+                country = escapeHtml(country);
+                countries.push({code:$(this).attr('id'), name:country});
             }
         });
+        var inputSurname = escapeHtml($('#surname').val());
+        var firstYear = escapeHtml($('#firstYear').val());
+        var lastYear = escapeHtml($('#lastYear').val());
 
-        var inputSurname = $('#surname').val();
+        // Check if errors and trigger them
+        var countryError = 0; var surnameError = 0; var firstError = 0; var lastError = 0;
+        if(countries.length == 0) countryError = 1;
+        if(inputSurname.length == 0) surnameError = 1;
+        if(firstYear.length != 4 || isNaN(firstYear)) firstError = 1;
+        if(lastYear != "" && (lastYear.length != 4 || isNaN(lastYear))) lastError = 1;
 
-        /* Search for the surname and each country */
-        var countryNames = ['Afghanistan','Aland Islands','Albania','Algeria','American Samoa','Andorra','Angola','Anguilla','Antarctica','Antigua and Barbuda','Argentina','Armenia','Aruba','Australia','Austria','Azerbaijan','Bahamas','Bahrain','Bangladesh','Barbados','Belarus','Belgium','Belize','Benin','Bermuda','Bhutan','Bolivia','Bosnia and Herzegovina','Botswana','Bouvet Island','Brazil','British Virgin Islands','British Indian Ocean Territory','Brunei Darussalam','Bulgaria','Burkina Faso','Burundi','Cambodia','Cameroon','Canada','Cape Verde','Cayman Islands','Central African Republic','Chad','Chile','China','Hong Kong','Macao','Christmas Island','Cocos Islands','Colombia','Comoros','Congo','Cook Islands','Costa Rica','Côte Ivoire','Croatia','Cuba','Cyprus','Czech Republic','Denmark','Djibouti','Dominica','Dominican Republic','Ecuador','Egypt','El Salvador','Equatorial Guinea','Eritrea','Estonia','Ethiopia','Falkland Islands','Faroe Islands','Fiji','Finland','France','French Guiana','French Polynesia','French Southern Territories','Gabon','Gambia','Georgia','Germany','Ghana','Gibraltar','Greece','Greenland','Grenada','Guadeloupe','Guam','Guatemala','Guernsey','Guinea','Guinea-Bissau','Guyana','Haiti','Heard Island and Mcdonald Islands','Holy See','Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Isle of Man','Israel','Italy','Jamaica','Japan','Jersey','Jordan','Kazakhstan','Kenya','Kiribati','Korea','Kuwait','Kyrgyzstan','Lao PDR','Latvia','Lebanon','Lesotho','Liberia','Libya','Liechtenstein','Lithuania','Luxembourg','Macedonia','Madagascar','Malawi','Malaysia','Maldives','Mali','Malta','Marshall Islands','Martinique','Mauritania','Mauritius','Mayotte','Mexico','Micronesia','Moldova','Monaco','Mongolia','Montenegro','Montserrat','Morocco','Mozambique','Myanmar','Namibia','Nauru','Nepal','Netherlands','Netherlands Antilles','New Caledonia','New Zealand','Nicaragua','Niger','Nigeria','Niue','Norfolk Island','Northern Mariana Islands','Norway','Oman','Pakistan','Palau','Palestinian Territory','Panama','Papua New Guinea','Paraguay','Peru','Philippines','Pitcairn','Poland','Portugal','Puerto Rico','Qatar','Réunion','Romania','Russian Federation','Rwanda','Saint-Barthélemy','Saint Helena','Saint Kitts and Nevis','Saint Lucia','Saint-Martin','Saint Pierre and Miquelon','Saint Vincent and Grenadines','Samoa','San Marino','Sao Tome and Principe','Saudi Arabia','Senegal','Serbia','Seychelles','Sierra Leone','Singapore','Slovakia','Slovenia','Solomon Islands','Somalia','South Africa','South Georgia and the South Sandwich Islands','South Sudan','Spain','Sri Lanka','Sudan','Suriname','Svalbard and Jan Mayen Islands','Swaziland','Sweden','Switzerland','Syrian Arab Republic','Taiwan','Tajikistan','Tanzania','Thailand','Timor-Leste','Togo','Tokelau','Tonga','Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Turks and Caicos Islands','Tuvalu','Uganda','Ukraine','United Arab Emirates','United Kingdom','United States of America','United States Minor Outlying Islands','Uruguay','Uzbekistan','Vanuatu','Venezuela','Viet Nam','Virgin Islands, US','Wallis and Futuna Islands','Western Sahara','Yemen','Zambia','Zimbabwe'];
-        var countryCodes = ['AF','AX','AL','DZ','AS','AD','AO','AI','AQ','AG','AR','AM','AW','AU','AT','AZ','BS','BH','BD','BB','BY','BE','BZ','BJ','BM','BT','BO','BA','BW','BV','BR','VG','IO','BN','BG','BF','BI','KH','CM','CA','CV','KY','CF','TD','CL','CN','HK','MO','CX','CC','CO','KM','CG','CK','CR','CI','HR','CU','CY','CZ','DK','DJ','DM','DO','EC','EG','SV','GQ','ER','EE','ET','FK','FO','FJ','FI','FR','GF','PF','TF','GA','GM','GE','DE','GH','GI','GR','GL','GD','GP','GU','GT','GG','GN','GW','GY','HT','HM','VA','HN','HU','IS','IN','ID','IR','IQ','IE','IM','IL','IT','JM','JP','JE','JO','KZ','KE','KI','KR','KW','KG','LA','LV','LB','LS','LR','LY','LI','LT','LU','MK','MG','MW','MY','MV','ML','MT','MH','MQ','MR','MU','YT','MX','FM','MD','MC','MN','ME','MS','MA','MZ','MM','NA','NR','NP','NL','AN','NC','NZ','NI','NE','NG','NU','NF','MP','NO','OM','PK','PW','PS','PA','PG','PY','PE','PH','PN','PL','PT','PR','QA','RE','RO','RU','RW','BL','SH','KN','LC','MF','PM','VC','WS','SM','ST','SA','SN','RS','SC','SL','SG','SK','SI','SB','SO','ZA','GS','SS','ES','LK','SD','SR','SJ','SZ','SE','CH','SY','TW','TJ','TZ','TH','TL','TG','TK','TO','TT','TN','TR','TM','TC','TV','UG','UA','AE','GB','US','UM','UY','UZ','VU','VE','VN','VI','WF','EH','YE','ZM','ZW'];
-        var europe = ['Russia','Germany','France','United Kingdom','Italy','Spain','Ukraine','Poland','Romania','Kazakhstan','Netherlands','Belgium','Greece','Czech Republic','Portugal','Sweden','Hungary','Austria','Switzerland','Denmark','Finland','Norway','Ireland','Portugal'];
+        // Compute years intervals
+        /*if(lastYear == "") years.push(firstYear);
+        else {
+            // Cast to int
+            firstYear = parseInt(firstYear);
+            lastYear = parseInt(lastYear);
+            // compute intervals
+            var auxYear = firstYear;
+            while(auxYear < lastYear) {
+                auxYear2 = auxYear+9 < lastYear ? auxYear+9 : lastYear;
+                years.push(auxYear + "-" + auxYear2);
+                auxYear = auxYear2+1;
+            }
+        }*/
 
-        countryNames = ['Antigua and Barbuda','Bahamas','Barbados','Belize','Canada','Costa Rica','Cuba','Dominica','Dominican Republic','El Salvador','Grenada','Guatemala','Haiti','Honduras','Jamaica','Mexico','Nicaragua','Panama','Saint Kitts and Nevis','Saint Lucia','Saint Vincent and the Grenadines','Trinidad and Tobago','United States'];
-        countryCodes = ['AG','BS','BB','BZ','CA','CR','CU','DM','DO','SV','GD','GT','HT','HN','JM','MX','NI','PA','KN','LC','VC','TT','US'];
 
-        for(var k = 0; k < countryNames.length; k++) {
-            (function(k) {
-                setTimeout(function() {
-                    var params = {
-                        surname: inputSurname,
-                        birthPlace: countryNames[k]
-                    }
+        firstYear = parseInt(firstYear);
+        lastYear =  lastYear == "" ? firstYear : parseInt(lastYear);
+        console.log(lastYear);
+        var auxYear = firstYear;
+        while(auxYear < lastYear) {
+            years.push(auxYear);
+            auxYear = auxYear+1 <= lastYear ? auxYear+1 : lastYear;
+        }
 
-                    client.getPersonSearch(params).then(function(searchResponse) {
-                        //var results = searchResponse.getSearchResults();
-                        // Get instances of people with name in country[k]
-                        var total = searchResponse.getResultsCount();
-        //                console.log("Country " + europe[k] + " " + results.length);
+        /* Loops through intervals and countries */
+        for (var i = 0; i < years.length; i++) {
+            // Initialize block of years geomapCountries
+            geomapCountries[i] = new Array();
+            geomapCountries[i].push(['Country', 'Number of People']);
 
-                        console.log("Country " + countryNames[k] + " " + total);
+            // Search for the surname on each country
+            for(var k = 0; k < countries.length; k++) {
+                // Delay all calls to the API by apiDELAY param
+                (function(k, i) {
+                    setTimeout(function() {
+                        var params = {
+                            surname: inputSurname,
+                            birthPlace: countries[k].name,
+                            birthDate: years[i]
+                        }
+                        // Launch search against FamilySearch API
+                        client.getPersonSearch(params).then(function(searchResponse) {
+                            // Get instances of people with name in country[k]
+                            var total = searchResponse.getResultsCount();
 
-                    });
-                }, 2000*k);
-            }(k));
+                            /*// real born years
+                            for(var p = 0; p < total; p = p+15) {
+                                var persons = searchResponse.getSearchResults({start:p});
+                                for(var j = 0; j < persons.length; j++) {
+                                    var result = persons[i];
+                                    person = result.getPrimaryPerson();
+                                    birth = person.getBirth();
+
+                                    console.log("Person name: " + person.getDisplayName());
+                                    //console.log("Normalized Place: " + birth.getNormalizedPlace());
+                                    //console.log("Get Place: " + birth.getPlace());
+                                    console.log("Get date: " + birth.getDate());
+                                }
+                            } */
+
+                            // Add results to be printed
+                            console.log("Country " + countries[k].name + " " + total);
+                            countriesConsulted = countriesConsulted + 1;
+                            if(total != 0) {
+                                geomapCountries[i].push([countries[k].code, total]);
+                            }
+
+                            // Check if year data should be printed
+                            if(countriesConsulted%countries.length == 0) printGeomap(i);
+                        });
+                    }, apiDELAY*k+(i*countries.length*apiDELAY));
+                }(k, i));
+            }
         }
     });
 
     // ======================================== //
-    // Scroll-spy
+    // Scroll spy
     // ======================================== //
-    $(window).scroll(function(){
+    $(window).scroll(function() {
         var windowHeight = $(window).height();
         var countryList = $("#eu-container").position().top;
         var fromTop =  $(document).scrollTop();
@@ -158,7 +265,7 @@ $( document ).ready(function() {
         // current position
         var currentPosition = fromTop+windowHeight;
 
-        // decide if we need to higlight the bar or nto
+        // decide if we need to fix the search bar or not
         if(currentPosition >= countryList+160) {
             if($("#submit-search").hasClass('detached-bottom')) {
                 if(currentPosition >= resultsZone+70) $("#submit-search").toggleClass('detached-bottom', false);
@@ -199,39 +306,40 @@ $( document ).ready(function() {
 
 
     $('#submit2').click(function() {
-        birthDate = $('#birthDate').val() + "~";
+        birthDate = $('#firstYear').val();
 
         var params = {
-            givenName: $('#givenName').val(),
+            givenName: $('#surname').val(),
             birthDate: birthDate
         };
 
-        console.log("param used: " + params.givenName);
+        console.log("param used: " + params.birthDate);
 
         client.getPersonSearch(params).then(function(searchResponse){
             var results = searchResponse.getSearchResults();
-
+            var results2 = searchResponse.getResultsCount();
             console.log("Response length: " + results.length);
+            console.log("Response count: " + results2);
 
-            var countries = [];
-            var countryNames = [];
-            var countryCounter = [];
-            countries.push(['Country', 'Number of People']);
+            //var countries = [];
+            //var countryNames = [];
+            //var countryCounter = [];
+            //countries.push(['Country', 'Number of People']);
 
             if(results.length > 0) {
-                var tmpCountries = [];
+                //var tmpCountries = [];
                 for(var i = 0; i < results.length; i++){
-                    /* tryout getPrimaryPerson */
+                    // tryout getPrimaryPerson
                     var result = results[i];
                     person = result.getPrimaryPerson();
                     birth = person.getBirth();
 
                     console.log("Person name: " + person.getDisplayName());
-                    console.log("Normalized Place: " + birth.getNormalizedPlace());
-                    console.log("Get Place: " + birth.getPlace());
-                    console.log("Bet date: " + birth.getDate());
-                    console.log("Get formal date: " + birth.getNormalizedDate());
-
+                    //console.log("Normalized Place: " + birth.getNormalizedPlace());
+                    //console.log("Get Place: " + birth.getPlace());
+                    //console.log("Get date: " + birth.getDate());
+                    //console.log("Get formal date: " + birth.getNormalizedDate());
+/*
                     if(typeof birth !== "undefined") {
                         birthPlace = birth.getNormalizedPlace();
 
@@ -263,9 +371,10 @@ $( document ).ready(function() {
                             countryNames.push('undefined');
                         }
                     }
+                    */
                 } // end: PERSOONS LOOP
             } // end: results found IF-ELSE
-
+/*
             // Create array to be passed to google geochart
             for (var i = 0; i < countryNames.length; i++)
                 if(countryNames[i] != 'undefined')
@@ -299,62 +408,7 @@ $( document ).ready(function() {
               var barchart = new google.visualization.BarChart(document.getElementById('barchart'));
               barchartData = google.visualization.arrayToDataTable(countries);
               barchart.draw(barchartData, options);
-
+*/
         }); //end getPersonSearch function
     }); // end onSubmit function
 });
-
-
-//backup search function
-function backupSearch() {
-    $('#submit').click(function(){
-
-        var params = {
-              givenName: $('#givenName').val(),
-              surname: $('#surname').val()//,
-              //birthDate: $('#birthDate').val(),
-              //birthPlace: $('#birthPlace').val(),
-              //deathDate: $('#deathDate').val(),
-              //deathPlace: $('#deathPlace').val(),
-              //fatherGivenName: $('#fatherGivenName').val(),
-              //fatherSurname: $('#fatherSurname').val(),
-              //motherGivenName: $('#motherGivenName').val(),
-              //motherSurname: $('#motherSurname').val(),
-              //spouseGivenName: $('#spouseGivenName').val(),
-              //spouseSurname: $('#spouseSurname').val()
-            };
-
-        client.getPersonSearch(params).then(function(searchResponse){
-
-            var results = searchResponse.getSearchResults();
-            var numberResults = searchResponse.getResultsCount();
-            var context = searchResponse.getContext();
-            //alert(numberResults);
-            //alert(context);
-            if(results.length == 0) alert("NO RESULTS");
-            else {
-                for(var i = 0; i < results.length; i++){
-                    /* tryout getPrimaryPerson */
-                    var result = results[i];
-                    person = result.getPrimaryPerson();
-                    birth = person.getBirth();
-                    birthPlace = birth.getNormalizedPlace();
-                    alert("Birth Place: " + birthPlace);
-
-
-                    childs = result.getChildIds();
-                    //alert(childs.length);
-                    if(childs.length > 0) {
-                        //alert("IN");
-                        children = result.getChildren();
-                        for(var j = 0; j < children.length; j++) {
-                            child = children[j];
-                            //alert(child.getId());
-                        }
-                    }
-                    //alert(person.getId());
-                }
-            }
-        });
-    });
-}

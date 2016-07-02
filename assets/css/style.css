@@ -75,6 +75,19 @@ h1 {
      font-size: 16px;
  }
 
+ .label-font {
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: 600;
+     font-size:20px;
+ }
+
+ .form-font {
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: 400;
+     height: 40px;
+     font-size:20px;
+ }
+
 /* ============================= */
 /* BUFFERS                       */
 /* ============================= */
@@ -122,8 +135,6 @@ li a, li a:hover, li a:focus {
 .block-pointer {
     cursor: pointer;
 }
-
-/* ---------------------------------------------------------------- */
 
 /* ============================= */
 /* FOOTER                        */
@@ -206,27 +217,6 @@ li a, li a:hover, li a:focus {
 /* ============================= */
 /* SURNAMES BY REGION            */
 /* ============================= */
-
-/* ============================= */
-/* FORMS                         */
-/* ============================= */
-.label-font {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    font-size:20px;
-}
-
-.form-font {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    height: 40px;
-    font-size:20px;
-}
-
-.form-checkbox {
-    margin-top: 9px !important;
-}
-
 .detached-bottom {
     position: fixed;
     border-top: 1px solid #2e6da4;
@@ -241,4 +231,11 @@ li a, li a:hover, li a:focus {
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
+}
+
+/* ============================= */
+/* FORMS                         */
+/* ============================= */
+.form-checkbox {
+    margin-top: 9px !important;
 }
