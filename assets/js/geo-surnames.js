@@ -44,72 +44,19 @@ $( document ).ready(function() {
     // checkboxes control
     // ======================================== //
     // select or deselect all
-    $('#eu-all').click(function() {
+    $('.checkbox-all').click(function() {
+        var fatherID = $(this).parent().parent().parent().attr('id');
+        fatherID = ".checkbox-" + fatherID.split('-')[0];
         if($(this).html().trim() == "Select All Countries") {
-            $('.checkbox-eu').prop('checked', true);
+            $(fatherID).prop('checked', true);
             $(this).html("Deselect All Countries");
         }
         else {
-            $('.checkbox-eu').prop('checked', false);
+            $(fatherID).prop('checked', false);
             $(this).html("Select All Countries");
         }
     });
-
-    $('#na-all').click(function() {
-        if($(this).html().trim() == "Select All Countries") {
-            $('.checkbox-na').prop('checked', true);
-            $(this).html("Deselect All Countries");
-        }
-        else {
-            $('.checkbox-na').prop('checked', false);
-            $(this).html("Select All Countries");
-        }
-    });
-
-    $('#sa-all').click(function() {
-        if($(this).html().trim() == "Select All Countries") {
-            $('.checkbox-sa').prop('checked', true);
-            $(this).html("Deselect All Countries");
-        }
-        else {
-            $('.checkbox-sa').prop('checked', false);
-            $(this).html("Select All Countries");
-        }
-    });
-
-    $('#oc-all').click(function() {
-        if($(this).html().trim() == "Select All Countries") {
-            $('.checkbox-oc').prop('checked', true);
-            $(this).html("Deselect All Countries");
-        }
-        else {
-            $('.checkbox-oc').prop('checked', false);
-            $(this).html("Select All Countries");
-        }
-    });
-
-    $('#as-all').click(function() {
-        if($(this).html().trim() == "Select All Countries") {
-            $('.checkbox-as').prop('checked', true);
-            $(this).html("Deselect All Countries");
-        }
-        else {
-            $('.checkbox-as').prop('checked', false);
-            $(this).html("Select All Countries");
-        }
-    });
-
-    $('#af-all').click(function() {
-        if($(this).html().trim() == "Select All Countries") {
-            $('.checkbox-af').prop('checked', true);
-            $(this).html("Deselect All Countries");
-        }
-        else {
-            $('.checkbox-af').prop('checked', false);
-            $(this).html("Select All Countries");
-        }
-    });
-
+    
     // Expand/Coallpse buttons
     $('.exp-button').click(function() {
         if($(this).html().trim() == "Collapse country list") {
@@ -168,37 +115,27 @@ $( document ).ready(function() {
         var inputSurname = escapeHtml($('#surname').val());
         var firstYear = escapeHtml($('#firstYear').val());
         var lastYear = escapeHtml($('#lastYear').val());
+        var interval = escapeHtml($('#interval').val());
 
         // Check if errors and trigger them
-        var countryError = 0; var surnameError = 0; var firstError = 0; var lastError = 0;
+        var countryError = 0; var surnameError = 0; var firstError = 0; var lastError = 0; var intervalError = 0;
         if(countries.length == 0) countryError = 1;
         if(inputSurname.length == 0) surnameError = 1;
         if(firstYear.length != 4 || isNaN(firstYear)) firstError = 1;
         if(lastYear != "" && (lastYear.length != 4 || isNaN(lastYear))) lastError = 1;
-
-        // Compute years intervals
-        /*if(lastYear == "") years.push(firstYear);
-        else {
-            // Cast to int
-            firstYear = parseInt(firstYear);
-            lastYear = parseInt(lastYear);
-            // compute intervals
-            var auxYear = firstYear;
-            while(auxYear < lastYear) {
-                auxYear2 = auxYear+9 < lastYear ? auxYear+9 : lastYear;
-                years.push(auxYear + "-" + auxYear2);
-                auxYear = auxYear2+1;
-            }
-        }*/
-
-
         firstYear = parseInt(firstYear);
         lastYear =  lastYear == "" ? firstYear : parseInt(lastYear);
-        console.log(lastYear);
-        var auxYear = firstYear;
-        while(auxYear < lastYear) {
-            years.push(auxYear);
-            auxYear = auxYear+1 <= lastYear ? auxYear+1 : lastYear;
+        interval = parseInt(interval);
+        if(lastYear != firstYear && (interval == "" | isNaN(interval))) intervalError = 1;
+
+        // Compute year checkpoints
+        years.push(firstYear);
+        if(lastYear != firstYear) {
+            var auxYear = firstYear;
+            while(auxYear < lastYear) {
+                auxYear = auxYear+interval < lastYear ? auxYear+interval : lastYear;
+                years.push(auxYear);
+            }
         }
 
         /* Loops through intervals and countries */

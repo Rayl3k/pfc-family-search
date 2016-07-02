@@ -39,3 +39,9 @@ http://stackoverflow.com/questions/29884654/button-that-refresh-page-on-click
 
 ## GOOD GEOAPI NO LIMITS CAN INSTALL
 http://open.mapquestapi.com/nominatim/
+
+## better map tool
+https://www.amcharts.com/demos/
+
+## sort javascript array of objects
+http://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value-in-javascript

@@ -107,7 +107,7 @@
     <!-- start: BASIC FORM FIELDS -->
     <div class="row">
         <!-- surname form field -->
-        <div class="form-group col-sm-6">
+        <div class="form-group col-sm-4">
             <label for="surname" class="label-font">Surname</label>
             <input type="text" class="form-control form-font" id="surname" placeholder="surname">
         </div>
@@ -120,6 +120,11 @@
         <div class="form-group col-sm-3">
             <label for="surname" class="label-font">Range (optional)</label>
             <input type="text" class="form-control form-font" id="lastYear" placeholder="YYYY">
+        </div>
+        <!-- interval year form field -->
+        <div class="form-group col-sm-2">
+            <label for="surname" class="label-font">Interval</label>
+            <input type="text" class="form-control form-font" id="interval" placeholder="10" value="10">
         </div>
     </div> <!-- end: BASIC FORM FIELDS -->
 </div>
@@ -153,7 +158,7 @@
                 <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#eu-countries" aria-expanded="false" aria-controls="eu-countries">
                     Collapse country list
                 </button>
-                <button id="eu-all" class="btn btn-primary" role="button">
+                <button id="eu-all" class="btn btn-primary checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -187,7 +192,7 @@
                 <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#na-countries" aria-expanded="false" aria-controls="na-countries">
                     Collapse country list
                 </button>
-                <button id="na-all" class="btn btn-primary" role="button">
+                <button id="na-all" class="btn btn-primary checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -221,7 +226,7 @@
                 <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#sa-countries" aria-expanded="false" aria-controls="sa-countries">
                     Collapse country list
                 </button>
-                <button id="sa-all" class="btn btn-primary" role="button">
+                <button id="sa-all" class="btn btn-primary checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -255,7 +260,7 @@
                 <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#oc-countries" aria-expanded="false" aria-controls="oc-countries">
                     Collapse country list
                 </button>
-                <button id="oc-all" class="btn btn-primary" role="button">
+                <button id="oc-all" class="btn btn-primary checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -289,7 +294,7 @@
                 <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#as-countries" aria-expanded="false" aria-controls="as-countries">
                     Collapse country list
                 </button>
-                <button id="as-all" class="btn btn-primary" role="button">
+                <button id="as-all" class="btn btn-primary checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -323,7 +328,7 @@
                 <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#af-countries" aria-expanded="false" aria-controls="af-countries">
                     Collapse country list
                 </button>
-                <button id="af-all" class="btn btn-primary" role="button">
+                <button id="af-all" class="btn btn-primary checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
