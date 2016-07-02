@@ -128,202 +128,223 @@
 <div class="container">
     <!-- start: EUROPEAN COUNTRIES -->
     <!-- ######################### -->
-    <div class="row xs-buffer">
-        <div class="col-sm-12">
-            <h3>European countries</h3>
-        </div>
-    </div>
-    <!-- country checkboxes -->
-    <div class="row">
-        <div class="collapse in" id="eu-countries">
-            {{#europe}}
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-eu">{{name}}
-                </label>
+    <div id="eu-container">
+        <!-- country title -->
+        <div class="row xs-buffer">
+            <div class="col-sm-12">
+                <h3>European countries</h3>
             </div>
-            {{/europe}}
         </div>
-    </div>
-    <!-- country controls -->
-    <div class="row sm-buffer">
-        <div class="col-sm-12">
-            <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#eu-countries" aria-expanded="false" aria-controls="eu-countries">
-                Collapse country list
-            </button>
-            <button id="eu-all" class="btn btn-primary" role="button">
-                Select All Countries
-            </button>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="eu-countries">
+                {{#europe}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-eu">{{name}}
+                    </label>
+                </div>
+                {{/europe}}
+            </div>
+        </div>
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#eu-countries" aria-expanded="false" aria-controls="eu-countries">
+                    Collapse country list
+                </button>
+                <button id="eu-all" class="btn btn-primary" role="button">
+                    Select All Countries
+                </button>
+            </div>
         </div>
     </div> <!-- end: EUROPEAN COUNTRIES -->
 
     <!-- start: NORTH AMERICA COUNTRIES -->
     <!-- ############################## -->
-    <div class="row md-buffer">
-        <div class="col-sm-12">
-            <h3>North-American countries</h3>
-        </div>
-    </div>
-    <!-- country checkboxes -->
-    <div class="row">
-        <div class="collapse" id="na-countries">
-            {{#northAmerica}}
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-na">{{name}}
-                </label>
+    <div id="na-container">
+    <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>North-American countries</h3>
             </div>
-            {{/northAmerica}}
         </div>
-    </div>
-    <!-- country controls -->
-    <div class="row sm-buffer">
-        <div class="col-sm-12">
-            <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#na-countries" aria-expanded="false" aria-controls="na-countries">
-                Collapse country list
-            </button>
-            <button id="na-all" class="btn btn-primary" role="button">
-                Select All Countries
-            </button>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="na-countries">
+                {{#northAmerica}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-na">{{name}}
+                    </label>
+                </div>
+                {{/northAmerica}}
+            </div>
         </div>
-    </div> <!-- end: EUROPEAN COUNTRIES -->
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#na-countries" aria-expanded="false" aria-controls="na-countries">
+                    Collapse country list
+                </button>
+                <button id="na-all" class="btn btn-primary" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: NORTH AMERICAN COUNTRIES -->
 
     <!-- start: SOUTH AMERICA COUNTRIES -->
     <!-- ############################## -->
-    <div class="row md-buffer">
-        <div class="col-sm-12">
-            <h3>South-American countries</h3>
-        </div>
-    </div>
-    <!-- country checkboxes -->
-    <div class="row">
-        <div class="collapse" id="sa-countries">
-            {{#southAmerica}}
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-sa">{{name}}
-                </label>
+    <div id="sa-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>South-American countries</h3>
             </div>
-            {{/southAmerica}}
         </div>
-    </div>
-    <!-- country controls -->
-    <div class="row sm-buffer">
-        <div class="col-sm-12">
-            <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#sa-countries" aria-expanded="false" aria-controls="sa-countries">
-                Collapse country list
-            </button>
-            <button id="sa-all" class="btn btn-primary" role="button">
-                Select All Countries
-            </button>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="sa-countries">
+                {{#southAmerica}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-sa">{{name}}
+                    </label>
+                </div>
+                {{/southAmerica}}
+            </div>
         </div>
-    </div> <!-- end: EUROPEAN COUNTRIES -->
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#sa-countries" aria-expanded="false" aria-controls="sa-countries">
+                    Collapse country list
+                </button>
+                <button id="sa-all" class="btn btn-primary" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: SOUTH AMERICAN COUNTRIES -->
 
     <!-- start: OCEANIA COUNTRIES -->
     <!-- ######################## -->
-    <div class="row md-buffer">
-        <div class="col-sm-12">
-            <h3>Oceanian countries</h3>
-        </div>
-    </div>
-    <!-- country checkboxes -->
-    <div class="row">
-        <div class="collapse" id="oc-countries">
-            {{#oceania}}
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-oc">{{name}}
-                </label>
+    <div id="oc-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>Oceanian countries</h3>
             </div>
-            {{/oceania}}
         </div>
-    </div>
-    <!-- country controls -->
-    <div class="row sm-buffer">
-        <div class="col-sm-12">
-            <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#oc-countries" aria-expanded="false" aria-controls="oc-countries">
-                Collapse country list
-            </button>
-            <button id="oc-all" class="btn btn-primary" role="button">
-                Select All Countries
-            </button>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="oc-countries">
+                {{#oceania}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-oc">{{name}}
+                    </label>
+                </div>
+                {{/oceania}}
+            </div>
         </div>
-    </div> <!-- end: EUROPEAN COUNTRIES -->
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#oc-countries" aria-expanded="false" aria-controls="oc-countries">
+                    Collapse country list
+                </button>
+                <button id="oc-all" class="btn btn-primary" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: OCEANIAN COUNTRIES -->
 
     <!-- start: ASIA COUNTRIES -->
     <!-- ##################### -->
-    <div class="row md-buffer">
-        <div class="col-sm-12">
-            <h3>Asian countries</h3>
-        </div>
-    </div>
-    <!-- country checkboxes -->
-    <div class="row">
-        <div class="collapse" id="as-countries">
-            {{#asia}}
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-as">{{name}}
-                </label>
+    <div id="as-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>Asian countries</h3>
             </div>
-            {{/asia}}
         </div>
-    </div>
-    <!-- country controls -->
-    <div class="row sm-buffer">
-        <div class="col-sm-12">
-            <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#as-countries" aria-expanded="false" aria-controls="as-countries">
-                Collapse country list
-            </button>
-            <button id="as-all" class="btn btn-primary" role="button">
-                Select All Countries
-            </button>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="as-countries">
+                {{#asia}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-as">{{name}}
+                    </label>
+                </div>
+                {{/asia}}
+            </div>
         </div>
-    </div> <!-- end: EUROPEAN COUNTRIES -->
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#as-countries" aria-expanded="false" aria-controls="as-countries">
+                    Collapse country list
+                </button>
+                <button id="as-all" class="btn btn-primary" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: ASIAN COUNTRIES -->
 
     <!-- start: AFRICA COUNTRIES -->
     <!-- ####################### -->
-    <div class="row md-buffer">
-        <div class="col-sm-12">
-            <h3>African countries</h3>
-        </div>
-    </div>
-    <!-- country checkboxes -->
-    <div class="row">
-        <div class="collapse" id="af-countries">
-            {{#africa}}
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <label class="checkbox-inline">
-                    <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-af">{{name}}
-                </label>
+    <div id="af-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>African countries</h3>
             </div>
-            {{/africa}}
         </div>
-    </div>
-    <!-- country controls -->
-    <div class="row sm-buffer">
-        <div class="col-sm-12">
-            <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#af-countries" aria-expanded="false" aria-controls="af-countries">
-                Collapse country list
-            </button>
-            <button id="af-all" class="btn btn-primary" role="button">
-                Select All Countries
-            </button>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="af-countries">
+                {{#africa}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-af">{{name}}
+                    </label>
+                </div>
+                {{/africa}}
+            </div>
         </div>
-    </div> <!-- end: EUROPEAN COUNTRIES -->
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#af-countries" aria-expanded="false" aria-controls="af-countries">
+                    Collapse country list
+                </button>
+                <button id="af-all" class="btn btn-primary" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: AFRICAN COUNTRIES -->
 
 </div> <!-- end: COUNTRIES -->
 
 <!-- start: SUBMIT BUTTON -->
-<div class="container">
+<div id="submit-search" class="container md-buffer">
     <!-- search button -->
-    <div class="row md-buffer">
+    <div class="row">
         <div class="col-sm-12 sm-buffer">
-            <p class="text-center"><button id="submit" class="btn btn-primary form-font">Lauch surname search</button></p>
+            <p class="text-center"><a href="#results-zone" id="submit" class="btn btn-primary form-font">Lauch surname search</a></p>
         </div>
     </div> <!-- end: SUBMIT BUTTON -->
 </div>
 
+<!-- start: RESULTS SPACE -->
+<div id="results-zone" class="container">
+</div>
 
 <div class="container md-buffer">
     <div id="geomap"></div>

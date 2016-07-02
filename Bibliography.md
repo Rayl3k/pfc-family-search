@@ -12,3 +12,6 @@ https://mledoze.github.io/countries/
 
 ##tip mustacheExpr
 https://www.vodori.com/helpful-mustache-template-tips/
+
+## promise
+https://www.promisejs.org/

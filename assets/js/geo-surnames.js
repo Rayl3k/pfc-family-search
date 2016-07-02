@@ -104,7 +104,7 @@ $( document ).ready(function() {
     // ======================================== //
     // Launch surname search
     // ======================================== //
-    $('#submit').click(function() {
+    $('#submit').click(function() {    
 
         // Get all countries to consult
         $(".form-checkbox").each(function(index) {
@@ -145,6 +145,58 @@ $( document ).ready(function() {
             }(k));
         }
     });
+
+    // ======================================== //
+    // Scroll-spy
+    // ======================================== //
+    $(window).scroll(function(){
+        var windowHeight = $(window).height();
+        var countryList = $("#eu-container").position().top;
+        var fromTop =  $(document).scrollTop();
+        var resultsZone = $("#results-zone").position().top;
+
+        // current position
+        var currentPosition = fromTop+windowHeight;
+
+        // decide if we need to higlight the bar or nto
+        if(currentPosition >= countryList+160) {
+            if($("#submit-search").hasClass('detached-bottom')) {
+                if(currentPosition >= resultsZone+70) $("#submit-search").toggleClass('detached-bottom', false);
+            }
+            else {
+                var submitZone = $("#submit-search").position().top;
+                if(currentPosition < submitZone+70) $("#submit-search").toggleClass('detached-bottom', true);
+            }
+        }
+        else {
+            $("#submit-search").toggleClass('detached-bottom', false);
+        }
+    });
+
+    // ======================================== //
+    // Smooth jumping
+    // ======================================== //
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+
+
+
+
+
+
+
 
     $('#submit2').click(function() {
         birthDate = $('#birthDate').val() + "~";

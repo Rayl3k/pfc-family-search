@@ -226,3 +226,19 @@ li a, li a:hover, li a:focus {
 .form-checkbox {
     margin-top: 9px !important;
 }
+
+.detached-bottom {
+    position: fixed;
+    border-top: 1px solid #2e6da4;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 9999;
+    background-color: #fff;
+
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
