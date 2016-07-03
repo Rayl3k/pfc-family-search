@@ -45,3 +45,9 @@ https://www.amcharts.com/demos/
 
 ## sort javascript array of objects
 http://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value-in-javascript
+
+# GOOGLE mAPS LIBRARIES
+https://developers.google.com/chart/interactive/docs/gallery/geomap#regions-example
+https://developers.google.com/chart/interactive/docs/gallery/barchart#stacked-bar-charts
+https://developers.google.com/chart/interactive/docs/gallery/linechart#top-x-charts
+https://developers.google.com/chart/interactive/docs/datatables_dataviews

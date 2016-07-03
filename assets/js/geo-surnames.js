@@ -57,9 +57,10 @@ function printLinechart() {
 
     // add rows to the dataset
     linechartData.addRows(linechartRows);
+    var title = 'Number of people matching surname ' + firstToUpperCase($('#surname').val()) + " per country";
     var linechartOptions = {
         chart: {
-          title: 'Number of people matching surname' + firstToUpperCase($('#surname').val()) + "per country",
+          title: title,
           subtitle: 'in number of FamilySearch person instances'
         },
         height: 500,
@@ -129,7 +130,6 @@ function printGraphs(i) {
 
     // Update current printed
     currentPrinted = i;
-
 }
 
 /* Function to print & update data */
@@ -153,7 +153,9 @@ function yearGraphs(i) {
         $('.current-year').text(years.length);
         $('.current-country').text(countries.length);
         $('#progress-value').removeClass('active');
-        $('#submit').removeAttr('disabled');
+
+        // Re-enable search button
+        $('#submit').removeClass('disabled');
 
         // Print linecahrt
         if(years.length > 1) {
@@ -164,6 +166,26 @@ function yearGraphs(i) {
             $('#next-year').fadeIn('fast');
         }
     }
+}
+
+// ======================================== //
+// CONTROL INJECTION
+// ======================================== //
+// maping of parameters to scape
+var entityMap = {
+   "&": "&amp;",
+   "<": "&lt;",
+   ">": "&gt;",
+   '"': '&quot;',
+   "'": '&#39;',
+   "/": '&#x2F;'
+ };
+
+// function to scape
+function escapeHtml(string) {
+    return String(string).replace(/[&<>"'\/]/g, function (s) {
+        return entityMap[s];
+    });
 }
 
 // ======================================== //
@@ -187,6 +209,19 @@ $( document ).ready(function() {
         }
     });
 
+    // ======================================== //
+    // inline-validation
+    // ======================================== //
+    $('.form-vali').focusout(function() {
+        if(inlineValidation($(this).attr('id'))) {
+            $(this).parent().removeClass('has-success');
+            $(this).parent().addClass('has-error');
+        }
+        else {
+            $(this).parent().removeClass('has-error');
+            $(this).parent().addClass('has-success');
+        }
+    });
 
     // ======================================== //
     // checkboxes control
@@ -216,33 +251,10 @@ $( document ).ready(function() {
     });
 
     // ======================================== //
-    // CONTROL INJECTION
-    // ======================================== //
-    // maping of parameters to scape
-    var entityMap = {
-       "&": "&amp;",
-       "<": "&lt;",
-       ">": "&gt;",
-       '"': '&quot;',
-       "'": '&#39;',
-       "/": '&#x2F;'
-     };
-
-    // function to scape
-    function escapeHtml(string) {
-        return String(string).replace(/[&<>"'\/]/g, function (s) {
-            return entityMap[s];
-        });
-    }
-
-    // ======================================== //
     // *** LAUNCH SURNAME SEARCH ***
     // ======================================== //
     $('#submit').click(function() {
-        // If the button was disabled, cancel the thing
-        if($(this).attr('disabled') == 'disabled') throw new FatalError("Another instance already running");
-
-        // Show waiting page & edit values & hide sections
+        // fadein & fadeout content
         $('#graphs').fadeOut('fast');
         $('#lineOverall').fadeOut('fast');
         $('#controls-block').fadeOut('fast');
@@ -260,7 +272,10 @@ $( document ).ready(function() {
         $("#waiting-page").fadeIn("slow");
 
         // Diable button and initialize content
-        $(this).attr('disabled', 'disabled');
+        //$(this).attr('disabled', 'disabled');
+        $(this).addClass('disabled');
+
+        // Initialize search variables
         countries = new Array();
         geomapCountries = new Array();
         years = new Array();
@@ -284,18 +299,42 @@ $( document ).ready(function() {
         var lastYear = escapeHtml($('#lastYear').val());
         var interval = escapeHtml($('#interval').val());
 
-        // Check if errors and trigger them
-        var countryError = 0; var surnameError = 0; var firstError = 0; var lastError = 0; var intervalError = 0;
-        if(countries.length == 0) countryError = 1;
-        if(inputSurname.length == 0) surnameError = 1;
-        if(firstYear.length != 4 || isNaN(firstYear)) firstError = 1;
-        if(lastYear != "" && (lastYear.length != 4 || isNaN(lastYear))) lastError = 1;
+        // Check errors and prepare messages
+        var countryError = 0; var surnameError = 0;
+        var firstError = 0; var lastError = 0; var intervalError = 0;
+        if(countries.length == 0) {countryError = 1; $('#countryError').removeClass('hidden');}
+        else $('#countryError').addClass('hidden');
+        if(inlineValidation('surname')) { $('#surname').trigger('focusout'); surnameError = 1; $('#surnameError').removeClass('hidden');}
+        else $('#surnameError').addClass('hidden');
+        if(inlineValidation('firstYear')) { $('#firstYear').trigger('focusout'); firstError = 1; $('#firstYearError').removeClass('hidden');}
+        else $('#firstYearError').addClass('hidden');
+        if(inlineValidation('lastYear')) { $('#lastYear').trigger('focusout'); lastError = 1; $('#lastYearError').removeClass('hidden');}
+        else $('#lastYearError').addClass('hidden');
+        if(inlineValidation('interval')) { $('#interval').trigger('focusout'); intervalError = 1; $('#intervalError').removeClass('hidden');}
+        else $('#intervalError').addClass('hidden');
+
+        // Display errors & abort ejecution or continue?
+        if(countryError || surnameError || firstError || lastError || intervalError) {
+            $("#waiting-page").fadeOut("fast");
+            $('#form-errors').removeClass('hidden');
+            $(this).removeClass('disabled');
+            $('#error-trigger').trigger('click');
+            setTimeout(function() {
+                throw new FatalError("Some fields had mistakes!");
+            }, 1200);
+        }
+        else {
+            $('#results-trigger').trigger('click');
+            $('.form-vali').each(function() {
+                $(this).parent().removeClass('has-error');
+                $(this).parent().addClass('has-success');
+            });
+        }
+
+        // Compute year checkpoints
         firstYear = parseInt(firstYear);
         lastYear =  lastYear == "" ? firstYear : parseInt(lastYear);
         interval = parseInt(interval);
-        if(lastYear != firstYear && (interval == "" | isNaN(interval))) intervalError = 1;
-
-        // Compute year checkpoints
         years.push(firstYear);
         if(lastYear != firstYear) {
             var auxYear = firstYear;
@@ -359,7 +398,6 @@ $( document ).ready(function() {
                             } */
 
                             // Add results to be printed
-                            //console.log("Country " + countries[k].name + " " + total);
                             countriesConsulted = countriesConsulted + 1;
                             geomapCountries[i].push([countries[k].code, total]);
                             linechartRows[i].push(total);
@@ -417,9 +455,10 @@ $( document ).ready(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                 var target = $(this.hash);
+                var targetString = String(this.hash.slice(1));
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                 if (target.length) {
-                    if($("#submit-search").hasClass('detached-bottom')) {
+                    if(targetString == "results-zone") {
                         $('html, body').animate({
                             scrollTop: target.offset().top+100
                         }, 1000);

@@ -104,27 +104,42 @@
             <h3>Configure surname and years</h3>
         </div>
     </div>
+    <!-- start: ERROR MESSAGES ZONE -->
+    <div id="form-errors" class="row hidden">
+        <div class = "col-md-12">
+            <div class="alert alert-danger" role="alert">
+                <p><span class="sans-bold">Uoops!</span> It seems that you might need to correct some fields :)</p>
+                <ul class="xs-buffer">
+                    <li id="surnameError" class="hidden">Please introduce a valid Surname.</li>
+                    <li id="firstYearError" class="hidden">Introduce a valid Birth Year. For example: 1905 </li>
+                    <li id="lastYearError" class="hidden">Introduce a valid Range Year. An example: 1989</li>
+                    <li id="intervalError" class="hidden">Introduce a valid interval. For example: 42</li>
+                    <li id="countryError" class="hidden">Please select at least one country.</li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- end: ERROR MESSAGES ZONE -->
     <!-- start: BASIC FORM FIELDS -->
     <div class="row">
         <!-- surname form field -->
         <div class="form-group col-sm-4">
             <label for="surname" class="label-font">Surname</label>
-            <input type="text" class="form-control form-font" id="surname" placeholder="surname">
+            <input type="text" class="form-control form-font form-vali" id="surname" placeholder="surname">
         </div>
         <!-- first year form field -->
         <div class="form-group col-sm-3">
-            <label for="surname" class="label-font">Birth Year</label>
-            <input type="text" class="form-control form-font" id="firstYear" placeholder="YYYY">
+            <label for="firstYear" class="label-font">Birth Year</label>
+            <input type="text" class="form-control form-font form-vali" id="firstYear" placeholder="YYYY">
         </div>
         <!-- range year form field -->
         <div class="form-group col-sm-3">
-            <label for="surname" class="label-font">Range (optional)</label>
-            <input type="text" class="form-control form-font" id="lastYear" placeholder="YYYY">
+            <label for="lastYear" class="label-font">Range (optional)</label>
+            <input type="text" class="form-control form-font form-vali" id="lastYear" placeholder="YYYY">
         </div>
         <!-- interval year form field -->
         <div class="form-group col-sm-2">
-            <label for="surname" class="label-font">Interval</label>
-            <input type="text" class="form-control form-font" id="interval" placeholder="10" value="10">
+            <label for="interval" class="label-font">Interval</label>
+            <input type="text" class="form-control form-font form-vali" id="interval" placeholder="10" value="10">
         </div>
     </div> <!-- end: BASIC FORM FIELDS -->
 </div>
@@ -341,8 +356,10 @@
 <div id="submit-search" class="container md-buffer">
     <!-- search button -->
     <div class="row">
-        <div class="col-sm-12 sm-buffer">
-            <p class="text-center"><a href="#results-zone" id="submit" class="btn btn-primary form-font">Lauch surname search</a></p>
+        <div class="col-sm-12 sm-buffer text-center">
+            <button id="submit" class="btn btn-primary form-font" role="button">Lauch surname search</button>
+            <a href="#results-zone" id="results-trigger" class="hidden"></a>
+            <a href="#surname-searcher" id="error-trigger" class="hidden"></a>
         </div>
     </div>
 </div>
@@ -455,6 +472,7 @@
 {{> javascripts }}
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="assets/js/formValidation.js"></script>
 <script src="assets/js/geo-surnames.js"></script>
 <script>
     google.charts.load('current', {'packages':['geochart', 'bar', 'line']});
