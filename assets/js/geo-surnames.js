@@ -9,6 +9,13 @@ var geomapCountries;
 geomapOptions = {};
 geomapOptions['dataMode'] = 'regions';
 geomapOptions['width'] = '100%';
+// BARCHART: Variables
+//    barchart => barchart to print on the HTML
+//    barchartOptions => global optinos for barchart
+//    bharcartCountries => ALL data for barchart graphs
+var barchart;
+var barchartOptions;
+var barchartCountries
 // FAMILYSEARCH & ITERATION: Variables
 //    countries => Countries selected by user (HTML)
 //    years => Year or Interval of years
@@ -26,12 +33,17 @@ function firstToUpperCase(str) {
     return str.substr(0, 1).toUpperCase() + str.substr(1);
 }
 
+/* Function to sort countries biggest to smaller */
+function compareCountries(a, b) {
+    //console.log(a);
+    console.log("Comparing: " + a[1] + " " + b[1]);
+    if(parseInt(a[1]) < parseInt(b[1])) return 1;
+    else if(parseInt(a[1]) > parseInt(b[1])) return -1;
+    else return 0;
+}
+
 /* Function to print & update data */
 function printGeomap(i) {
-    // Console log verification
-    console.log("Printing data for years: ", years[i]);
-    console.log(geomapCountries[i]);
-
     // Transform required data & update counter
     var geomapData = google.visualization.arrayToDataTable(geomapCountries[i]);
     yearsConsulted = yearsConsulted + 1;
@@ -41,6 +53,12 @@ function printGeomap(i) {
     $('#geomap').fadeOut('fast');
     geomap.draw(geomapData, geomapOptions);
     $('#geomap').fadeIn('slow');
+
+    // Prepare and sort data for barchart
+    var x = geomapCountries[i];
+    var first = x.splice(0, 1);
+    x.sort(compareCountries);
+    x.unshift(first);
 
     // Enable button if it was last update
     if(yearsConsulted == years.length) {
@@ -131,6 +149,7 @@ $( document ).ready(function() {
         $(this).attr('disabled', 'disabled');
         countries = new Array();
         geomapCountries = new Array();
+        barchartCountires = new Array();
         years = new Array();
         countriesConsulted = 0;
         yearsConsulted = 0;
@@ -202,7 +221,6 @@ $( document ).ready(function() {
 
                             // Update progress bar: We divide/10 instead of 1000 to multiply after*100
                             var pValue = Math.round((k+1+countries.length*i)/searchDuration*100);
-                            console.log(pValue);
                             $("#progress-value").css('width', pValue+'%');
                             $("#progress-text").text(pValue+'% completed');
 
@@ -222,7 +240,7 @@ $( document ).ready(function() {
                             } */
 
                             // Add results to be printed
-                            console.log("Country " + countries[k].name + " " + total);
+                            //console.log("Country " + countries[k].name + " " + total);
                             countriesConsulted = countriesConsulted + 1;
                             if(total != 0) {
                                 geomapCountries[i].push([countries[k].code, total]);
@@ -245,6 +263,8 @@ $( document ).ready(function() {
         var countryList = $("#eu-container").position().top;
         var fromTop =  $(document).scrollTop();
         var resultsZone = $("#results-zone").position().top;
+        var controlsBlock = $("#controls-block").position().top;
+        var graphs = $("#graphs").position().top;
 
         // current position
         var currentPosition = fromTop+windowHeight;
@@ -252,7 +272,7 @@ $( document ).ready(function() {
         // decide if we need to fix the search bar or not
         if(currentPosition >= countryList+160) {
             if($("#submit-search").hasClass('detached-bottom')) {
-                if(currentPosition >= resultsZone+70) $("#submit-search").toggleClass('detached-bottom', false);
+                if(currentPosition >= resultsZone+80) $("#submit-search").toggleClass('detached-bottom', false);
             }
             else {
                 var submitZone = $("#submit-search").position().top;
@@ -261,6 +281,13 @@ $( document ).ready(function() {
         }
         else {
             $("#submit-search").toggleClass('detached-bottom', false);
+        }
+
+        if(fromTop >= graphs-80) {
+            $("#controls-block").addClass('detached-top', true);
+        }
+        else {
+            $("#controls-block").removeClass('detached-top', false);
         }
     });
 

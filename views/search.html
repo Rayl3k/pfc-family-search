@@ -391,13 +391,50 @@
 
 </div> <!-- end: RESULTS ZONE -->
 
-<div class="container md-buffer">
-    <div id="geomap"></div>
-</div>
+<!-- start: DETACHABLE YEARLY CONTROL -->
+<div id="controls-block" class="container sm-buffer">
+    <!-- start: PRINT MAP CONTROLS -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button id="previous-year" type="button" class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-menu-left"></span>
+            </button>
+            <span id="controls-year"class="h3">Year data: <span id="year-number" class="sans-bold">1234</span></span>
+            <button id="next-year" type="button" class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </button>
+        </div>
+    </div> <!-- end: PRINT MAP CONTROLS -->
+</div> <!-- end: DETACHABLE YEARLY CONTROL -->
 
-<div class="container xl-buffer">
-    <div id="barchart"></div>
-</div>
+<!-- start: GRAPHS CONTAINER -->
+<div id="graphs" class="container">
+    <!-- start: GEOMAP TITLE -->
+    <div class="row md-buffer">
+        <div class="col-md-12">
+            <h2>Geomap Results</h2>
+        </div>
+    </div>
+    <!-- start: GEOMAP MAP -->
+    <div class="row xxl-buffer">
+        <div class="col-md-12">
+            <div id="geomap"></div>
+        </div>
+    </div>
+
+    <!-- start: BARCJART TITLE -->
+    <div class="row xl-buffer">
+        <div class="col-md-12">
+            <h2>Bar-chart Results</h2>
+        </div>
+    </div>
+    <!-- start: BARCHART CHART -->
+    <div class="row xxl-buffer">
+        <div class="col-md-12">
+            <div id="barchart"></div>
+        </div>
+    </div>
+</div> <!-- end: GRAPHS CONTAINER -->
 
 {{> javascripts }}
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
