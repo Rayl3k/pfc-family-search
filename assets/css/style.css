@@ -272,6 +272,10 @@ li a, li a:hover, li a:focus {
     padding-bottom: 14px;
 }
 
+#controls-block, #graphs, #lineOverall {
+    display: none;
+}
+
 /* ============================= */
 /* FORMS                         */
 /* ============================= */

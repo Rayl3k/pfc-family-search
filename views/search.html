@@ -399,7 +399,7 @@
             <button id="previous-year" type="button" class="btn btn-default btn-md">
                 <span class="glyphicon glyphicon-menu-left"></span>
             </button>
-            <span id="controls-year"class="h3">Year data: <span id="year-number" class="sans-bold">1234</span></span>
+            <span id="controls-year"class="h3">Year data: <span id="year-number" class="sans-bold"></span></span>
             <button id="next-year" type="button" class="btn btn-default btn-md">
                 <span class="glyphicon glyphicon-menu-right"></span>
             </button>
@@ -422,26 +422,42 @@
         </div>
     </div>
 
-    <!-- start: BARCJART TITLE -->
-    <div class="row xl-buffer">
+    <!-- start: BARCHART TITLE -->
+    <div class="row xxxl-buffer">
         <div class="col-md-12">
-            <h2>Bar-chart Results</h2>
+            <h2>Bar chart Results</h2>
         </div>
     </div>
     <!-- start: BARCHART CHART -->
-    <div class="row xxl-buffer">
+    <div class="row md-buffer">
         <div class="col-md-12">
             <div id="barchart"></div>
         </div>
     </div>
 </div> <!-- end: GRAPHS CONTAINER -->
 
+<!-- start: LINECHART -->
+<div id="lineOverall" class="container">
+    <!-- start: LINECHART TITLE -->
+    <div class="row xxxl-buffer">
+        <div class="col-md-12">
+            <h2>Years evolution</h2>
+        </div>
+    </div>
+    <!-- start: GEOMAP MAP -->
+    <div class="row md-buffer">
+        <div class="col-md-12">
+            <div id="linechart"></div>
+        </div>
+    </div>
+</div>
+
 {{> javascripts }}
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="assets/js/geo-surnames.js"></script>
 <script>
-    google.charts.load('current', {'packages':['geochart', 'corechart', 'bar']});
+    google.charts.load('current', {'packages':['geochart', 'bar', 'line']});
 </script>
 
 {{> footer }}

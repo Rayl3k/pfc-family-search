@@ -11,54 +11,134 @@ geomapOptions['dataMode'] = 'regions';
 geomapOptions['width'] = '100%';
 // BARCHART: Variables
 //    barchart => barchart to print on the HTML
-//    barchartOptions => global optinos for barchart
-//    bharcartCountries => ALL data for barchart graphs
 var barchart;
-var barchartOptions;
-var barchartCountries
+// LINECHART: Variables
+var linechart;
+var linechartData;
+var linechartRows;
 // FAMILYSEARCH & ITERATION: Variables
 //    countries => Countries selected by user (HTML)
 //    years => Year or Interval of years
 //    countriesConsulted => To control when to print interval data
 //    yearsConsulted => To control when to re-enable the functionality
 //    apiDELAY => Ensure no blocking
+//    currentPrinted => To control which plots are printed
 var countries;
 var years;
 var countriesConsulted;
 var yearsConsulted;
 var apiDELAY = 1500;
+var currentPrinted;
+
+// ========================================================================== //
 
 /* Function firstToUpperCase */
 function firstToUpperCase(str) {
     return str.substr(0, 1).toUpperCase() + str.substr(1);
 }
 
+
+// ========================================================================== //
+// PRINT MAPS
+// ========================================================================== //
+
 /* Function to sort countries biggest to smaller */
 function compareCountries(a, b) {
-    //console.log(a);
-    console.log("Comparing: " + a[1] + " " + b[1]);
     if(parseInt(a[1]) < parseInt(b[1])) return 1;
     else if(parseInt(a[1]) > parseInt(b[1])) return -1;
     else return 0;
 }
 
-/* Function to print & update data */
+/* Print linechart if more than one year */
+function printLinechart() {
+    // Disable specific and enable canvas
+    $('#linechart').fadeOut('fast');
+    $('#lineOverall').fadeIn('slow');
+
+    // add rows to the dataset
+    linechartData.addRows(linechartRows);
+    var linechartOptions = {
+        chart: {
+          title: 'Number of people matching surname' + firstToUpperCase($('#surname').val()) + "per country",
+          subtitle: 'in number of FamilySearch person instances'
+        },
+        height: 500,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+    // print the chart
+    linechart = new google.charts.Line(document.getElementById('linechart'));
+    linechart.draw(linechartData, linechartOptions);
+
+    // Fade-in specific
+    $('#linechart').fadeIn('slow');
+}
+
+/* Print GEOMAP */
 function printGeomap(i) {
-    // Transform required data & update counter
+    // Print geomap
     var geomapData = google.visualization.arrayToDataTable(geomapCountries[i]);
+    $('#geomap').css('width', '100%');
+    geomap = new google.visualization.GeoChart(document.getElementById('geomap'));
+    geomap.draw(geomapData, geomapOptions);
+}
+
+/* Print BARCHART */
+function printBarchart(i) {
+    // Get the data, sort it and increase container size
+    var barchartCountries = geomapCountries[i];
+    var first = barchartCountries.splice(0, 1);
+    barchartCountries.sort(compareCountries);
+    barchartCountries.unshift(first[0]);
+    $('#barchart').css('height', 100*countries.length);
+    var barchartOptions = {
+          chart: {
+            title: 'Persons found at year: ' + years[i] + ' by country'
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+    };
+
+    // transform and plot
+    var barchartData = google.visualization.arrayToDataTable(barchartCountries);
+    barchart = new google.charts.Bar(document.getElementById('barchart'));
+    barchart.draw(barchartData, barchartOptions);
+}
+
+// Print the graphs and controls of a specific year
+function printGraphs(i) {
+    // Fade out specific graphs
+    $('#geomap').fadeOut('fast');
+    $('#barchart').fadeOut('fast');
+
+    // Ensure canvas is ready
+    $('#graphs').fadeIn('fast');
+    $('#controls-block').fadeIn('fast');
+
+    // Update geomap, barchart and yearControl
+    printGeomap(i);
+    printBarchart(i);
+    $('#year-number').text(years[i]);
+
+    // Fade in specific graphs
+    $('#geomap').fadeIn('slow');
+    $('#barchart').fadeIn('slow');
+
+    // Update current printed
+    currentPrinted = i;
+
+}
+
+/* Function to print & update data */
+function yearGraphs(i) {
+    // Update years counter
     yearsConsulted = yearsConsulted + 1;
 
-    // Create & print map
-    geomap = new google.visualization.GeoChart(document.getElementById('geomap'));
-    $('#geomap').fadeOut('fast');
-    geomap.draw(geomapData, geomapOptions);
-    $('#geomap').fadeIn('slow');
-
-    // Prepare and sort data for barchart
-    var x = geomapCountries[i];
-    var first = x.splice(0, 1);
-    x.sort(compareCountries);
-    x.unshift(first);
+    // Print graphs
+    printGraphs(i);
 
     // Enable button if it was last update
     if(yearsConsulted == years.length) {
@@ -74,11 +154,40 @@ function printGeomap(i) {
         $('.current-country').text(countries.length);
         $('#progress-value').removeClass('active');
         $('#submit').removeAttr('disabled');
+
+        // Print linecahrt
+        if(years.length > 1) {
+            printLinechart();
+
+            // Enable surfing commands
+            $('#previous-year').fadeIn('fast');
+            $('#next-year').fadeIn('fast');
+        }
     }
 }
 
-/* Document ready function */
+// ======================================== //
+// ************ DOCUMENT READY ************
+// ======================================== //
 $( document ).ready(function() {
+    // START: Stop focus on button press
+    $(".btn").mouseup(function(){
+        $(this).blur();
+    });
+
+    // Control graphs displayed
+    $('#previous-year').click(function() {
+        if(currentPrinted > 0) {
+            printGraphs(currentPrinted-1);
+        }
+    });
+    $('#next-year').click(function() {
+        if(currentPrinted < years.length-1) {
+            printGraphs(currentPrinted+1);
+        }
+    });
+
+
     // ======================================== //
     // checkboxes control
     // ======================================== //
@@ -134,6 +243,11 @@ $( document ).ready(function() {
         if($(this).attr('disabled') == 'disabled') throw new FatalError("Another instance already running");
 
         // Show waiting page & edit values & hide sections
+        $('#graphs').fadeOut('fast');
+        $('#lineOverall').fadeOut('fast');
+        $('#controls-block').fadeOut('fast');
+        $('#previous-year').fadeOut('fast');
+        $('#next-year').fadeOut('fast');
         $('#search-title').text('Searching for ');
         $('#search-title-2').text('...');
         $('#search-time').text('Please note that this process could take up to: ');
@@ -149,8 +263,10 @@ $( document ).ready(function() {
         $(this).attr('disabled', 'disabled');
         countries = new Array();
         geomapCountries = new Array();
-        barchartCountires = new Array();
         years = new Array();
+        linechartData = new google.visualization.DataTable();
+        linechartData.addColumn('string', 'Year');
+        linechartRows = new Array();
         countriesConsulted = 0;
         yearsConsulted = 0;
 
@@ -160,6 +276,7 @@ $( document ).ready(function() {
                 var country = $(this).parent().html().trim().split(">")[1];
                 country = escapeHtml(country);
                 countries.push({code:$(this).attr('id'), name:country});
+                linechartData.addColumn('number', $(this).attr('id'));
             }
         });
         var inputSurname = escapeHtml($('#surname').val());
@@ -195,9 +312,11 @@ $( document ).ready(function() {
 
         /* Loops through intervals and countries */
         for (var i = 0; i < years.length; i++) {
-            // Initialize block of years geomapCountries
+            // Initialize blocks for graphs
             geomapCountries[i] = new Array();
             geomapCountries[i].push(['Country', 'Number of People']);
+            linechartRows[i] = new Array();
+            linechartRows[i].push(String(years[i]));
 
             // Search for the surname on each country
             for(var k = 0; k < countries.length; k++) {
@@ -242,12 +361,12 @@ $( document ).ready(function() {
                             // Add results to be printed
                             //console.log("Country " + countries[k].name + " " + total);
                             countriesConsulted = countriesConsulted + 1;
-                            if(total != 0) {
-                                geomapCountries[i].push([countries[k].code, total]);
-                            }
+                            geomapCountries[i].push([countries[k].code, total]);
+                            linechartRows[i].push(total);
+                            console.log("Pushing at year: " + years[i] + " " + countries[k].code + " " + total);
 
                             // Check if year data should be printed
-                            if(countriesConsulted%countries.length == 0) printGeomap(i);
+                            if(countriesConsulted%countries.length == 0) yearGraphs(i);
                         });
                     }, apiDELAY*k+(i*countries.length*apiDELAY));
                 }(k, i));
