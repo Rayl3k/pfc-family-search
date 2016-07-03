@@ -1,3 +1,4 @@
+
 // GEOMAP: Variables
 //    geomap => map to print on the HTML
 //    geomapOptions => global options for geomap
@@ -20,6 +21,11 @@ var countriesConsulted;
 var yearsConsulted;
 var apiDELAY = 1500;
 
+/* Function firstToUpperCase */
+function firstToUpperCase(str) {
+    return str.substr(0, 1).toUpperCase() + str.substr(1);
+}
+
 /* Function to print & update data */
 function printGeomap(i) {
     // Console log verification
@@ -32,10 +38,25 @@ function printGeomap(i) {
 
     // Create & print map
     geomap = new google.visualization.GeoChart(document.getElementById('geomap'));
+    $('#geomap').fadeOut('fast');
     geomap.draw(geomapData, geomapOptions);
+    $('#geomap').fadeIn('slow');
 
     // Enable button if it was last update
-    if(yearsConsulted == years.length) $('#submit').removeAttr('disabled');
+    if(yearsConsulted == years.length) {
+        $('#search-title').text('Search completed for ');
+        $('#search-surname').text(firstToUpperCase($('#surname').val()));
+        $('#search-title-2').text('!');
+        $('#search-time').text('You will find your results on the sections below.');
+        $('#search-duration').text('');
+        $('#search-time-2').text('');
+        $('.year-label').text('Years: ');
+        $('.country-label').text('Countries: ');
+        $('.current-year').text(years.length);
+        $('.current-country').text(countries.length);
+        $('#progress-value').removeClass('active');
+        $('#submit').removeAttr('disabled');
+    }
 }
 
 /* Document ready function */
@@ -56,7 +77,7 @@ $( document ).ready(function() {
             $(this).html("Select All Countries");
         }
     });
-    
+
     // Expand/Coallpse buttons
     $('.exp-button').click(function() {
         if($(this).html().trim() == "Collapse country list") {
@@ -94,6 +115,18 @@ $( document ).ready(function() {
         // If the button was disabled, cancel the thing
         if($(this).attr('disabled') == 'disabled') throw new FatalError("Another instance already running");
 
+        // Show waiting page & edit values & hide sections
+        $('#search-title').text('Searching for ');
+        $('#search-title-2').text('...');
+        $('#search-time').text('Please note that this process could take up to: ');
+        $('#search-time-2').text(' seconds');
+        $("#progress-value").css('width', '0%');
+        $("#progress-text").text('');
+        $('.year-label').text('Year: ');
+        $('.country-label').text('Country: ');
+        $('#progress-value').addClass('active');
+        $("#waiting-page").fadeIn("slow");
+
         // Diable button and initialize content
         $(this).attr('disabled', 'disabled');
         countries = new Array();
@@ -101,8 +134,6 @@ $( document ).ready(function() {
         years = new Array();
         countriesConsulted = 0;
         yearsConsulted = 0;
-
-        // Missing code to clean the current graphs, etc.
 
         // Get all parameters and avoid injection
         $(".form-checkbox").each(function(index) {
@@ -138,6 +169,11 @@ $( document ).ready(function() {
             }
         }
 
+        // Waiting: Show estimated duration & surname
+        var searchDuration = countries.length*years.length;
+        $('#search-duration').text(searchDuration*apiDELAY/1000);
+        $('#search-surname').text(firstToUpperCase(inputSurname));
+
         /* Loops through intervals and countries */
         for (var i = 0; i < years.length; i++) {
             // Initialize block of years geomapCountries
@@ -149,6 +185,11 @@ $( document ).ready(function() {
                 // Delay all calls to the API by apiDELAY param
                 (function(k, i) {
                     setTimeout(function() {
+                        // Waiting: Update current year & country
+                        $('.current-year').text(years[i]);
+                        $('.current-country').text(countries[k].name);
+
+                        // Set params for search
                         var params = {
                             surname: inputSurname,
                             birthPlace: countries[k].name,
@@ -158,6 +199,12 @@ $( document ).ready(function() {
                         client.getPersonSearch(params).then(function(searchResponse) {
                             // Get instances of people with name in country[k]
                             var total = searchResponse.getResultsCount();
+
+                            // Update progress bar: We divide/10 instead of 1000 to multiply after*100
+                            var pValue = Math.round((k+1+countries.length*i)/searchDuration*100);
+                            console.log(pValue);
+                            $("#progress-value").css('width', pValue+'%');
+                            $("#progress-text").text(pValue+'% completed');
 
                             /*// real born years
                             for(var p = 0; p < total; p = p+15) {
@@ -226,10 +273,18 @@ $( document ).ready(function() {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                 if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+                    if($("#submit-search").hasClass('detached-bottom')) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top+100
+                        }, 1000);
+                        return false;
+                    }
+                    else {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
                 }
             }
         });

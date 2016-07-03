@@ -101,7 +101,7 @@
     <!-- section title -->
     <div class="row">
         <div class="col-md-12">
-            <h3>Configure the surname and years</h3>
+            <h3>Configure surname and years</h3>
         </div>
     </div>
     <!-- start: BASIC FORM FIELDS -->
@@ -344,12 +344,52 @@
         <div class="col-sm-12 sm-buffer">
             <p class="text-center"><a href="#results-zone" id="submit" class="btn btn-primary form-font">Lauch surname search</a></p>
         </div>
-    </div> <!-- end: SUBMIT BUTTON -->
+    </div>
 </div>
 
 <!-- start: RESULTS SPACE -->
-<div id="results-zone" class="container">
-</div>
+<div id="results-zone" class="md-buffer">
+    <!-- start: WAITING PAGE ZONE -->
+    <div id="waiting-page" class="container-fluid" style="display:none;">
+            <div class="container">
+                <!-- text -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2><span id="search-title"></span><span id="search-surname"></span><span id="search-title-2"></span></h2>
+                        <h4 class="text-italic"><span id="search-time"></span><span id="search-duration" class="lora-bold"></span><span id="search-time-2"></span></h4>
+                    </div>
+                </div>
+                <!-- start: CURRENT ITERATION -->
+                <div class="row">
+                    <!-- desktop alginments -->
+                    <div class="col-sm-6 text-right hidden-xs">
+                        <h4><span class="year-label"></span><span class="current-year" class="lora-bold"></span></h4>
+                    </div>
+                    <div class="col-sm-6 text-left hidden-xs">
+                        <h4><span class="country-label"></span><span class="current-country" class="lora-bold"></span></h4>
+                    </div>
+                    <!-- smartphone alignment -->
+                    <div class="col-xs-12 text-center visible-xs">
+                        <h4><span class="year-label"></span><span class="current-year" class="lora-bold"></span></h4>
+                    </div>
+                    <div class="col-xs-12 text-center visible-xs">
+                        <h4><span class="country-label"></span><span class="current-country" class="lora-bold"></span></h4>
+                    </div>
+                </div>
+                <!-- progress bar -->
+                <div class="row sm-buffer">
+                    <div class="col-sm-10 col-sm-offset-1 text-center">
+                        <div class="progress">
+                            <div id="progress-value" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 0%">
+                                <span id="progress-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end progress bar -->
+            </div>
+        </div> <!-- end: WAITING PAGE ZONE -->
+
+</div> <!-- end: RESULTS ZONE -->
 
 <div class="container md-buffer">
     <div id="geomap"></div>
