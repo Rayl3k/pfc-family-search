@@ -1,3 +1,27 @@
+// ======================================== //
+// CONTROL INJECTION
+// ======================================== //
+// maping of parameters to scape
+var entityMap = {
+   "&": "&amp;",
+   "<": "&lt;",
+   ">": "&gt;",
+   '"': '&quot;',
+   "'": '&#39;',
+   "/": '&#x2F;'
+ };
+
+// function to scape
+function escapeHtml(string) {
+    return String(string).replace(/[&<>"'\/]/g, function (s) {
+        return entityMap[s];
+    });
+}
+
+/* ================= */
+/* INLINE VALIDATION */
+/* ================= */
+
 // surname validation
 function surnameValidation() {
     var x = escapeHtml($('#surname').val());

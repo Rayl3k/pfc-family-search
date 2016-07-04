@@ -38,8 +38,8 @@ app.get('/home', isAuthenticated, function(req, res) {
     res.render('home.html');
 });
 
-// Search example page
-app.get('/search', isAuthenticated, function(req, res) {
+// Surnames example page
+app.get('/examples/surnames', isAuthenticated, function(req, res) {
     var europe = countryParametersIns.getCountries("EU");
     var northAmerica = countryParametersIns.getCountries("NA");
     var southAmerica = countryParametersIns.getCountries("SA");
@@ -47,7 +47,7 @@ app.get('/search', isAuthenticated, function(req, res) {
     var asia = countryParametersIns.getCountries("AS");
     var africa = countryParametersIns.getCountries("AF");
 
-    res.render('search.html', {
+    res.render('surnames.html', {
         europe : europe,
         northAmerica : northAmerica,
         southAmerica : southAmerica,
@@ -55,6 +55,11 @@ app.get('/search', isAuthenticated, function(req, res) {
         asia : asia,
         africa: africa
     });
+});
+
+// Facts example page
+app.get('/examples/facts', isAuthenticated, function(req, res) {
+    res.render('facts.html');
 });
 
 // Get all proposals page

@@ -1,0 +1,480 @@
+{{> header }}
+{{> navbar }}
+
+<!-- ########################### -->
+<!--           TITLES            -->
+<!-- ########################### -->
+
+<!-- start: TITLE ZONE DESKTOP -->
+<div class="container-fluid example-search-bkg exampleSurnames hidden-xs">
+    <div class="container">
+        <!-- main title -->
+        <div class="row">
+            <div class="col-md-12 xl-buffer text-center">
+                <h1 class="lightbox-text">SURNAME NEWBORNS</h1>
+            </div>
+        </div>
+        <!-- subtitle -->
+        <div class="row">
+            <div class="col-md-12 text-center sm-buffer hidden-sm">
+                <h2 class="lightbox-text text-italic">Check how many people with a specific surname were born last year</h2>
+            </div>
+        </div>
+        <!-- button -->
+        <div class="row">
+            <div class="col-md-12 xl-buffer text-center">
+                <a class="btn btn-default md-buffer" href="/examples" role="button">Back to examples list</a>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: TITLE ZONE DESKTOP -->
+
+<!-- start: TITLE ZONE MOBILE -->
+<div class="container-fluid example-search-bkg title-zone-xs exampleSurnames visible-xs">
+    <div class="container">
+        <!-- main title -->
+        <div class="row">
+            <div class="col-xs-12 sm-buffer text-center">
+                <h1 class="lightbox-text h1-5">SURNAME NEWBORNS</h1>
+            </div>
+        </div>
+        <!-- button -->
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <a class="btn btn-default md-buffer" href="/proposals" role="button">Back to proposals list</a>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: TITLE ZONE MOBILE -->
+
+<!-- ########################### -->
+<!--         MAIN CONTENT        -->
+<!-- ########################### -->
+
+<!-- start: EXAMPLE DESCRIPTION -->
+<div class="container s-buffer">
+    <!-- sectio title -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Project description</h2>
+        </div>
+    </div>
+    <!-- text zone -->
+    <div class="row">
+        <div class="col-md-12">
+            <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+            <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+        </div>
+    </div>
+    <div class="row sm-buffer">
+        <div class="col-sm-4 hidden-xs">
+            <a href="/proposals/surnames" type="button" class="btn btn-default">Check feature sheet</a>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <a type="button" class="btn btn-default btn-block">Check feature sheet</a>
+        </div>
+    </div>
+</div> <!-- end: EXAMPLE DESCRIPTION -->
+
+<!-- start: INTERACTIVE EXAMPLE DESCRIPTION -->
+<div class="container xl-buffer">
+    <!-- section title -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Interactive Example</h2>
+        </div>
+    </div>
+    <!-- text zone -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3>How to use</h3>
+            <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+            <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+        </div>
+    </div>
+</diV> <!-- end: INTERACTIVE EXAMPLE DESCRIPTION-->
+
+<!-- start: FORM TO SEARCH -->
+<div class="container sm-buffer" id="surname-searcher">
+    <!-- section title -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Configure surname and years</h3>
+        </div>
+    </div>
+    <!-- start: ERROR MESSAGES ZONE -->
+    <div id="form-errors" class="row hidden">
+        <div class = "col-md-12">
+            <div class="alert alert-danger" role="alert">
+                <p><span class="sans-bold">Uoops!</span> It seems that you might need to correct some fields :)</p>
+                <ul class="xs-buffer">
+                    <li id="surnameError" class="hidden">Please introduce a valid Surname.</li>
+                    <li id="firstYearError" class="hidden">Introduce a valid Birth Year. For example: 1905 </li>
+                    <li id="lastYearError" class="hidden">Introduce a valid Range Year. An example: 1989</li>
+                    <li id="intervalError" class="hidden">Introduce a valid interval. For example: 42</li>
+                    <li id="countryError" class="hidden">Please select at least one country.</li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- end: ERROR MESSAGES ZONE -->
+    <!-- start: BASIC FORM FIELDS -->
+    <div class="row">
+        <!-- surname form field -->
+        <div class="form-group col-sm-4">
+            <label for="surname" class="label-font">Surname</label>
+            <input type="text" class="form-control form-font form-vali" id="surname" placeholder="surname">
+        </div>
+        <!-- first year form field -->
+        <div class="form-group col-sm-3">
+            <label for="firstYear" class="label-font">Birth Year</label>
+            <input type="text" class="form-control form-font form-vali" id="firstYear" placeholder="YYYY">
+        </div>
+        <!-- range year form field -->
+        <div class="form-group col-sm-3">
+            <label for="lastYear" class="label-font">Range (optional)</label>
+            <input type="text" class="form-control form-font form-vali" id="lastYear" placeholder="YYYY">
+        </div>
+        <!-- interval year form field -->
+        <div class="form-group col-sm-2">
+            <label for="interval" class="label-font">Interval</label>
+            <input type="text" class="form-control form-font form-vali" id="interval" placeholder="10" value="10">
+        </div>
+    </div> <!-- end: BASIC FORM FIELDS -->
+</div> <!-- end: FORM TO SEARCH -->
+
+<!-- start: COUNTRIES -->
+<div class="container">
+    <!-- start: EUROPEAN COUNTRIES -->
+    <!-- ######################### -->
+    <div id="eu-container">
+        <!-- country title -->
+        <div class="row xs-buffer">
+            <div class="col-sm-12">
+                <h3>European countries</h3>
+            </div>
+        </div>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="eu-countries">
+                {{#europe}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-eu">{{name}}
+                    </label>
+                </div>
+                {{/europe}}
+            </div>
+        </div>
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#eu-countries" aria-expanded="false" aria-controls="eu-countries">
+                    Collapse country list
+                </button>
+                <button id="eu-all" class="btn btn-primary checkbox-all" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: EUROPEAN COUNTRIES -->
+
+    <!-- start: NORTH AMERICA COUNTRIES -->
+    <!-- ############################## -->
+    <div id="na-container">
+    <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>North-American countries</h3>
+            </div>
+        </div>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="na-countries">
+                {{#northAmerica}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-na">{{name}}
+                    </label>
+                </div>
+                {{/northAmerica}}
+            </div>
+        </div>
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#na-countries" aria-expanded="false" aria-controls="na-countries">
+                    Collapse country list
+                </button>
+                <button id="na-all" class="btn btn-primary checkbox-all" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: NORTH AMERICAN COUNTRIES -->
+
+    <!-- start: SOUTH AMERICA COUNTRIES -->
+    <!-- ############################## -->
+    <div id="sa-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>South-American countries</h3>
+            </div>
+        </div>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="sa-countries">
+                {{#southAmerica}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-sa">{{name}}
+                    </label>
+                </div>
+                {{/southAmerica}}
+            </div>
+        </div>
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#sa-countries" aria-expanded="false" aria-controls="sa-countries">
+                    Collapse country list
+                </button>
+                <button id="sa-all" class="btn btn-primary checkbox-all" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: SOUTH AMERICAN COUNTRIES -->
+
+    <!-- start: OCEANIA COUNTRIES -->
+    <!-- ######################## -->
+    <div id="oc-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>Oceanian countries</h3>
+            </div>
+        </div>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="oc-countries">
+                {{#oceania}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-oc">{{name}}
+                    </label>
+                </div>
+                {{/oceania}}
+            </div>
+        </div>
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#oc-countries" aria-expanded="false" aria-controls="oc-countries">
+                    Collapse country list
+                </button>
+                <button id="oc-all" class="btn btn-primary checkbox-all" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: OCEANIAN COUNTRIES -->
+
+    <!-- start: ASIA COUNTRIES -->
+    <!-- ##################### -->
+    <div id="as-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>Asian countries</h3>
+            </div>
+        </div>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="as-countries">
+                {{#asia}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-as">{{name}}
+                    </label>
+                </div>
+                {{/asia}}
+            </div>
+        </div>
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#as-countries" aria-expanded="false" aria-controls="as-countries">
+                    Collapse country list
+                </button>
+                <button id="as-all" class="btn btn-primary checkbox-all" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: ASIAN COUNTRIES -->
+
+    <!-- start: AFRICA COUNTRIES -->
+    <!-- ####################### -->
+    <div id="af-container">
+        <!-- section title -->
+        <div class="row md-buffer">
+            <div class="col-sm-12">
+                <h3>African countries</h3>
+            </div>
+        </div>
+        <!-- country checkboxes -->
+        <div class="row">
+            <div class="collapse in" id="af-countries">
+                {{#africa}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-af">{{name}}
+                    </label>
+                </div>
+                {{/africa}}
+            </div>
+        </div>
+        <!-- country controls -->
+        <div class="row sm-buffer">
+            <div class="col-sm-12">
+                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#af-countries" aria-expanded="false" aria-controls="af-countries">
+                    Collapse country list
+                </button>
+                <button id="af-all" class="btn btn-primary checkbox-all" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: AFRICAN COUNTRIES -->
+
+</div> <!-- end: COUNTRIES -->
+
+<!-- start: SUBMIT BUTTON -->
+<div id="submit-search" class="container md-buffer">
+    <!-- search button -->
+    <div class="row">
+        <div class="col-sm-12 sm-buffer text-center">
+            <button id="submit" class="btn btn-primary form-font" role="button">Lauch surname search</button>
+            <a href="#results-zone" id="results-trigger" class="hidden"></a>
+            <a href="#surname-searcher" id="error-trigger" class="hidden"></a>
+        </div>
+    </div>
+</div>
+
+<!-- start: RESULTS SPACE -->
+<div id="results-zone" class="md-buffer">
+    <!-- start: WAITING PAGE ZONE -->
+    <div id="waiting-page" class="container-fluid" style="display:none;">
+        <div class="container">
+            <!-- text -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2><span id="search-title"></span><span id="search-surname"></span><span id="search-title-2"></span></h2>
+                    <h4 class="text-italic"><span id="search-time"></span><span id="search-duration" class="lora-bold"></span><span id="search-time-2"></span></h4>
+                </div>
+            </div>
+            <!-- start: CURRENT ITERATION -->
+            <div class="row">
+                <!-- desktop alginments -->
+                <div class="col-sm-6 text-right hidden-xs">
+                    <h4><span class="year-label"></span><span class="current-year" class="lora-bold"></span></h4>
+                </div>
+                <div class="col-sm-6 text-left hidden-xs">
+                    <h4><span class="country-label"></span><span class="current-country" class="lora-bold"></span></h4>
+                </div>
+                <!-- smartphone alignment -->
+                <div class="col-xs-12 text-center visible-xs">
+                    <h4><span class="year-label"></span><span class="current-year" class="lora-bold"></span></h4>
+                </div>
+                <div class="col-xs-12 text-center visible-xs">
+                    <h4><span class="country-label"></span><span class="current-country" class="lora-bold"></span></h4>
+                </div>
+            </div>
+            <!-- progress bar -->
+            <div class="row sm-buffer">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <div class="progress">
+                        <div id="progress-value" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 0%">
+                            <span id="progress-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end progress bar -->
+        </div>
+    </div> <!-- end: WAITING PAGE ZONE -->
+</div> <!-- end: RESULTS ZONE -->
+
+<!-- start: DETACHABLE YEARLY CONTROL -->
+<div id="controls-block" class="container sm-buffer">
+    <!-- start: PRINT MAP CONTROLS -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button id="previous-year" type="button" class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-menu-left"></span>
+            </button>
+            <span id="controls-year"class="h3">Year data: <span id="year-number" class="sans-bold"></span></span>
+            <button id="next-year" type="button" class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </button>
+        </div>
+    </div> <!-- end: PRINT MAP CONTROLS -->
+</div> <!-- end: DETACHABLE YEARLY CONTROL -->
+
+<!-- start: GRAPHS CONTAINER -->
+<div id="graphs" class="container">
+    <!-- start: GEOMAP TITLE -->
+    <div class="row md-buffer">
+        <div class="col-md-12">
+            <h2>Geomap Results</h2>
+        </div>
+    </div>
+    <!-- start: GEOMAP MAP -->
+    <div class="row xxl-buffer">
+        <div class="col-md-12">
+            <div id="geomap"></div>
+        </div>
+    </div>
+
+    <!-- start: BARCHART TITLE -->
+    <div class="row xxxl-buffer">
+        <div class="col-md-12">
+            <h2>Bar chart Results</h2>
+        </div>
+    </div>
+    <!-- start: BARCHART CHART -->
+    <div class="row md-buffer">
+        <div class="col-md-12">
+            <div id="barchart"></div>
+        </div>
+    </div>
+</div> <!-- end: GRAPHS CONTAINER -->
+
+<!-- start: LINECHART -->
+<div id="lineOverall" class="container">
+    <!-- start: LINECHART TITLE -->
+    <div class="row xxxl-buffer">
+        <div class="col-md-12">
+            <h2>Years evolution</h2>
+        </div>
+    </div>
+    <!-- start: GEOMAP MAP -->
+    <div class="row md-buffer">
+        <div class="col-md-12">
+            <div id="linechart"></div>
+        </div>
+    </div>
+</div>
+
+{{> javascripts }}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="/assets/js/formValidation.js"></script>
+<script src="/assets/js/geo-surnames.js"></script>
+<script>
+    google.charts.load('current', {'packages':['geochart', 'bar', 'line']});
+</script>
+
+{{> footer }}

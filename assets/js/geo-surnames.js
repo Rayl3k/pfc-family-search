@@ -169,26 +169,6 @@ function yearGraphs(i) {
 }
 
 // ======================================== //
-// CONTROL INJECTION
-// ======================================== //
-// maping of parameters to scape
-var entityMap = {
-   "&": "&amp;",
-   "<": "&lt;",
-   ">": "&gt;",
-   '"': '&quot;',
-   "'": '&#39;',
-   "/": '&#x2F;'
- };
-
-// function to scape
-function escapeHtml(string) {
-    return String(string).replace(/[&<>"'\/]/g, function (s) {
-        return entityMap[s];
-    });
-}
-
-// ======================================== //
 // ************ DOCUMENT READY ************
 // ======================================== //
 $( document ).ready(function() {
@@ -325,6 +305,7 @@ $( document ).ready(function() {
         }
         else {
             $('#results-trigger').trigger('click');
+            $('#form-errors').addClass('hidden');
             $('.form-vali').each(function() {
                 $(this).parent().removeClass('has-error');
                 $(this).parent().addClass('has-success');
