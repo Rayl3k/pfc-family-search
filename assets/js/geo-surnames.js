@@ -148,11 +148,13 @@ function yearGraphs(i) {
         $('#search-time').text('You will find your results on the sections below.');
         $('#search-duration').text('');
         $('#search-time-2').text('');
+        $('#submit').text('Lauch surname search');
         $('.year-label').text('Years: ');
         $('.country-label').text('Countries: ');
         $('.current-year').text(years.length);
         $('.current-country').text(countries.length);
         $('#progress-value').removeClass('active');
+        $('#progress-value').removeClass('progress-bar-striped');
 
         // Re-enable search button
         $('#submit').removeClass('disabled');
@@ -234,34 +236,13 @@ $( document ).ready(function() {
     // *** LAUNCH SURNAME SEARCH ***
     // ======================================== //
     $('#submit').click(function() {
-        // fadein & fadeout content
-        $('#graphs').fadeOut('fast');
-        $('#lineOverall').fadeOut('fast');
-        $('#controls-block').fadeOut('fast');
-        $('#previous-year').fadeOut('fast');
-        $('#next-year').fadeOut('fast');
-        $('#search-title').text('Searching for ');
-        $('#search-title-2').text('...');
-        $('#search-time').text('Please note that this process could take up to: ');
-        $('#search-time-2').text(' seconds');
-        $("#progress-value").css('width', '0%');
-        $("#progress-text").text('');
-        $('.year-label').text('Year: ');
-        $('.country-label').text('Country: ');
-        $('#progress-value').addClass('active');
-        $("#waiting-page").fadeIn("slow");
-
-        // Diable button and initialize content
-        //$(this).attr('disabled', 'disabled');
-        $(this).addClass('disabled');
-
-        // Initialize search variables
+        // Remove values from previous SEARCH
         countries = new Array();
         geomapCountries = new Array();
         years = new Array();
+        linechartRows = new Array();
         linechartData = new google.visualization.DataTable();
         linechartData.addColumn('string', 'Year');
-        linechartRows = new Array();
         countriesConsulted = 0;
         yearsConsulted = 0;
 
@@ -295,17 +276,40 @@ $( document ).ready(function() {
 
         // Display errors & abort ejecution or continue?
         if(countryError || surnameError || firstError || lastError || intervalError) {
-            $("#waiting-page").fadeOut("fast");
+            //$("#waiting-page").fadeOut("fast");
+            //$(this).removeClass('disabled');
             $('#form-errors').removeClass('hidden');
-            $(this).removeClass('disabled');
             $('#error-trigger').trigger('click');
             setTimeout(function() {
                 throw new FatalError("Some fields had mistakes!");
             }, 1200);
         }
         else {
+            // fadein & fadeout content
+            $('#graphs').fadeOut('fast');
+            $('#lineOverall').fadeOut('fast');
+            $('#controls-block').fadeOut('fast');
+            $('#previous-year').fadeOut('fast');
+            $('#next-year').fadeOut('fast');
+            $('#search-title').text('Searching for ');
+            $('#search-title-2').text('...');
+            $('#search-time').text('Please note that this process could take up to: ');
+            $('#search-time-2').text(' seconds');
+            $("#progress-value").css('width', '0%');
+            $("#progress-text").text('');
+            $('.year-label').text('Year: ');
+            $('.country-label').text('Country: ');
+            $('#progress-value').addClass('active');
+            $('#progress-value').addClass('progress-bar-striped');
+            $("#waiting-page").fadeIn("slow");
             $('#results-trigger').trigger('click');
             $('#form-errors').addClass('hidden');
+
+            // Diable button
+            $(this).text('Searching now...');
+            $(this).addClass('disabled');
+
+            // remove errors from validation
             $('.form-vali').each(function() {
                 $(this).parent().removeClass('has-error');
                 $(this).parent().addClass('has-success');

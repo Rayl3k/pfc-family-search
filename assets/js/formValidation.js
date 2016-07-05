@@ -53,6 +53,20 @@ function intervalValidation() {
     return 0;
 }
 
+// facts-place validation
+function factsPlaceValidation() {
+    var x = escapeHtml($('#factsPlace').val());
+    if(x == "") return 1;
+    return 0;
+}
+
+// centralYear validation
+function centralYearValidation() {
+    var x = escapeHtml($('#centralYear').val());
+    if(x.length != 4 || isNaN(x)) return 1;
+    else return 0;
+}
+
 /* =============== */
 /* MOTHER FUNCTION */
 /* =============== */
@@ -61,4 +75,6 @@ function inlineValidation(keyword) {
     else if(keyword == 'firstYear') return firstYearValidation();
     else if(keyword == 'lastYear') return lastYearValidation();
     else if(keyword == 'interval') return intervalValidation();
+    else if(keyword == 'factsPlace') return factsPlaceValidation();
+    else if(keyword == 'centralYear') return centralYearValidation();
 }
