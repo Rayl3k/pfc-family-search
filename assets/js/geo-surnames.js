@@ -27,7 +27,7 @@ var countries;
 var years;
 var countriesConsulted;
 var yearsConsulted;
-var apiDELAY = 1500;
+var apiDELAY = 2000;
 var currentPrinted;
 
 // ========================================================================== //
@@ -148,7 +148,6 @@ function yearGraphs(i) {
         $('#search-time').text('You will find your results on the sections below.');
         $('#search-duration').text('');
         $('#search-time-2').text('');
-        $('#submit').text('Lauch surname search');
         $('.year-label').text('Years: ');
         $('.country-label').text('Countries: ');
         $('.current-year').text(years.length);
@@ -157,6 +156,7 @@ function yearGraphs(i) {
         $('#progress-value').removeClass('progress-bar-striped');
 
         // Re-enable search button
+        $('#submit').text('Lauch surname search');
         $('#submit').removeClass('disabled');
 
         // Print linecahrt
@@ -236,6 +236,13 @@ $( document ).ready(function() {
     // *** LAUNCH SURNAME SEARCH ***
     // ======================================== //
     $('#submit').click(function() {
+        // Check current status button and kill if necessary
+        if($(this).hasClass('disabled')) throw new FatalError("Can't launch two at the same time!");
+
+        // Diable button
+        $(this).text('Searching now...');
+        $(this).addClass('disabled');
+
         // Remove values from previous SEARCH
         countries = new Array();
         geomapCountries = new Array();
@@ -276,13 +283,21 @@ $( document ).ready(function() {
 
         // Display errors & abort ejecution or continue?
         if(countryError || surnameError || firstError || lastError || intervalError) {
-            //$("#waiting-page").fadeOut("fast");
-            //$(this).removeClass('disabled');
+            // Recover serch button
+            $(this).removeClass('disabled');
+            $('#submit').text('Lauch surname search');
+
+            // Display errors
             $('#form-errors').removeClass('hidden');
             $('#error-trigger').trigger('click');
-            setTimeout(function() {
-                throw new FatalError("Some fields had mistakes!");
-            }, 1200);
+
+            // Once Jumped, hide content
+            $('#graphs').fadeOut('fast');
+            $('#lineOverall').fadeOut('fast');
+            $('#controls-block').fadeOut('fast');
+            $('#previous-year').fadeOut('fast');
+            $('#next-year').fadeOut('fast');
+            throw new FatalError("Some fields had mistakes!");
         }
         else {
             // fadein & fadeout content
@@ -302,12 +317,8 @@ $( document ).ready(function() {
             $('#progress-value').addClass('active');
             $('#progress-value').addClass('progress-bar-striped');
             $("#waiting-page").fadeIn("slow");
-            $('#results-trigger').trigger('click');
             $('#form-errors').addClass('hidden');
-
-            // Diable button
-            $(this).text('Searching now...');
-            $(this).addClass('disabled');
+            $('#results-trigger').trigger('click');
 
             // remove errors from validation
             $('.form-vali').each(function() {

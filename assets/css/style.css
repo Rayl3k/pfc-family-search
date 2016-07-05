@@ -81,11 +81,16 @@ h1 {
      font-size:20px;
  }
 
- .form-font {
+
+ .form-font, .header-button {
      font-family: 'Source Sans Pro', sans-serif;
      font-weight: 400;
      height: 40px;
      font-size:20px;
+ }
+
+ .header-button {
+     font-size: 16px;
  }
 
  #progress-text {
@@ -216,7 +221,6 @@ li a, li a:hover, li a:focus {
 /* Name popularity proposal & implementation image */
 .name-popualarity-bkg {
     background-image: url('/images/namesCloud.jpg');
-    background-size: cover;
 }
 
 /* Example surnames */

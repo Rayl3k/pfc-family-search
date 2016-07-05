@@ -51,3 +51,9 @@ https://developers.google.com/chart/interactive/docs/gallery/geomap#regions-exam
 https://developers.google.com/chart/interactive/docs/gallery/barchart#stacked-bar-charts
 https://developers.google.com/chart/interactive/docs/gallery/linechart#top-x-charts
 https://developers.google.com/chart/interactive/docs/datatables_dataviews
+
+# MORE ON PROMISES
+http://www.html5rocks.com/en/tutorials/es6/promises/?redirect_from_locale=es
+
+## FAMILYSAERCH RESPONSES
+https://familysearch.org/developers/docs/guides/http-status-codes#429
