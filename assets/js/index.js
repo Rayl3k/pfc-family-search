@@ -4,7 +4,7 @@ function signIn(){
   client.getAccessToken().then(function(){
 
     // Create cookie to ensure familysearch logged in
-    //cookiesUtil.setItem('FS_ACCESS_TOKEN_1', 'userIsAuthenticated', '', '', '');
+    //cookiesUtil.setItem('FS_ACCESS_TOKEN_1', accessToken, '', '', '');
     //console.log(testTokenValue);
     // Redirect the page
     $("#loading-container").fadeOut("fast");

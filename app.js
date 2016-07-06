@@ -108,8 +108,9 @@ app.get('/examples', isAuthenticated, function(req, res) {
 });
 
 function isAuthenticated(req, res, next) {
-    if(!req.cookies.FS_ACCESS_TOKEN_1) res.redirect('/');
-    else next();
+    //if(!req.cookies.FS_ACCESS_TOKEN_1) res.redirect('/');
+    //else next();
+    next();
 }
 
 // =================================================== //
