@@ -1,11 +1,11 @@
 // Function is called when the user clicks the "Sign In" button.
 function signIn(){
   // Request an access token (login)
-  client.getAccessToken().then(function(testTokenValue){
+  client.getAccessToken().then(function(){
 
     // Create cookie to ensure familysearch logged in
-    cookiesUtil.setItem('FS_ACCESS_TOKEN_1', 'userIsAuthenticated', '', '', '');
-    console.log(testTokenValue);
+    //cookiesUtil.setItem('FS_ACCESS_TOKEN_1', 'userIsAuthenticated', '', '', '');
+    //console.log(testTokenValue);
     // Redirect the page
     $("#loading-container").fadeOut("fast");
     setTimeout(function() {
@@ -14,7 +14,8 @@ function signIn(){
   })
   // Error handling
   .catch(function(e){
-      console.log("YOU FUCKED UP MORON");
+      console.log("You could not login");
+      location.reload();
   });
 
 }
