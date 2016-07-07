@@ -105,6 +105,11 @@ h1 {
      font-size: 16px;
  }
 
+ .personHeaderText {
+     margin-right: 8px;
+     font-size: 18px;
+ }
+
 /* ============================= */
 /* BUFFERS                       */
 /* ============================= */
@@ -233,6 +238,11 @@ li a, li a:hover, li a:focus {
     background-image: url('/images/exampleFacts.jpg');
 }
 
+/* Example search */
+.exampleSearch {
+    background-image: url('/images/searchBackground.jpg');
+}
+
 /* ============================= */
 /* HEADERS SMARTPHONE            */
 /* ============================= */
@@ -302,8 +312,26 @@ li a, li a:hover, li a:focus {
 }
 
 /* ============================= */
+/* SERACH PERSONS                */
+/* ============================= */
+.searchPersonHeader {
+    border-bottom: 1px solid #2e6da4;
+    display:block;
+    cursor: pointer;
+    color: #2e6da4
+}
+
+.personHeaderGlyph {
+    margin-top: 32px;
+}
+
+/* ============================= */
 /* FORMS                         */
 /* ============================= */
 .form-checkbox {
+    margin-top: 9px !important;
+}
+
+.form-radio {
     margin-top: 9px !important;
 }

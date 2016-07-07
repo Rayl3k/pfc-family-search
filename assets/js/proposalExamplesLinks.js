@@ -19,4 +19,9 @@ $( document ).ready(function() {
         window.location = document.location.protocol + '//' + document.location.host + '/examples/facts';
     });
 
+    $("#implemented-box-3").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/examples/search';
+    });
+
+
 });

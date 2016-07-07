@@ -62,6 +62,11 @@ app.get('/examples/facts', isAuthenticated, function(req, res) {
     res.render('facts.html');
 });
 
+// Search example page
+app.get('/examples/search', isAuthenticated, function(req, res) {
+    res.render('search.html');
+})
+
 // Get all proposals page
 app.get('/proposals', isAuthenticated, function(req, res) {
     res.render('proposals.html');
@@ -108,9 +113,8 @@ app.get('/examples', isAuthenticated, function(req, res) {
 });
 
 function isAuthenticated(req, res, next) {
-    //if(!req.cookies.FS_ACCESS_TOKEN_1) res.redirect('/');
-    //else next();
-    next();
+    if(!req.cookies.FS_ACCESS_TOKEN_1) res.redirect('/');
+    else next();
 }
 
 // =================================================== //
