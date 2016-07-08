@@ -95,11 +95,14 @@
 </diV> <!-- end: INTERACTIVE EXAMPLE DESCRIPTION-->
 
 <!-- start: FORM TO SEARCH -->
-<div class="container sm-buffer" id="surname-searcher">
+<div class="container sm-buffer" id="person-searcher">
     <!-- section title -->
     <div class="row">
-        <div class="col-md-12">
-            <h3>Configure overall person and relatives search parameters</h3>
+        <div class="col-sm-12">
+            <h2>Search Form</h2>
+        </div>
+        <div class="col-sm-12">
+            <p>asdfASDF safasd fasdf adsf ajsdkf jasdñf jasdñkf jaskdñfj asdfaksdjf ñasdjf ñaksdjf ñasdj fkñasdjf kñasdjf ñkasdjf ñasdj fñasdj fakñlsd f</p>
         </div>
     </div>
     <!-- start: ERROR MESSAGES ZONE -->
@@ -108,7 +111,7 @@
             <div class="alert alert-danger" role="alert">
                 <p><span class="sans-bold">Uoops!</span> It seems that you might need to correct some fields :)</p>
                 <ul class="xs-buffer">
-                    <li id="surnameError" class="hidden">Please introduce a valid Surname.</li>
+                    <li>Please fill at least one field in the form!</li>
                 </ul>
             </div>
         </div>
@@ -117,15 +120,16 @@
     <!-- load person forms -->
     {{> searchMainPerson}}
     {{> searchSpouse}}
-    {{> searchSpouse}}
-    {{> searchSpouse}}
+    {{> searchFather}}
+    {{> searchMother}}
+
 
     <!-- submit search -->
     <div class="row xxl-buffer">
         <div class="col-sm-12 text-center">
             <button id="person-search-submit" class="btn btn-primary form-font" role="button">Lauch person search</button>
             <a href="#results-zone" id="results-trigger" class="hidden"></a>
-            <a href="#facts-searcher" id="error-trigger" class="hidden"></a>
+            <a href="#person-searcher" id="error-trigger" class="hidden"></a>
         </div>
     </div>
 
@@ -134,5 +138,6 @@
 
 {{> javascripts }}
 <script src="/assets/js/formValidation.js"></script>
+<script src="/assets/js/search.js"></script>
 
 {{> footer }}

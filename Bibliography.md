@@ -57,3 +57,8 @@ http://www.html5rocks.com/en/tutorials/es6/promises/?redirect_from_locale=es
 
 ## FAMILYSAERCH RESPONSES
 https://familysearch.org/developers/docs/guides/http-status-codes#429
+
+## ForEach
+https://github.com/FamilySearch/familysearch-javascript-sdk/blob/92298ea5dece1db8fadb36d6e3218d85bcdd97e3/src/utils.js
+
+## Familysearch Glossary

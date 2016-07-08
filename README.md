@@ -81,6 +81,8 @@ https://howtonode.org/creating-custom-modules
 ## darkbox / lightbox
 https://css-tricks.com/design-considerations-text-images/
 
+## count project lines
+https://gist.github.com/mandiwise/dc53cb9da00856d7cdbb
 
 
 ## certification checklist

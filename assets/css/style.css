@@ -315,14 +315,30 @@ li a, li a:hover, li a:focus {
 /* SERACH PERSONS                */
 /* ============================= */
 .searchPersonHeader {
-    border-bottom: 1px solid #2e6da4;
     display:block;
     cursor: pointer;
-    color: #2e6da4
+    color: #fff;
+    background-color: #2e6da4;
+}
+
+.searchPersonHeader:hover {
+    background-color: #337ab7;
 }
 
 .personHeaderGlyph {
-    margin-top: 32px;
+    margin-top: 16px;
+}
+
+.searchPersonHeader h3 {
+    margin-top: 10px;
+}
+
+.glyph-rotated {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /* ============================= */

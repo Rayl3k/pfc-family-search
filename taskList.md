@@ -28,3 +28,4 @@
 - Estudi etnografic i demografic de cognoms propis i concrets: Emprant GEOAPI interna + decodificació tots els registres
 - Genealogies (reals): Study of diversity on ancestors. Relate to momondo campaign?
 - Gender related mortality / newborns based on countries & period of time.
+- List best collection / browse through documents / discover random document, etc. functionalities!! Use entry points collections

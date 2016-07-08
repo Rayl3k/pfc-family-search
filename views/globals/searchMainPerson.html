@@ -1,10 +1,14 @@
 <!-- start: FIRST PERSON FIELDS -->
-<div class="row xs-buffer searchPersonHeader">
-    <div class="col-sm-12">
-        <h3>Person to be searched</h3>
+<div class="row md-buffer searchPersonHeader" data-toggle="collapse" href="#mainPerson">
+    <div class="col-sm-6 personHeaderTitle">
+        <h3><span class="personHeaderSign">-</span> Person to be searched</h3>
+    </div>
+    <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+        <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+        <span class="glyphicon glyphicon-menu-down glyph-rotated" aria-hidden="true" style="vertical-align:middle"></span>
     </div>
 </div>
-<div class="row md-buffer">
+<div id="mainPerson" class="row md-buffer collapse in">
     <div class="col-sm-12">
         <div class="row">
             <!-- gender -->
@@ -17,10 +21,10 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <label class="radio-inline">
-                            <input type="radio" name="personGender" id="personGenderMale" value="genderMale" class="form-checkbox">Male
+                            <input checked type="radio" name="personGender" id="personGenderMale" value="male" class="form-checkbox">Male
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="personGender" id="personGenderFemale" value="genderFemale" class="form-checkbox">Female
+                            <input type="radio" name="personGender" id="personGenderFemale" value="female" class="form-checkbox">Female
                         </label>
                     </div>
                 </div>
@@ -35,7 +39,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <label class="radio-inline">
-                            <input type="radio" name="exactInput" id="exactInputYes" value="exactYes" class="form-checkbox">Exact
+                            <input checked type="radio" name="exactInput" id="exactInputYes" value="exactYes" class="form-checkbox">Exact
                         </label>
                         <label class="radio-inline">
                             <input type="radio" name="exactInput" id="exactInputNo" value="exactNo" class="form-checkbox">Similar
@@ -48,44 +52,44 @@
         <div class="row sm-buffer">
             <div class="form-group col-sm-6">
                 <label for="givenName" class="label-font">Name</label>
-                <input type="text" class="form-control form-font form-vali" id="givenName" placeholder="Delilah">
+                <input type="text" class="form-control form-font form-vali" id="givenName" placeholder="Delilah" maxlength=50>
             </div>
             <div class="form-group col-sm-6">
                 <label for="surname" class="label-font">Surname</label>
-                <input type="text" class="form-control form-font form-vali" id="surname" placeholder="Scoth Williams">
+                <input type="text" class="form-control form-font form-vali" id="surname" placeholder="Scoth Williams"  maxlength=50>
             </div>
         </div>
         <!-- birth places -->
         <div class="row xs-buffer">
             <div class="form-group col-sm-6">
                 <label for="birthPlace" class="label-font">Birth Place</label>
-                <input type="text" class="form-control form-font form-vali" id="birthPlace" placeholder="Ohio, United States">
+                <input type="text" class="form-control form-font form-vali" id="birthPlace" placeholder="Ohio, United States"  maxlength=50>
             </div>
             <div class="form-group col-sm-6">
                 <label for="birthDate" class="label-font">Birth Date</label>
-                <input type="text" class="form-control form-font form-vali" id="birthDate" placeholder="July 1969">
+                <input type="text" class="form-control form-font form-vali" id="birthDate" placeholder="July 1969"  maxlength=50>
             </div>
         </div>
         <!-- death places -->
         <div class="row xs-buffer">
             <div class="form-group col-sm-6">
                 <label for="deathPlace" class="label-font">Death Place</label>
-                <input type="text" class="form-control form-font form-vali" id="deathPlace" placeholder="Europe">
+                <input type="text" class="form-control form-font form-vali" id="deathPlace" placeholder="Europe" maxlength=50>
             </div>
             <div class="form-group col-sm-6">
                 <label for="deathDate" class="label-font">Death Date</label>
-                <input type="text" class="form-control form-font form-vali" id="deathDate" placeholder="1990">
+                <input type="text" class="form-control form-font form-vali" id="deathDate" placeholder="1990" maxlength=50>
             </div>
         </div>
         <!-- marriage places -->
         <div class="row xs-buffer">
             <div class="form-group col-sm-6">
                 <label for="marriagePlace" class="label-font">Marriage Place</label>
-                <input type="text" class="form-control form-font form-vali" id="marriagePlace" placeholder="New york city">
+                <input type="text" class="form-control form-font form-vali" id="marriagePlace" placeholder="New york city" maxlength=50>
             </div>
             <div class="form-group col-sm-6">
                 <label for="marriageDate" class="label-font">Marriage Date</label>
-                <input type="text" class="form-control form-font form-vali" id="marriageDate" placeholder="20/05/1989">
+                <input type="text" class="form-control form-font form-vali" id="marriageDate" placeholder="20/05/1989" maxlength=50>
             </div>
         </div>
     </div>
