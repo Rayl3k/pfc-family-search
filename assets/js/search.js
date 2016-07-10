@@ -1,7 +1,7 @@
 // Global variables to manage the search
 var start, count;
 
-// Definition of foreach
+// Function to iterate over an object parameters
 var forEach = function(obj, iterator, context) {
     if (obj == null) { // also catches undefined
         return;
@@ -109,6 +109,9 @@ $( document ).ready(function() {
          // Hide errors
          $('#form-errors').addClass('hidden');
 
+         // Dislay loading icon and jump to results
+
+
          // Append tilde if non-exact applies
          if(mainExact != "exactYes") { mainName = mainName + '~'; mainSurname = mainSurname + '~'; }
          if(spouseExact != "exactYes") { spouseName = spouseName + '~'; spouseSurname = spouseSurname + '~'; }
@@ -162,14 +165,37 @@ $( document ).ready(function() {
              start = searchResponse.getIndex();
 
              // Check real data inside
-             for(var p = 0; p < count; p = p+15) {
+             /*for(var p = 0; p < count; p = p+15) {
                  var persons = searchResponse.getSearchResults({start:p});
                  for(var j = 0; j < persons.length; j++) {
                      var result = persons[j];
                      person = result.getPrimaryPerson();
                      console.log("Person: " + person.getId() + " " + person.getDisplayName());
                  }
-             }
+             }*/
+
+             var $table = $('<table>').addClass('table table-hover');
+              $table.append(
+                $('<tr>')
+                  .append('<th>Id</th>')
+                  .append('<th>Name</th>')
+                  .append('<th>Birth</th>')
+                  .append('<th>Death</th>')
+              );
+
+              var results = searchResponse.getSearchResults();
+              for(var i = 0; i < results.length; i++){
+                var result = results[i],
+                    person = result.getPrimaryPerson(),
+                    $row = $('<tr>').appendTo($table);
+                $('<td>').text(person.getId()).appendTo($row);
+                $('<td>').text(person.getDisplayName()).appendTo($row);
+                $('<td>').text(person.getDisplayBirthDate()).appendTo($row);
+                $('<td>').text(person.getDisplayDeathDate()).appendTo($row);
+              }
+
+              $('#table-container').append($table);
+
          });
 
     });

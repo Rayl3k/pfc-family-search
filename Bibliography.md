@@ -62,3 +62,6 @@ https://familysearch.org/developers/docs/guides/http-status-codes#429
 https://github.com/FamilySearch/familysearch-javascript-sdk/blob/92298ea5dece1db8fadb36d6e3218d85bcdd97e3/src/utils.js
 
 ## Familysearch Glossary
+
+## Hide vs fadeOut vs animate
+http://www.catchmyfame.com/2010/08/31/jquery-hide-vs-fadeout-vs-animate/
