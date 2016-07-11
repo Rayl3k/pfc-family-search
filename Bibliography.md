@@ -65,3 +65,6 @@ https://github.com/FamilySearch/familysearch-javascript-sdk/blob/92298ea5dece1db
 
 ## Hide vs fadeOut vs animate
 http://www.catchmyfame.com/2010/08/31/jquery-hide-vs-fadeout-vs-animate/
+
+## FamilySearch sandbox data copy utility
+https://groups.google.com/a/ldsmail.net/forum/#!topic/FSDN/xNH2Om5u-kc

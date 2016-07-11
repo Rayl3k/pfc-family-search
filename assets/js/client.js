@@ -18,6 +18,8 @@ var client = new FamilySearch({
   // Store the access token in a cookie so that the user doesn't have to
   // login every time the page loads
   save_access_token: true,
+  autoExpire: true,
+  autoSigin: true,
 
   // Sandbox is the testing environment
   environment: 'sandbox'

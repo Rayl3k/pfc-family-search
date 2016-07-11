@@ -138,53 +138,27 @@
 <!-- start: FIRST RESULTS TO BE DISPLAYED -->
 <div id="results-zone" class="container">
     <!-- section title -->
-    <div class="row">
+    <div class="row xl-buffer">
         <div class="col-sm-12">
             <h2>Person search results</h2>
         </div>
     </div>
+    <!-- table controls -->
     <div class="row">
-        <div id="table-container" class="col-sm-12">
-            <table class="table table-hover">
-                <tr>
-                    <th>HEADER 1</th>
-                    <th>HEADER 2</th>
-                    <th>HEADER 3</th>
-                    <th>HEADER 4</th>
-                </tr>
-                <tbody>
-                <tr>
-                    <td>HEADER 1</td>
-                    <td>HEADER 2</td>
-                    <td>HEADER 3</td>
-                    <td>HEADER 4</td>
-                </tr>
-                <tr>
-                    <td>HEADER 1</td>
-                    <td>HEADER 2</td>
-                    <td>HEADER 3</td>
-                    <td>HEADER 4</td>
-                </tr>
-                <tr>
-                    <td>HEADER 1</td>
-                    <td>HEADER 2</td>
-                    <td>HEADER 3</td>
-                    <td>HEADER 4</td>
-                </tr>
-                <tr>
-                    <td>HEADER 1</td>
-                    <td>HEADER 2</td>
-                    <td>HEADER 3</td>
-                    <td>HEADER 4</td>
-                </tr>
-                <tr>
-                    <td>HEADER 1</td>
-                    <td>HEADER 2</td>
-                    <td>HEADER 3</td>
-                    <td>HEADER 4</td>
-                </tr>
-            </tbody>
-            </table>
+        <div class="col-sm-12 text-center">
+            <button id="previous-persons" type="button" class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-menu-left"></span>
+            </button>
+            <span id="controls-year"class="h3">Displaying persons:<span id="persons-block" class="sans-bold"></span>of<span id="person-totals"></span></span>
+            <button id="next-persons" type="button" class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </button>
+        </div>
+    </div>
+    <!-- table with persons -->
+    <div class="row xs-buffer">
+        <div class="col-sm-12">
+            <div id="table-container" class="col-sm-12 sm-buffer"></div>
         </div>
     </div>
 

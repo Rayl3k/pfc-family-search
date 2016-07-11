@@ -1,5 +1,6 @@
 // Global variables to manage the search
-var start, count;
+var start, count, params;
+var resultsLength = 15;
 
 // Function to iterate over an object parameters
 var forEach = function(obj, iterator, context) {
@@ -35,16 +36,92 @@ function removeEmptyProperties(obj) {
     return obj;
 };
 
+// Print persons from start + results.length
+function printPersonsToTable(pos) {
+    // Update start in params
+    params.start = pos;
+
+    // Search with the defined parameters
+    client.getPersonSearch(params).then(function(searchResponse) {
+       // Get parameters
+       count = searchResponse.getResultsCount();
+       start = searchResponse.getIndex();
+
+       // Log total results and starting point
+       console.log("count: " + count + " start: " + start);
+
+       // Set persons totals
+       $('#person-totals').text(" " + count);
+
+        // Initialize table content
+        var $table = $('<table>').addClass('table table-hover table-responsive');
+        $table.append(
+            $('<thead>')
+                .append($('<tr>')
+                    .append('<th>ID</th>')
+                    .append('<th>NAME</th>')
+                    .append('<th>BIRTH</th>')
+                    .append('<th>DEATH</th>')
+                )
+            )
+            .append($('<tbody>'));
+
+        // Refresh start position and get persons
+        start = pos;
+        var results = searchResponse.getSearchResults();
+
+        // For each person in results update table
+        for(var i = 0; i < results.length; i++){
+            var result = results[i],
+                person = result.getPrimaryPerson(),
+                $row = $('<tr>').appendTo($table);
+
+                // Get basic variables
+                $('<td>').text(person.getId()).appendTo($row);
+                $('<td>').text(person.getDisplayName()).appendTo($row);
+                $('<td>').text(person.getDisplayBirthDate()).appendTo($row);
+                $('<td>').text(person.getDisplayDeathDate()).appendTo($row);
+          }
+
+          // Update table controsl content
+          $('#persons-block').text(' ' + (pos+1) + '-' + (pos+results.length) + ' ');
+
+          // Update table content
+          $('#table-container').fadeOut('fast');
+          $('#table-container').empty();
+          $('#table-container').append($table);
+          $('#table-container').fadeIn('slow');
+      });
+}
+
 // ======================================== //
 // ************ DOCUMENT READY ************
 // ======================================== //
 $( document ).ready(function() {
+    // START: Stop focus on button press
+    $(".btn").mouseup(function(){
+        $(this).blur();
+    });
+
     // Expand/contract searchers
     $('.searchPersonHeader').click(function () {
         var x = $(this).children('.personHeaderGlyph').children('.glyphicon');
         x.toggleClass('glyph-rotated');
         if(x.hasClass('glyph-rotated')) $(this).children('.personHeaderTitle').children('h3').children('.personHeaderSign').text('-');
         else $(this).children('.personHeaderTitle').children('h3').children('.personHeaderSign').text('+');
+    });
+
+    // ======================================== //
+    // *** PERSON TABLE CONTROLS  ***
+    // ======================================== //
+    $('#previous-persons').click(function () {
+        var next = (start-resultsLength) > 0 ? (start-resultsLength) : 0;
+        if(start != next) printPersonsToTable(next);
+    });
+
+    $('#next-persons').click(function () {
+        var next = (start+resultsLength) < count ? (start+resultsLength) : start;
+        if(start != next) printPersonsToTable(next);
     });
 
     // ======================================== //
@@ -119,7 +196,8 @@ $( document ).ready(function() {
          if(motherExact != "exactYes") { motherName = motherName + '~'; motherSurname = motherSurname + '~'; }
 
          // Populate params variable to get results
-         var params = {
+         params = {
+             start : 0,
              gender : mainGender,
              givenName : mainName,
              surname : mainSurname,
@@ -158,45 +236,8 @@ $( document ).ready(function() {
          // Remove empty properties
          params = removeEmptyProperties(params);
 
-         // Search with the defined parameters
-         client.getPersonSearch(params).then(function(searchResponse) {
-             // Get parameters
-             count = searchResponse.getResultsCount();
-             start = searchResponse.getIndex();
-
-             // Check real data inside
-             /*for(var p = 0; p < count; p = p+15) {
-                 var persons = searchResponse.getSearchResults({start:p});
-                 for(var j = 0; j < persons.length; j++) {
-                     var result = persons[j];
-                     person = result.getPrimaryPerson();
-                     console.log("Person: " + person.getId() + " " + person.getDisplayName());
-                 }
-             }*/
-
-             var $table = $('<table>').addClass('table table-hover');
-              $table.append(
-                $('<tr>')
-                  .append('<th>Id</th>')
-                  .append('<th>Name</th>')
-                  .append('<th>Birth</th>')
-                  .append('<th>Death</th>')
-              );
-
-              var results = searchResponse.getSearchResults();
-              for(var i = 0; i < results.length; i++){
-                var result = results[i],
-                    person = result.getPrimaryPerson(),
-                    $row = $('<tr>').appendTo($table);
-                $('<td>').text(person.getId()).appendTo($row);
-                $('<td>').text(person.getDisplayName()).appendTo($row);
-                $('<td>').text(person.getDisplayBirthDate()).appendTo($row);
-                $('<td>').text(person.getDisplayDeathDate()).appendTo($row);
-              }
-
-              $('#table-container').append($table);
-
-         });
+         // Print first batch of results
+         printPersonsToTable(0);
 
     });
 });
