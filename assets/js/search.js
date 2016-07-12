@@ -1,6 +1,7 @@
 // Global variables to manage the search
 var start, count, params;
 var resultsLength = 15;
+var context = "";
 
 // Function to iterate over an object parameters
 var forEach = function(obj, iterator, context) {
@@ -29,7 +30,7 @@ var forEach = function(obj, iterator, context) {
 // Remove empty properties from objects
 function removeEmptyProperties(obj) {
     forEach(obj, function(value, key) {
-        if (value == null || value === '') {  // == null also catches undefined
+        if (key != context && (value == null || value === '')) {  // == null also catches undefined
             delete obj[key];
         }
     });
@@ -40,15 +41,18 @@ function removeEmptyProperties(obj) {
 function printPersonsToTable(pos) {
     // Update start in params
     params.start = pos;
+    params.context = context;
+    console.log("current context: "+context);
 
     // Search with the defined parameters
     client.getPersonSearch(params).then(function(searchResponse) {
        // Get parameters
        count = searchResponse.getResultsCount();
        start = searchResponse.getIndex();
+       context = searchResponse.getContext();
 
        // Log total results and starting point
-       console.log("count: " + count + " start: " + start);
+       console.log("count: " + count + " start: " + start + " context: " + context);
 
        // Set persons totals
        $('#person-totals').text(" " + count);
@@ -198,6 +202,7 @@ $( document ).ready(function() {
          // Populate params variable to get results
          params = {
              start : 0,
+             context: '',
              gender : mainGender,
              givenName : mainName,
              surname : mainSurname,
@@ -233,8 +238,9 @@ $( document ).ready(function() {
              motherMarriageDate : motherMarriageDate
          }
 
-         // Remove empty properties
+         // Remove empty properties and clean context
          params = removeEmptyProperties(params);
+         context = '';
 
          // Print first batch of results
          printPersonsToTable(0);
