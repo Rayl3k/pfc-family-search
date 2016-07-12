@@ -68,3 +68,9 @@ http://www.catchmyfame.com/2010/08/31/jquery-hide-vs-fadeout-vs-animate/
 
 ## FamilySearch sandbox data copy utility
 https://groups.google.com/a/ldsmail.net/forum/#!topic/FSDN/xNH2Om5u-kc
+
+## Direct and delegate events
+http://api.jquery.com/on/#direct-and-delegated-events
+http://stackoverflow.com/questions/10920355/attaching-click-event-to-a-jquery-object-not-yet-added-to-the-dom
+
+## pre-load images

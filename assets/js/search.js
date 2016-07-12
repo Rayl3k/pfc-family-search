@@ -3,6 +3,9 @@ var start, count, params;
 var resultsLength = 15;
 var context = "";
 
+// ======================================== //
+// ********** OBJECT TREATMENT **********
+// ======================================== //
 // Function to iterate over an object parameters
 var forEach = function(obj, iterator, context) {
     if (obj == null) { // also catches undefined
@@ -30,19 +33,77 @@ var forEach = function(obj, iterator, context) {
 // Remove empty properties from objects
 function removeEmptyProperties(obj) {
     forEach(obj, function(value, key) {
-        if (key != context && (value == null || value === '')) {  // == null also catches undefined
+        if ((value == null || value === '')) {  // == null also catches undefined
             delete obj[key];
         }
     });
     return obj;
 };
 
-// Print persons from start + results.length
+// ======================================== //
+// ****** PANELS & TABLES CREATOR ********
+// ======================================== //
+// Create table for main display properties
+function personDisplayProperties(person) {
+
+    var displayProperties = createPanelTable('Display information', [
+        [
+            ['th', 'ID'],
+            ['th', 'Gender'],
+            ['th', 'Lifespan'],
+            ['th', 'Living']
+        ],
+        [
+            ['td', person.getId()],
+            ['td', person.getDisplayGender()],
+            ['td', person.getDisplayLifeSpan()],
+            ['td', person.isLiving()]
+        ],
+        [
+            ['th', 'Birth Date'],
+            ['th', 'Birth Place'],
+            ['th', 'Death Date'],
+            ['th', 'Death Place']
+        ],
+        [
+            ['td', person.getDisplayBirthDate()],
+            ['td', person.getDisplayBirthPlace()],
+            ['td', person.getDisplayDeathDate()],
+            ['td', person.getDisplayDeathPlace()]
+        ]
+    ]);
+
+    return displayProperties;
+}
+
+// Create panel tables
+function createPanelTable(header, rows){
+    // Create pannel and attach header text
+    var $panel = $('<div>').addClass('panel panel-default');
+    $('<div>').addClass('panel-heading').html(header).appendTo($panel);
+
+    // Create Pannel body
+    //var $panelBody = $('<div>').addClass('panel-body').appendTo($panel);
+
+    // Create table
+    var $table = $('<table>').addClass('table table-responsive table-padding').append('<tbody>').appendTo($panel);
+    for(var i = 0; i < rows.length; i++){
+        var $row = $('<tr>').appendTo($table);
+        for(var j = 0; j < rows[i].length; j++){
+            $('<'+rows[i][j][0]+'>').text(rows[i][j][1]).appendTo($row);
+        }
+    }
+
+    return $panel;
+}
+
+// ======================================== //
+// ************ PERSON SEARCH  ************
+// ======================================== //
 function printPersonsToTable(pos) {
     // Update start in params
     params.start = pos;
     params.context = context;
-    console.log("current context: "+context);
 
     // Search with the defined parameters
     client.getPersonSearch(params).then(function(searchResponse) {
@@ -78,13 +139,17 @@ function printPersonsToTable(pos) {
         for(var i = 0; i < results.length; i++){
             var result = results[i],
                 person = result.getPrimaryPerson(),
-                $row = $('<tr>').appendTo($table);
+                $row = $('<tr>').addClass('table-body-row').appendTo($table);
 
-                // Get basic variables
-                $('<td>').text(person.getId()).appendTo($row);
-                $('<td>').text(person.getDisplayName()).appendTo($row);
-                $('<td>').text(person.getDisplayBirthDate()).appendTo($row);
-                $('<td>').text(person.getDisplayDeathDate()).appendTo($row);
+                // Get basic variables and add them to row
+                var personID = person.getId() != null ? person.getId() : "undefined";
+                var displayName = person.getDisplayName() != null ? person.getDisplayName() : "undefined";
+                var displayBirth = person.getDisplayBirthDate() != null ? person.getDisplayBirthDate() : "undefined";
+                var displayDeath = person.getDisplayDeathDate() != null ? person.getDisplayDeathDate() : "undefined";
+                $('<td>').addClass('person-table-id').text(personID).appendTo($row);
+                $('<td>').text(displayName).appendTo($row);
+                $('<td>').text(displayBirth).appendTo($row);
+                $('<td>').text(displayDeath).appendTo($row);
           }
 
           // Update table controsl content
@@ -113,6 +178,33 @@ $( document ).ready(function() {
         x.toggleClass('glyph-rotated');
         if(x.hasClass('glyph-rotated')) $(this).children('.personHeaderTitle').children('h3').children('.personHeaderSign').text('-');
         else $(this).children('.personHeaderTitle').children('h3').children('.personHeaderSign').text('+');
+    });
+
+    // ======================================== //
+    // *** CLICK ON PERSON IN TABLE  ***
+    // ======================================== //
+    $('#persons-table').on("click", '.table-body-row', function() {
+        // Get id of clicked person
+        var personID = $(this).children('.person-table-id').html().trim();
+
+        // Display person being loaded and jump to section
+
+        // Launch the call to get the data and prin it when you get it.
+        client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {
+            //http://familysearch.github.io/familysearch-javascript-sdk/2.4/#/api/person.functions:getPersonWithRelationships
+
+            // Get Main Person and print its data
+            var mainPerson = personResponse.getPrimaryPerson();
+            // Print name
+            $('#person-name').text(mainPerson.getDisplayName() + " ");
+            // Append display properties
+            personDisplayProperties(mainPerson).appendTo('#display-information');
+
+        })
+        // Catch errors
+        .catch(function(e) {
+            console.log("e");
+        });
     });
 
     // ======================================== //

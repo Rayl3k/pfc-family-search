@@ -341,8 +341,15 @@ li a, li a:hover, li a:focus {
     transform: rotate(180deg);
 }
 
-#table-container tr {
+#table-container tbody tr {
     cursor: pointer;
+}
+
+.table-padding {
+    margin-top:10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 20px;
 }
 
 /* ============================= */
