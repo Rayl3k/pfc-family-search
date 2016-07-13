@@ -345,11 +345,13 @@ li a, li a:hover, li a:focus {
     cursor: pointer;
 }
 
-.table-padding {
-    margin-top:10px;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-bottom: 20px;
+.table-bottom-0 table {
+    margin-bottom: 0px;
+}
+
+.bodyTable {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* ============================= */

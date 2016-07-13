@@ -76,6 +76,147 @@ function personDisplayProperties(person) {
     return displayProperties;
 }
 
+// Create table for names
+function personDisplayNames(names) {
+    // Create an entry per each name
+    for(var i = 0; i < names.length; i++) {
+        var name = names[i];
+        var header = '<code>' + name.getType() + '</code>';
+        if(name.isPreferred()) header += ' <span class="label label-success">Preferred</span>';
+
+        var rowNames = [
+            [
+                ['th', 'Full Text'],
+                ['th', 'Given Name'],
+                ['th', 'Surname'],
+                ['th', 'Lang']
+            ]
+        ];
+
+        for(var j = 0; j < name.getNameFormsCount(); j++) {
+            rowNames.push([
+                ['td', name.getFullText(j)],
+                ['td', name.getGivenName(j)],
+                ['td', name.getSurname(j)],
+                ['td', name.getLang(j)]
+            ]);
+        }
+
+        // append pannel table
+        createPanelTable(header, rowNames).appendTo('#table-names');
+    }
+}
+
+// Crate tables for facts
+function personDisplayFacts(facts) {
+    // Create an entry per each fact
+    for(var i = 0; i < facts.length; i++) {
+        var fact = facts[i];
+        var header = '<code>' + fact.getType() + '</code>';
+        if(fact.isCustomNonEvent()) header += '<span class="label label-info">Event</span>';
+        else header += '<span class="label label-info">Fact</span>';
+
+        var x = createPanelTable(header, [
+            [
+                ['th', 'Place - Original'],
+                ['th', 'Place - Normalized'],
+                ['th', 'Place - Normalized ID']
+            ],
+            [
+                ['td', fact.getOriginalPlace()],
+                ['td', fact.getNormalizedPlace()],
+                ['td', fact.getNormalizedPlaceId()]
+            ],
+            [
+                ['th', 'Date - Original'],
+                ['th', 'Date - Formal'],
+                ['th', 'Place - Normalized']
+            ],
+            [
+                ['td', fact.getOriginalDate()],
+                ['td', fact.getFormalDate()],
+                ['td', fact.getNormalizedDate()]
+            ],
+            [
+                ['th', 'Description'],
+                ['th', ''],
+                ['th', '']
+            ],
+            [
+                ['td', fact.getValue()],
+                ['td', ''],
+                ['td', '']
+            ]
+
+        ]).appendTo($('#table-facts'));
+    }
+}
+
+// Create parent tables
+function personDisplayParents(response, person) {
+    var parentRelationships = response.getParentRelationships();
+    for(var i = 0; i < parentRelationships.length; i++) {
+        var relationship = parentRelationships[i];
+        var father = response.getPerson(relationship.getFatherId());
+        var mother = response.getPerson(relationship.getMotherId());
+
+        createPanelTable('Parents Relationship: ' + (i+1), [
+            [
+                ['th', 'Father'],
+                ['th', 'Mother'],
+                ['th', 'Child']
+            ],
+            [
+                ['td', father ? father.getId() : ''],
+                ['td', mother ? mother.getId() : ''],
+                ['td', person ? person.getId() : '']
+            ],
+            [
+                ['td', father ? father.getDisplayName() : ''],
+                ['td', mother ? mother.getDisplayName() : ''],
+                ['td', person ? person.getDisplayName() : '']
+            ],
+            [
+                ['td', father ? father.getDisplayLifeSpan() : ''],
+                ['td', mother ? mother.getDisplayLifeSpan() : ''],
+                ['td', person ? person.getDisplayLifeSpan() : '']
+            ]
+        ]).appendTo($('#table-parents'));
+    }
+}
+
+// Create spouse tables
+function personDisplaySpouse(response, person) {
+    var spouseRelationships = response.getSpouseRelationships();
+    for(var i = 0; i < spouseRelationships.length; i++) {
+        var relationship = spouseRelationships[i];
+        var spouse = response.getPerson(relationship.getSpouseId(person.getId()));
+
+        createPanelTable('Couple Relationship: ' + (i+1), [
+            [
+                ['th', 'Relationship ID'],
+                ['th', 'Person'],
+                ['th', 'Spouse']
+            ],
+            [
+                ['td', relationship ? relationship.getId() : ''],
+                ['td', person ? person.getId() : ''],
+                ['td', spouse ? spouse.getId() : '']
+            ],
+            [
+                ['td', ''],
+                ['td', person ? person.getDisplayName() : ''],
+                ['td', spouse ? spouse.getDisplayName() : '']
+            ],
+            [
+                ['td', ''],
+                ['td', person ? person.getDisplayLifeSpan() : ''],
+                ['td', spouse ? spouse.getDisplayLifeSpan() : '']
+            ]
+        ]).appendTo($('#table-spouse'));
+    }
+}
+
 // Create panel tables
 function createPanelTable(header, rows){
     // Create pannel and attach header text
@@ -83,10 +224,10 @@ function createPanelTable(header, rows){
     $('<div>').addClass('panel-heading').html(header).appendTo($panel);
 
     // Create Pannel body
-    //var $panelBody = $('<div>').addClass('panel-body').appendTo($panel);
+    var $panelBody = $('<div>').addClass('bodyTable').appendTo($panel);
 
     // Create table
-    var $table = $('<table>').addClass('table table-responsive table-padding').append('<tbody>').appendTo($panel);
+    var $table = $('<table>').addClass('table table-responsive').append('<tbody>').appendTo($panelBody);
     for(var i = 0; i < rows.length; i++){
         var $row = $('<tr>').appendTo($table);
         for(var j = 0; j < rows[i].length; j++){
@@ -199,11 +340,19 @@ $( document ).ready(function() {
             $('#person-name').text(mainPerson.getDisplayName() + " ");
             // Append display properties
             personDisplayProperties(mainPerson).appendTo('#display-information');
+            // Display person names
+            personDisplayNames(mainPerson.getNames());
+            // Display facts
+            personDisplayFacts(mainPerson.getFacts());
+            // Display parent relationships
+            personDisplayParents(personResponse, mainPerson);
+            // Display spouse information
+            personDisplaySpouse(personResponse, mainPerson);
 
         })
         // Catch errors
         .catch(function(e) {
-            console.log("e");
+            console.log(e);
         });
     });
 
