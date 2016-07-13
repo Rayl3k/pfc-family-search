@@ -217,6 +217,66 @@ function personDisplaySpouse(response, person) {
     }
 }
 
+// Create children tables
+function personDisplayChildren(response, person) {
+    var childrenRelationships = response.getChildRelationships();
+    for(var i = 0; i < childrenRelationships.length; i++) {
+        var relationship = childrenRelationships[i];
+        var child = response.getPerson(relationship.getChildId());
+        var father = response.getPerson(relationship.getFatherId());
+        var mother = response.getPerson(relationship.getMotherId());
+
+        createPanelTable('Children of Couple: ' + (i+1), [
+            [
+                ['th', 'Child'],
+                ['th', 'Father'],
+                ['th', 'Mother']
+            ],
+            [
+                ['td', person ? child.getId() : ''],
+                ['td', father ? father.getId() : ''],
+                ['td', mother ? mother.getId() : '']
+            ],
+            [
+                ['td', person ? child.getDisplayName() : ''],
+                ['td', father ? father.getDisplayName() : ''],
+                ['td', mother ? mother.getDisplayName() : '']
+            ],
+            [
+                ['td', person ? child.getDisplayLifeSpan() : ''],
+                ['td', father ? father.getDisplayLifeSpan() : ''],
+                ['td', mother ? mother.getDisplayLifeSpan() : '']
+            ]
+        ]).appendTo($('#table-children'));
+    }
+}
+
+// Create ancestry table
+function personDisplayAncestry(ancestry) {
+    // Initial variables
+    var header = 'Ascendency in Ahnentafel numbers';
+    var rows = [
+        [
+            ['th', 'Anhentafel #'],
+            ['th', 'ID'],
+            ['th', 'Name']
+        ]
+    ];
+    // Asked for max generations so max: 255
+    for(var i = 1; i <= 255; i++) {
+        if(ancestry.exists(i)) {
+            var person = ancestry.getPerson(i);
+            rows.push([
+                ['td', person ? person.getAscendancyNumber() : ''],
+                ['td', person ? person.getId() : ''],
+                ['td', person ? person.getDisplayName() : '']
+            ]);
+        }
+    }
+
+    createPanelTable(header, rows).appendTo($('#table-ancestry'));
+}
+
 // Create panel tables
 function createPanelTable(header, rows){
     // Create pannel and attach header text
@@ -346,8 +406,17 @@ $( document ).ready(function() {
             personDisplayFacts(mainPerson.getFacts());
             // Display parent relationships
             personDisplayParents(personResponse, mainPerson);
-            // Display spouse information
+            // Display spouse relationships
             personDisplaySpouse(personResponse, mainPerson);
+            // Display child relationships
+            personDisplayChildren(personResponse, mainPerson);
+            // Display person ancestry (255)
+            client.getAncestry(mainPerson.getId(), {generations: 8}).then(function(ancestry){
+                personDisplayAncestry(ancestry);
+            })
+            .catch(function(e) {
+
+            });
 
         })
         // Catch errors
