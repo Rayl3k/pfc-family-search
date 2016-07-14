@@ -73,7 +73,11 @@ function personDisplayProperties(person) {
         ]
     ]);
 
-    return displayProperties;
+    // Print
+    if(person) {
+        displayProperties.appendTo('#display-information');
+        $('#disclaimer-display').hide();
+    }
 }
 
 // Create table for names
@@ -103,7 +107,10 @@ function personDisplayNames(names) {
         }
 
         // append pannel table
-        createPanelTable(header, rowNames).appendTo('#table-names');
+        if(names.length > 0) {
+            createPanelTable(header, rowNames).appendTo('#table-names');
+            $('#disclaimer-names').hide();
+        }
     }
 }
 
@@ -150,6 +157,11 @@ function personDisplayFacts(facts) {
 
         ]).appendTo($('#table-facts'));
     }
+
+    // Hide error message
+    if(facts.length > 0) {
+        $('#disclaimer-facts').hide();
+    }
 }
 
 // Create parent tables
@@ -183,6 +195,11 @@ function personDisplayParents(response, person) {
             ]
         ]).appendTo($('#table-parents'));
     }
+
+    // Hide error
+    if(parentRelationships.length > 0) {
+        $('#disclaimer-parents').hide();
+    }
 }
 
 // Create spouse tables
@@ -214,6 +231,11 @@ function personDisplaySpouse(response, person) {
                 ['td', spouse ? spouse.getDisplayLifeSpan() : '']
             ]
         ]).appendTo($('#table-spouse'));
+    }
+
+    // Hide error
+    if(spouseRelationships.length > 0) {
+        $('#disclaimer-spouse').hide();
     }
 }
 
@@ -249,6 +271,11 @@ function personDisplayChildren(response, person) {
             ]
         ]).appendTo($('#table-children'));
     }
+
+    // Hide Error
+    if(childrenRelationships.lenght > 0) {
+        $('#disclaimer-children').hide();
+    }
 }
 
 // Create ancestry table
@@ -275,7 +302,10 @@ function personDisplayAncestry(ancestry) {
         }
     }
 
-    createPanelTable(header, rows).appendTo($('#table-ancestry'));
+    if(rows.length > 1) {
+        $('#disclaimer-ancestry').hide();
+        createPanelTable(header, rows).appendTo($('#table-ancestry'));
+    }
 }
 
 // Create descendancy table
@@ -327,7 +357,10 @@ function personDisplayDescendancy(descendancy) {
     }
 
     // Add rows and print
-    createPanelTable(header, rows).appendTo($('#table-descendancy'));
+    if(rows.length > 1) {
+        $('#disclaimer-descendancy').hide();
+        createPanelTable(header, rows).appendTo($('#table-descendancy'));
+    }
 }
 
 // Create panel changes
@@ -358,6 +391,11 @@ function personDisplayChanges(changes) {
         createPanelTable(header, rows).appendTo($('#table-changes'));
 
     }
+
+    // Hide error
+    if(changes.length > 0) {
+        $('#disclaimer-changes').hide();
+    }
 }
 
 // Create notes table
@@ -382,9 +420,9 @@ function personDisplayNotes(notes) {
     }
 
     // Print changes
-    if(notes.length != 0) {
+    if(notes.length > 0) {
+        $('#disclaimer-notes').hide();
         createPanelTable(header, rows).appendTo($('#table-notes'));
-
     }
 }
 
@@ -413,9 +451,9 @@ function personDisplaySources(sourcesRef) {
         createPanelTable(header, rows).appendTo($('#table-sources'));
     }
 
-    // Display if sources exist
+    // Hide error
     if(sources.length > 0) {
-
+        $('#disclaimer-sources').hide();
     }
 }
 
@@ -559,7 +597,12 @@ function printPersonsToTable(pos) {
           $('#table-container').fadeOut('fast');
           $('#table-container').empty();
           $('#table-container').append($table);
+          $('#table-controls').fadeIn('fast');
           $('#table-container').fadeIn('slow');
+
+          // Enable search button
+          $('#person-search-submit').text('Launch person sesarch');
+          $('#person-search-submit').removeClass('disabled');
       });
 }
 
@@ -591,14 +634,15 @@ $( document ).ready(function() {
 
         // Launch the call to get the data and prin it when you get it.
         client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {
-            //http://familysearch.github.io/familysearch-javascript-sdk/2.4/#/api/person.functions:getPersonWithRelationships
+            // Show Results
+            $('#specific-person').fadeIn('slow');
 
             // Get Main Person and print its data
             var mainPerson = personResponse.getPrimaryPerson();
             // Print name
             $('#person-name').text(mainPerson.getDisplayName() + " ");
             // Append display properties
-            personDisplayProperties(mainPerson).appendTo('#display-information');
+            personDisplayProperties(mainPerson);
             // Display person names
             personDisplayNames(mainPerson.getNames());
             // Display facts
@@ -668,8 +712,34 @@ $( document ).ready(function() {
         if($(this).hasClass('disabled')) throw new FatalError("Can't launch two at the same time!");
 
         // Diable button
-        //$(this).text('Searching now...');
-        //$(this).addClass('disabled');
+        $(this).text('Searching now...');
+        $(this).addClass('disabled');
+
+        // Hide big sections
+        $('#table-container').empty(); $('#table-container').hide();
+        $('#table-controls').hide();
+        $('#specific-person').hide();
+
+        // Empty current person selection content
+        $('#display-information').empty();
+        $('#table-names').empty();
+        $('#table-facts').empty();
+        $('#table-parents').empty();
+        $('#table-spouse').empty();
+        $('#table-children').empty();
+        $('#table-ancestry').empty();
+        $('#table-descendancy').empty();
+        $('#table-notes').empty();
+        $('#table-sources').empty();
+        $('#table-changes').empty();
+
+        // Ensure that all the displays are shown
+        $('.disclaimer').show();
+
+        // Hide errors (1)
+        $('#form-errors').addClass('hidden');
+
+        // Dislay loading icon and jump to results
 
         // Read variables and avoid inejection (no form control needed)
         var mainGender, mainExact, mainName, mainSurname, mainBirthPlace, mainBirthDate, mainDeathPlace, mainDeathDate, mainMarriagePlace, mainMarriageDate;
@@ -718,12 +788,6 @@ $( document ).ready(function() {
              $('#error-trigger').trigger('click');
              throw new FatalError("We need you to at least select a field!");
          }
-
-         // Hide errors
-         $('#form-errors').addClass('hidden');
-
-         // Dislay loading icon and jump to results
-
 
          // Append tilde if non-exact applies
          if(mainExact != "exactYes") { mainName = mainName + '~'; mainSurname = mainSurname + '~'; }
