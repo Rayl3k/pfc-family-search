@@ -330,6 +330,152 @@ function personDisplayDescendancy(descendancy) {
     createPanelTable(header, rows).appendTo($('#table-descendancy'));
 }
 
+// Create panel changes
+function personDisplayChanges(changes) {
+    // Initialize variables
+    var header = 'Last changes on person';
+    var rows = [
+        [
+            ['th', 'Title'],
+            ['th', 'Agent'],
+            ['th', 'Change Reason']
+        ]
+    ];
+
+    // Get changes details
+    var changes = changes.getChanges();
+    for(var i = 0; i < changes.length; i++) {
+        var change = changes[i];
+        rows.push([
+            ['td', change.getTitle()],
+            ['td', change.getAgentName()],
+            ['td', change.getChangeReason()]
+        ]);
+    }
+
+    // Print changes
+    if(changes.length != 0) {
+        createPanelTable(header, rows).appendTo($('#table-changes'));
+
+    }
+}
+
+// Create notes table
+function personDisplayNotes(notes) {
+    // Initialize variables
+    var header = 'Notes information';
+    var rows = [
+        [
+            ['th', 'Subject'],
+            ['th', 'Text']
+        ]
+    ];
+
+    // Get notes
+    var notes = notes.getNotes();
+    for(var i = 0; i < notes.length; i++) {
+        var note = notes[i];
+        rows.push([
+            ['td', note.getSubject()],
+            ['td', note.getText()]
+        ]);
+    }
+
+    // Print changes
+    if(notes.length != 0) {
+        createPanelTable(header, rows).appendTo($('#table-notes'));
+
+    }
+}
+
+// Create sources tables
+function personDisplaySources(sourcesRef) {
+    // Get sources
+    var sources = sourcesRef.getSourceRefs();
+
+    // Create box per each sources ref
+    for(var i = 0; i < sources.length; i++) {
+        var source = sources[i];
+        var header = '<code>' + source.getAttachedEntityUrl() + '</code>';
+        //var attribution = source.getAttribution().getAgent().getName();
+        var rows = [
+            [
+                ['th', 'Agent'],
+                ['th', 'Description']
+            ],
+            [
+                ['td', 'lula'],
+                ['td', source.getDescription()]
+            ]
+        ];
+
+        // Append to table sources
+        createPanelTable(header, rows).appendTo($('#table-sources'));
+    }
+
+    // Display if sources exist
+    if(sources.length > 0) {
+
+    }
+}
+
+// Create discussions table
+function personDisplayDiscussions(discussions) {
+    // Initialize variables
+    var header = 'Discussions';
+    var rows = [
+        [
+            ['th', 'ID'],
+            ['th', 'URL']
+        ]
+    ];
+
+    // Get Discussions
+    var discussions = discussions.getDiscussionRefs();
+    for(var i = 0; i < discussions.length; i++) {
+        var discussion = discussions[i];
+        rows.push([
+            [
+                ['td', discussion.getId()],
+                ['td', discussion.getDiscussionUrl()]
+            ]
+        ]);
+    }
+
+    if(discussions.length > 0) {
+        createPanelTable(header, rows).appendTo($('#table-discussions'));
+    }
+}
+
+// Create panel memories
+function personDisplayMemories(memories) {
+    // Initialize variables
+    var header = 'Discussions';
+    var rows = [
+        [
+            ['th', 'ID'],
+            ['th', 'URL']
+        ]
+    ];
+
+    // Get memories
+    var memories = memories.getMemoryPersonaRefs();
+    for(var i = 0; i < memories.length; i++) {
+        memory = memories[i];
+        rows.push([
+            [
+                ['td', memory.getId()],
+                ['td', memory.getMemoryPersonaRefUrl()]
+            ]
+        ]);
+    }
+
+    // Print result
+    if(memories.length > 0) {
+        createPanelTable(header, rows).appendTo($('#table-memories'));
+    }
+}
+
 // Create panel tables
 function createPanelTable(header, rows){
     // Create pannel and attach header text
@@ -467,9 +613,32 @@ $( document ).ready(function() {
             client.getAncestry(mainPerson.getId(), {generations: 8}).then(function(ancestry){
                 personDisplayAncestry(ancestry);
             });
+            // Display person descendancy (2 generations)
             client.getDescendancy(mainPerson.getId(), {generations: 2}).then(function(descendancy){
                 personDisplayDescendancy(descendancy);
             });
+            // Display notes related with person
+            mainPerson.getNotes().then(function(notes) {
+                personDisplayNotes(notes);
+            });
+            // Display sources
+            mainPerson.getSources().then(function(sources) {
+                personDisplaySources(sources);
+            });
+            // Display onGoing Discussions
+            /*mainPerson.getDiscussionRefs().then(function(discussions) {
+                personDisplayDiscussions(discussions);
+            });
+            // Display memories
+            mainPerson.getMemoryPersonaRefs().then(function(memories) {
+                personDisplayMemories(memories);
+            });*/
+            // Display Person Matches
+            // Display changes in person
+            mainPerson.getChanges(mainPerson.getId()).then(function(changes) {
+                personDisplayChanges(changes);
+            });
+
 
         })
         // Catch errors
