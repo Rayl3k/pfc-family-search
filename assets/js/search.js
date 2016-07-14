@@ -262,7 +262,8 @@ function personDisplayAncestry(ancestry) {
             ['th', 'Name']
         ]
     ];
-    // Asked for max generations so max: 255
+
+    // Asked for max generations 8 so max: 255
     for(var i = 1; i <= 255; i++) {
         if(ancestry.exists(i)) {
             var person = ancestry.getPerson(i);
@@ -275,6 +276,58 @@ function personDisplayAncestry(ancestry) {
     }
 
     createPanelTable(header, rows).appendTo($('#table-ancestry'));
+}
+
+// Create descendancy table
+function personDisplayDescendancy(descendancy) {
+    // Initial variables
+    var header = 'Descendancy in Aboville System';
+    var rows = [
+        [
+            ['th', 'Aboville #'],
+            ['th', 'ID'],
+            ['th', 'Name']
+        ]
+    ];
+
+    // Get main person
+    var person = descendancy.getPerson(1);
+    rows.push([
+        ['td', person ? person.getDescendancyNumber() : ''],
+        ['td', person ? person.getId() : ''],
+        ['td', person ? person.getDisplayName() : '']
+    ]);
+
+    // We've asked for two descendancy generations and we will set max 10 children per peson
+    for(var i = 1; i <= 10; i++) {
+        var aboville = 1 + '.' + i;
+        // Get descendancy of descendancy
+        if(descendancy.exists(aboville)) {
+            // Print child of person
+            person = descendancy.getPerson(aboville);
+            rows.push([
+                ['td', aboville],
+                ['td', person ? person.getId() : ''],
+                ['td', person ? person.getDisplayName() : '']
+            ]);
+
+            // Print children of child
+            for(var j = 1; j <= 10; j++) {
+                var aboville2 = aboville + '.' + j;
+                if(descendancy.exists(aboville2)) {
+                    person = descendancy.getPerson(aboville2);
+                    rows.push([
+                        ['td', aboville2],
+                        ['td', person ? person.getId() : ''],
+                        ['td', person ? person.getDisplayName() : '']
+                    ]);
+                }
+            }
+        }
+    }
+
+    // Add rows and print
+    createPanelTable(header, rows).appendTo($('#table-descendancy'));
 }
 
 // Create panel tables
@@ -413,9 +466,9 @@ $( document ).ready(function() {
             // Display person ancestry (255)
             client.getAncestry(mainPerson.getId(), {generations: 8}).then(function(ancestry){
                 personDisplayAncestry(ancestry);
-            })
-            .catch(function(e) {
-
+            });
+            client.getDescendancy(mainPerson.getId(), {generations: 2}).then(function(descendancy){
+                personDisplayDescendancy(descendancy);
             });
 
         })
