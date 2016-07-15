@@ -273,7 +273,7 @@ function personDisplayChildren(response, person) {
     }
 
     // Hide Error
-    if(childrenRelationships.lenght > 0) {
+    if(childrenRelationships.length > 0) {
         $('#disclaimer-children').hide();
     }
 }
@@ -535,6 +535,21 @@ function createPanelTable(header, rows){
     return $panel;
 }
 
+// Empty specific person content
+function emptySpecificPerson() {
+    $('#display-information').empty();
+    $('#table-names').empty();
+    $('#table-facts').empty();
+    $('#table-parents').empty();
+    $('#table-spouse').empty();
+    $('#table-children').empty();
+    $('#table-ancestry').empty();
+    $('#table-descendancy').empty();
+    $('#table-notes').empty();
+    $('#table-sources').empty();
+    $('#table-changes').empty();
+}
+
 // ======================================== //
 // ************ PERSON SEARCH  ************
 // ======================================== //
@@ -549,6 +564,9 @@ function printPersonsToTable(pos) {
        count = searchResponse.getResultsCount();
        start = searchResponse.getIndex();
        context = searchResponse.getContext();
+
+       // Ensure API errors are not displayed
+       $('#api-error-text').fadeOut('fast');
 
        // Log total results and starting point
        console.log("count: " + count + " start: " + start + " context: " + context);
@@ -590,6 +608,9 @@ function printPersonsToTable(pos) {
                 $('<td>').text(displayDeath).appendTo($row);
           }
 
+          // Hide loader
+          $('#table-loader').fadeOut('fast');
+
           // Update table controsl content
           $('#persons-block').text(' ' + (pos+1) + '-' + (pos+results.length) + ' ');
 
@@ -599,6 +620,21 @@ function printPersonsToTable(pos) {
           $('#table-container').append($table);
           $('#table-controls').fadeIn('fast');
           $('#table-container').fadeIn('slow');
+
+          // Enable search button
+          $('#person-search-submit').text('Launch person sesarch');
+          $('#person-search-submit').removeClass('disabled');
+      })
+      .catch(function(e) {
+          // Print error
+          $('#api-error-text').text(String(e));
+          $('#api-errors').fadeIn('fast');
+          $('#results-trigger').trigger('click');
+          console.log(e);
+
+          // Recover status
+          $('#table-loader').fadeOut('fast');
+          $('#results-zone').fadeOut('fast');
 
           // Enable search button
           $('#person-search-submit').text('Launch person sesarch');
@@ -630,17 +666,29 @@ $( document ).ready(function() {
         // Get id of clicked person
         var personID = $(this).children('.person-table-id').html().trim();
 
+        // Clean current contents + reset
+        emptySpecificPerson();
+        $('.disclaimer').show();
+
         // Display person being loaded and jump to section
+        $('#person-name').text('Loading information...');
+        $('#specific-details').hide();
+        $('#specific-person').fadeIn('fast');
+        $('#specific-loader').fadeIn('fast');
+        $('#specific-trigger').trigger('click');
 
         // Launch the call to get the data and prin it when you get it.
         client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {
-            // Show Results
-            $('#specific-person').fadeIn('slow');
-
+            // Ensure API errors are not displayed
+            $('#api-error-text').fadeOut('fast');
             // Get Main Person and print its data
             var mainPerson = personResponse.getPrimaryPerson();
+            // Hide specific loader
+            $('#specific-loader').fadeOut('fast');
             // Print name
-            $('#person-name').text(mainPerson.getDisplayName() + " ");
+            $('#person-name').text(mainPerson.getDisplayName() + " details");
+            // Show Results
+            $('#specific-details').fadeIn('slow');
             // Append display properties
             personDisplayProperties(mainPerson);
             // Display person names
@@ -682,12 +730,20 @@ $( document ).ready(function() {
             mainPerson.getChanges(mainPerson.getId()).then(function(changes) {
                 personDisplayChanges(changes);
             });
-
-
         })
         // Catch errors
         .catch(function(e) {
+            // Print error
+            $('#api-error-text').html(e);
+            $('#api-errors').fadeIn('fast');
+            $('#results-trigger').trigger('click');
+            //console.log(Object.keys(e));
+            //console.log(typeof(e.response));
             console.log(e);
+
+            // Recover status
+            $('#specific-person').fadeOut('fast');
+            $('#specific-loader').fadeOut('fast');
         });
     });
 
@@ -719,27 +775,18 @@ $( document ).ready(function() {
         $('#table-container').empty(); $('#table-container').hide();
         $('#table-controls').hide();
         $('#specific-person').hide();
+        $('#specific-details').hide();
+        $('#api-error-text').hide();
 
         // Empty current person selection content
-        $('#display-information').empty();
-        $('#table-names').empty();
-        $('#table-facts').empty();
-        $('#table-parents').empty();
-        $('#table-spouse').empty();
-        $('#table-children').empty();
-        $('#table-ancestry').empty();
-        $('#table-descendancy').empty();
-        $('#table-notes').empty();
-        $('#table-sources').empty();
-        $('#table-changes').empty();
+        emptySpecificPerson();
 
         // Ensure that all the displays are shown
         $('.disclaimer').show();
 
         // Hide errors (1)
         $('#form-errors').addClass('hidden');
-
-        // Dislay loading icon and jump to results
+        $('#api-errors').fadeOut('fast');
 
         // Read variables and avoid inejection (no form control needed)
         var mainGender, mainExact, mainName, mainSurname, mainBirthPlace, mainBirthDate, mainDeathPlace, mainDeathDate, mainMarriagePlace, mainMarriageDate;
@@ -783,11 +830,26 @@ $( document ).ready(function() {
          }
 
          if(error) {
-             // Display error of: please fill at least a field and reactivate button + abort execution
+             // Go to errors
              $('#form-errors').removeClass('hidden');
              $('#error-trigger').trigger('click');
+
+             // Display and hide sections
+             $('#results-zone').fadeOut('fast');
+             $('#table-loader').hide();
+
+             // Enable search button
+             $('#person-search-submit').text('Launch person sesarch');
+             $('#person-search-submit').removeClass('disabled');
+
+             // Throw error
              throw new FatalError("We need you to at least select a field!");
          }
+
+         // Dislay loading icon and jump to results
+         $('#table-loader').fadeIn('fast');
+         $('#results-zone').fadeIn('fast');
+         $('#results-trigger').trigger('click');
 
          // Append tilde if non-exact applies
          if(mainExact != "exactYes") { mainName = mainName + '~'; mainSurname = mainSurname + '~'; }
@@ -841,5 +903,24 @@ $( document ).ready(function() {
          // Print first batch of results
          printPersonsToTable(0);
 
+    });
+
+    // ======================================== //
+    // Smooth jumping
+    // ======================================== //
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                var targetString = String(this.hash.slice(1));
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
 });

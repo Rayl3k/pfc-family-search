@@ -197,18 +197,10 @@ $( document ).ready(function() {
                 var targetString = String(this.hash.slice(1));
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                 if (target.length) {
-                    if(targetString == "results-zone") {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top+100
-                        }, 1000);
-                        return false;
-                    }
-                    else {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
                 }
             }
         });

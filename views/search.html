@@ -106,7 +106,7 @@
         </div>
     </div>
     <!-- start: ERROR MESSAGES ZONE -->
-    <div id="form-errors" class="row hidden">
+    <div id="form-errors" class="row sm-buffer hidden">
         <div class = "col-md-12">
             <div class="alert alert-danger" role="alert">
                 <p><span class="sans-bold">Uoops!</span> It seems that you might need to correct some fields :)</p>
@@ -130,17 +130,35 @@
             <button id="person-search-submit" class="btn btn-primary form-font" role="button">Lauch person search</button>
             <a href="#results-zone" id="results-trigger" class="hidden"></a>
             <a href="#person-searcher" id="error-trigger" class="hidden"></a>
+            <a href="#specific-person" id="specific-trigger" class="hidden"></a>
         </div>
     </div>
 
 </div> <!-- basic form to search -->
 
-<!-- start: FIRST RESULTS TO BE DISPLAYED -->
-<div id="results-zone" class="container">
+<!-- start: PERSONS TABLE -->
+<div id="results-zone" class="container" style="display:none">
     <!-- section title -->
     <div class="row xxl-buffer">
         <div class="col-sm-12">
-            <h2>Person search results</h2>
+            <h2><span id="table-title">Person search results</span></h2>
+        </div>
+    </div>
+    <!-- API ERRORS -->
+    <div id="api-errors" class="row xs-buffer" style="display:none">
+        <div class="col-sm-12">
+            <div class="alert alert-danger" role="alert">
+                <p><span class="sans-bold">FamilySearch Uoops!</span> It seems that the connection with the FamilySearch API didn't end as expected. Please try again or refresh the page.</p>
+                <ul class="xs-buffer">
+                    <li><span id="api-error-text"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- loader: TABLE PERSONS -->
+    <div id="table-loader" class="row xs-buffer" style="display:none">
+        <div class="col-sm-12">
+            <img class="img-responsive center-block" src="/images/loader/Preloader_3.gif">
         </div>
     </div>
     <!-- table controls -->
@@ -163,161 +181,171 @@
     </div>
 </div>
 
-<div id="specific-person" class="container">
+<!-- start: SPECIFIC PERSON DETAILS -->
+<div id="specific-person" class="container" style="display:none">
     <!-- setion title -->
     <div class="row xxl-buffer">
         <div class="col-sm-12">
-            <h2><span id="person-name"></span>details</h2>
+            <h2><span id="person-name"></span></h2>
         </div>
     </div>
-    <!-- person: DISPLAY DATA -->
-    <div class="row">
+    <!-- loader: SPECIFIC PERSON -->
+    <div id="specific-loader" class="row xs-buffer" style="display:none">
         <div class="col-sm-12">
-            <h3>Basic Information</h3>
-        </div>
-        <div id="disclaimer-display" class="col-sm-12 disclaimer">
-            <p>No basic information available for the selected person.</p>
+            <img class="img-responsive center-block" src="/images/loader/gangnam.gif">
         </div>
     </div>
-    <div class="row xs-buffer">
-        <div id="display-information" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: NAMES -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Names</h3>
+    <!-- person: SPECIFIC DETAILS SECTIONS -->
+    <div id="specific-details" style="display:none">
+        <!-- person: DISPLAY DATA -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Basic Information<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-display" class="col-sm-12 disclaimer">
+                <p>No basic information available for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-names" class="col-sm-12 disclaimer">
-            <p>No names available for the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="display-information" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-names" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: FACTS -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Facts and Events</h3>
+        <!-- person: NAMES -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Names<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-names" class="col-sm-12 disclaimer">
+                <p>No names available for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-facts" class="col-sm-12 disclaimer">
-            <p>No facts are present for the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-names" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-facts" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: PARENTS -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Parents Information</h3>
+        <!-- person: FACTS -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Facts and Events<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-facts" class="col-sm-12 disclaimer">
+                <p>No facts are present for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-parents" class="col-sm-12 disclaimer">
-            <p>No parent relationships stored for the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-facts" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-parents" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: SPOUSE -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Spouse Information</h3>
+        <!-- person: PARENTS -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Parents Information<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-parents" class="col-sm-12 disclaimer">
+                <p>No parent relationships stored for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-spouse" class="col-sm-12 disclaimer">
-            <p>No spouses for the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-parents" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-spouse" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: CHILDREN -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Children Information</h3>
+        <!-- person: SPOUSE -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Spouse Information<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-spouse" class="col-sm-12 disclaimer">
+                <p>No spouses for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-children" class="col-sm-12 disclaimer">
-            <p>No children found for the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-spouse" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-children" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: ANCESTRY -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Ancestry Information</h3>
+        <!-- person: CHILDREN -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Children Information<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-children" class="col-sm-12 disclaimer">
+                <p>No children found for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-ancestry" class="col-sm-12 disclaimer">
-            <p>No ancestry data found for the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-children" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-ancestry" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: DESCENDANCY -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Descendancy Information</h3>
+        <!-- person: ANCESTRY -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Ancestry Information<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-ancestry" class="col-sm-12 disclaimer">
+                <p>No ancestry data found for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-descendancy" class="col-sm-12 disclaimer">
-            <p>No descendancy data found for the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-ancestry" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-descendancy" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: NOTES -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Notes recorded</h3>
+        <!-- person: DESCENDANCY -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Descendancy Information<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-descendancy" class="col-sm-12 disclaimer">
+                <p>No descendancy data found for the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-notes" class="col-sm-12 disclaimer">
-            <p>No notes related to the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-descendancy" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-notes" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!-- person: SOURCES -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Sources related</h3>
+        <!-- person: NOTES -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Notes recorded<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-notes" class="col-sm-12 disclaimer">
+                <p>No notes related to the selected person.</p>
+            </div>
         </div>
-        <div id="disclaimer-sources" class="col-sm-12 disclaimer">
-            <p>No sources related to the selected person.</p>
+        <div class="row xs-buffer">
+            <div id="table-notes" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-sources" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <!--
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Discussions involved</h3>
+        <!-- person: SOURCES -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Sources related<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-sources" class="col-sm-12 disclaimer">
+                <p>No sources related to the selected person.</p>
+            </div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-discussions" class="col-sm-12 table-bottom-0"></div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Memories / Artifacts</h3>
+        <div class="row xs-buffer">
+            <div id="table-sources" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-memories" class="col-sm-12 table-bottom-0"></div>
-    </div> -->
-    <!-- person: CHANGES -->
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Changes Record</h3>
+        <!--
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Discussions involved</h3>
+            </div>
         </div>
-        <div id="disclaimer-changes" class="col-sm-12 disclaimer">
-            <p>No changes recorded for the selected user.</p>
+        <div class="row xs-buffer">
+            <div id="table-discussions" class="col-sm-12 table-bottom-0"></div>
         </div>
-    </div>
-    <div class="row xs-buffer">
-        <div id="table-changes" class="col-sm-12 table-bottom-0"></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Memories / Artifacts</h3>
+            </div>
+        </div>
+        <div class="row xs-buffer">
+            <div id="table-memories" class="col-sm-12 table-bottom-0"></div>
+        </div> -->
+        <!-- person: CHANGES -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Changes Record<a href="#specific-person" type="button"><span class="glyphicon glyphicon-arrow-up glyph-left"></span></a></h3>
+            </div>
+            <div id="disclaimer-changes" class="col-sm-12 disclaimer">
+                <p>No changes recorded for the selected user.</p>
+            </div>
+        </div>
+        <div class="row xs-buffer">
+            <div id="table-changes" class="col-sm-12 table-bottom-0"></div>
+        </div>
     </div>
 </div>
 
