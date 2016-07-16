@@ -1,3 +1,10 @@
+// Show signout if required
+if(cookiesUtil.hasItem('logged')) {
+    $('#signOut').css('display', 'block');
+    $('#signOut').fadeIn('fast');
+    console.log("HIHO");
+}
+
 // Make log-in call
 function serverLogIn(apiToken) {
     $.ajax({
@@ -12,8 +19,10 @@ function serverLogIn(apiToken) {
     });
 }
 
+// Function to log-out from everywhere
 function serverLogOut() {
     client.invalidateAccessToken();
+    cookiesUtil.removeItem('logged');
     $.ajax({
         type: "POST",
         url: "/token/logout",

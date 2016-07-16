@@ -2,6 +2,9 @@
 function signIn() {
     // Request an access token (login)
     client.getAccessToken().then(function(testTokenValue){
+        // Create front-end cookie
+        cookiesUtil.setItem('logged', 'true');
+
         // Create server sid secure cookie
         serverLogIn(testTokenValue);
     })

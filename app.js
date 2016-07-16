@@ -45,12 +45,12 @@ app.use(bodyParser.json());
 // =================================================== //
 // Serve index page
 app.get('/', function(req, res){
-  res.render('index.html');
+    res.render('index.html');
 });
 
 // Tryout page
-app.get('/home', function(req, res) {
-    res.render('home.html');
+app.get('/login', function(req, res) {
+    res.render('login.html');
 });
 
 // Get all proposals page
@@ -133,6 +133,7 @@ app.get('/examples/search', isAuthenticated, function(req, res) {
 // Set req.session
 app.post('/token/login', function(req, res) {
     //console.log(req.body.token);
+    //var page = req.query.page;
     req.session.logged = req.session.logged || req.body.token;
     res.end('{"redirect" : "/examples"}');
 });
@@ -140,7 +141,7 @@ app.post('/token/login', function(req, res) {
 // Delete req.session
 app.post('/token/logout', function(req, res) {
     req.session = null;
-    res.end('{"redirect" : "/home"}');
+    res.end('{"redirect" : "/"}');
 });
 
 // =================================================== //
@@ -148,7 +149,7 @@ app.post('/token/logout', function(req, res) {
 // =================================================== //
 function isAuthenticated(req, res, next) {
     if(req.session.isPopulated) next();
-    else res.redirect('/');
+    else res.redirect('/login');
 }
 
 // =================================================== //

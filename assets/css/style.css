@@ -158,6 +158,10 @@ li a, li a:hover, li a:focus {
     cursor: pointer;
 }
 
+#signOut {
+    display: none;
+}
+
 /* ============================= */
 /* FOOTER                        */
 /* ============================= */
