@@ -566,7 +566,7 @@ function printPersonsToTable(pos) {
        context = searchResponse.getContext();
 
        // Ensure API errors are not displayed
-       $('#api-error-text').fadeOut('fast');
+       $('#api-errors').fadeOut('fast');
 
        // Log total results and starting point
        console.log("count: " + count + " start: " + start + " context: " + context);
@@ -680,7 +680,7 @@ $( document ).ready(function() {
         // Launch the call to get the data and prin it when you get it.
         client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {
             // Ensure API errors are not displayed
-            $('#api-error-text').fadeOut('fast');
+            $('#api-errors').fadeOut('fast');
             // Get Main Person and print its data
             var mainPerson = personResponse.getPrimaryPerson();
             // Hide specific loader

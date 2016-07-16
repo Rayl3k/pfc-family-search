@@ -2,7 +2,8 @@ var express = require('express'),
     app = express(),
     path = require('path'),
     mustacheExpress = require('mustache-express'),
-    cookieParser = require('cookie-parser');
+    cookieParser = require('cookie-parser'),
+    cookieSession = require('cookie-session');
 
 var projectProposals = require("./assets/js/projectProposals.js");
 var projectProposalsIns = new projectProposals();

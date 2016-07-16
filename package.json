@@ -9,9 +9,10 @@
     "url": "https://github.com/sinh15/pfc-family-search"
   },
   "dependencies": {
-    "express": "4.13.4",
+    "express": "4.14.0",
     "mustache-express": "1.2.2",
     "cookie-parser": "1.4.1",
+    "cookie-session": "2.0.0-alpha.1",
     "bootstrap": "3.3.6"
   }
 }
