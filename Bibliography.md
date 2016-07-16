@@ -85,3 +85,4 @@ https://familysearch.org/indexing/help/faq#/
 ## Body parser and post parameters
 https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
 https://api.jquery.com/jquery.post/
+http://stackoverflow.com/questions/22820734/how-to-return-success-from-ajax-post-in-node-js

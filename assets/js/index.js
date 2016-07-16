@@ -4,12 +4,6 @@ function signIn() {
     client.getAccessToken().then(function(testTokenValue){
         // Create server sid secure cookie
         serverLogIn(testTokenValue);
-
-        // Treat response
-        $("#loading-container").fadeOut("fast");
-        setTimeout(function() {
-            window.location = document.location.protocol + '//' + document.location.host + '/home';
-        }, 300);
     })
     // Error handling
     .catch(function(e){

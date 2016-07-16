@@ -134,13 +134,13 @@ app.get('/examples/search', isAuthenticated, function(req, res) {
 app.post('/token/login', function(req, res) {
     //console.log(req.body.token);
     req.session.logged = req.session.logged || req.body.token;
-    res.redirect('/home');
+    res.end('{"redirect" : "/examples"}');
 });
 
 // Delete req.session
 app.post('/token/logout', function(req, res) {
     req.session = null;
-    res.redirect('/');
+    res.end('{"redirect" : "/home"}');
 });
 
 // =================================================== //

@@ -3,8 +3,12 @@ function serverLogIn(apiToken) {
     $.ajax({
         type: "POST",
         url: "/token/login",
-        data: {token: apiToken},
-        dataType: 'application/json'
+        data: JSON.stringify({token: apiToken}),
+        dataType: 'json',
+        contentType: 'application/json; charset=UTF-8',
+        success: function(data) {
+            window.location.replace(document.location.protocol + '//' + document.location.host + data.redirect);
+        }
     });
 }
 
@@ -12,7 +16,12 @@ function serverLogOut() {
     client.invalidateAccessToken();
     $.ajax({
         type: "POST",
-        url: "/token/logout"
+        url: "/token/logout",
+        dataType: 'json',
+        contentType: 'application/json; charset=UTF-8',
+        success: function(data) {
+            window.location.replace(document.location.protocol + '//' + document.location.host + data.redirect);
+        }
     });
 }
 
@@ -29,10 +38,5 @@ $( document ).ready(function() {
     // Signout function
     $('#signOut').click(function() {
         serverLogOut();
-
-        $("#loading-container").fadeOut("fast");
-        setTimeout(function() {
-            window.location = document.location.protocol + '//' + document.location.host + '/';
-        }, 300);
     });
 });
