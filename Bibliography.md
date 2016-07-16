@@ -74,3 +74,14 @@ http://api.jquery.com/on/#direct-and-delegated-events
 http://stackoverflow.com/questions/10920355/attaching-click-event-to-a-jquery-object-not-yet-added-to-the-dom
 
 ## pre-load images
+http://stackoverflow.com/questions/15813571/javascript-html-load-image-in-the-background-asynchronously
+
+## Cookie session
+https://github.com/expressjs/cookie-session
+
+## Indexing helper
+https://familysearch.org/indexing/help/faq#/
+
+## Body parser and post parameters
+https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
+https://api.jquery.com/jquery.post/

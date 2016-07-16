@@ -1,9 +1,12 @@
+// =================================================== //
+// CREATE ALL REQUIRED VARIABLES
+// =================================================== //
 var express = require('express'),
     app = express(),
     path = require('path'),
     mustacheExpress = require('mustache-express'),
-    cookieParser = require('cookie-parser'),
-    cookieSession = require('cookie-session');
+    cookieSession = require('cookie-session'),
+    bodyParser = require('body-parser');
 
 var projectProposals = require("./assets/js/projectProposals.js");
 var projectProposalsIns = new projectProposals();
@@ -25,56 +28,38 @@ app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // =================================================== //
+// COOKIES MANAGEMENT + POST DATA
+// =================================================== //
+// Use cookie-session
+app.use(cookieSession({
+    name: 'session',
+    keys: ['misaholdrin', 'tommarvoloriddle']
+}));
+
+// Prepare server to recieve json bodies
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// =================================================== //
 // SET ROUTER PROPERTIES
 // =================================================== //
-app.use(cookieParser());
-
 // Serve index page
 app.get('/', function(req, res){
   res.render('index.html');
 });
 
 // Tryout page
-app.get('/home', isAuthenticated, function(req, res) {
+app.get('/home', function(req, res) {
     res.render('home.html');
 });
 
-// Surnames example page
-app.get('/examples/surnames', isAuthenticated, function(req, res) {
-    var europe = countryParametersIns.getCountries("EU");
-    var northAmerica = countryParametersIns.getCountries("NA");
-    var southAmerica = countryParametersIns.getCountries("SA");
-    var oceania = countryParametersIns.getCountries("OC");
-    var asia = countryParametersIns.getCountries("AS");
-    var africa = countryParametersIns.getCountries("AF");
-
-    res.render('surnames.html', {
-        europe : europe,
-        northAmerica : northAmerica,
-        southAmerica : southAmerica,
-        oceania : oceania,
-        asia : asia,
-        africa: africa
-    });
-});
-
-// Facts example page
-app.get('/examples/facts', isAuthenticated, function(req, res) {
-    res.render('facts.html');
-});
-
-// Search example page
-app.get('/examples/search', isAuthenticated, function(req, res) {
-    res.render('search.html');
-})
-
 // Get all proposals page
-app.get('/proposals', isAuthenticated, function(req, res) {
+app.get('/proposals', function(req, res) {
     res.render('proposals.html');
 });
 
 // Get projectProposals page
-app.get('/proposals/:project', isAuthenticated, function(req, res) {
+app.get('/proposals/:project', function(req, res) {
 
     var caption1 = projectProposalsIns.getExample(req.params.project);
     var name = caption1[0];
@@ -113,9 +98,57 @@ app.get('/examples', isAuthenticated, function(req, res) {
     res.render('examples.html');
 });
 
+// Surnames example page
+app.get('/examples/surnames', isAuthenticated, function(req, res) {
+    var europe = countryParametersIns.getCountries("EU");
+    var northAmerica = countryParametersIns.getCountries("NA");
+    var southAmerica = countryParametersIns.getCountries("SA");
+    var oceania = countryParametersIns.getCountries("OC");
+    var asia = countryParametersIns.getCountries("AS");
+    var africa = countryParametersIns.getCountries("AF");
+
+    res.render('surnames.html', {
+        europe : europe,
+        northAmerica : northAmerica,
+        southAmerica : southAmerica,
+        oceania : oceania,
+        asia : asia,
+        africa: africa
+    });
+});
+
+// Facts example page
+app.get('/examples/facts', isAuthenticated, function(req, res) {
+    res.render('facts.html');
+});
+
+// Search example page
+app.get('/examples/search', isAuthenticated, function(req, res) {
+    res.render('search.html');
+})
+
+// =================================================== //
+// SESSION MANAGEMENT
+// =================================================== //
+// Set req.session
+app.post('/token/login', function(req, res) {
+    //console.log(req.body.token);
+    req.session.logged = req.session.logged || req.body.token;
+    res.redirect('/home');
+});
+
+// Delete req.session
+app.post('/token/logout', function(req, res) {
+    req.session = null;
+    res.redirect('/');
+});
+
+// =================================================== //
+// AUTHENTICATION VALIDATION
+// =================================================== //
 function isAuthenticated(req, res, next) {
-    if(!req.cookies.FS_ACCESS_TOKEN_1) res.redirect('/');
-    else next();
+    if(req.session.isPopulated) next();
+    else res.redirect('/');
 }
 
 // =================================================== //
