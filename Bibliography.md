@@ -89,3 +89,6 @@ http://stackoverflow.com/questions/22820734/how-to-return-success-from-ajax-post
 
 ## LOCAL STORAGE
 http://www.w3schools.com/html/html5_webstorage.asp
+
+## IMAGE OPTIMIZER
+http://optimizilla.com/

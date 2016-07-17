@@ -109,7 +109,8 @@ app.get('/proposals/:project', function(req, res) {
         subtitleDesktop: params[3],
         subtitleTablet: params[4],
         button: params[5],
-        buttonHref: '/proposals'
+        buttonHref: '/proposals',
+        listKeyword: 'proposals'
     });
 });
 
@@ -151,7 +152,8 @@ app.get('/examples/surnames', isAuthenticated, function(req, res) {
         subtitleDesktop: params[3],
         subtitleTablet: params[4],
         button: params[5],
-        buttonHref: '/examples'
+        buttonHref: '/examples',
+        listKeyword: 'examples'
     });
 });
 
@@ -165,7 +167,8 @@ app.get('/examples/facts', isAuthenticated, function(req, res) {
         subtitleDesktop: params[3],
         subtitleTablet: params[4],
         button: params[5],
-        buttonHref: '/examples'
+        buttonHref: '/examples',
+        listKeyword: 'examples'
     });
 });
 
@@ -179,7 +182,8 @@ app.get('/examples/search', isAuthenticated, function(req, res) {
         subtitleDesktop: params[3],
         subtitleTablet: params[4],
         button: params[5],
-        buttonHref: '/examples'
+        buttonHref: '/examples',
+        listKeyword: 'examples'
     });
 })
 

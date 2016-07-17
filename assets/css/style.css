@@ -197,12 +197,12 @@ li a, li a:hover, li a:focus {
 
 /* examples */
 .titleExamples {
-  background-image: url('/images/interactiveExamplesBackground.png');
+  background-image: url('/images/headers/examples-min.png');
 }
 
 /* proposals */
 .titleProposals {
-  background-image: url('/images/proposals.png');
+  background-image: url('/images/headers/proposals-min.png');
 }
 
 /* Example 1 background image location */
@@ -217,17 +217,17 @@ li a, li a:hover, li a:focus {
 
 /* Example surnames */
 .exampleSurnames {
-    background-image: url('/images/exampleSurnames.jpg');
+    background-image: url('/images/headers/surnames-min.png');
 }
 
 /* Example Facts */
 .exampleFacts {
-    background-image: url('/images/exampleFacts.jpg');
+    background-image: url('/images/headers/facts-min.png');
 }
 
 /* Example search */
 .exampleSearch {
-    background-image: url('/images/searchBackground.jpg');
+    background-image: url('/images/headers/search-min.png');
 }
 
 /* ============================= */
