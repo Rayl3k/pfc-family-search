@@ -180,37 +180,7 @@ li a, li a:hover, li a:focus {
 }
 
 /* ============================= */
-/* SPECIFIC PAGE CSS: Home       */
-/* ============================= */
-.title-zone {
-  background-image: url('/images/logoBackgroundTransparent.png');
-  background-repeat: repeat;
-  background-position: center center;
-  height: 400px;
-}
-
-/* ============================= */
-/* SPECIFIC PAGE CSS: EXAMPLES   */
-/* ============================= */
-.title-zone-examples {
-  background-image: url('/images/interactiveExamplesBackground.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 400px;
-}
-
-/* ============================= */
-/* SPECIFIC PAGE CSS: PROPOSALS  */
-/* ============================= */
-.title-zone-proposals {
-  background-image: url('/images/proposals.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 400px;
-}
-
-/* ============================= */
-/* SPECIFIC PAGE CSS: Examples   */
+/* TITLE ZONES                   */
 /* ============================= */
 .example-search-bkg {
     background-repeat: no-repeat;
@@ -219,16 +189,29 @@ li a, li a:hover, li a:focus {
     height: 400px;
 }
 
-/* ============================= */
-/* BACKGROUDS: Props & Exampl    */
-/* ============================= */
+.title-zone-index {
+  background-image: url('/images/logoBackgroundTransparent.png');
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+/* examples */
+.titleExamples {
+  background-image: url('/images/interactiveExamplesBackground.png');
+}
+
+/* proposals */
+.titleProposals {
+  background-image: url('/images/proposals.png');
+}
+
 /* Example 1 background image location */
 .example1 {
     background-image: url('/images/exampleBackgroundSearch.jpg');
 }
 
 /* Name popularity proposal & implementation image */
-.name-popualarity-bkg {
+.namePopularity {
     background-image: url('/images/namesCloud.jpg');
 }
 
@@ -248,7 +231,7 @@ li a, li a:hover, li a:focus {
 }
 
 /* ============================= */
-/* HEADERS SMARTPHONE            */
+/* TITLE SMARTPHONE              */
 /* ============================= */
 .title-zone-xs {
     height: 300px;

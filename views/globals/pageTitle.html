@@ -1,0 +1,53 @@
+<!-- ########################### -->
+<!--           TITLES            -->
+<!-- ########################### -->
+
+<!-- start: TITLE ZONE DESKTOP -->
+<div class="container-fluid example-search-bkg {{backgroundImage}} hidden-xs">
+    <div class="container">
+        <!-- main title -->
+        <div class="row">
+            <div class="col-md-12 xl-buffer text-center">
+                <h1 class="{{highlight}}">{{title}}</h1>
+            </div>
+        </div>
+        <!-- subtitle -->
+        <div class="row">
+            <!-- Subtitles: Desktop & Tablet -->
+            <div class="col-md-12 text-center sm-buffer hidden-sm hidden-xs">
+                <h2 class="{{highlight}} text-italic">{{subtitleDesktop}}</h2>
+            </div>
+            <div class="col-md-12 text-center sm-buffer visible-sm">
+                <h2 class="{{highlight}} text-italic">{{subtitleTablet}}</h2>
+            </div>
+        </div>
+        <!-- button -->
+        {{#button}}
+        <div class="row">
+            <div class="col-md-12 xl-buffer text-center">
+                <a class="btn btn-default md-buffer header-button" href="{{buttonHref}}" role="button">Back to examples list</a>
+            </div>
+        </div>
+        {{/button}}
+    </div>
+</div> <!-- end: TITLE ZONE DESKTOP -->
+
+<!-- start: TITLE ZONE MOBILE -->
+<div class="container-fluid example-search-bkg title-zone-xs {{backgroundImage}} visible-xs">
+    <div class="container">
+        <!-- main title -->
+        <div class="row">
+            <div class="col-xs-12 sm-buffer text-center">
+                <h1 class="{{highlight}} h1-5">{{title}}</h1>
+            </div>
+        </div>
+        <!-- button -->
+        {{#button}}
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <a class="btn btn-default md-buffer header-button" href="{{buttonHref}}" role="button">Back to proposals list</a>
+            </div>
+        </div>
+        {{/button}}
+    </div>
+</div> <!-- end: TITLE ZONE MOBILE -->

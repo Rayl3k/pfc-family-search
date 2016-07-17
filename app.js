@@ -11,6 +11,9 @@ var express = require('express'),
 var projectProposals = require("./assets/js/projectProposals.js");
 var projectProposalsIns = new projectProposals();
 
+var pageTitles = require("./assets/js/pageTitles.js");
+var pageTitlesIns = new pageTitles();
+
 var countryParameters = require("./assets/js/countryParameters.js");
 var countryParametersIns = new countryParameters();
 
@@ -43,34 +46,47 @@ app.use(bodyParser.json());
 // =================================================== //
 // SET ROUTER PROPERTIES
 // =================================================== //
-// Serve index page
-app.get('/', function(req, res){
-    res.render('index.html');
-});
-
 // Tryout page
 app.get('/login', function(req, res) {
     res.render('login.html');
 });
 
+// Serve index page
+app.get('/', function(req, res){
+    var params = pageTitlesIns.getTitle('index');
+    res.render('index.html', {
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        subtitleDesktop: params[3],
+        subtitleTablet: params[4],
+        button: params[5],
+        buttonHref: ''
+    });
+});
+
 // Get all proposals page
 app.get('/proposals', function(req, res) {
-    res.render('proposals.html');
+    var params = pageTitlesIns.getTitle('proposals');
+    res.render('proposals.html', {
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        subtitleDesktop: params[3],
+        subtitleTablet: params[4],
+        button: params[5],
+        buttonHref: ''
+    });
 });
 
 // Get projectProposals page
 app.get('/proposals/:project', function(req, res) {
 
-    var caption1 = projectProposalsIns.getExample(req.params.project);
-    var name = caption1[0];
-    var title = caption1[1];
-    var subtitle = caption1[2];
-    var goal = caption1[3];
-    var requirements = caption1[4];
-    var description = caption1[5];
-    var background = caption1[6];
-    var backgroundText = caption1[7];
-    var complexity = caption1[8];
+    var proposal = projectProposalsIns.getExample(req.params.project);
+    var goal = proposal[0];
+    var requirements = proposal[1];
+    var description = proposal[2];
+    var complexity = proposal[3];
     var complexityCSS = "width: " + complexity + "%";
     var complexityProgressBar = "";
 
@@ -78,24 +94,37 @@ app.get('/proposals/:project', function(req, res) {
     else if(complexity < 70) {complexity = "Medium Complexity"; complexityProgressBar = "progress-bar progress-bar-warning";}
     else {complexity = "High Complexity"; complexityProgressBar = "progress-bar progress-bar-danger";}
 
+    var params = pageTitlesIns.getTitle('/proposals/' + req.params.project);
+
     res.render('proposalsTemplate.html', {
-        name : name,
-        title : title,
-        subtitle : subtitle,
         goal: goal,
         requirements : requirements,
         description : description,
-        background : background,
-        backgroundText : backgroundText,
         complexity : complexity,
         complexityCSS : complexityCSS,
-        complexityProgressBar : complexityProgressBar
+        complexityProgressBar : complexityProgressBar,
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        subtitleDesktop: params[3],
+        subtitleTablet: params[4],
+        button: params[5],
+        buttonHref: '/proposals'
     });
 });
 
 // Get all examples page
 app.get('/examples', isAuthenticated, function(req, res) {
-    res.render('examples.html');
+    var params = pageTitlesIns.getTitle('examples');
+    res.render('examples.html', {
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        subtitleDesktop: params[3],
+        subtitleTablet: params[4],
+        button: params[5],
+        buttonHref: ''
+    });
 });
 
 // Surnames example page
@@ -107,24 +136,51 @@ app.get('/examples/surnames', isAuthenticated, function(req, res) {
     var asia = countryParametersIns.getCountries("AS");
     var africa = countryParametersIns.getCountries("AF");
 
+    var params = pageTitlesIns.getTitle('surnames');
+
     res.render('surnames.html', {
         europe : europe,
         northAmerica : northAmerica,
         southAmerica : southAmerica,
         oceania : oceania,
         asia : asia,
-        africa: africa
+        africa: africa,
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        subtitleDesktop: params[3],
+        subtitleTablet: params[4],
+        button: params[5],
+        buttonHref: '/examples'
     });
 });
 
 // Facts example page
 app.get('/examples/facts', isAuthenticated, function(req, res) {
-    res.render('facts.html');
+    var params = pageTitlesIns.getTitle('facts');
+    res.render('facts.html', {
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        subtitleDesktop: params[3],
+        subtitleTablet: params[4],
+        button: params[5],
+        buttonHref: '/examples'
+    });
 });
 
 // Search example page
 app.get('/examples/search', isAuthenticated, function(req, res) {
-    res.render('search.html');
+    var params = pageTitlesIns.getTitle('search');
+    res.render('search.html', {
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        subtitleDesktop: params[3],
+        subtitleTablet: params[4],
+        button: params[5],
+        buttonHref: '/examples'
+    });
 })
 
 // =================================================== //

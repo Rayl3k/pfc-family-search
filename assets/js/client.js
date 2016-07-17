@@ -53,6 +53,21 @@ var client = new FamilySearch({
     redirect_uri: document.location.protocol + '//' + document.location.host + '/',
     save_access_token: saveCookie,
     access_token: token,
+    auto_expire: true,
+    auto_signin: true,
+    expire_callback: function(data) {
+        localStorage.removeItem('token');
+        // Kill server session
+        $.ajax({
+            type: "POST",
+            url: "/token/logout",
+            dataType: 'json',
+            contentType: 'application/json; charset=UTF-8',
+            success: function(data) {
+                window.location.replace(document.location.protocol + '//' + document.location.host + data.redirect);
+            }
+        });
+    },
     environment: 'sandbox'
 });
 
