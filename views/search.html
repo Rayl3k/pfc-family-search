@@ -12,11 +12,11 @@
     <!-- sectio title -->
     <div class="row">
         <div class="col-md-12">
-            <h2>Project description</h2>
+            <h2 class="example-section">Project description</h2>
         </div>
     </div>
     <!-- text zone -->
-    <div class="row">
+    <div class="row sm-buffer">
         <div class="col-md-12">
             <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
             <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
@@ -38,7 +38,7 @@
     <!-- section title -->
     <div class="row">
         <div class="col-md-12">
-            <h2>Interactive Example</h2>
+            <h2 class="example-section">Interactive Example</h2>
         </div>
     </div>
     <!-- text zone -->
@@ -51,14 +51,11 @@
 </diV> <!-- end: INTERACTIVE EXAMPLE DESCRIPTION-->
 
 <!-- start: FORM TO SEARCH -->
-<div class="container sm-buffer" id="person-searcher">
+<div id="person-searcher" class="container sm-buffer">
     <!-- section title -->
     <div class="row">
         <div class="col-sm-12">
-            <h2>Search Form</h2>
-        </div>
-        <div class="col-sm-12">
-            <p>asdfASDF safasd fasdf adsf ajsdkf jasdñf jasdñkf jaskdñfj asdfaksdjf ñasdjf ñaksdjf ñasdj fkñasdjf kñasdjf ñkasdjf ñasdj fñasdj fakñlsd f</p>
+            <h2 class="example-section">Search Form</h2>
         </div>
     </div>
     <!-- start: ERROR MESSAGES ZONE -->
@@ -78,61 +75,64 @@
     {{> searchSpouse}}
     {{> searchFather}}
     {{> searchMother}}
+</div>  <!-- basic form to search -->
 
-
+<!-- start: SUBMIT BUTTON -->
+<div id="submit-search" class="container md-buffer">
     <!-- submit search -->
-    <div class="row xxl-buffer">
-        <div class="col-sm-12 text-center">
+    <div class="row">
+        <div class="col-sm-12 sm-buffer text-center">
             <button id="person-search-submit" class="btn btn-primary form-font" role="button">Lauch person search</button>
             <a href="#results-zone" id="results-trigger" class="hidden"></a>
             <a href="#person-searcher" id="error-trigger" class="hidden"></a>
             <a href="#specific-person" id="specific-trigger" class="hidden"></a>
         </div>
     </div>
-
-</div> <!-- basic form to search -->
+</div>
 
 <!-- start: PERSONS TABLE -->
-<div id="results-zone" class="container" style="display:none">
-    <!-- section title -->
-    <div class="row xxl-buffer">
-        <div class="col-sm-12">
-            <h2><span id="table-title">Person search results</span></h2>
-        </div>
-    </div>
-    <!-- API ERRORS -->
-    <div id="api-errors" class="row xs-buffer" style="display:none">
-        <div class="col-sm-12">
-            <div class="alert alert-danger" role="alert">
-                <p><span class="sans-bold">FamilySearch Uoops!</span> It seems that the connection with the FamilySearch API didn't end as expected. Please try again or refresh the page.</p>
-                <ul class="xs-buffer">
-                    <li><span id="api-error-text"></span></li>
-                </ul>
+<div id="results-container">
+    <div id="results-zone" class="container" style="display:none">
+        <!-- section title -->
+        <div class="row xxl-buffer">
+            <div class="col-sm-12">
+                <h2 class="example-section"><span id="table-title">Person search results</span></h2>
             </div>
         </div>
-    </div>
-    <!-- loader: TABLE PERSONS -->
-    <div id="table-loader" class="row xs-buffer" style="display:none">
-        <div class="col-sm-12">
-            <img class="img-responsive center-block" src="/images/loader/Preloader_3.gif">
+        <!-- API ERRORS -->
+        <div id="api-errors" class="row sm-buffer" style="display:none">
+            <div class="col-sm-12">
+                <div class="alert alert-danger" role="alert">
+                    <p><span class="sans-bold">FamilySearch Uoops!</span> It seems that the connection with the FamilySearch API didn't end as expected. Please try again or refresh the page.</p>
+                    <ul class="xs-buffer">
+                        <li><span id="api-error-text"></span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- table controls -->
-    <div id="table-controls" class="row">
-        <div class="col-sm-12 text-center">
-            <button id="previous-persons" type="button" class="btn btn-default btn-md">
-                <span class="glyphicon glyphicon-menu-left"></span>
-            </button>
-            <span id="controls-year"class="h3">Displaying persons:<span id="persons-block" class="sans-bold"></span>of<span id="person-totals"></span></span>
-            <button id="next-persons" type="button" class="btn btn-default btn-md">
-                <span class="glyphicon glyphicon-menu-right"></span>
-            </button>
+        <!-- loader: TABLE PERSONS -->
+        <div id="table-loader" class="row xs-buffer" style="display:none">
+            <div class="col-sm-12">
+                <img class="img-responsive center-block" src="/images/loader/Preloader_3.gif">
+            </div>
         </div>
-    </div>
-    <!-- table with persons -->
-    <div id="persons-table" class="row xs-buffer">
-        <div class="col-sm-12">
-            <div id="table-container" class="col-sm-12 sm-buffer"></div>
+        <!-- table controls -->
+        <div id="table-controls" class="row">
+            <div class="col-sm-12 text-center">
+                <button id="previous-persons" type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-menu-left"></span>
+                </button>
+                <span id="controls-year"class="h3">Displaying persons:<span id="persons-block" class="sans-bold"></span>of<span id="person-totals"></span></span>
+                <button id="next-persons" type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </button>
+            </div>
+        </div>
+        <!-- table with persons -->
+        <div id="persons-table" class="row xs-buffer">
+            <div class="col-sm-12">
+                <div id="table-container" class="col-sm-12 sm-buffer"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -142,11 +142,11 @@
     <!-- setion title -->
     <div class="row xxl-buffer">
         <div class="col-sm-12">
-            <h2><span id="person-name"></span></h2>
+            <h2 class="example-section"><span id="person-name"></span></h2>
         </div>
     </div>
     <!-- loader: SPECIFIC PERSON -->
-    <div id="specific-loader" class="row xs-buffer" style="display:none">
+    <div id="specific-loader" class="row sm-buffer" style="display:none">
         <div class="col-sm-12">
             <img class="img-responsive center-block" src="/images/loader/gangnam.gif">
         </div>

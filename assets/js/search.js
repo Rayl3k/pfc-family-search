@@ -652,7 +652,7 @@ $( document ).ready(function() {
     });
 
     // Expand/contract searchers
-    $('.searchPersonHeader').click(function () {
+    $('.collapseHeader').click(function () {
         var x = $(this).children('.personHeaderGlyph').children('.glyphicon');
         x.toggleClass('glyph-rotated');
         if(x.hasClass('glyph-rotated')) $(this).children('.personHeaderTitle').children('h3').children('.personHeaderSign').text('-');
@@ -903,6 +903,32 @@ $( document ).ready(function() {
          // Print first batch of results
          printPersonsToTable(0);
 
+    });
+
+    // ======================================== //
+    // Scroll spy
+    // ======================================== //
+    $(window).scroll(function() {
+        var windowHeight = $(window).height();
+        var personSearcher = $("#person-searcher").position().top;
+        var fromTop =  $(document).scrollTop();
+        var resultsZone = $("#results-container").position().top;
+
+        // current position
+        var currentPosition = fromTop+windowHeight;
+
+        // decide if we need to fix the search bar or not
+        if(currentPosition >= personSearcher+780) {
+            if($("#submit-search").hasClass('detached-bottom')) {
+                if(currentPosition >= resultsZone+110) $("#submit-search").toggleClass('detached-bottom', false);
+            }
+            else {
+                if(currentPosition < resultsZone) $("#submit-search").toggleClass('detached-bottom', true);
+            }
+        }
+        else {
+            $("#submit-search").toggleClass('detached-bottom', false);
+        }
     });
 
     // ======================================== //

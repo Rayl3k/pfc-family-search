@@ -240,6 +240,10 @@ li a, li a:hover, li a:focus {
 /* ============================= */
 /* SURNAMES BY REGION            */
 /* ============================= */
+.example-section {
+    border-bottom: 1px solid #2e6da4;
+}
+
 .detached-bottom {
     position: fixed;
     border-top: 1px solid #2e6da4;
@@ -301,14 +305,14 @@ li a, li a:hover, li a:focus {
 /* ============================= */
 /* SERACH PERSONS                */
 /* ============================= */
-.searchPersonHeader {
+.collapseHeader {
     display:block;
     cursor: pointer;
     color: #fff;
     background-color: #2e6da4;
 }
 
-.searchPersonHeader:hover {
+.collapseHeader:hover {
     background-color: #337ab7;
 }
 
@@ -316,7 +320,7 @@ li a, li a:hover, li a:focus {
     margin-top: 16px;
 }
 
-.searchPersonHeader h3 {
+.collapseHeader h3 {
     margin-top: 10px;
 }
 

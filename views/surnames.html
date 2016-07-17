@@ -11,11 +11,11 @@
     <!-- sectio title -->
     <div class="row">
         <div class="col-md-12">
-            <h2>Project description</h2>
+            <h2 class="example-section">Project description</h2>
         </div>
     </div>
     <!-- text zone -->
-    <div class="row">
+    <div class="row sm-buffer">
         <div class="col-md-12">
             <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
             <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
@@ -37,7 +37,7 @@
     <!-- section title -->
     <div class="row">
         <div class="col-md-12">
-            <h2>Interactive Example</h2>
+            <h2 class="example-section">Interactive Example</h2>
         </div>
     </div>
     <!-- text zone -->
@@ -53,6 +53,11 @@
 
 <!-- start: FORM TO SEARCH -->
 <div class="container sm-buffer" id="surname-searcher">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="example-section">Search Form</h2>
+        </div>
+    </div>
     <!-- section title -->
     <div class="row">
         <div class="col-md-12">
@@ -105,14 +110,19 @@
     <!-- ######################### -->
     <div id="eu-container">
         <!-- country title -->
-        <div class="row xs-buffer">
-            <div class="col-sm-12">
-                <h3>European countries</h3>
+        <div class="row md-buffer collapseHeader" data-toggle="collapse" href="#eu-countries">
+            <div class="col-sm-6 personHeaderTitle">
+                <h3><span class="personHeaderSign">-</span> European countries</h3>
+            </div>
+            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
             </div>
         </div>
-        <!-- country checkboxes -->
-        <div class="row">
-            <div class="collapse in" id="eu-countries">
+        <!-- country content -->
+        <div id="eu-countries" class="collapse in">
+            <!-- country checkboxes -->
+            <div class="row md-buffer">
                 {{#europe}}
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <label class="checkbox-inline">
@@ -121,14 +131,9 @@
                 </div>
                 {{/europe}}
             </div>
-        </div>
-        <!-- country controls -->
-        <div class="row sm-buffer">
-            <div class="col-sm-12">
-                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#eu-countries" aria-expanded="false" aria-controls="eu-countries">
-                    Collapse country list
-                </button>
-                <button id="eu-all" class="btn btn-primary checkbox-all" role="button">
+            <!-- country controls -->
+            <div class="row sm-buffer">
+                <button class="btn btn-default checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -138,15 +143,20 @@
     <!-- start: NORTH AMERICA COUNTRIES -->
     <!-- ############################## -->
     <div id="na-container">
-    <!-- section title -->
-        <div class="row md-buffer">
-            <div class="col-sm-12">
-                <h3>North-American countries</h3>
+        <!-- section title -->
+        <div class="row xxl-buffer collapseHeader" data-toggle="collapse" href="#na-countries">
+            <div class="col-sm-6 personHeaderTitle">
+                <h3><span class="personHeaderSign">+</span> North American countries</h3>
+            </div>
+            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
             </div>
         </div>
-        <!-- country checkboxes -->
-        <div class="row">
-            <div class="collapse in" id="na-countries">
+        <!-- country content -->
+        <div id="na-countries" class="collapse">
+            <!-- country checkboxes -->
+            <div class="row md-buffer">
                 {{#northAmerica}}
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <label class="checkbox-inline">
@@ -155,14 +165,9 @@
                 </div>
                 {{/northAmerica}}
             </div>
-        </div>
-        <!-- country controls -->
-        <div class="row sm-buffer">
-            <div class="col-sm-12">
-                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#na-countries" aria-expanded="false" aria-controls="na-countries">
-                    Collapse country list
-                </button>
-                <button id="na-all" class="btn btn-primary checkbox-all" role="button">
+            <!-- country controls -->
+            <div class="row sm-buffer">
+                <button class="btn btn-default checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -173,14 +178,19 @@
     <!-- ############################## -->
     <div id="sa-container">
         <!-- section title -->
-        <div class="row md-buffer">
-            <div class="col-sm-12">
-                <h3>South-American countries</h3>
+        <div class="row xxl-buffer collapseHeader" data-toggle="collapse" href="#sa-countries">
+            <div class="col-sm-6 personHeaderTitle">
+                <h3><span class="personHeaderSign">+</span> South American countries</h3>
+            </div>
+            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
             </div>
         </div>
-        <!-- country checkboxes -->
-        <div class="row">
-            <div class="collapse in" id="sa-countries">
+        <!-- country content -->
+        <div id="sa-countries" class="collapse">
+            <!-- country checkboxes -->
+            <div class="row md-buffer">
                 {{#southAmerica}}
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <label class="checkbox-inline">
@@ -189,14 +199,9 @@
                 </div>
                 {{/southAmerica}}
             </div>
-        </div>
-        <!-- country controls -->
-        <div class="row sm-buffer">
-            <div class="col-sm-12">
-                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#sa-countries" aria-expanded="false" aria-controls="sa-countries">
-                    Collapse country list
-                </button>
-                <button id="sa-all" class="btn btn-primary checkbox-all" role="button">
+            <!-- country controls -->
+            <div class="row sm-buffer">
+                <button class="btn btn-default checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -207,14 +212,19 @@
     <!-- ######################## -->
     <div id="oc-container">
         <!-- section title -->
-        <div class="row md-buffer">
-            <div class="col-sm-12">
-                <h3>Oceanian countries</h3>
+        <div class="row xxl-buffer collapseHeader" data-toggle="collapse" href="#oc-countries">
+            <div class="col-sm-6 personHeaderTitle">
+                <h3><span class="personHeaderSign">+</span> Oceanian countries</h3>
+            </div>
+            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
             </div>
         </div>
-        <!-- country checkboxes -->
-        <div class="row">
-            <div class="collapse in" id="oc-countries">
+        <!-- country content -->
+        <div id="oc-countries" class="collapse">
+            <!-- country checkboxes -->
+            <div class="row md-buffer">
                 {{#oceania}}
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <label class="checkbox-inline">
@@ -223,14 +233,9 @@
                 </div>
                 {{/oceania}}
             </div>
-        </div>
-        <!-- country controls -->
-        <div class="row sm-buffer">
-            <div class="col-sm-12">
-                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#oc-countries" aria-expanded="false" aria-controls="oc-countries">
-                    Collapse country list
-                </button>
-                <button id="oc-all" class="btn btn-primary checkbox-all" role="button">
+            <!-- country controls -->
+            <div class="row sm-buffer">
+                <button class="btn btn-default checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -241,14 +246,19 @@
     <!-- ##################### -->
     <div id="as-container">
         <!-- section title -->
-        <div class="row md-buffer">
-            <div class="col-sm-12">
-                <h3>Asian countries</h3>
+        <div class="row xxl-buffer collapseHeader" data-toggle="collapse" href="#as-countries">
+            <div class="col-sm-6 personHeaderTitle">
+                <h3><span class="personHeaderSign">+</span> Asian countries</h3>
+            </div>
+            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
             </div>
         </div>
-        <!-- country checkboxes -->
-        <div class="row">
-            <div class="collapse in" id="as-countries">
+        <!-- country content -->
+        <div id="as-countries" class="collapse">
+            <!-- country checkboxes -->
+            <div class="row md-buffer">
                 {{#asia}}
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <label class="checkbox-inline">
@@ -257,14 +267,9 @@
                 </div>
                 {{/asia}}
             </div>
-        </div>
-        <!-- country controls -->
-        <div class="row sm-buffer">
-            <div class="col-sm-12">
-                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#as-countries" aria-expanded="false" aria-controls="as-countries">
-                    Collapse country list
-                </button>
-                <button id="as-all" class="btn btn-primary checkbox-all" role="button">
+            <!-- country controls -->
+            <div class="row sm-buffer">
+                <button class="btn btn-default checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>
@@ -275,14 +280,19 @@
     <!-- ####################### -->
     <div id="af-container">
         <!-- section title -->
-        <div class="row md-buffer">
-            <div class="col-sm-12">
-                <h3>African countries</h3>
+        <div class="row xxl-buffer collapseHeader" data-toggle="collapse" href="#af-countries">
+            <div class="col-sm-6 personHeaderTitle">
+                <h3><span class="personHeaderSign">+</span> African countries</h3>
+            </div>
+            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
             </div>
         </div>
-        <!-- country checkboxes -->
-        <div class="row">
-            <div class="collapse in" id="af-countries">
+        <!-- country content -->
+        <div id="af-countries" class="collapse">
+            <!-- country checkboxes -->
+            <div class="row md-buffer">
                 {{#africa}}
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <label class="checkbox-inline">
@@ -291,14 +301,9 @@
                 </div>
                 {{/africa}}
             </div>
-        </div>
-        <!-- country controls -->
-        <div class="row sm-buffer">
-            <div class="col-sm-12">
-                <button class="btn btn-default exp-button" role="button" data-toggle="collapse" href="#af-countries" aria-expanded="false" aria-controls="af-countries">
-                    Collapse country list
-                </button>
-                <button id="af-all" class="btn btn-primary checkbox-all" role="button">
+            <!-- country controls -->
+            <div class="row sm-buffer">
+                <button class="btn btn-default checkbox-all" role="button">
                     Select All Countries
                 </button>
             </div>

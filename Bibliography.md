@@ -92,3 +92,9 @@ http://www.w3schools.com/html/html5_webstorage.asp
 
 ## IMAGE OPTIMIZER
 http://optimizilla.com/
+
+## GA ON LOCALHOST
+http://stackoverflow.com/questions/4375447/can-you-test-google-analytics-on-a-localhost-address
+
+## External IP address
+http://myexternalip.com/

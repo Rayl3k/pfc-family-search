@@ -191,6 +191,14 @@ $( document ).ready(function() {
         }
     });
 
+    // Expand/contract countries
+    $('.collapseHeader').click(function () {
+        var x = $(this).children('.personHeaderGlyph').children('.glyphicon');
+        x.toggleClass('glyph-rotated');
+        if(x.hasClass('glyph-rotated')) $(this).children('.personHeaderTitle').children('h3').children('.personHeaderSign').text('-');
+        else $(this).children('.personHeaderTitle').children('h3').children('.personHeaderSign').text('+');
+    });
+
     // ======================================== //
     // inline-validation
     // ======================================== //
@@ -425,22 +433,24 @@ $( document ).ready(function() {
         // decide if we need to fix the search bar or not
         if(currentPosition >= countryList+160) {
             if($("#submit-search").hasClass('detached-bottom')) {
-                if(currentPosition >= resultsZone+80) $("#submit-search").toggleClass('detached-bottom', false);
+                if(currentPosition >= resultsZone+110) $("#submit-search").toggleClass('detached-bottom', false);
             }
             else {
-                var submitZone = $("#submit-search").position().top;
-                if(currentPosition < submitZone+70) $("#submit-search").toggleClass('detached-bottom', true);
+                if(currentPosition < resultsZone) $("#submit-search").toggleClass('detached-bottom', true);
             }
         }
         else {
             $("#submit-search").toggleClass('detached-bottom', false);
         }
 
+        // controls detach
         if(fromTop >= graphs-80) {
             $("#controls-block").addClass('detached-top', true);
+            $('#graphs').css('margin-top', '109px');
         }
         else {
             $("#controls-block").removeClass('detached-top', false);
+            $('#graphs').css('margin-top', '0px');
         }
     });
 
