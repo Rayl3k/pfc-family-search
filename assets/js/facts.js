@@ -156,6 +156,10 @@ $( document ).ready(function() {
         // Initialize variables
         var firstYear = centralYear-5;
 
+        // Send GA event
+        var label = 'facts_'+factSelected+'_'+firstYear+'_'+(parseInt(centralYear)+5)+'_'+ place.replace(/\s+/g, '');
+        sendEvent('familysearch', 'facts', label);
+
         // Get data from family search
         for(var i = 0; i < 11; i++) {
                         // Delay all calls to the API by apiDELAY param

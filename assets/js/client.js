@@ -24,6 +24,8 @@ function serverLogIn(apiToken) {
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
         success: function(data) {
+            // Send Event + redirect
+            sendEvent('', 'session', 'login');
             window.location.replace(document.location.protocol + '//' + document.location.host + data.redirect);
         }
     });
@@ -42,6 +44,8 @@ function serverLogOut() {
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
         success: function(data) {
+            // Send Event + redirect
+            sendEvent('', 'session', 'logout');
             window.location.replace(document.location.protocol + '//' + document.location.host + data.redirect);
         }
     });

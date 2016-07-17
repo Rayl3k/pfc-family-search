@@ -900,6 +900,10 @@ $( document ).ready(function() {
          params = removeEmptyProperties(params);
          context = '';
 
+         // Send GA event
+         var label = 'personSearch_'+(Object.keys(params).length-2);
+         sendEvent('familysearch', 'personSearch', label);
+
          // Print first batch of results
          printPersonsToTable(0);
 

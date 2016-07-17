@@ -347,6 +347,11 @@ $( document ).ready(function() {
                 years.push(auxYear);
             }
         }
+        else interval = 0;
+
+        // Send GA event
+        var label = 'surnames_'+countries.length+'_'+years.length+'_'+firstYear+'_'+interval+'_'+inputSurname.replace(/\s+/g, '');
+        sendEvent('familysearch', 'surnames', label);
 
         // Waiting: Show estimated duration & surname
         var searchDuration = countries.length*years.length;
