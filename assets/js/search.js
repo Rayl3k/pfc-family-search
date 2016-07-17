@@ -733,7 +733,6 @@ $( document ).ready(function() {
         })
         // Catch errors
         .catch(function(e) {
-            console.log("DOING SOMETHING");
             // Print error
             $('#api-error-text').html(e);
             $('#api-errors').fadeIn('fast');

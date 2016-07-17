@@ -132,8 +132,6 @@ app.get('/examples/search', isAuthenticated, function(req, res) {
 // =================================================== //
 // Set req.session
 app.post('/token/login', function(req, res) {
-    //console.log(req.body.token);
-    //var page = req.query.page;
     req.session.logged = req.session.logged || req.body.token;
     res.end('{"redirect" : "/examples"}');
 });

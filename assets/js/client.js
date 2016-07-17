@@ -1,8 +1,18 @@
+// Global Variables
+var token;
+var saveCookie = false;
+
+// Decide if token in local storage / cookie
+if (typeof(Storage) !== "undefined") {
+    token = localStorage.token ? localStorage.token : '';
+} else {
+    saveCookie = true;
+}
+
 // Show signout if required
-if(cookiesUtil.hasItem('logged')) {
+if(localStorage.token) {
     $('#signOut').css('display', 'block');
     $('#signOut').fadeIn('fast');
-    console.log("HIHO");
 }
 
 // Make log-in call
@@ -21,8 +31,11 @@ function serverLogIn(apiToken) {
 
 // Function to log-out from everywhere
 function serverLogOut() {
+    // Delete all local instances of the session
     client.invalidateAccessToken();
-    cookiesUtil.removeItem('logged');
+    localStorage.removeItem('token');
+
+    // Kill server session
     $.ajax({
         type: "POST",
         url: "/token/logout",
@@ -34,12 +47,13 @@ function serverLogOut() {
     });
 }
 
-// Setup the SDK client
+// Create client instance
 var client = new FamilySearch({
-  client_id: 'a02j000000E5DXqAAN',
-  redirect_uri: document.location.protocol + '//' + document.location.host + '/',
-  save_access_token: true,
-  environment: 'sandbox'
+    client_id: 'a02j000000E5DXqAAN',
+    redirect_uri: document.location.protocol + '//' + document.location.host + '/',
+    save_access_token: saveCookie,
+    access_token: token,
+    environment: 'sandbox'
 });
 
 // Function to logOut
