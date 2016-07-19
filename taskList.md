@@ -8,18 +8,10 @@
 - https://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro
 
 # Huge implementations to be done OVERALL (due date 17/06/2016)
-- Logout function
-- Refactor headers into PROPERTIES
 - catchErrors and display them if calls to FS fail
 - Errors on search to be changed to append
 - Fill implemented examples proposals + text
 - Review whole code
-
-# Functionalities missing points (due date 17/06/2016)
-- Add loading
-- Control display/hide stuff
-- Display person data in detail
-- Play with scrolling?
 
 # Other project ideas
 - Indexing visual recognition helper / assistant
