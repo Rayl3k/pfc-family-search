@@ -58,9 +58,10 @@ app.get('/', function(req, res){
         backgroundImage: params[0],
         highlight: params[1],
         title: params[2],
-        subtitleDesktop: params[3],
-        subtitleTablet: params[4],
-        button: params[5],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
         buttonHref: ''
     });
 });
@@ -72,9 +73,10 @@ app.get('/proposals', function(req, res) {
         backgroundImage: params[0],
         highlight: params[1],
         title: params[2],
-        subtitleDesktop: params[3],
-        subtitleTablet: params[4],
-        button: params[5],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
         buttonHref: ''
     });
 });
@@ -106,9 +108,10 @@ app.get('/proposals/:project', function(req, res) {
         backgroundImage: params[0],
         highlight: params[1],
         title: params[2],
-        subtitleDesktop: params[3],
-        subtitleTablet: params[4],
-        button: params[5],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
         buttonHref: '/proposals',
         listKeyword: 'proposals'
     });
@@ -121,9 +124,10 @@ app.get('/examples', isAuthenticated, function(req, res) {
         backgroundImage: params[0],
         highlight: params[1],
         title: params[2],
-        subtitleDesktop: params[3],
-        subtitleTablet: params[4],
-        button: params[5],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
         buttonHref: ''
     });
 });
@@ -149,9 +153,10 @@ app.get('/examples/surnames', isAuthenticated, function(req, res) {
         backgroundImage: params[0],
         highlight: params[1],
         title: params[2],
-        subtitleDesktop: params[3],
-        subtitleTablet: params[4],
-        button: params[5],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
         buttonHref: '/examples',
         listKeyword: 'examples'
     });
@@ -164,9 +169,10 @@ app.get('/examples/facts', isAuthenticated, function(req, res) {
         backgroundImage: params[0],
         highlight: params[1],
         title: params[2],
-        subtitleDesktop: params[3],
-        subtitleTablet: params[4],
-        button: params[5],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
         buttonHref: '/examples',
         listKeyword: 'examples'
     });
@@ -179,9 +185,10 @@ app.get('/examples/search', isAuthenticated, function(req, res) {
         backgroundImage: params[0],
         highlight: params[1],
         title: params[2],
-        subtitleDesktop: params[3],
-        subtitleTablet: params[4],
-        button: params[5],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
         buttonHref: '/examples',
         listKeyword: 'examples'
     });

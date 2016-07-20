@@ -11,7 +11,14 @@
 - catchErrors and display them if calls to FS fail
 - Errors on search to be changed to append
 - Fill implemented examples proposals + text
-- Review whole code
+
+# Content tasks
+- Fit proposals title section & page
+- Fit examples title section & page
+- Fit surname title section & page
+- Fit facts title section & page
+- Fit personSearch title section & page
+- Change content of LOGIN page to reflect that it's not entry point anymore
 
 # Other project ideas
 - Indexing visual recognition helper / assistant
