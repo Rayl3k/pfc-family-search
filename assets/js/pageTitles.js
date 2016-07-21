@@ -17,9 +17,9 @@ function titleProposals() {
     var background = "titleProposals";
     var highlight = "lightbox-text";
     var title = "PROJECT PROPOSALS";
-    var titleMobile = "FS API STUDY";
-    var subtitleDesktop = "Wondering what could you implement with the family search API? Check the following project proposals";
-    var subtitleTablet = "Reduced subtitle just to fit the size and rock";
+    var titleMobile = "PROJECT PROPOSALS";
+    var subtitleDesktop = "This area contains the possible project proposals with some considerations about each one and the feature details of the implemented examples.";
+    var subtitleTablet = "This area contains the possible project proposals with some considerations about each one.";
     var button = false;
 
     // Return parameters
@@ -31,7 +31,7 @@ function titleExamples() {
     var background = "titleExamples";
     var highlight = "darkbox-text";
     var title = "IMPLEMENTED EXAMPLES";
-    var titleMobile = "FS API STUDY";
+    var titleMobile = "IMPLEMENTED EXAMPLES";
     var subtitleDesktop = "Play with some examples that illustrate how data from the FamilySearch API can be accessed and played with";
     var subtitleTablet = "Reduced subtitle just to fit the size and rock";
     var button = false;

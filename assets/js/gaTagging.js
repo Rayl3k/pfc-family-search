@@ -11,7 +11,7 @@ function sendEvent(category, action, label, value) {
     category = category != '' ? category : getCategory();
     action = action != '' ? action : null;
     label = action != '' ? label : null;
-    value = typeof action !== 'undefined' ? value : null;
+    value = typeof value !== 'undefined' ? value : null;
 
     ga('send', 'event', category, action, label)
 }
@@ -28,5 +28,17 @@ $( document ).ready(function() {
         var dest = $(this).attr('href').slice(1);
         dest = dest != '' ? dest : 'home';
         sendEvent('', 'navbar', dest);
+    });
+
+    // Tagging proposal-box
+    $('.proposal-box').click(function () {
+        var label = 'future_proposal_' + $(this).attr('id').split('-')[2];
+        sendEvent('proposals', 'future_proposals', label);
+    });
+
+    // Tagging implemented-box
+    $('.implemented-box').click(function () {
+        var label = 'implemented_example' + $(this).attr('id').split('-')[2];
+        sendEvent('proposals', 'implemented_examples', label);
     });
 });
