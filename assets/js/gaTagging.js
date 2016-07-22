@@ -38,7 +38,7 @@ $( document ).ready(function() {
 
     // Tagging implemented-box
     $('.implemented-box').click(function () {
-        var label = 'implemented_example' + $(this).attr('id').split('-')[2];
-        sendEvent('proposals', 'implemented_examples', label);
+        var label = 'implemented_example_' + $(this).attr('id').split('-')[2];
+        sendEvent('', 'implemented_examples', label);
     });
 });
