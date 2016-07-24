@@ -29,7 +29,7 @@ function titleProposals() {
 // titles: EXAMPLES
 function titleExamples() {
     var background = "titleExamples";
-    var highlight = "darkbox-text";
+    var highlight = "lightbox-text";
     var title = "IMPLEMENTED EXAMPLES";
     var titleMobile = "IMPLEMENTED EXAMPLES";
     var subtitleDesktop = "Play with some examples that illustrate how data from the FamilySearch API can be accessed and played with";

@@ -183,26 +183,25 @@ li a, li a:hover, li a:focus {
 /* TITLE ZONES                   */
 /* ============================= */
 .example-search-bkg {
-    background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     border-bottom: 1px solid #333333;
     height: 400px;
+    opacity: 0.9;
 }
 
 .title-zone-index {
-  background-image: url('/images/logoBackgroundTransparent.png');
-  background-repeat: repeat;
-  background-position: center center;
+  background-image: url('/images/headers/homepage-min.png');
 }
 
 /* examples */
 .titleExamples {
-  background-image: url('/images/headers/examples-min.png');
+  background-image: url('/images/headers/examples2-min.png');
 }
 
 /* proposals */
 .titleProposals {
-  background-image: url('/images/headers/proposals-min.png');
+  background-image: url('/images/headers/proposals2-min.png');
 }
 
 /* Example 1 background image location */
@@ -217,17 +216,17 @@ li a, li a:hover, li a:focus {
 
 /* Example surnames */
 .exampleSurnames {
-    background-image: url('/images/headers/surnames-min.png');
+    background-image: url('/images/headers/surnames2-min.png');
 }
 
 /* Example Facts */
 .exampleFacts {
-    background-image: url('/images/headers/facts-min.png');
+    background-image: url('/images/headers/facts2-min.png');
 }
 
 /* Example search */
 .exampleSearch {
-    background-image: url('/images/headers/search-min.png');
+    background-image: url('/images/headers/search2-min.png');
 }
 
 /* ============================= */

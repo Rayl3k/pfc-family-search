@@ -10,18 +10,22 @@ $( document ).ready(function() {
     });
 
 
-    // reroute when clicked examplple box
+    // reroute when clicked examplple box depending on current path
     $("#implemented-box-1").click(function() {
-        window.location = document.location.protocol + '//' + document.location.host + '/examples/surnames';
+        var path = location.pathname.split('?')[0].slice(1);
+        var redirect = path == "proposals" ? '/proposals/search' : '/examples/search';
+        window.location = document.location.protocol + '//' + document.location.host + redirect;
     });
 
     $("#implemented-box-2").click(function() {
-        window.location = document.location.protocol + '//' + document.location.host + '/examples/facts';
+        var path = location.pathname.split('?')[0].slice(1);
+        var redirect = path == "proposals" ? '/proposals/surnames' : '/examples/surnames';
+        window.location = document.location.protocol + '//' + document.location.host + redirect;
     });
 
     $("#implemented-box-3").click(function() {
-        window.location = document.location.protocol + '//' + document.location.host + '/examples/search';
+        var path = location.pathname.split('?')[0].slice(1);
+        var redirect = path == "proposals" ? '/proposals/facts' : '/examples/facts';
+        window.location = document.location.protocol + '//' + document.location.host + redirect;
     });
-
-
 });
