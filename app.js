@@ -66,6 +66,20 @@ app.get('/', function(req, res){
     });
 });
 
+app.get('/background', function(req, res) {
+    var params = pageTitlesIns.getTitle('background');
+    res.render('background.html', {
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
+        buttonHref: ''
+    });
+});
+
 // Get all proposals page
 app.get('/proposals', function(req, res) {
     var params = pageTitlesIns.getTitle('proposals');

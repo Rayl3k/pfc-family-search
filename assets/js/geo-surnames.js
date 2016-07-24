@@ -29,6 +29,9 @@ var countriesConsulted;
 var yearsConsulted;
 var apiDELAY = 2000;
 var currentPrinted;
+// GOOGLE ANALYTICS errors
+//    gaError => variable to control that same error is not sent multiple times
+var gaError = 0;
 
 // ========================================================================== //
 
@@ -261,6 +264,9 @@ $( document ).ready(function() {
         countriesConsulted = 0;
         yearsConsulted = 0;
 
+        // Reset gaError
+        gaError = 0;
+
         // Get all parameters and avoid injection
         $(".form-checkbox").each(function(index) {
             if($(this).is(':checked')) {
@@ -410,6 +416,13 @@ $( document ).ready(function() {
                             // Enable search button
                             $('#submit').text('Launch surname sesarch');
                             $('#submit').removeClass('disabled');
+
+                            // Send ga error
+                            if(!gaError) {
+                                var error = 'surnames_error_' + String(e.message).replace(' ', '_').toLowerCase();
+                                sendEvent('familysearch', 'surnames', error);
+                                gaError = 1;
+                            }
                         });
                     }, apiDELAY*k+(i*countries.length*apiDELAY));
                 }(k, i));

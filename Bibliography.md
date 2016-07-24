@@ -98,3 +98,6 @@ http://stackoverflow.com/questions/4375447/can-you-test-google-analytics-on-a-lo
 
 ## External IP address
 http://myexternalip.com/
+
+## Photoshop vintage
+http://mashable.com/2013/10/20/photoshop-instagram-filters/#1cxYuiSCngqb

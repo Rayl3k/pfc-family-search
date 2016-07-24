@@ -637,6 +637,10 @@ function printPersonsToTable(pos) {
           // Enable search button
           $('#person-search-submit').text('Launch person sesarch');
           $('#person-search-submit').removeClass('disabled');
+
+          // Send ga error
+          var error = 'personSearch_error_' + String(e.message).replace(' ', '_').toLowerCase();
+          sendEvent('familysearch', 'personSearch', error);
       });
 }
 
@@ -739,6 +743,10 @@ $( document ).ready(function() {
             // Recover status
             $('#specific-person').fadeOut('fast');
             $('#specific-loader').fadeOut('fast');
+
+            // Send ga error
+            var error = 'selectPerson_error_' + String(e.message).replace(' ', '_').toLowerCase();
+            sendEvent('familysearch', 'personSearch', error);
         });
     });
 

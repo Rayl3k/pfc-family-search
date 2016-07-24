@@ -10,7 +10,8 @@ function signIn() {
     })
     // Error handling
     .catch(function(e){
-        console.log("You could not login");
+        var error = 'login_error_' + String(e.message).replace(' ', '_').toLowerCase();
+        sendEvent('', 'session', error);
         location.reload();
     });
 }

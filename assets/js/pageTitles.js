@@ -12,6 +12,20 @@ function titleIndex() {
     return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
 }
 
+// titles: BACKGROUND
+function titleBackground() {
+    var background = "titleBackground";
+    var highlight = "lightbox-text";
+    var title = "PROJECT BACKGROUND";
+    var titleMobile = "PROJECT BAKCGROUND";
+    var subtitleDesktop = "Short project introduction to its objectives and motivations behind.";
+    var subtitleTablet = "Introduction to the objectives and motivations.";
+    var button = false;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
 // titles: PROPOSALS
 function titleProposals() {
     var background = "titleProposals";
@@ -90,6 +104,7 @@ var pageTitles = function () {
     /* Get specific example */
     self.getTitle = function (keyword) {
         if(keyword == 'index') return titleIndex();
+        else if(keyword == "background") return titleBackground();
         else if(keyword == 'proposals') return titleProposals();
         else if(keyword == 'examples') return titleExamples();
         else if(keyword == 'facts') return titleFacts();

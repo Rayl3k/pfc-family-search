@@ -3,6 +3,9 @@ var linechart;
 var linechartData;
 var linechartRows;
 var yearsConsulted;
+// GOOGLE ANALYTICS errors
+//    gaError => variable to control that same error is not sent multiple times
+var gaError = 0;
 
 /* Print linechart if more than one year */
 function printLinechart() {
@@ -91,6 +94,9 @@ $( document ).ready(function() {
         yearsConsulted = 0;
         linechartData.addColumn('string', 'Year');
         linechartData.addColumn('number', 'Instances');
+
+        // Enable ga error
+        gaError = 0;
 
         // Get all parameters and avoid injection
         var place = escapeHtml($('#factsPlace').val());
@@ -196,6 +202,13 @@ $( document ).ready(function() {
                         // Enable search button
                         $('#facts-submit').text('Launch facts sesarch');
                         $('#facts-submit').removeClass('disabled');
+
+                        // Send ga error
+                        if(!gaError) {
+                            var error = 'facts_error_' + String(e.message).replace(' ', '_').toLowerCase();
+                            sendEvent('familysearch', 'facts', error);
+                            gaError = 1;
+                        }
                     });
                 }, 2500*i);
             }(i));
