@@ -310,6 +310,7 @@ $( document ).ready(function() {
         else {
             // fadein & fadeout content
             $('#graphs').fadeOut('fast');
+            $('#api-errors').fadeOut('fast');
             $('#lineOverall').fadeOut('fast');
             $('#controls-block').fadeOut('fast');
             $('#previous-year').fadeOut('fast');
@@ -391,21 +392,6 @@ $( document ).ready(function() {
                             $("#progress-value").css('width', pValue+'%');
                             $("#progress-text").text(pValue+'% completed');
 
-                            /*// real born years
-                            for(var p = 0; p < total; p = p+15) {
-                                var persons = searchResponse.getSearchResults({start:p});
-                                for(var j = 0; j < persons.length; j++) {
-                                    var result = persons[i];
-                                    person = result.getPrimaryPerson();
-                                    birth = person.getBirth();
-
-                                    console.log("Person name: " + person.getDisplayName());
-                                    //console.log("Normalized Place: " + birth.getNormalizedPlace());
-                                    //console.log("Get Place: " + birth.getPlace());
-                                    console.log("Get date: " + birth.getDate());
-                                }
-                            } */
-
                             // Add results to be printed
                             countriesConsulted = countriesConsulted + 1;
                             geomapCountries[i].push([countries[k].code, total]);
@@ -414,6 +400,16 @@ $( document ).ready(function() {
 
                             // Check if year data should be printed
                             if(countriesConsulted%countries.length == 0) yearGraphs(i);
+                        })
+                        // Catch errors
+                        .catch(function(e) {
+                            // Print error
+                            $('#api-error-text').text(e.message);
+                            $('#api-errors').fadeIn('slow');
+
+                            // Enable search button
+                            $('#submit').text('Launch surname sesarch');
+                            $('#submit').removeClass('disabled');
                         });
                     }, apiDELAY*k+(i*countries.length*apiDELAY));
                 }(k, i));

@@ -7,7 +7,6 @@ function getCategory() {
 
 // Send event based on defined parameters
 function sendEvent(category, action, label, value) {
-    console.log(getCategory());
     category = category != '' ? category : getCategory();
     action = action != '' ? action : null;
     label = action != '' ? label : null;

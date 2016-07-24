@@ -105,7 +105,7 @@
         </div>
         <!-- submit search -->
         <div class="col-sm-5">
-            <button id="facts-submit" class="btn btn-primary form-font" role="button">Lauch facts searcher</button>
+            <button id="facts-submit" class="btn btn-primary form-font" role="button">Launch facts searcher</button>
             <a href="#results-zone" id="results-trigger" class="hidden"></a>
             <a href="#facts-searcher" id="error-trigger" class="hidden"></a>
         </div>
@@ -139,7 +139,28 @@
             </div>
         </div>
     </div>
-</div>
+    <!-- API ERRORS -->
+    <div class="container">
+        <div id="api-errors" class="row sm-buffer" style="display:none;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="example-section"><span id="table-title">Facts search error</span></h2>
+                </div>
+            </div>
+            <!-- error display -->
+            <div class="row sm-buffer">
+                <div class="col-sm-12">
+                    <div class="alert alert-danger" role="alert">
+                        <p><span class="sans-bold">FamilySearch Uoops!</span> It seems that the connection with the FamilySearch API didn't go as expected. Please try waiting a few minutes, logging in again or refreshing the page.</p>
+                        <ul class="xs-buffer">
+                            <li><span id="api-error-text"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: results space: Waiting + api errors -->
 
 <!-- start: LINECHART -->
 <div id="lineOverall" class="container">

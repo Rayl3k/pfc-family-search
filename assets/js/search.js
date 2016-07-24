@@ -627,14 +627,12 @@ function printPersonsToTable(pos) {
       })
       .catch(function(e) {
           // Print error
-          $('#api-error-text').text(String(e));
+          $('#api-error-text').text(e.message);
           $('#api-errors').fadeIn('fast');
           $('#results-trigger').trigger('click');
-          console.log(e);
 
           // Recover status
           $('#table-loader').fadeOut('fast');
-          $('#results-zone').fadeOut('fast');
 
           // Enable search button
           $('#person-search-submit').text('Launch person sesarch');
@@ -734,12 +732,9 @@ $( document ).ready(function() {
         // Catch errors
         .catch(function(e) {
             // Print error
-            $('#api-error-text').html(e);
+            $('#api-error-text').text(e.message);
             $('#api-errors').fadeIn('fast');
             $('#results-trigger').trigger('click');
-            //console.log(Object.keys(e));
-            //console.log(typeof(e.response));
-            console.log(e);
 
             // Recover status
             $('#specific-person').fadeOut('fast');
@@ -776,7 +771,6 @@ $( document ).ready(function() {
         $('#table-controls').hide();
         $('#specific-person').hide();
         $('#specific-details').hide();
-        $('#api-error-text').hide();
 
         // Empty current person selection content
         emptySpecificPerson();

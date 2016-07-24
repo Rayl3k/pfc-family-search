@@ -106,47 +106,13 @@
 
 <!-- start: COUNTRIES -->
 <div class="container">
-    <!-- start: EUROPEAN COUNTRIES -->
-    <!-- ######################### -->
-    <div id="eu-container">
-        <!-- country title -->
-        <div class="row md-buffer collapseHeader" data-toggle="collapse" href="#eu-countries">
-            <div class="col-sm-6 personHeaderTitle">
-                <h3><span class="personHeaderSign">-</span> European countries</h3>
-            </div>
-            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
-                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
-                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
-            </div>
-        </div>
-        <!-- country content -->
-        <div id="eu-countries" class="collapse in">
-            <!-- country checkboxes -->
-            <div class="row md-buffer">
-                {{#europe}}
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <label class="checkbox-inline">
-                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-eu">{{name}}
-                    </label>
-                </div>
-                {{/europe}}
-            </div>
-            <!-- country controls -->
-            <div class="row sm-buffer">
-                <button class="btn btn-default checkbox-all" role="button">
-                    Select All Countries
-                </button>
-            </div>
-        </div>
-    </div> <!-- end: EUROPEAN COUNTRIES -->
-
     <!-- start: NORTH AMERICA COUNTRIES -->
     <!-- ############################## -->
     <div id="na-container">
         <!-- section title -->
         <div class="row xxl-buffer collapseHeader" data-toggle="collapse" href="#na-countries">
             <div class="col-sm-6 personHeaderTitle">
-                <h3><span class="personHeaderSign">+</span> North American countries</h3>
+                <h3><span class="personHeaderSign">-</span> North American countries</h3>
             </div>
             <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
                 <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
@@ -154,7 +120,7 @@
             </div>
         </div>
         <!-- country content -->
-        <div id="na-countries" class="collapse">
+        <div id="na-countries" class="collapse in">
             <!-- country checkboxes -->
             <div class="row md-buffer">
                 {{#northAmerica}}
@@ -207,6 +173,40 @@
             </div>
         </div>
     </div> <!-- end: SOUTH AMERICAN COUNTRIES -->
+
+    <!-- start: EUROPEAN COUNTRIES -->
+    <!-- ######################### -->
+    <div id="eu-container">
+        <!-- country title -->
+        <div class="row md-buffer collapseHeader" data-toggle="collapse" href="#eu-countries">
+            <div class="col-sm-6 personHeaderTitle">
+                <h3><span class="personHeaderSign">+</span> European countries</h3>
+            </div>
+            <div class="col-sm-6 text-right personHeaderGlyph hidden-xs">
+                <span class="personHeaderText text-italic" style="vertical-align:middle">Click to expand/contract form</span>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="vertical-align:middle"></span>
+            </div>
+        </div>
+        <!-- country content -->
+        <div id="eu-countries" class="collapse">
+            <!-- country checkboxes -->
+            <div class="row md-buffer">
+                {{#europe}}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="{{code}}" value="" class="form-checkbox checkbox-eu">{{name}}
+                    </label>
+                </div>
+                {{/europe}}
+            </div>
+            <!-- country controls -->
+            <div class="row sm-buffer">
+                <button class="btn btn-default checkbox-all" role="button">
+                    Select All Countries
+                </button>
+            </div>
+        </div>
+    </div> <!-- end: EUROPEAN COUNTRIES -->
 
     <!-- start: OCEANIA COUNTRIES -->
     <!-- ######################## -->
@@ -365,7 +365,28 @@
             </div> <!-- end progress bar -->
         </div>
     </div> <!-- end: WAITING PAGE ZONE -->
-</div> <!-- end: RESULTS ZONE -->
+    <!-- API ERRORS -->
+    <div class="container">
+        <div id="api-errors" class="row sm-buffer" style="display:none;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="example-section"><span id="table-title">Surnames search error</span></h2>
+                </div>
+            </div>
+            <!-- error display -->
+            <div class="row sm-buffer">
+                <div class="col-sm-12">
+                    <div class="alert alert-danger" role="alert">
+                        <p><span class="sans-bold">FamilySearch Uoops!</span> It seems that the connection with the FamilySearch API didn't go as expected. Please try waiting a few minutes, logging in again or refreshing the page.</p>
+                        <ul class="xs-buffer">
+                            <li><span id="api-error-text"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- end: RESULTS ZONE (waiting + api errors) -->
 
 <!-- start: DETACHABLE YEARLY CONTROL -->
 <div id="controls-block" class="container sm-buffer">

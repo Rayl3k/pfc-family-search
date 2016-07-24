@@ -136,6 +136,7 @@ $( document ).ready(function() {
             });
 
             // fadein & fadeout content
+            $('#api-errors').fadeOut('fast');
             $('#lineOverall').fadeOut('fast');
             $('.search-fact-type').text(" " + factSelected + " ");
             $('#search-fact-place').text(" " + place + " ");
@@ -150,7 +151,7 @@ $( document ).ready(function() {
 
             // Trigger to content
             $("#waiting-page").fadeIn("slow");
-            $('#error-trigger').trigger('click');
+            $('#results-trigger').trigger('click');
         }
 
         // Initialize variables
@@ -185,6 +186,16 @@ $( document ).ready(function() {
                         // Check if year data should be printed
                         yearsConsulted = yearsConsulted + 1;
                         if(yearsConsulted == 11) printLinechart(i);
+                    })
+                    // Catch errors
+                    .catch(function(e) {
+                        // Print error
+                        $('#api-error-text').text(e.message);
+                        $('#api-errors').fadeIn('slow');
+
+                        // Enable search button
+                        $('#facts-submit').text('Launch facts sesarch');
+                        $('#facts-submit').removeClass('disabled');
                     });
                 }, 2500*i);
             }(i));
