@@ -22,8 +22,13 @@ $( document ).ready(function() {
         $(this).blur();
     }); // -- end: focus on button press
 
+    // START: Sign-in-back
+    $('#sign-in-back').click(function() {
+        history.back();
+    });
+
     // START: sign-in button
-    $('#sign-in').click(function () {
+    $('#sign-in').click(function() {
 
         // Set properties for new loading gif container
         var height = $(window).height();
