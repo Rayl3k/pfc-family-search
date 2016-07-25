@@ -3,7 +3,7 @@ function titleIndex() {
     var background = "title-zone-index";
     var highlight = "lightbox-text";
     var title = "STUDY OF FAMILYSEARCH API POTENTIAL";
-    var titleMobile = "STUDY OF FS API POTENTIAL";
+    var titleMobile = "FAMILY SEARCH API POTENTIAL";
     var subtitleDesktop = "This project studies the genalogical data inside the FamilySearch API and provides some examples of what it could be used for.";
     var subtitleTablet = "Possibilities study for the genealogical data.";
     var button = false;
