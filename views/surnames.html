@@ -17,9 +17,9 @@
     <!-- text zone -->
     <div class="row sm-buffer">
         <div class="col-md-12">
-            <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
-            <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+            <p>The surnames functionality enables you to check how many instances of a given surname are registered on a set of countries in a specific year or time interval.</p>
+            <p>The goal of this feature is to try to understand how a certain surnames expanded over the years on a set of different countries or continents. With this simple tool we aim to find were the ancestors of a given surname might have come from and how much of each etnicity or race there is in a given surname.</p>
+            <p>We do notice that this tool is far from solving the two questions on the above paragraph but it might result helpful when trying to undertand how global the world actually is.</p>
         </div>
     </div>
     <div class="row sm-buffer">
@@ -44,9 +44,16 @@
     <div class="row">
         <div class="col-md-12">
             <h3>How to use</h3>
-            <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
-            <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+            <p>To use this feature we just need to introduce some basic data. Each field has the following meaning:</p>
+            <ul>
+                <li><b>Surname: </b>Mandatory field. It tells the system for which surname the search has to be performed.</li>
+                <li><b>Year: </b>Mandatory field. It tells the system for which year, in a four digits foramt, it has to do the search.  It also represents the first year of the time interval to be checked in case that the next parameter is also introduced.</li>
+                <li><b>Range: </b>Optional Field. If specified, in a four digits format, it tells the system that it wants to perform the search over the period of time Year – Range.</li>
+                <li><b>Interval: </b>Optional Field. Numeric. It is required if the Range field is not empty. It tells the system after how many years new data shuld be pulled on the time interval.</li>
+                <li><b>Countries: </b>The selected checkboxes over the different continents will  set the list of countries in which the surname search will be launched for each year computed of the time interval.</li>
+            </ul>
+            <p>The duration of the operation might be in the scale of: 2*num_countries*num_years (seconds), so try to keep both indexes in the low numbers.</p>
+            <p>As an example, if we searched for the surname Smith with the parameter year: 1900, the range parameter: 2000, using as as interval: 20 and with the selected countries: United States, United Kingdom and Canada, the system would perform a search that would display the number of persons, having Smith as a surname, found on each country over the years 1900, 1920, 1940, 1960, 1980 and 2000. And the operation might take up to: 2*3*6 (36 seconds).</p>
         </div>
     </div>
 </diV> <!-- end: INTERACTIVE EXAMPLE DESCRIPTION-->
