@@ -101,3 +101,6 @@ http://myexternalip.com/
 
 ## Photoshop vintage
 http://mashable.com/2013/10/20/photoshop-instagram-filters/#1cxYuiSCngqb
+
+## Preload used
+http://dreamerslab.com/blog/en/preload-images-with-jquery-preload-plugin/
