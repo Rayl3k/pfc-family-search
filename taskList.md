@@ -35,3 +35,5 @@
 - Genealogies (reals): Study of diversity on ancestors. Relate to momondo campaign?
 - Gender related mortality / newborns based on countries & period of time.
 - List best collection / browse through documents / discover random document, etc. functionalities!! Use entry points collections
+- Localització al català dels recursos principals així com del portal web.
+- Transformar aplicacions d'escriptori d'heràldica en una API + estudi complementari de cognoms i heràldica
