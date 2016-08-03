@@ -624,6 +624,9 @@ function printPersonsToTable(pos) {
           // Enable search button
           $('#person-search-submit').text('Launch person sesarch');
           $('#person-search-submit').removeClass('disabled');
+
+          // Send GA OK
+          sendEvent('familysearch', 'personSearch', 'personSearch_successful');
       })
       .catch(function(e) {
           // Print error
@@ -727,11 +730,13 @@ $( document ).ready(function() {
             mainPerson.getMemoryPersonaRefs().then(function(memories) {
                 personDisplayMemories(memories);
             });*/
-            // Display Person Matches
             // Display changes in person
             mainPerson.getChanges(mainPerson.getId()).then(function(changes) {
                 personDisplayChanges(changes);
             });
+
+            // Send GA OK
+            sendEvent('familysearch', 'personSearch', 'selectPerson_successful');
         })
         // Catch errors
         .catch(function(e) {

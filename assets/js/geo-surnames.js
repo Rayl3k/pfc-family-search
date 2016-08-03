@@ -170,6 +170,9 @@ function yearGraphs(i) {
             $('#previous-year').fadeIn('fast');
             $('#next-year').fadeIn('fast');
         }
+
+        // Send facts success event
+        sendEvent('familysearch', 'surnames', 'surnames_successful');
     }
 }
 

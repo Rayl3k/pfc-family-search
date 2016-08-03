@@ -45,6 +45,9 @@ function printLinechart() {
     // Bar remove active class & stripes
     $('#progress-value').removeClass('active');
     $('#progress-value').removeClass('progress-bar-striped');
+
+    // Send facts success event
+    sendEvent('familysearch', 'facts', 'facts_successful');
 }
 
 /* Get facts Params */
