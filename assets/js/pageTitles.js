@@ -17,7 +17,7 @@ function titleBackground() {
     var background = "titleBackground";
     var highlight = "lightbox-text";
     var title = "PROJECT BACKGROUND";
-    var titleMobile = "PROJECT BAKCGROUND";
+    var titleMobile = "PROJECT BACK-GROUND";
     var subtitleDesktop = "Short project introduction to its objectives and motivations behind.";
     var subtitleTablet = "Introduction to the objectives and motivations.";
     var button = false;
