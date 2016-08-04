@@ -849,7 +849,10 @@ $( document ).ready(function() {
              $('#person-search-submit').text('Launch person sesarch');
              $('#person-search-submit').removeClass('disabled');
 
-             // Throw error
+             // Send GA event
+             sendEvent('familysearch', 'personSearch', 'personSearch_error_formValidation');
+
+             // Stop execution
              throw new FatalError("We need you to at least select a field!");
          }
 

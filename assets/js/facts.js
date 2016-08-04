@@ -129,11 +129,16 @@ $( document ).ready(function() {
             $(this).text('Lauch facts searcher');
             $(this).removeClass('disabled');
 
-            // TRigger errors
+            // Trigger errors
             $('#form-errors').removeClass('hidden');
             $('#error-trigger').trigger('click');
             $("#waiting-page").fadeOut("fast");
             $('#lineOverall').fadeOut('fast');
+
+            // Send GA event
+            sendEvent('familysearch', 'facts', 'facts_error_formValidation');
+
+            // Stop execution
             throw new FatalError("Some fields had mistakes!");
         }
         else {

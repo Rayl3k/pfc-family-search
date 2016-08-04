@@ -314,6 +314,11 @@ $( document ).ready(function() {
             $('#controls-block').fadeOut('fast');
             $('#previous-year').fadeOut('fast');
             $('#next-year').fadeOut('fast');
+
+            // Send GA error
+            sendEvent('familysearch', 'surnames', 'surnames_error_formValidation');
+
+            // Stop Execution
             throw new FatalError("Some fields had mistakes!");
         }
         else {
