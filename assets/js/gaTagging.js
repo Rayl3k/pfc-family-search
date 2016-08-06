@@ -12,7 +12,7 @@ function sendEvent(category, action, label, value) {
     label = action != '' ? label : null;
     value = typeof value !== 'undefined' ? value : null;
 
-    ga('send', 'event', category, action, label)
+    ga('send', 'event', category, action, label);
 }
 
 $( document ).ready(function() {
