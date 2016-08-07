@@ -284,7 +284,7 @@ function personDisplayAncestry(ancestry) {
     var header = 'Ascendency in Ahnentafel numbers';
     var rows = [
         [
-            ['th', 'Anhentafel #'],
+            ['th', 'Ahnentafel #'],
             ['th', 'ID'],
             ['th', 'Name']
         ]
@@ -554,7 +554,7 @@ function emptySpecificPerson() {
 // ************ PERSON SEARCH  ************
 // ======================================== //
 function printPersonsToTable(pos) {
-    // Update start in params
+    // Update start params
     params.start = pos;
     params.context = context;
 
@@ -675,7 +675,7 @@ $( document ).ready(function() {
         emptySpecificPerson();
         $('.disclaimer').show();
 
-        // Display person being loaded and jump to section
+        // Display person being loaded
         $('#person-name').text('Loading information...');
         $('#specific-details').hide();
         $('#specific-person').fadeIn('fast');
@@ -683,7 +683,7 @@ $( document ).ready(function() {
         $('#specific-trigger').trigger('click');
 
         // Launch the call to get the data and prin it when you get it.
-        client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {
+        client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {            
             // Ensure API errors are not displayed
             $('#api-errors').fadeOut('fast');
             // Get Main Person and print its data

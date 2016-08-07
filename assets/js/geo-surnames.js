@@ -236,16 +236,6 @@ $( document ).ready(function() {
         }
     });
 
-    // Expand/Coallpse buttons
-    $('.exp-button').click(function() {
-        if($(this).html().trim() == "Collapse country list") {
-            $(this).html("Expand country list");
-        }
-        else {
-            $(this).html("Collapse country list");
-        }
-    });
-
     // ======================================== //
     // *** LAUNCH SURNAME SEARCH ***
     // ======================================== //
@@ -392,6 +382,7 @@ $( document ).ready(function() {
 
                         // Set params for search
                         var params = {
+                            count : 0,
                             surname: inputSurname,
                             birthPlace: countries[k].name,
                             birthDate: years[i]
@@ -443,7 +434,7 @@ $( document ).ready(function() {
     // ======================================== //
     $(window).scroll(function() {
         var windowHeight = $(window).height();
-        var countryList = $("#eu-container").position().top;
+        var countryList = $("#na-container").position().top;
         var fromTop =  $(document).scrollTop();
         var resultsZone = $("#results-zone").position().top;
         var controlsBlock = $("#controls-block").position().top;
