@@ -392,13 +392,18 @@ $( document ).ready(function() {
                             // Get instances of people with name in country[k]
                             var total = searchResponse.getResultsCount();
 
+                            // Update counter
+                            countriesConsulted = countriesConsulted + 1;
+
+                            // Update progress bar
+                            var pValue = Math.round(countriesConsulted/searchDuration*100);
+
                             // Update progress bar: We divide/10 instead of 1000 to multiply after*100
-                            var pValue = Math.round((k+1+countries.length*i)/searchDuration*100);
+                            //var pValue = Math.round((k+1+countries.length*i)/searchDuration*100);
                             $("#progress-value").css('width', pValue+'%');
                             $("#progress-text").text(pValue+'% completed');
 
                             // Add results to be printed
-                            countriesConsulted = countriesConsulted + 1;
                             geomapCountries[i].push([countries[k].code, total]);
                             linechartRows[i].push(total);
                             console.log("Pushing at year: " + years[i] + " " + countries[k].code + " " + total);

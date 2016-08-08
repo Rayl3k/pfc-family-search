@@ -28,8 +28,6 @@ function printLinechart() {
         }
       };
 
-      console.log(linechartRows);
-
     // print the chart
     linechartData.addRows(linechartRows);
     linechart = new google.charts.Line(document.getElementById('linechart'));
@@ -52,9 +50,9 @@ function printLinechart() {
 
 /* Get facts Params */
 function getFactsParams(fact, year, place) {
-    if(fact == "births") return { birthDate: year, birthPlace: place }
-    else if(fact == "deaths") return { deathDate: year, deathPlace: place }
-    else if(fact == "marriages") return { marriageDate: year, marriagePlace: place }
+    if(fact == "births") return { count: 0, birthDate: year, birthPlace: place }
+    else if(fact == "deaths") return { count: 0, deathDate: year, deathPlace: place }
+    else if(fact == "marriages") return { count: 0, marriageDate: year, marriagePlace: place }
 }
 
 // ======================================== //
@@ -190,7 +188,9 @@ $( document ).ready(function() {
                         console.log("results total: " + total);
 
                         // Update progress bar: We divide/10 instead of 1000 to multiply after*100
-                        var pValue = Math.round((i+1)/11*100);
+                        //var pValue = Math.round((i+1)/11*100)
+                        yearsConsulted = yearsConsulted + 1;
+                        var pValue = Math.round(yearsConsulted/11*100);
                         $("#progress-value").css('width', pValue+'%');
                         $("#progress-text").text(pValue+'% completed');
 
@@ -198,8 +198,7 @@ $( document ).ready(function() {
                         linechartRows.push([String(firstYear+i), total]);
 
                         // Check if year data should be printed
-                        yearsConsulted = yearsConsulted + 1;
-                        if(yearsConsulted == 11) printLinechart(i);
+                        if(yearsConsulted == 11) printLinechart();
                     })
                     // Catch errors
                     .catch(function(e) {
