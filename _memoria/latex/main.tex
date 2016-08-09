@@ -2,15 +2,25 @@
 \usepackage[utf8]{inputenc}
 \usepackage[acronym,toc,xindy]{glossaries}
 \usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+    \geometry{
+     a4paper,
+     total={150mm,237mm},
+     left=30mm,
+     top=30mm,
+     }
+\usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{todonotes}
 
+% configure glossary and acronyms
 \loadglsentries{glossary.tex}
 \loadglsentries{acronyms.tex}
 \makeglossaries{}
 
-
+% overall configurations
 \onehalfspacing{}
+\graphicspath{ {images/} }
 \newcommand{\porras}[1]{\todo[backgroundcolor=blue!25,inline]{#1}}
 
 \begin{document}
@@ -22,6 +32,5 @@
 
     \clearpage
 	\printglossaries{}
-
 
 \end{document}

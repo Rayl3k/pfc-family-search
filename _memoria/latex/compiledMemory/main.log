@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  9 AUG 2016 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  9 AUG 2016 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -627,6 +627,36 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
 \Hy@SectionHShift=\skip59
+) (c:/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count138
+\Gm@cntv=\count139
+\c@Gm@tempcnt=\count140
+\Gm@bindingoffset=\dimen128
+\Gm@wd@mp=\dimen129
+\Gm@odd@mp=\dimen130
+\Gm@even@mp=\dimen131
+\Gm@layoutwidth=\dimen132
+\Gm@layoutheight=\dimen133
+\Gm@layouthoffset=\dimen134
+\Gm@layoutvoffset=\dimen135
+\Gm@dimlist=\toks32
+) (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (c:/texlive/2016/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+\Gread@gobject=\count141
+))
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 ) (c:/texlive/2016/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/texlive/2016/texmf-dist/tex/latex/todonotes/todonotes.sty
@@ -638,10 +668,6 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
- (c:/texlive/2016/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
-\Gread@gobject=\count138
-)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -652,10 +678,11 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (c:/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen128
-\pgfutil@tempdimb=\dimen129
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen138
+\pgfutil@tempdimb=\dimen139
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box33
  (c:/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -663,45 +690,31 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-)
-\Gin@req@height=\dimen130
-\Gin@req@width=\dimen131
-) (c:/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+ (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks35
+\pgfkeys@tmptoks=\toks36
 ))
-\pgf@x=\dimen132
-\pgf@y=\dimen133
-\pgf@xa=\dimen134
-\pgf@ya=\dimen135
-\pgf@xb=\dimen136
-\pgf@yb=\dimen137
-\pgf@xc=\dimen138
-\pgf@yc=\dimen139
+\pgf@x=\dimen140
+\pgf@y=\dimen141
+\pgf@xa=\dimen142
+\pgf@ya=\dimen143
+\pgf@xb=\dimen144
+\pgf@yb=\dimen145
+\pgf@xc=\dimen146
+\pgf@yc=\dimen147
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count139
-\c@pgf@countb=\count140
-\c@pgf@countc=\count141
-\c@pgf@countd=\count142
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
+\c@pgf@counta=\count142
+\c@pgf@countb=\count143
+\c@pgf@countc=\count144
+\c@pgf@countd=\count145
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -712,75 +725,75 @@ File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ))) (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count143
-\pgfsyssoftpath@bigbuffer@items=\count144
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count146
+\pgfsyssoftpath@bigbuffer@items=\count147
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen140
-\pgfmath@count=\count145
+\pgfmath@dimen=\dimen148
+\pgfmath@count=\count148
 \pgfmath@box=\box34
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count146
+\pgfmath@toks=\toks40
+\pgfmath@stack@operand=\toks41
+\pgfmath@stack@operation=\toks42
+) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count149
 )) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen141
-\pgf@picmaxx=\dimen142
-\pgf@picminy=\dimen143
-\pgf@picmaxy=\dimen144
-\pgf@pathminx=\dimen145
-\pgf@pathmaxx=\dimen146
-\pgf@pathminy=\dimen147
-\pgf@pathmaxy=\dimen148
-\pgf@xx=\dimen149
-\pgf@xy=\dimen150
-\pgf@yx=\dimen151
-\pgf@yy=\dimen152
-\pgf@zx=\dimen153
-\pgf@zy=\dimen154
+\pgf@picminx=\dimen149
+\pgf@picmaxx=\dimen150
+\pgf@picminy=\dimen151
+\pgf@picmaxy=\dimen152
+\pgf@pathminx=\dimen153
+\pgf@pathmaxx=\dimen154
+\pgf@pathminy=\dimen155
+\pgf@pathmaxy=\dimen156
+\pgf@xx=\dimen157
+\pgf@xy=\dimen158
+\pgf@yx=\dimen159
+\pgf@yy=\dimen160
+\pgf@zx=\dimen161
+\pgf@zy=\dimen162
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen155
-\pgf@path@lasty=\dimen156
+\pgf@path@lastx=\dimen163
+\pgf@path@lasty=\dimen164
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen157
-\pgf@shorten@start@additional=\dimen158
+\pgf@shorten@end@additional=\dimen165
+\pgf@shorten@start@additional=\dimen166
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box35
 \pgf@hbox=\box36
 \pgf@layerbox@main=\box37
-\pgf@picture@serial@count=\count147
+\pgf@picture@serial@count=\count150
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen159
+\pgflinewidth=\dimen167
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen160
-\pgf@pt@y=\dimen161
-\pgf@pt@temp=\dimen162
+\pgf@pt@x=\dimen168
+\pgf@pt@y=\dimen169
+\pgf@pt@temp=\dimen170
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen163
+\pgfarrowsep=\dimen171
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen164
-\pgf@sys@shading@range@num=\count148
+\pgf@max=\dimen172
+\pgf@sys@shading@range@num=\count151
 ) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -799,125 +812,160 @@ File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ) (c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen165
-\pgf@nodesepend=\dimen166
+\pgf@nodesepstart=\dimen173
+\pgf@nodesepend=\dimen174
 ) (c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+))
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen167
-\pgffor@skip=\dimen168
-\pgffor@stack=\toks42
-\pgffor@toks=\toks43
+\pgffor@iter=\dimen175
+\pgffor@skip=\dimen176
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
 )) (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count149
-\pgfplotmarksize=\dimen169
+\pgf@plot@mark@count=\count152
+\pgfplotmarksize=\dimen177
 )
-\tikz@lastx=\dimen170
-\tikz@lasty=\dimen171
-\tikz@lastxsaved=\dimen172
-\tikz@lastysaved=\dimen173
-\tikzleveldistance=\dimen174
-\tikzsiblingdistance=\dimen175
+\tikz@lastx=\dimen178
+\tikz@lasty=\dimen179
+\tikz@lastxsaved=\dimen180
+\tikz@lastysaved=\dimen181
+\tikzleveldistance=\dimen182
+\tikzsiblingdistance=\dimen183
 \tikz@figbox=\box40
 \tikz@figbox@bg=\box41
 \tikz@tempbox=\box42
 \tikz@tempbox@bg=\box43
-\tikztreelevel=\count150
-\tikznumberofchildren=\count151
-\tikznumberofcurrentchild=\count152
-\tikz@fig@count=\count153
+\tikztreelevel=\count153
+\tikznumberofchildren=\count154
+\tikznumberofcurrentchild=\count155
+\tikz@fig@count=\count156
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count154
-\pgfmatrixcurrentcolumn=\count155
-\pgf@matrix@numberofcolumns=\count156
+\pgfmatrixcurrentrow=\count157
+\pgfmatrixcurrentcolumn=\count158
+\pgf@matrix@numberofcolumns=\count159
 )
-\tikz@expandcount=\count157
+\tikz@expandcount=\count160
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 ))) (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 ) (c:/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count158
-\calc@Bcount=\count159
-\calc@Adimen=\dimen176
-\calc@Bdimen=\dimen177
+\calc@Acount=\count161
+\calc@Bcount=\count162
+\calc@Adimen=\dimen184
+\calc@Bdimen=\dimen185
 \calc@Askip=\skip60
 \calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count160
+\calc@Ccount=\count163
 \calc@Cskip=\skip62
 )
-\c@@todonotes@numberoftodonotes=\count161
-) (./glossary.tex) (./acronyms.tex)
+\c@@todonotes@numberoftodonotes=\count164
+) (./glossary.tex)
+(./acronyms.tex)
 \glswrite=\write4
 \glo@main@file=\write5
 \openout5 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 10.
+Package glossaries Info: Writing glossary file main.glo on input line 19.
 \glo@acronym@file=\write6
 \openout6 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 10.
-
-(E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux
+Package glossaries Info: Writing glossary file main.acn on input line 19.
+ (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux
 
 LaTeX Warning: Label `foot-api' multiply defined.
 
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 26.
  (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count165
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
- (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
+* v-part:(T,H,B)=(85.35826pt, 674.3303pt, 85.35828pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79134pt
+* \textheight=674.3303pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08829pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count163
-\scratchdimen=\dimen178
+\scratchcounter=\count166
+\scratchdimen=\dimen186
 \scratchbox=\box45
-\nofMPsegments=\count164
-\nofMParguments=\count165
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count166
-\MPscratchDim=\dimen179
-\MPnumerator=\count167
-\makeMPintoPDFobject=\count168
-\everyMPtoPDFconversion=\toks45
+\nofMPsegments=\count167
+\nofMParguments=\count168
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count169
+\MPscratchDim=\dimen187
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
+\everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -945,7 +993,7 @@ Chapter 1.
 (./sections/01/01_section1.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 6.
 
-Overfull \hbox (10.45003pt too wide) in paragraph at lines 6--6
+Overfull \hbox (10.45001pt too wide) in paragraph at lines 6--6
  [][] [] 
  []
 
@@ -953,51 +1001,68 @@ Overfull \hbox (10.45003pt too wide) in paragraph at lines 6--6
 
 ]
 Chapter 2.
-(./sections/01/02_section2.tex
-./sections/01/02_section2.tex:13: Undefined control sequence.
-l.13 \subsubsubsection
-                      {Introducció2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(./sections/01/02_section2.tex <images/04/resourceRellocation.jpg, id=77, 1039.885pt x 442.65375pt>
+File: images/04/resourceRellocation.jpg Graphic file (type jpg)
+ <use images/04/resourceRellocation.jpg>
+Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 21.
+(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
+File: images/04/resourceRellocation.jpg Graphic file (type jpg)
+ <use images/04/resourceRellocation.jpg>
+Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 36.
+(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
+ [5] [6 <./images/04/resourceRellocation.jpg>]
+File: images/04/resourceRellocation.jpg Graphic file (type jpg)
+ <use images/04/resourceRellocation.jpg>
+Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 48.
+(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
+File: images/04/resourceRellocation.jpg Graphic file (type jpg)
+ <use images/04/resourceRellocation.jpg>
+Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 49.
+(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
+ [7]) [8]
+Chapter 3.
+(./sections/01/01_section1.tex
+Overfull \hbox (10.45001pt too wide) in paragraph at lines 6--6
+ [][] [] 
+ []
 
-)) [5] (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [6
+)) [9
 
-]) [7
+] (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [10
+
+]) [11
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
  (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 254426A09E41164F34B6AAE31E68A124;335.
+(rerunfilecheck)             Checksum: 205A707C04BAF1F7877F05C33360BFC8;458.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20188 strings out of 493013
- 364698 string characters out of 6136994
- 496276 words of memory out of 5000000
- 23302 multiletter control sequences out of 15000+600000
- 11500 words of font info for 41 fonts, out of 8000000 for 9000
+ 20678 strings out of 493013
+ 371724 string characters out of 6136994
+ 511801 words of memory out of 5000000
+ 23751 multiletter control sequences out of 15000+600000
+ 11846 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,80p,1951b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,80p,1951b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (7 pages, 88493 bytes).
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (11 pages, 190480 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
