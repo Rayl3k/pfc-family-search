@@ -88,3 +88,6 @@ https://gist.github.com/mandiwise/dc53cb9da00856d7cdbb
 ## certification checklist
 https://familysearch.org/developers/docs/certification/authentication
 https://familysearch.org/developers/docs/certification
+
+## conmpile latex
+http://tex.stackexchange.com/questions/6845/compile-latex-with-bibtex-and-glossaries

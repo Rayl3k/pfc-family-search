@@ -1,0 +1,6 @@
+PWD E:/Documents/GitHub/pfc-family-search/_memoria/latex/sections/01
+INPUT c:/texlive/2016/texmf.cnf
+INPUT c:/texlive/2016/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT ./02_section2.tex
+OUTPUT E:\Documents\GitHub\pfc-family-search\_memoria\latex\sections\01\compiledMemory/02_section2.log

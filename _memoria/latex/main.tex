@@ -1,0 +1,27 @@
+\documentclass[11pt,twoside,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym,toc,xindy]{glossaries}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{todonotes}
+
+\loadglsentries{glossary.tex}
+\loadglsentries{acronyms.tex}
+\makeglossaries{}
+
+
+\onehalfspacing{}
+\newcommand{\porras}[1]{\todo[backgroundcolor=blue!25,inline]{#1}}
+
+\begin{document}
+
+    \tableofcontents{}
+
+    \input{./sections/01/_introduction.tex}
+
+
+    \clearpage
+	\printglossaries{}
+
+
+\end{document}
