@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  9 AUG 2016 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  10 AUG 2016 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -870,40 +870,38 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip62
 )
 \c@@todonotes@numberoftodonotes=\count164
-) (./glossary.tex)
-(./acronyms.tex)
+)
+(c:/texlive/2016/texmf-dist/tex/latex/emptypage/emptypage.sty
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty pages
+) (./glossary.tex) (./acronyms.tex)
 \glswrite=\write4
 \glo@main@file=\write5
 \openout5 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 19.
+Package glossaries Info: Writing glossary file main.glo on input line 20.
 \glo@acronym@file=\write6
 \openout6 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 19.
- (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux
-
-LaTeX Warning: Label `foot-api' multiply defined.
-
-)
+Package glossaries Info: Writing glossary file main.acn on input line 20.
+ (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 29.
  (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -911,9 +909,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count165
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -927,15 +925,15 @@ LaTeX Info: Redefining \nameref on input line 26.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
-* v-part:(T,H,B)=(85.35826pt, 674.3303pt, 85.35828pt)
+* h-part:(L,W,R)=(99.58464pt, 398.33858pt, 99.58466pt)
+* v-part:(T,H,B)=(113.81102pt, 617.42479pt, 113.81104pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79134pt
-* \textheight=674.3303pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08829pt
-* \topmargin=-18.78552pt
+* \textwidth=398.33858pt
+* \textheight=617.42479pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31467pt
+* \topmargin=9.66724pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
 * \topskip=11.0pt
@@ -989,80 +987,61 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Chapter 1.
-(./sections/01/01_section1.tex
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 6.
-
-Overfull \hbox (10.45001pt too wide) in paragraph at lines 6--6
- [][] [] 
+Secci\IeC {\'o} 1.
+(./sections/01/01_intro.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
+ (c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+) (./sections/01/02_motivations.tex [3]) (./sections/01/03_objectives.tex [4]
+Overfull \hbox (19.25232pt too wide) in paragraph at lines 16--17
+[]\OT1/cmr/m/n/10.95 Escollir el ti-pus d'aplicaci^^So a de-sen-volu-par i es-tu-diar les tec-nolo-gies necess^^Raries
  []
 
-) [3] [4
+) (./sections/01/04_planification.tex [5] <images/01/firstPlan.jpg, id=81, 743.77875pt x 310.15875pt>
+File: images/01/firstPlan.jpg Graphic file (type jpg)
+ <use images/01/firstPlan.jpg>
+Package pdftex.def Info: images/01/firstPlan.jpg used on input line 14.
+(pdftex.def)             Requested size: 398.33858pt x 166.11076pt.
+ <images/01/actualPlan.jpg, id=83, 1298.8525pt x 423.5825pt>
+File: images/01/actualPlan.jpg Graphic file (type jpg)
+ <use images/01/actualPlan.jpg>
+Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
+(pdftex.def)             Requested size: 649.42467pt x 211.79073pt.
 
-]
-Chapter 2.
-(./sections/01/02_section2.tex <images/04/resourceRellocation.jpg, id=77, 1039.885pt x 442.65375pt>
-File: images/04/resourceRellocation.jpg Graphic file (type jpg)
- <use images/04/resourceRellocation.jpg>
-Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 21.
-(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
-File: images/04/resourceRellocation.jpg Graphic file (type jpg)
- <use images/04/resourceRellocation.jpg>
-Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 36.
-(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
- [5] [6 <./images/04/resourceRellocation.jpg>]
-File: images/04/resourceRellocation.jpg Graphic file (type jpg)
- <use images/04/resourceRellocation.jpg>
-Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 48.
-(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
-File: images/04/resourceRellocation.jpg Graphic file (type jpg)
- <use images/04/resourceRellocation.jpg>
-Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 49.
-(pdftex.def)             Requested size: 426.79134pt x 181.67157pt.
- [7]) [8]
-Chapter 3.
-(./sections/01/01_section1.tex
-Overfull \hbox (10.45001pt too wide) in paragraph at lines 6--6
- [][] [] 
- []
 
-)) [9
+LaTeX Warning: Float too large for page by 57.72905pt on input line 38.
 
-] (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [10
+[6 <./images/01/firstPlan.jpg>] [7 <./images/01/actualPlan.jpg>])) [8] (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [9
+
+] [10
 
 ]) [11
 
-
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
  (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 205A707C04BAF1F7877F05C33360BFC8;458.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 751FCB7BA6A0479933233E93484785AF;548.
  ) 
 Here is how much of TeX's memory you used:
- 20678 strings out of 493013
- 371724 string characters out of 6136994
- 511801 words of memory out of 5000000
- 23751 multiletter control sequences out of 15000+600000
- 11846 words of font info for 42 fonts, out of 8000000 for 9000
+ 20614 strings out of 493013
+ 370766 string characters out of 6136994
+ 514321 words of memory out of 5000000
+ 23702 multiletter control sequences out of 15000+600000
+ 10482 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,80p,1951b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
-
-<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (11 pages, 190480 bytes).
+ 62i,9n,63p,1951b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (11 pages, 313702 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

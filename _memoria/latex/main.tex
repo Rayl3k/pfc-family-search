@@ -5,13 +5,14 @@
 \usepackage{geometry}
     \geometry{
      a4paper,
-     total={150mm,237mm},
-     left=30mm,
-     top=30mm,
+     total={140mm,217mm},
+     left=35mm,
+     top=40mm,
      }
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{todonotes}
+\usepackage{emptypage}
 
 % configure glossary and acronyms
 \loadglsentries{glossary.tex}
@@ -19,17 +20,21 @@
 \makeglossaries{}
 
 % overall configurations
-\onehalfspacing{}
+\singlespacing{}
 \graphicspath{ {images/} }
 \newcommand{\porras}[1]{\todo[backgroundcolor=blue!25,inline]{#1}}
+\renewcommand{\contentsname}{Continguts}
+\renewcommand{\chaptername}{Secció}
 
 \begin{document}
 
+    % table of contents
     \tableofcontents{}
 
+    % MAIN MEMORY PART
     \input{./sections/01/_introduction.tex}
 
-
+    % ending memory sections
     \clearpage
 	\printglossaries{}
 
