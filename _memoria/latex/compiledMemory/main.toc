@@ -34,4 +34,11 @@
 \contentsline {paragraph}{}{12}{section*.24}
 \contentsline {section}{\numberline {2.4}Les lleis reguladores}{13}{section.2.4}
 \contentsline {paragraph}{}{13}{section*.25}
-\contentsline {chapter}{Acronyms}{17}{section*.26}
+\contentsline {section}{\numberline {2.5}Els codis \IeC {\`e}tics en la genealogia}{14}{section.2.5}
+\contentsline {paragraph}{}{14}{section*.26}
+\contentsline {section}{\numberline {2.6}El proc\IeC {\'e}s de recerca geneal\IeC {\`o}gica}{15}{section.2.6}
+\contentsline {paragraph}{}{15}{section*.27}
+\contentsline {paragraph}{}{16}{section*.28}
+\contentsline {section}{\numberline {2.7}Conclusi\IeC {\'o}}{16}{section.2.7}
+\contentsline {paragraph}{}{16}{section*.29}
+\contentsline {chapter}{Acronyms}{19}{section*.30}

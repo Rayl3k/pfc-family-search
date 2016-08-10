@@ -320,6 +320,15 @@ INPUT ./sections/02/03_roleInHistory.tex
 INPUT ./sections/02/03_roleInHistory.tex
 INPUT ./sections/02/04_laws.tex
 INPUT ./sections/02/04_laws.tex
+INPUT ./sections/02/05_ethics.tex
+INPUT ./sections/02/05_ethics.tex
+INPUT ./sections/02/06_process.tex
+INPUT ./sections/02/06_process.tex
+INPUT images/02/researchProcess.jpg
+INPUT ./images/02/researchProcess.jpg
+INPUT ./images/02/researchProcess.jpg
+INPUT ./sections/02/07_closing.tex
+INPUT ./sections/02/07_closing.tex
 INPUT E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls
 INPUT E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls
 INPUT E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls
