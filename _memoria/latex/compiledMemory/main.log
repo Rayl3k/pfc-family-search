@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  10 AUG 2016 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  10 AUG 2016 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,45 +873,63 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 (c:/texlive/2016/texmf-dist/tex/latex/emptypage/emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty pages
-) (./glossary.tex) (./acronyms.tex)
+) (c:/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
+\csq@reset=\count165
+\csq@gtype=\count166
+\csq@glevel=\count167
+\csq@qlevel=\count168
+\csq@maxlvl=\count169
+\csq@tshold=\count170
+\csq@ltx@everypar=\toks45
+ (c:/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2016/07/14 v5.1h csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (c:/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (./glossary.tex) (./acronyms.tex)
 \glswrite=\write4
 \glo@main@file=\write5
 \openout5 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 20.
+Package glossaries Info: Writing glossary file main.glo on input line 21.
 \glo@acronym@file=\write6
 \openout6 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 20.
+Package glossaries Info: Writing glossary file main.acn on input line 21.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
  (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 30.
  (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count165
+\c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -953,17 +971,17 @@ LaTeX Info: Redefining \nameref on input line 29.
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count166
+\scratchcounter=\count172
 \scratchdimen=\dimen186
 \scratchbox=\box45
-\nofMPsegments=\count167
-\nofMParguments=\count168
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count169
+\nofMPsegments=\count173
+\nofMParguments=\count174
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count175
 \MPscratchDim=\dimen187
-\MPnumerator=\count170
-\makeMPintoPDFobject=\count171
-\everyMPtoPDFconversion=\toks46
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
+\everyMPtoPDFconversion=\toks47
 ) (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1000,12 +1018,12 @@ Overfull \hbox (19.25232pt too wide) in paragraph at lines 16--17
 []\OT1/cmr/m/n/10.95 Escollir el ti-pus d'aplicaci^^So a de-sen-volu-par i es-tu-diar les tec-nolo-gies necess^^Raries
  []
 
-) (./sections/01/04_planification.tex [5] <images/01/firstPlan.jpg, id=81, 743.77875pt x 310.15875pt>
+) (./sections/01/04_planification.tex [5] <images/01/firstPlan.jpg, id=106, 743.77875pt x 310.15875pt>
 File: images/01/firstPlan.jpg Graphic file (type jpg)
  <use images/01/firstPlan.jpg>
 Package pdftex.def Info: images/01/firstPlan.jpg used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 166.11076pt.
- <images/01/actualPlan.jpg, id=83, 1298.8525pt x 423.5825pt>
+ <images/01/actualPlan.jpg, id=108, 1298.8525pt x 423.5825pt>
 File: images/01/actualPlan.jpg Graphic file (type jpg)
  <use images/01/actualPlan.jpg>
 Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
@@ -1014,34 +1032,43 @@ Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
 
 LaTeX Warning: Float too large for page by 57.72905pt on input line 38.
 
-[6 <./images/01/firstPlan.jpg>] [7 <./images/01/actualPlan.jpg>])) [8] (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [9
-
-] [10
-
-]) [11
+[6 <./images/01/firstPlan.jpg>] [7 <./images/01/actualPlan.jpg>] [8])) (./sections/02/_genealogy.tex [9] [10
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
+Secci\IeC {\'o} 2.
+(./sections/02/01_intro.tex) (./sections/02/02_whatisit.tex [11]) (./sections/02/03_roleInHistory.tex
+Overfull \hbox (7.34769pt too wide) in paragraph at lines 1--1
+[]\OT1/cmr/bx/n/14.4 El pa-per de la ge-nealo-gia en el tran-scurs de la hist^^Roria 
+ []
+
+[12]) (./sections/02/04_laws.tex [13])) [14] (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [15
+
+] [16
+
+]) [17
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
  (E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 751FCB7BA6A0479933233E93484785AF;548.
+(rerunfilecheck)             Checksum: C4170739119F436635F7840CFBF56E29;922.
  ) 
 Here is how much of TeX's memory you used:
- 20614 strings out of 493013
- 370766 string characters out of 6136994
- 514321 words of memory out of 5000000
- 23702 multiletter control sequences out of 15000+600000
+ 21277 strings out of 493013
+ 381590 string characters out of 6136994
+ 532823 words of memory out of 5000000
+ 24316 multiletter control sequences out of 15000+600000
  10482 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,63p,1951b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,63p,1951b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (11 pages, 313702 bytes).
+Output written on E:\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (17 pages, 332848 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
