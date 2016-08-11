@@ -21,6 +21,9 @@ function printLinechart() {
           subtitle: 'in number of FamilySearch person instances'
         },
         height: 500,
+        legend: {
+            position: 'none'
+        },
         axes: {
           x: {
             0: {side: 'top'}

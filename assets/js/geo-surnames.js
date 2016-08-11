@@ -103,6 +103,9 @@ function printBarchart(i) {
           chart: {
             title: 'Persons found at year: ' + years[i] + ' by country'
           },
+          legend: {
+              position: 'none'
+          },
           bars: 'horizontal' // Required for Material Bar Charts.
     };
 
