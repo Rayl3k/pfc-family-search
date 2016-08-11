@@ -335,6 +335,16 @@ INPUT ./sections/03/02_history.tex
 INPUT ./sections/03/02_history.tex
 INPUT ./sections/03/03_mormons.tex
 INPUT ./sections/03/03_mormons.tex
+INPUT ./sections/03/04_organizationServices.tex
+INPUT ./sections/03/04_organizationServices.tex
+INPUT ./sections/03/05_personalServices.tex
+INPUT ./sections/03/05_personalServices.tex
+INPUT images/03/familyTree.jpg
+INPUT ./images/03/familyTree.jpg
+INPUT ./images/03/familyTree.jpg
+INPUT images/03/fanChart.jpg
+INPUT ./images/03/fanChart.jpg
+INPUT ./images/03/fanChart.jpg
 INPUT C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls
 INPUT C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls
 INPUT C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls

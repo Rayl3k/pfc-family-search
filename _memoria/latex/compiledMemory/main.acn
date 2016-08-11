@@ -23,3 +23,4 @@
 (indexentry :tkey (("GEDCOM" "\\glossentry{GEDCOM}") ) :locref "{}{18}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("API" "\\glossentry{API}") ) :locref "{}{19}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("API" "\\glossentry{API}") ) :locref "{}{19}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("OAIS" "\\glossentry{OAIS}") ) :locref "{}{22}" :attr "pageglsnumberformat" ) 
