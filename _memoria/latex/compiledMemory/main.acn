@@ -20,3 +20,6 @@
 (indexentry :tkey (("API" "\\glossentry{API}") ) :locref "{}{9}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("LOPD" "\\glossentry{LOPD}") ) :locref "{}{13}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("LOPD" "\\glossentry{LOPD}") ) :locref "{}{14}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("GEDCOM" "\\glossentry{GEDCOM}") ) :locref "{}{18}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("API" "\\glossentry{API}") ) :locref "{}{19}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("API" "\\glossentry{API}") ) :locref "{}{19}" :attr "pageglsnumberformat" ) 

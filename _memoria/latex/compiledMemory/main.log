@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  11 AUG 2016 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  11 AUG 2016 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -901,7 +901,7 @@ Package glossaries Info: Writing glossary file main.glo on input line 21.
 Package glossaries Info: Writing glossary file main.acn on input line 21.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
+ (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -930,7 +930,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
- (E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
+ (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
@@ -993,7 +993,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
  (c:/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) ABD: EveryShipout initializing macros (E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.toc)
+)) ABD: EveryShipout initializing macros (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.toc)
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1018,12 +1018,12 @@ Overfull \hbox (19.25232pt too wide) in paragraph at lines 16--17
 []\OT1/cmr/m/n/10.95 Escollir el ti-pus d'aplicaci^^So a de-sen-volu-par i es-tu-diar les tec-nolo-gies necess^^Raries
  []
 
-) (./sections/01/04_planification.tex [5] <images/01/firstPlan.jpg, id=121, 743.77875pt x 310.15875pt>
+) (./sections/01/04_planification.tex [5] <images/01/firstPlan.jpg, id=136, 743.77875pt x 310.15875pt>
 File: images/01/firstPlan.jpg Graphic file (type jpg)
  <use images/01/firstPlan.jpg>
 Package pdftex.def Info: images/01/firstPlan.jpg used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 166.11076pt.
- <images/01/actualPlan.jpg, id=123, 1298.8525pt x 423.5825pt>
+ <images/01/actualPlan.jpg, id=138, 1298.8525pt x 423.5825pt>
 File: images/01/actualPlan.jpg Graphic file (type jpg)
  <use images/01/actualPlan.jpg>
 Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
@@ -1036,44 +1036,47 @@ LaTeX Warning: Float too large for page by 57.72905pt on input line 38.
 
 ]
 Secci\IeC {\'o} 2.
-(./sections/02/01_intro.tex) (./sections/02/02_whatisit.tex [11]) (./sections/02/03_roleInHistory.tex
+(./sections/02/02_whatisit.tex [11]) (./sections/02/03_roleInHistory.tex
 Overfull \hbox (7.34769pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 El pa-per de la ge-nealo-gia en el tran-scurs de la hist^^Roria 
  []
 
-[12]) (./sections/02/04_laws.tex [13]) (./sections/02/05_ethics.tex [14]) (./sections/02/06_process.tex [15] <images/02/researchProcess.jpg, id=196, 526.96875pt x 301.125pt>
+[12]) (./sections/02/04_laws.tex [13]) (./sections/02/05_ethics.tex [14]) (./sections/02/06_process.tex [15] <images/02/researchProcess.jpg, id=211, 526.96875pt x 301.125pt>
 File: images/02/researchProcess.jpg Graphic file (type jpg)
  <use images/02/researchProcess.jpg>
 Package pdftex.def Info: images/02/researchProcess.jpg used on input line 20.
 (pdftex.def)             Requested size: 316.18369pt x 180.67638pt.
-) (./sections/02/07_closing.tex)) [16 <./images/02/researchProcess.jpg>] (E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [17
+) (./sections/02/07_closing.tex)) (./sections/03/_fsOrganization.tex [16 <./images/02/researchProcess.jpg>]
+Secci\IeC {\'o} 3.
+(./sections/03/01_whatisit.tex [17
 
-] [18
+]) (./sections/03/02_history.tex [18]) (./sections/03/03_mormons.tex [19])) [20] [21] (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [22
 
-]) [19
+]) [23
+
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
- (E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
+ (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2682ED2FB5A68C45E98EBD78F8F91CFD;1148.
+(rerunfilecheck)             Checksum: 809C50FDE777D53BE443920082C9F54D;1370.
  ) 
 Here is how much of TeX's memory you used:
- 21313 strings out of 493013
- 381981 string characters out of 6136994
- 532882 words of memory out of 5000000
- 24325 multiletter control sequences out of 15000+600000
+ 21369 strings out of 493013
+ 383282 string characters out of 6136994
+ 533320 words of memory out of 5000000
+ 24359 multiletter control sequences out of 15000+600000
  10482 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,63p,1951b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on E:\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (19 pages, 400143 bytes).
+Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (23 pages, 418078 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 226 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
