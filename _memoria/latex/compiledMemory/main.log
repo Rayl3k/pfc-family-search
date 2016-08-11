@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  11 AUG 2016 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  11 AUG 2016 21:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -993,18 +993,16 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
  (c:/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) ABD: EveryShipout initializing macros (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.toc)
-\tf@toc=\write8
-\openout8 = `main.toc'.
-
- (./sections/01/_introduction.tex [1
+)) ABD: EveryShipout initializing macros (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.toc [1
 
 \openout4 = `main.xdy'.
 
 
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
-]
+ (./sections/01/_introduction.tex [2]
 Secci\IeC {\'o} 1.
 (./sections/01/01_intro.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
@@ -1013,17 +1011,19 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
-) (./sections/01/02_motivations.tex [3]) (./sections/01/03_objectives.tex [4]
+) (./sections/01/02_motivations.tex [3
+
+]) (./sections/01/03_objectives.tex [4]
 Overfull \hbox (19.25232pt too wide) in paragraph at lines 16--17
 []\OT1/cmr/m/n/10.95 Escollir el ti-pus d'aplicaci^^So a de-sen-volu-par i es-tu-diar les tec-nolo-gies necess^^Raries
  []
 
-) (./sections/01/04_planification.tex [5] <images/01/firstPlan.jpg, id=182, 743.77875pt x 310.15875pt>
+) (./sections/01/04_planification.tex [5] <images/01/firstPlan.jpg, id=222, 743.77875pt x 310.15875pt>
 File: images/01/firstPlan.jpg Graphic file (type jpg)
  <use images/01/firstPlan.jpg>
 Package pdftex.def Info: images/01/firstPlan.jpg used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 166.11076pt.
- <images/01/actualPlan.jpg, id=184, 1298.8525pt x 423.5825pt>
+ <images/01/actualPlan.jpg, id=224, 1298.8525pt x 423.5825pt>
 File: images/01/actualPlan.jpg Graphic file (type jpg)
  <use images/01/actualPlan.jpg>
 Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
@@ -1041,7 +1041,7 @@ Overfull \hbox (7.34769pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 El pa-per de la ge-nealo-gia en el tran-scurs de la hist^^Roria 
  []
 
-[12]) (./sections/02/04_laws.tex [13]) (./sections/02/05_ethics.tex [14]) (./sections/02/06_process.tex [15] <images/02/researchProcess.jpg, id=256, 526.96875pt x 301.125pt>
+[12]) (./sections/02/04_laws.tex [13]) (./sections/02/05_ethics.tex [14]) (./sections/02/06_process.tex [15] <images/02/researchProcess.jpg, id=297, 526.96875pt x 301.125pt>
 File: images/02/researchProcess.jpg Graphic file (type jpg)
  <use images/02/researchProcess.jpg>
 Package pdftex.def Info: images/02/researchProcess.jpg used on input line 20.
@@ -1055,7 +1055,7 @@ Overfull \hbox (18.73233pt too wide) in paragraph at lines 8--9
 []\OT1/cmr/m/n/10.95 Per al-tra banda, les eines de cerca, con-stitueixen el prin-ci-pal atrac-tiu de l'organitzaci^^So
  []
 
-[23] <images/03/familyTree.jpg, id=308, 820.06375pt x 668.4975pt>
+[23] <images/03/familyTree.jpg, id=348, 820.06375pt x 668.4975pt>
 File: images/03/familyTree.jpg Graphic file (type jpg)
  <use images/03/familyTree.jpg>
 Package pdftex.def Info: images/03/familyTree.jpg used on input line 35.
@@ -1063,16 +1063,40 @@ Package pdftex.def Info: images/03/familyTree.jpg used on input line 35.
 
 Underfull \vbox (badness 7451) has occurred while \output is active []
 
- [24 <./images/03/familyTree.jpg>] <images/03/fanChart.jpg, id=317, 601.24625pt x 639.38875pt>
+ [24 <./images/03/familyTree.jpg>] <images/03/fanChart.jpg, id=357, 601.24625pt x 639.38875pt>
 File: images/03/fanChart.jpg Graphic file (type jpg)
  <use images/03/fanChart.jpg>
 Package pdftex.def Info: images/03/fanChart.jpg used on input line 49.
 (pdftex.def)             Requested size: 240.49423pt x 255.75096pt.
- [25 <./images/03/fanChart.jpg>])) [26] (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr [27
+ [25 <./images/03/fanChart.jpg>]) (./sections/03/06_searchTools.tex [26] <images/03/searchForm.jpg, id=378, 576.1525pt x 739.76375pt>
+File: images/03/searchForm.jpg Graphic file (type jpg)
+ <use images/03/searchForm.jpg>
+Package pdftex.def Info: images/03/searchForm.jpg used on input line 30.
+(pdftex.def)             Requested size: 230.45691pt x 295.90025pt.
 
-] [28
 
-]) [29
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27]) (./sections/03/07_indexing.tex [28 <./images/03/searchForm.jpg>]
+./sections/03/07_indexing.tex:18: Undefined control sequence.
+l.18 ...grupació dels registres en grups de 20-\5
+                                                  0 camps diferents dels que...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (./sections/03/08_conclusions.tex [29])) [30] (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.gls) (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.acr
+Overfull \hbox (62.66519pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10.95 3.8.  CONCLUSI[]O SOBRE LES EINES PER USUARIS I AFICIONATS A LA GENEALOGIA \OT1/cmr/m/n/10.95 31
+ []
+
+[31
+
+] [32
+
+]) [33
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
@@ -1081,21 +1105,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A1F0BE6D7401F1FF4BF3A4EF0E6BB660;2152.
+(rerunfilecheck)             Checksum: 0C31029858DC08B791812220D12339F3;2801.
  ) 
 Here is how much of TeX's memory you used:
- 21464 strings out of 493013
- 384786 string characters out of 6136994
- 533929 words of memory out of 5000000
- 24408 multiletter control sequences out of 15000+600000
+ 21518 strings out of 493013
+ 385610 string characters out of 6136994
+ 535992 words of memory out of 5000000
+ 24421 multiletter control sequences out of 15000+600000
  10482 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,63p,1951b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (29 pages, 546142 bytes).
+Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (33 pages, 643539 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 353 compressed objects within 4 object streams
- 121 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 
