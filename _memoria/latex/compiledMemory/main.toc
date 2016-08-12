@@ -62,7 +62,7 @@
 \contentsline {paragraph}{}{22}{section*.39}
 \contentsline {subsection}{\numberline {3.4.6}Conclusions sobre els serveis professionals}{22}{subsection.3.4.6}
 \contentsline {paragraph}{}{22}{section*.40}
-\contentsline {section}{\numberline {3.5}Serveix per particulars i aficionats a la genealogia}{23}{section.3.5}
+\contentsline {section}{\numberline {3.5}Serveis per particulars i aficionats a la genealogia}{23}{section.3.5}
 \contentsline {paragraph}{}{23}{section*.41}
 \contentsline {subsection}{\numberline {3.5.1}Eines geneal\IeC {\`o}giques}{23}{subsection.3.5.1}
 \contentsline {paragraph}{}{23}{section*.42}
@@ -82,8 +82,8 @@
 \contentsline {paragraph}{}{26}{section*.54}
 \contentsline {subsection}{\numberline {3.6.2}Cerca de genealogies}{27}{subsection.3.6.2}
 \contentsline {paragraph}{}{27}{section*.55}
-\contentsline {subsection}{\numberline {3.6.3}Cerca per cat\IeC {\`a}leg}{28}{subsection.3.6.3}
-\contentsline {paragraph}{}{28}{section*.56}
+\contentsline {subsection}{\numberline {3.6.3}Cerca per cat\IeC {\`a}leg}{27}{subsection.3.6.3}
+\contentsline {paragraph}{}{27}{section*.56}
 \contentsline {subsection}{\numberline {3.6.4}Cerca en llibres d'hist\IeC {\`o}ria geneal\IeC {\`o}gica}{28}{subsection.3.6.4}
 \contentsline {paragraph}{}{28}{section*.57}
 \contentsline {subsection}{\numberline {3.6.5}Wiki de FamilySearch}{28}{subsection.3.6.5}
@@ -92,7 +92,7 @@
 \contentsline {paragraph}{}{28}{section*.59}
 \contentsline {subsubsection}{Proc\IeC {\'e}s d'indexaci\IeC {\'o}}{28}{section*.60}
 \contentsline {paragraph}{}{28}{section*.61}
-\contentsline {paragraph}{}{29}{section*.62}
+\contentsline {paragraph}{}{28}{section*.62}
 \contentsline {subsubsection}{Qu\IeC {\`e} pot indexar un voluntari?}{29}{section*.63}
 \contentsline {paragraph}{}{29}{section*.64}
 \contentsline {section}{\numberline {3.8}Conclusi\IeC {\'o} sobre les eines per particulars}{29}{section.3.8}
