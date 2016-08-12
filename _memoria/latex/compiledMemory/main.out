@@ -32,5 +32,15 @@
 \BOOKMARK [2][-]{subsection.3.6.4}{Cerca en llibres d'hist\362ria geneal\362gica}{section.3.6}% 32
 \BOOKMARK [2][-]{subsection.3.6.5}{Wiki de FamilySearch}{section.3.6}% 33
 \BOOKMARK [1][-]{section.3.7}{Projectes d'indexaci\363}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.8}{Conclusi\363 sobre les eines per usuaris i aficionats a la genealogia}{chapter.3}% 35
-\BOOKMARK [0][-]{section*.66}{Acronyms}{}% 36
+\BOOKMARK [1][-]{section.3.8}{Conclusi\363 sobre les eines per particulars}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Introducci\363 a l'API de FamilySearch}{}% 36
+\BOOKMARK [1][-]{section.4.1}{El portal de desenvolupadors}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{L'arquitectura de l'API}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Qu\350 \351s una API?}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.2}{L'arquitectura REST}{section.4.2}% 40
+\BOOKMARK [1][-]{section.4.3}{Formats de dades utilitzats pel Sistema}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.3.1}{El format de dades GEDCOM i GEDCOM X}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.2}{Format de dades FamilySearch}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.3}{Format de dades Atom \(o At\362mic\)}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.4}{Codificacions dels formats de dades}{section.4.3}% 45
+\BOOKMARK [0][-]{section*.94}{Acronyms}{}% 46

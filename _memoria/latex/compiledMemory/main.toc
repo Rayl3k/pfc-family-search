@@ -12,15 +12,15 @@
 \contentsline {paragraph}{}{5}{section*.7}
 \contentsline {subsection}{\numberline {1.4.2}Planificaci\IeC {\'o} Febrer del 2016 -\ Setembre 2016}{6}{subsection.1.4.2}
 \contentsline {paragraph}{}{6}{section*.8}
-\contentsline {subsubsection}{Segona quinzena de Mar\IeC {\c c}}{8}{section*.9}
-\contentsline {paragraph}{}{8}{section*.10}
+\contentsline {subsubsection}{Segona quinzena de Mar\IeC {\c c}}{6}{section*.9}
+\contentsline {paragraph}{}{6}{section*.10}
 \contentsline {subsubsection}{Primera quinzena d'Abril}{8}{section*.11}
 \contentsline {paragraph}{}{8}{section*.12}
 \contentsline {subsubsection}{Segona quinzena d'Abril -\ Finals de Maig}{8}{section*.13}
 \contentsline {paragraph}{}{8}{section*.14}
 \contentsline {paragraph}{}{8}{section*.15}
-\contentsline {subsubsection}{Mesos de juny i juliol}{9}{section*.16}
-\contentsline {paragraph}{}{9}{section*.17}
+\contentsline {subsubsection}{Mesos de juny i juliol}{8}{section*.16}
+\contentsline {paragraph}{}{8}{section*.17}
 \contentsline {subsubsection}{Mes d'agost}{9}{section*.18}
 \contentsline {paragraph}{}{9}{section*.19}
 \contentsline {subsubsection}{Mes de setembre}{9}{section*.20}
@@ -37,9 +37,9 @@
 \contentsline {paragraph}{}{14}{section*.26}
 \contentsline {section}{\numberline {2.5}El proc\IeC {\'e}s de recerca geneal\IeC {\`o}gica}{15}{section.2.5}
 \contentsline {paragraph}{}{15}{section*.27}
-\contentsline {paragraph}{}{16}{section*.28}
-\contentsline {section}{\numberline {2.6}Conclusi\IeC {\'o}}{16}{section.2.6}
-\contentsline {paragraph}{}{16}{section*.29}
+\contentsline {paragraph}{}{15}{section*.28}
+\contentsline {section}{\numberline {2.6}Conclusi\IeC {\'o}}{15}{section.2.6}
+\contentsline {paragraph}{}{15}{section*.29}
 \contentsline {chapter}{\numberline {3}L'organitzaci\IeC {\'o} FamilySearch}{17}{chapter.3}
 \contentsline {paragraph}{}{17}{section*.30}
 \contentsline {section}{\numberline {3.1}Qu\IeC {\`e} \IeC {\'e}s FamilySearch?}{17}{section.3.1}
@@ -48,38 +48,38 @@
 \contentsline {paragraph}{}{18}{section*.32}
 \contentsline {section}{\numberline {3.3}L'esgl\IeC {\'e}sia mormona i la fam\IeC {\'\i }lia}{19}{section.3.3}
 \contentsline {paragraph}{}{19}{section*.33}
-\contentsline {section}{\numberline {3.4}Serveis per organitzacions amb arxius geneal\IeC {\`o}gics}{21}{section.3.4}
-\contentsline {paragraph}{}{21}{section*.34}
+\contentsline {section}{\numberline {3.4}Serveis per organitzacions amb arxius geneal\IeC {\`o}gics}{20}{section.3.4}
+\contentsline {paragraph}{}{20}{section*.34}
 \contentsline {subsection}{\numberline {3.4.1}Captura d'imatges}{21}{subsection.3.4.1}
 \contentsline {paragraph}{}{21}{section*.35}
 \contentsline {subsection}{\numberline {3.4.2}Conversi\IeC {\'o} de formats digital}{21}{subsection.3.4.2}
 \contentsline {paragraph}{}{21}{section*.36}
-\contentsline {subsection}{\numberline {3.4.3}Indexaci\IeC {\'o} en l\IeC {\'\i }nea}{22}{subsection.3.4.3}
-\contentsline {paragraph}{}{22}{section*.37}
+\contentsline {subsection}{\numberline {3.4.3}Indexaci\IeC {\'o} en l\IeC {\'\i }nea}{21}{subsection.3.4.3}
+\contentsline {paragraph}{}{21}{section*.37}
 \contentsline {subsection}{\numberline {3.4.4}Acc\IeC {\'e}s en l\IeC {\'\i }nea}{22}{subsection.3.4.4}
 \contentsline {paragraph}{}{22}{section*.38}
 \contentsline {subsection}{\numberline {3.4.5}Preservaci\IeC {\'o} dels registres i fitxers f\IeC {\'\i }sics}{22}{subsection.3.4.5}
 \contentsline {paragraph}{}{22}{section*.39}
-\contentsline {subsection}{\numberline {3.4.6}Conclusions sobre els serveis professionals}{23}{subsection.3.4.6}
-\contentsline {paragraph}{}{23}{section*.40}
+\contentsline {subsection}{\numberline {3.4.6}Conclusions sobre els serveis professionals}{22}{subsection.3.4.6}
+\contentsline {paragraph}{}{22}{section*.40}
 \contentsline {section}{\numberline {3.5}Serveix per particulars i aficionats a la genealogia}{23}{section.3.5}
 \contentsline {paragraph}{}{23}{section*.41}
 \contentsline {subsection}{\numberline {3.5.1}Eines geneal\IeC {\`o}giques}{23}{subsection.3.5.1}
 \contentsline {paragraph}{}{23}{section*.42}
-\contentsline {subsubsection}{Arbre familiar}{24}{section*.43}
-\contentsline {paragraph}{}{24}{section*.44}
-\contentsline {subsubsection}{Fan chart}{25}{section*.45}
-\contentsline {paragraph}{}{25}{section*.46}
-\contentsline {subsubsection}{Detalls personals}{25}{section*.47}
-\contentsline {paragraph}{}{25}{section*.48}
-\contentsline {subsubsection}{Mem\IeC {\`o}ries}{26}{section*.49}
-\contentsline {paragraph}{}{26}{section*.50}
+\contentsline {subsubsection}{Arbre familiar}{23}{section*.43}
+\contentsline {paragraph}{}{23}{section*.44}
+\contentsline {subsubsection}{Fan chart}{24}{section*.45}
+\contentsline {paragraph}{}{24}{section*.46}
+\contentsline {subsubsection}{Detalls personals}{24}{section*.47}
+\contentsline {paragraph}{}{24}{section*.48}
+\contentsline {subsubsection}{Mem\IeC {\`o}ries}{25}{section*.49}
+\contentsline {paragraph}{}{25}{section*.50}
 \contentsline {subsubsection}{Family Booklet}{26}{section*.51}
 \contentsline {paragraph}{}{26}{section*.52}
 \contentsline {section}{\numberline {3.6}Recerca geneal\IeC {\`o}gica}{26}{section.3.6}
 \contentsline {paragraph}{}{26}{section*.53}
-\contentsline {subsection}{\numberline {3.6.1}Cerca de registres}{27}{subsection.3.6.1}
-\contentsline {paragraph}{}{27}{section*.54}
+\contentsline {subsection}{\numberline {3.6.1}Cerca de registres}{26}{subsection.3.6.1}
+\contentsline {paragraph}{}{26}{section*.54}
 \contentsline {subsection}{\numberline {3.6.2}Cerca de genealogies}{27}{subsection.3.6.2}
 \contentsline {paragraph}{}{27}{section*.55}
 \contentsline {subsection}{\numberline {3.6.3}Cerca per cat\IeC {\`a}leg}{28}{subsection.3.6.3}
@@ -88,13 +88,51 @@
 \contentsline {paragraph}{}{28}{section*.57}
 \contentsline {subsection}{\numberline {3.6.5}Wiki de FamilySearch}{28}{subsection.3.6.5}
 \contentsline {paragraph}{}{28}{section*.58}
-\contentsline {section}{\numberline {3.7}Projectes d'indexaci\IeC {\'o}}{29}{section.3.7}
-\contentsline {paragraph}{}{29}{section*.59}
-\contentsline {subsubsection}{Proc\IeC {\'e}s d'indexaci\IeC {\'o}}{29}{section*.60}
-\contentsline {paragraph}{}{29}{section*.61}
+\contentsline {section}{\numberline {3.7}Projectes d'indexaci\IeC {\'o}}{28}{section.3.7}
+\contentsline {paragraph}{}{28}{section*.59}
+\contentsline {subsubsection}{Proc\IeC {\'e}s d'indexaci\IeC {\'o}}{28}{section*.60}
+\contentsline {paragraph}{}{28}{section*.61}
 \contentsline {paragraph}{}{29}{section*.62}
 \contentsline {subsubsection}{Qu\IeC {\`e} pot indexar un voluntari?}{29}{section*.63}
 \contentsline {paragraph}{}{29}{section*.64}
-\contentsline {section}{\numberline {3.8}Conclusi\IeC {\'o} sobre les eines per usuaris i aficionats a la genealogia}{30}{section.3.8}
-\contentsline {paragraph}{}{30}{section*.65}
-\contentsline {chapter}{Acronyms}{33}{section*.66}
+\contentsline {section}{\numberline {3.8}Conclusi\IeC {\'o} sobre les eines per particulars}{29}{section.3.8}
+\contentsline {paragraph}{}{29}{section*.65}
+\contentsline {chapter}{\numberline {4}Introducci\IeC {\'o} a l'API de FamilySearch}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}El portal de desenvolupadors}{31}{section.4.1}
+\contentsline {paragraph}{}{31}{section*.66}
+\contentsline {section}{\numberline {4.2}L'arquitectura de l'\gls {API}}{32}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Qu\IeC {\`e} \IeC {\'e}s una \gls {API}?}{32}{subsection.4.2.1}
+\contentsline {paragraph}{}{32}{section*.67}
+\contentsline {subsection}{\numberline {4.2.2}L'arquitectura REST}{32}{subsection.4.2.2}
+\contentsline {paragraph}{}{32}{section*.68}
+\contentsline {paragraph}{}{32}{section*.69}
+\contentsline {subsubsection}{Interf\IeC {\'\i }cie uniforme (uniform interface)}{33}{section*.70}
+\contentsline {paragraph}{}{33}{section*.71}
+\contentsline {subsubsection}{Sense estat (stateless)}{33}{section*.72}
+\contentsline {paragraph}{}{33}{section*.73}
+\contentsline {subsubsection}{Client-servidor (client-server)}{33}{section*.74}
+\contentsline {paragraph}{}{33}{section*.75}
+\contentsline {subsubsection}{Emmagatzematge en el client (cacheable)}{33}{section*.76}
+\contentsline {paragraph}{}{33}{section*.77}
+\contentsline {subsubsection}{Sistema per capes (layered system)}{34}{section*.78}
+\contentsline {paragraph}{}{34}{section*.79}
+\contentsline {subsubsection}{Codi sota petici\IeC {\'o} (code on demand)}{34}{section*.80}
+\contentsline {paragraph}{}{34}{section*.81}
+\contentsline {section}{\numberline {4.3}Formats de dades utilitzats pel Sistema}{34}{section.4.3}
+\contentsline {paragraph}{}{34}{section*.82}
+\contentsline {subsection}{\numberline {4.3.1}El format de dades GEDCOM i GEDCOM X}{34}{subsection.4.3.1}
+\contentsline {paragraph}{}{34}{section*.83}
+\contentsline {paragraph}{}{35}{section*.84}
+\contentsline {paragraph}{}{35}{section*.85}
+\contentsline {subsection}{\numberline {4.3.2}Format de dades FamilySearch}{35}{subsection.4.3.2}
+\contentsline {paragraph}{}{35}{section*.86}
+\contentsline {subsection}{\numberline {4.3.3}Format de dades Atom (o At\IeC {\`o}mic)}{35}{subsection.4.3.3}
+\contentsline {paragraph}{}{35}{section*.87}
+\contentsline {subsection}{\numberline {4.3.4}Codificacions dels formats de dades}{36}{subsection.4.3.4}
+\contentsline {paragraph}{}{36}{section*.88}
+\contentsline {subsubsection}{El llenguatge XML}{36}{section*.89}
+\contentsline {paragraph}{}{36}{section*.90}
+\contentsline {paragraph}{}{36}{section*.91}
+\contentsline {subsubsection}{El llenguatge JSON}{36}{section*.92}
+\contentsline {paragraph}{}{36}{section*.93}
+\contentsline {chapter}{Acronyms}{39}{section*.94}
