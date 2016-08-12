@@ -41,6 +41,20 @@
 \BOOKMARK [1][-]{section.4.3}{Formats de dades utilitzats pel Sistema}{chapter.4}% 41
 \BOOKMARK [2][-]{subsection.4.3.1}{El format de dades GEDCOM i GEDCOM X}{section.4.3}% 42
 \BOOKMARK [2][-]{subsection.4.3.2}{Format de dades FamilySearch}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.3}{Format de dades Atom \(o At\362mic\)}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.3}{Format de dades Atom \(o At\3032mic\)}{section.4.3}% 44
 \BOOKMARK [2][-]{subsection.4.3.4}{Codificacions dels formats de dades}{section.4.3}% 45
-\BOOKMARK [0][-]{section*.94}{Acronyms}{}% 46
+\BOOKMARK [1][-]{section.4.4}{Evoluci\3033 temporal de l'API}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.1}{Evolucions al llarg del temps}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.2}{Tree Foundation}{section.4.4}% 48
+\BOOKMARK [1][-]{section.4.5}{Serveis extres oferts per l'API}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.5.1}{Caching}{section.4.5}% 50
+\BOOKMARK [2][-]{subsection.4.5.2}{Throttling}{section.4.5}% 51
+\BOOKMARK [2][-]{subsection.4.5.3}{Sincronitzaci\3033}{section.4.5}% 52
+\BOOKMARK [2][-]{subsection.4.5.4}{Internacionaltizaci\3033}{section.4.5}% 53
+\BOOKMARK [2][-]{subsection.4.5.5}{Transfer\303\250ncia de registres en grans quantitats}{section.4.5}% 54
+\BOOKMARK [1][-]{section.4.6}{Eines de desenvolupament}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.6.1}{Els SDK de FamilySearch}{section.4.6}% 56
+\BOOKMARK [2][-]{subsection.4.6.2}{Les aplicacions d'exemple}{section.4.6}% 57
+\BOOKMARK [2][-]{subsection.4.6.3}{Altres eines intressants}{section.4.6}% 58
+\BOOKMARK [1][-]{section.4.7}{Proc\303\251s de certificaci\3033}{chapter.4}% 59
+\BOOKMARK [1][-]{section.4.8}{Diferents entorns de treball}{chapter.4}% 60

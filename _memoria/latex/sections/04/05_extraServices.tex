@@ -1,0 +1,66 @@
+\section{Serveis extres oferts per l'API}
+
+    \paragraph{}
+    L'API de FamilySearch no es caracteritza només per ser el centre d'informació obert amb més registres genealògics, sinó que a més a més, l'API ha estat dissenyada i pensada perquè pugui ser utilitzada de forma simultània per moltes persones, des de diferents indrets del món, d'una forma còmode i personalitzada.
+
+    Tot i que evidentment cap sistema és infal·lible, i de fet, com ja hem comentat, FamilySearch està realitzat una actualització del seu sistema del back-end per tal de garantir una millor escalabilitat del sistema, el sistema actual ja presenta una sèrie de serveis dignes de menció.
+
+    \subsection{Caching}
+
+        \paragraph{}
+        El fet de voler oferir un servei de \emph{caching} decent ha influenciat bona part del disseny de l'API. Davant la pregunta evident de, perquè és important el \emph{caching} a FamilySearch?
+
+        \begin{itemize}
+            \item El fet que el client pugui aplicar tècniques d'emmagatzematge, evita la repetició de certes peticions al sistema.
+            \item L'existència de reverse proxies permet, a aquests servidors, respondre a peticions dels clients sense necessitat d'accedir als servidors i bases de dades si detecten que la informació demana, ja es troba disponible en aquests. Per tant, ajuden a reduir la càrrega del sistema.
+            \item Davant noves peticions, els servidors poden indicar als proxies que les seves dades encara són vàlides i que per tant, no fa falta que realitzin una nova petició i n'esperin la resposta.
+        \end{itemize}
+
+
+    \subsection{Throttling}
+
+        \paragraph{}
+        La funcionalitat de \emph{throttling} s'encarrega de posar un límit al nombre de peticions, en un cert interval de temps, que un usuari pot realitzar. Aquests límits són creats en l'àmbit d'usuari i per tant, utilitzar més d'una sessió simultània, no permet saltar-se aquesta limitació.
+
+        Les polítiques de \emph{throttling} permeses són calculades mitjançant el temps de processat, respecte al temps real que ha transcorregut. Diferents recursos, disposen de diferents polítiques. En cas d'excedir aquests límits, la capçalera de resposta indica quant de temps cal esperar entre peticions, per poder tornar a interactuar amb l'API.
+
+        Aquest servei, que evidentment, suposa una limitació pels usuaris, evita que certs usuaris de forma intencionada o involuntària, bloquegin tots els recursos disponibles per part dels servidors i el servei quedi inutilitzable per altres persones.
+
+
+    \subsection{Sincronització}
+
+        \paragraph{}
+        Un dels reptes més comuns, per aquelles aplicacions que emmagatzemen dades d'un tercer, és el de saber si aquestes dades han estat modificades des de l'últim cop que van ser consultades o extretes.
+
+        El paràmetre ETag, de la capçalera de les peticions contra l'API, ha estat modificat per part de FamilySearch, per obtenir la versió del recurs consultat. Per tant, si es realitza una petició de només aquestes capçaleres, a canvi d'un petit esforç de l'API, es podria comparar si els recursos desitjats han estat modificats o no sense causar un gran impacte.
+
+        Un cop es coneix que un recurs ha estat modificat, es poden descobrir els canvis realitzats mitjançant la comparació dels dos objectes o llegint l'historial de canvis. Evidentment, sempre es podria realitzar una sobre escriptura completa del recurs.
+
+
+    \subsection{Internacionaltizació}
+
+        \paragraph{}
+        Un dels serveis que més m'ha sorprès trobar-me a l'API de FamilySearch és el de suport a la internacionalització.
+
+        La internacionalització consisteix a adaptar una peça de software o contingut, a diferents idiomes, sense necessitat de realitzar canvis en el codi. L'API de FamilySearch permet realitzar les peticions de forma que certs conjunts de dades retornades, com poden ser per exemple, el nom de països o persones, estiguin localitzades en l'idioma especificat.
+
+        La internacionalització permet, per exemple, que un usuari que es troba a Espanya vegi el terme `living' (viu), en el seu idioma natiu. Un altre recurs que moltes pàgines web localitzen són les dates. És ben sabut que l'estructura americana d'una data, per exemple, difereix d'una data europea en la posició dels termes any, mes i dia.
+
+        El conjunt de dades que FamilySearch permet localitzar són:
+
+        \begin{itemize}
+            \item Les propietats de visualització del recurs Persona.
+            \item La informació relativa a les localitzacions.
+            \item Certs aspectes del vocabulari controlat, o comú, de l'API.
+            \item Dates.
+        \end{itemize}
+
+
+    \subsection{Transferència de registres en grans quantitats}
+
+        \paragraph{}
+        Existeix la possibilitat per les organitzacions que així ho desitgin, de signar un acord amb FamilySearch, que els hi permeti mantenir la seva pròpia còpia de dades oficials de FamilySearch, relativa a persones difuntes.
+
+        Per realitzar aquestes transferències, que mouen alts volums de dades, FamilySearch disposa d'una API especial que permet a les organitzacions gestionar, mantenir i actualitzar, les dades emmagatzemades en els seus sistemes a través de diferents sessions.
+
+        Aquesta opció pot permetre a altres organitzacions ordenar i emmagatzemar les dades amb una estructura diferent i habilitar, d'aquesta forma, la possibilitat de realitzar diferents tipus d'estudi. Per exemple, estudis de mineria de dades.
