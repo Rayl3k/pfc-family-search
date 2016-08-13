@@ -1,0 +1,90 @@
+\section{L'arquitectura de l'\gls{API}}
+
+
+    \subsection{Què és una \gls{API}?}
+
+    \paragraph{}
+    Abans d'entrar en detall en com funciona una \gls{API}, estaria bé definir, amb una mica més de precisió, en què consisteix exactament.
+
+    Una \gls{API}, de l'anglès `Application Programming Interface' o Interfície de programació d'aplicacions en català, representa el conjunt de subrutines, funcions i procediments que ofereix una biblioteca per tal de ser utilitzada en el software de tercers com una capa d'abstracció. Aquest conjunt de subrutines, funcions i procediments, acostumen a oferir accés a certs serveis o conjunts de dades d'un particular, a tercers, de forma controlada.
+
+
+    \subsection{L'arquitectura REST}
+
+    \paragraph{}
+    L’arquitectura sobre la qual està creada l’\gls{API} de FamilySearch és una arquitectura REST. Les sigles provenen de l’anglès i representen el concepte: \gls{REST}.
+
+    Les arquitectures \gls{REST} es caracteritzen per estar orientades els recursos més que a les accions que es poden realitzar sobre ells i com a peculiaritat, es caracteritzen per sis regles o restriccions.
+
+    Aquestes són: interfície uniforme, sense estat, client-servidor, emmagatzemables, sistema per capes, i codi sota petició. Aquests sis conceptes són doncs els que defineixen les bases de es arquitectures \gls{REST}.
+
+    És diu que una arquitectura \gls{REST} és orientada als recursos perquè estan construïdes al voltant d’objectes i les relacions entre aquests, en comptes d’accions. Per exemple, a l’\gls{API} de FamilySearch, es parla de persones i esdeveniments, en comptes de llegir persones o crear esdeveniments i en canvi, aquestes operacions, passen a formar part dels objectes \emph{Persona} i \emph{Esdeveniment.}
+
+    L'intercanvi de dades es produeix mitjançant l'ús de diferents representacions. Aquestes, expliquen com els recursos són tractats per l’\gls{API} i de quina forma han de ser realitzades les comunicacions entre el servidor i el client. Els formats més freqüents són JSON i XML. FamilySearch ofereix suport per ambdós formats.
+
+    Per posar un exemple reduït que il·lustri el que estem explicant, podem descriure de la següent forma, el que podria ser una operació contra l'\gls{API} de FamilySearch, especificant quin element seria considerat el Recurs, quin el Servei i quin la Representació:
+
+    \begin{itemize}
+        \item \textbf{Recurs:} Persona (informació relacionada amb una persona en concret)
+        \item \textbf{Servei:} Obtenir informació de la persona (GET)
+        \item \textbf{Representació:} Nom, cognoms, esdeveniments relacionats amb la vida de la persona, etcètera, en format \gls{XML} o \gls{JSON}.
+    \end{itemize}
+
+    \paragraph{}
+    Com també s'ha comentat, l’arquitectura \gls{REST} es caracteritza per la implementació de sis restriccions imposades sobre el sistema. A continuació s'exposa amb més detall, cada una d'elles.
+
+
+    \subsubsection{Interfície uniforme (uniform interface)}
+
+    \paragraph{}
+    Aquesta restricció s'encarrega de definir la interfície de comunicació entre el client i el servidor.
+
+    En una arquitectura REST, s'utilitzen els protocols de comunicació \gls{HTTP} i \gls{HTTPS} de forma conjunta amb els \gls{URI}, per aconseguir accés als diferents recursos i operacions proporcionades per l'\gls{API}.
+
+    Els verbs permesos pels protocols de comunicació web són els coneguts: get, put, post, delete, options and head.
+
+    Per exemple, per fer la petició de lectura sobre el recurs d’una Persona a l’\gls{API} de FamilySearch, executaríem la següent crida \gls{HTTP} o \gls{HTTPS} mitjançant el verb i URI especificats a continuació:\\ \verb|GET /platform/genealogies/persons/2:2:PPPJ-MYZ7|.
+
+
+    \subsubsection{Sense estat (stateless)}
+
+    \paragraph{}
+    Aquesta restricció implica que el servidor no emmagatzema la informació del client. Això implica que cada petició d'aquest cap a l’\gls{API}, ha de contenir tota la informació necessària perquè el servidor l'identifiqui i es defineixin les regles de comunicació adequades per processar la petició.
+
+    Hi ha exemples d'operacions a l'\gls{API} de FamilySearch, com per exemple el procés d'identificació Oauth V2, que no són realment RESTful, doncs aquestes sí que guarden informació del client durant les diferents parts de la comunicació.
+
+
+    \subsubsection{Client-servidor (client-server)}
+
+    \paragraph{}
+    Per comprendre aquesta restricció, cal comprendre primer en què consisteix un sistema desconnectat.
+
+    En el cas de les arquitectures REST, un sistema desconnectat implica que el client mai tindrà accés directe a les bases de dades que emmagatzemen la informació, i que per tant, sempre haurà d'accedir a les dades mitjançant l’intermediari. En aquest cas, l'\gls{API}.
+
+    Els protocols de comunicació descrits prèviament (\gls{HTTP} i \gls{HTTPS}), i la interfície de comunicació, són els encarregats de gestionar les comunicacions entre client i servidor.
+
+
+    \subsubsection{Emmagatzematge en el client (cacheable)}
+
+    \paragraph{}
+    Aquesta restricció fa referència a si les respostes retornades, des del servidor, al client, poden ser emmagatzemades per aquest i durant quant de temps les pot guardar. Existeixen tres nivells de configuració diferents:
+
+    \begin{itemize}
+        \item \textbf{Implícit:} Si és el client el que decideix quant de temps guardarà les dades o informació retornada, es tracte d'emmagatzematge implícit.
+        \item \textbf{Explícit:} Si és el servidor el que mana i posa les regles, parlem d'emmagatzematge explícit.
+        \item \textbf{Negociat:} Quan el client i el servidor negocien i arriben a un acord, es tractea d'emmagatzematge negociat.
+    \end{itemize}
+
+
+    \subsubsection{Sistema per capes (layered system)}
+
+    \paragraph{}
+    Aquest principi, o restricció, es basa en el fet que el client no pot assumir que tindrà connexió directa amb el servidor. És a dir, poden existir diferents intermediaris en forma de hardware i software entre client i servidor.
+
+    Això, facilita l’escalabilitat i persistència del sistema gràcies al fet que el client no s’ha de preocupar de comunicar-se amb elements o tecnologies específiques. D'aquesta forma, el servidor es pot veure subjectes a canvis de forma transparent pels clients.
+
+
+    \subsubsection{Codi sota petició (code on demand)}
+
+    \paragraph{}
+    Restricció que regula com, de forma excepcional, el servidor pot proporcionar accés al client sobre certes parts de la lògica del funcionament. Alguns exemples poden ser els \emph{Java Applets} o blocs de codi \emph{JavasScript}.

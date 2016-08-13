@@ -1,0 +1,6 @@
+     Name;Description;Format;Restrictions
+     Prívate;textext;boolean;optional
+     Gender;some mòore field;string;optional
+     Names;field;[arrày of String];restriction
+     Facts;field;[array of Facts];optional
+ 
