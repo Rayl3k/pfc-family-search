@@ -124,44 +124,44 @@
 \contentsline {paragraph}{}{37}{section*.83}
 \contentsline {paragraph}{}{38}{section*.84}
 \contentsline {paragraph}{}{38}{section*.85}
-\contentsline {subsection}{\numberline {4.3.2}Format de dades FamilySearch}{38}{subsection.4.3.2}
-\contentsline {paragraph}{}{38}{section*.86}
-\contentsline {subsection}{\numberline {4.3.3}Format de dades Atom (o At\IeC {\`o}mic)}{38}{subsection.4.3.3}
-\contentsline {paragraph}{}{38}{section*.87}
+\contentsline {subsection}{\numberline {4.3.2}Format de dades FamilySearch}{39}{subsection.4.3.2}
+\contentsline {paragraph}{}{39}{section*.86}
+\contentsline {subsection}{\numberline {4.3.3}Format de dades Atom (o At\IeC {\`o}mic)}{39}{subsection.4.3.3}
+\contentsline {paragraph}{}{39}{section*.87}
 \contentsline {subsection}{\numberline {4.3.4}Codificacions dels formats de dades}{39}{subsection.4.3.4}
 \contentsline {paragraph}{}{39}{section*.88}
 \contentsline {subsubsection}{El llenguatge XML}{39}{section*.89}
 \contentsline {paragraph}{}{39}{section*.90}
-\contentsline {paragraph}{}{39}{section*.91}
-\contentsline {subsubsection}{El llenguatge JSON}{39}{section*.92}
-\contentsline {paragraph}{}{39}{section*.93}
-\contentsline {section}{\numberline {4.4}Evoluci\IeC {\'o} temporal de l'API}{40}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Evolucions al llarg del temps}{40}{subsection.4.4.1}
-\contentsline {paragraph}{}{40}{section*.94}
+\contentsline {paragraph}{}{40}{section*.91}
+\contentsline {subsubsection}{El llenguatge JSON}{40}{section*.92}
+\contentsline {paragraph}{}{40}{section*.93}
+\contentsline {section}{\numberline {4.4}Evoluci\IeC {\'o} temporal de l'API}{41}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Evolucions al llarg del temps}{41}{subsection.4.4.1}
+\contentsline {paragraph}{}{41}{section*.94}
 \contentsline {subsection}{\numberline {4.4.2}Tree Foundation}{41}{subsection.4.4.2}
 \contentsline {paragraph}{}{41}{section*.95}
 \contentsline {section}{\numberline {4.5}Serveis extres oferts per l'API}{43}{section.4.5}
 \contentsline {paragraph}{}{43}{section*.96}
-\contentsline {subsection}{\numberline {4.5.1}Caching}{43}{subsection.4.5.1}
-\contentsline {paragraph}{}{43}{section*.97}
+\contentsline {subsection}{\numberline {4.5.1}Caching}{44}{subsection.4.5.1}
+\contentsline {paragraph}{}{44}{section*.97}
 \contentsline {subsection}{\numberline {4.5.2}Throttling}{44}{subsection.4.5.2}
 \contentsline {paragraph}{}{44}{section*.98}
 \contentsline {subsection}{\numberline {4.5.3}Sincronitzaci\IeC {\'o}}{44}{subsection.4.5.3}
 \contentsline {paragraph}{}{44}{section*.99}
-\contentsline {subsection}{\numberline {4.5.4}Internacionaltizaci\IeC {\'o}}{44}{subsection.4.5.4}
-\contentsline {paragraph}{}{44}{section*.100}
+\contentsline {subsection}{\numberline {4.5.4}Internacionaltizaci\IeC {\'o}}{45}{subsection.4.5.4}
+\contentsline {paragraph}{}{45}{section*.100}
 \contentsline {subsection}{\numberline {4.5.5}Transfer\IeC {\`e}ncia de registres en grans quantitats}{45}{subsection.4.5.5}
 \contentsline {paragraph}{}{45}{section*.101}
-\contentsline {section}{\numberline {4.6}Eines de desenvolupament}{45}{section.4.6}
-\contentsline {paragraph}{}{45}{section*.102}
-\contentsline {subsection}{\numberline {4.6.1}Els SDK de FamilySearch}{45}{subsection.4.6.1}
-\contentsline {paragraph}{}{45}{section*.103}
-\contentsline {subsection}{\numberline {4.6.2}Les aplicacions d'exemple}{46}{subsection.4.6.2}
-\contentsline {paragraph}{}{46}{section*.104}
+\contentsline {section}{\numberline {4.6}Eines de desenvolupament}{46}{section.4.6}
+\contentsline {paragraph}{}{46}{section*.102}
+\contentsline {subsection}{\numberline {4.6.1}Els SDK de FamilySearch}{46}{subsection.4.6.1}
+\contentsline {paragraph}{}{46}{section*.103}
+\contentsline {subsection}{\numberline {4.6.2}Les aplicacions d'exemple}{47}{subsection.4.6.2}
+\contentsline {paragraph}{}{47}{section*.104}
 \contentsline {subsection}{\numberline {4.6.3}Altres eines intressants}{47}{subsection.4.6.3}
 \contentsline {paragraph}{}{47}{section*.105}
 \contentsline {section}{\numberline {4.7}Proc\IeC {\'e}s de certificaci\IeC {\'o}}{47}{section.4.7}
 \contentsline {paragraph}{}{47}{section*.106}
-\contentsline {paragraph}{}{47}{section*.107}
+\contentsline {paragraph}{}{48}{section*.107}
 \contentsline {section}{\numberline {4.8}Diferents entorns de treball}{48}{section.4.8}
 \contentsline {paragraph}{}{48}{section*.108}

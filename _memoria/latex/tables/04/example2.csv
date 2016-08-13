@@ -1,5 +1,0 @@
-nom;desc;format;rest
-Private;Indica si la instancia de la persona ha estat designada com a privada o publica.;Boolea;OPCIONAL. Una descripcio de com les aplicacions han de tractar les dades de caracter privat.
-Gender;El genere de la persona;Genere (GEDCOM X);OPCIONAL.
-Names;Els noms de la persona;Llista de Noms. (GEDCOM X);OPCIONAL. Si mes d’un nom es introduit, sassumeix que aquests han estat introduits en ordre de preferencia, amb el mes preferit, introduit primer.
-Facts;Esdeveniments relacionats amb la vida d’una persona.;Llista d'Esdeveniments (GEDCOM X);OPCIONAL.

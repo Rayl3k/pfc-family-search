@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  13 AUG 2016 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  13 AUG 2016 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1175,8 +1175,13 @@ Overfull \hbox (15.86052pt too wide) in paragraph at lines 74--75
  []
 
 ) (./sections/04/03_dataFormats.tex [36]
-Underfull \hbox (badness 3919) in paragraph at lines 47--47
-\OT1/cmss/m/n/10 apli-ca-cions han de
+Underfull \hbox (badness 3375) in paragraph at lines 47--47
+\OT1/cmss/m/n/10 de trac-tar les dades de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\OT1/cmss/m/n/10 G^^Renere (GED-
  []
 
 
@@ -1186,42 +1191,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 47--47
-[]|\OT1/cmss/m/n/10 Llista d'Esdeveniments
+[]|\OT1/cmss/m/n/10 Llista
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 47--47
-\OT1/cmss/m/n/10 (GED-COM X). L'ordre
+\OT1/cmss/m/n/10 d'Esdeveniments
  []
 
-
-Overfull \hbox (14.22636pt too wide) in alignment at lines 47--47
- [] [] [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 47
- []
-
-
-Overfull \vbox (3.66933pt too high) has occurred while \output is active []
-
- [37]
-Underfull \vbox (badness 2012) has occurred while \output is active []
-
- [38]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 98.
- [39]) (./sections/04/04_temporalEvolution.tex [40] <images/04/treeFoundationDistributed.jpg, id=638, 1029.8475pt x 468.75125pt>
+[37] [38]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 128.
+ [39] [40]) (./sections/04/04_temporalEvolution.tex [41] <images/04/treeFoundationDistributed.jpg, id=649, 1029.8475pt x 468.75125pt>
 File: images/04/treeFoundationDistributed.jpg Graphic file (type jpg)
  <use images/04/treeFoundationDistributed.jpg>
 Package pdftex.def Info: images/04/treeFoundationDistributed.jpg used on input line 29.
 (pdftex.def)             Requested size: 360.45203pt x 164.06538pt.
- [41 <./images/04/treeFoundationDistributed.jpg>] <images/04/resourceRellocation.jpg, id=646, 1039.885pt x 442.65375pt>
+ <images/04/resourceRellocation.jpg, id=651, 1039.885pt x 442.65375pt>
 File: images/04/resourceRellocation.jpg Graphic file (type jpg)
  <use images/04/resourceRellocation.jpg>
 Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 43.
 (pdftex.def)             Requested size: 363.9652pt x 154.93112pt.
- <images/04/phase1.jpg, id=648, 1051.93pt x 552.0625pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/04/phase1.jpg, id=653, 1051.93pt x 552.0625pt>
 File: images/04/phase1.jpg Graphic file (type jpg)
  <use images/04/phase1.jpg>
 Package pdftex.def Info: images/04/phase1.jpg used on input line 51.
@@ -1230,23 +1224,17 @@ Package pdftex.def Info: images/04/phase1.jpg used on input line 51.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./sections/04/05_extraServices.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42 <./images/04/resourceRellocation.jpg>]
+) (./sections/04/05_extraServices.tex [42 <./images/04/treeFoundationDistributed.jpg>] [43 <./images/04/resourceRellocation.jpg> <./images/04/phase1.jpg>]
 Overfull \hbox (0.63734pt too wide) in paragraph at lines 14--15
 []\OT1/cmr/m/n/10.95 El fet que el client pugui aplicar t^^Recniques d'emmagatzematge, evita la repetici^^So
  []
 
-[43 <./images/04/phase1.jpg>] [44]) (./sections/04/06_developmentTools.tex [45]
-Underfull \vbox (badness 2932) has occurred while \output is active []
-
- [46]) (./sections/04/07_certification.tex
+[44]) (./sections/04/06_developmentTools.tex [45] [46]) (./sections/04/07_certification.tex
 Overfull \hbox (17.72443pt too wide) in paragraph at lines 12--13
 []\OT1/cmr/bx/n/10.95 Certificaci^^So d'escriptura: \OT1/cmr/m/n/10.95 En cas que l'aplicaci^^So re-al-itzi op-era-cions d'escriptura,
  []
 
-) (./sections/04/08_workingEnvironments.tex [47])) [48]
+[47]) (./sections/04/08_workingEnvironments.tex)) [48]
 No file main.gls.
 No file main.acr.
 [49
@@ -1261,18 +1249,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7E0A965E337601250E02410890C833A7;4671.
  ) 
 Here is how much of TeX's memory you used:
- 24409 strings out of 493013
- 431604 string characters out of 6136994
- 581417 words of memory out of 5000000
- 27135 multiletter control sequences out of 15000+600000
+ 24421 strings out of 493013
+ 431761 string characters out of 6136994
+ 586699 words of memory out of 5000000
+ 27143 multiletter control sequences out of 15000+600000
  12176 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,64p,1951b,1128s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,64p,1951b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (49 pages, 952111 bytes).
+Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (49 pages, 956076 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 714 compressed objects within 8 object streams
- 265 named destinations out of 1000 (max. 500000)
+ 796 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 267 named destinations out of 1000 (max. 500000)
  538 words of extra memory for PDF output out of 10000 (max. 10000000)
 
