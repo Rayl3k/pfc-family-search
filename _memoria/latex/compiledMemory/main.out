@@ -1,0 +1,60 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363 al projecte}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introducci\363}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Motivaci\363 i context}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Objectius}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Planificaci\363}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.4.1}{Planificaci\363 Febrer del 2014 - Juliol 2014}{section.1.4}% 6
+\BOOKMARK [2][-]{subsection.1.4.2}{Planificaci\363 Febrer del 2016 - Setembre 2016}{section.1.4}% 7
+\BOOKMARK [0][-]{chapter.2}{La genealogia}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Qu\350 \351s la genealogia?}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{El paper de la genealogia en el transcurs de la hist\362ria}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Les lleis reguladores}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Els codis \350tics en la genealogia}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{El proc\351s de recerca geneal\362gica}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.6}{Conclusi\363}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{L'organitzaci\363 FamilySearch}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Qu\350 \351s FamilySearch?}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{La hist\362ria de FamilySearch}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{L'esgl\351sia mormona i la fam\355lia}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Serveis per organitzacions amb arxius geneal\362gics}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.4.1}{Captura d'imatges}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.2}{Conversi\363 de formats digital}{section.3.4}% 21
+\BOOKMARK [2][-]{subsection.3.4.3}{Indexaci\363 en l\355nea}{section.3.4}% 22
+\BOOKMARK [2][-]{subsection.3.4.4}{Acc\351s en l\355nea}{section.3.4}% 23
+\BOOKMARK [2][-]{subsection.3.4.5}{Preservaci\363 dels registres i fitxers f\355sics}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.6}{Conclusions sobre els serveis professionals}{section.3.4}% 25
+\BOOKMARK [1][-]{section.3.5}{Serveis per particulars i aficionats a la genealogia}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.5.1}{Eines geneal\362giques}{section.3.5}% 27
+\BOOKMARK [1][-]{section.3.6}{Recerca geneal\362gica}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.6.1}{Cerca de registres}{section.3.6}% 29
+\BOOKMARK [2][-]{subsection.3.6.2}{Cerca de genealogies}{section.3.6}% 30
+\BOOKMARK [2][-]{subsection.3.6.3}{Cerca per cat\340leg}{section.3.6}% 31
+\BOOKMARK [2][-]{subsection.3.6.4}{Cerca en llibres d'hist\362ria geneal\362gica}{section.3.6}% 32
+\BOOKMARK [2][-]{subsection.3.6.5}{Wiki de FamilySearch}{section.3.6}% 33
+\BOOKMARK [1][-]{section.3.7}{Projectes d'indexaci\363}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.8}{Conclusi\363 sobre les eines per particulars}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Introducci\363 a l'API de FamilySearch}{}% 36
+\BOOKMARK [1][-]{section.4.1}{El portal de desenvolupadors}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{L'arquitectura de l'API}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Qu\350 \351s una API?}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.2}{L'arquitectura REST}{section.4.2}% 40
+\BOOKMARK [1][-]{section.4.3}{Formats de dades utilitzats pel Sistema}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.3.1}{El format de dades GEDCOM i GEDCOM X}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.2}{Format de dades FamilySearch}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.3}{Format de dades Atom \(o At\362mic\)}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.4}{Codificacions dels formats de dades}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Evoluci\363 temporal de l'API}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.1}{Evolucions al llarg del temps}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.2}{Tree Foundation}{section.4.4}% 48
+\BOOKMARK [1][-]{section.4.5}{Serveis extres oferts per l'API}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.5.1}{Caching}{section.4.5}% 50
+\BOOKMARK [2][-]{subsection.4.5.2}{Throttling}{section.4.5}% 51
+\BOOKMARK [2][-]{subsection.4.5.3}{Sincronitzaci\363}{section.4.5}% 52
+\BOOKMARK [2][-]{subsection.4.5.4}{Internacionaltizaci\363}{section.4.5}% 53
+\BOOKMARK [2][-]{subsection.4.5.5}{Transfer\350ncia de registres en grans quantitats}{section.4.5}% 54
+\BOOKMARK [1][-]{section.4.6}{Eines de desenvolupament}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.6.1}{Els SDK de FamilySearch}{section.4.6}% 56
+\BOOKMARK [2][-]{subsection.4.6.2}{Les aplicacions d'exemple}{section.4.6}% 57
+\BOOKMARK [2][-]{subsection.4.6.3}{Altres eines intressants}{section.4.6}% 58
+\BOOKMARK [1][-]{section.4.7}{Proc\351s de certificaci\363}{chapter.4}% 59
+\BOOKMARK [1][-]{section.4.8}{Diferents entorns de treball}{chapter.4}% 60

@@ -1,5 +1,4 @@
 \documentclass[11pt,twoside,a4paper]{book}
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[acronym,toc,xindy]{glossaries}
 \usepackage[hidelinks]{hyperref}
@@ -31,7 +30,7 @@
 \singlespacing{}
 \graphicspath{ {images/} }
 \newcommand{\porras}[1]{\todo[backgroundcolor=blue!25,inline]{#1}}
-\newcommand*{\headentry}[2]{\multicolumn{1}{#1}{\arraybackslash\bfseries #2}}
+\newcommand*{\headentry}[2]{\multicolumn{1}{#1}{\raggedright\arraybackslash\bfseries #2}}
 \renewcommand{\contentsname}{Continguts}
 \renewcommand{\chaptername}{Secció}
 

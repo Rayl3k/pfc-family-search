@@ -28,21 +28,21 @@
          Al mateix temps, el nou estàndard també donava suport a l'intercanvi i enllaçament de dades a través del núvol i es creava així la primera versió de l'API de FamilySearch.
 
          A continuació, a la taula [ref] s'ofereix un petit exemple de com un recurs és codificat part del recurs persona sota el format de dades GEDCOM X.
-                 
+
         \begin{center}
                  \csvreader[
-                    separator=semicolon,
+                    separator=comma,
                     before table=\sffamily\small,
-                    longtable={p{3cm-2\tabcolsep}p{4cm-2\tabcolsep}p{3cm-2\tabcolsep}p{4cm-2\tabcolsep}},
+                    longtable={p{1.5cm-2\tabcolsep}p{4.5cm-2\tabcolsep}p{4.5cm-2\tabcolsep}p{3.5cm-2\tabcolsep}},
                     table head={\toprule%
-                        \headentry{m{3cm-2\tabcolsep}}{Nom}
-                        & \headentry{m{4cm-2\tabcolsep}}{Desc.}
-                        & \headentry{m{3cm-2\tabcolsep}}{Format}
+                        \headentry{m{1.5cm-2\tabcolsep}}{Nom}
+                        & \headentry{m{4.5cm-2\tabcolsep}}{Desc.}
+                        & \headentry{m{4cm-2\tabcolsep}}{Format}
                         & \headentry{m{4cm-2\tabcolsep}}{Rest.}\\\midrule},
                     late after line=\\\midrule,
                     late after last line=\\\bottomrule,
                  ]
-                 {./tables/04/exampleGedcom.csv}
+                 {./tables/04/gedcomFinal.csv}
                  {nom=\nom,desc=\desc,format=\format,rest=\rest}
                  {\nom&\desc&\format&\rest}
          \end{center}

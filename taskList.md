@@ -1,24 +1,6 @@
-# STYLE SUPAH TASK LIST
-- IMAGE REFACTOR ON FOLDERS AND SIZES
-- Refactor HTML of finished files
-- Refactor JS files
-
 # fonts
 - https://www.google.com/fonts#UsePlace:use/Collection:Lora
 - https://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro
-
-# Huge implementations to be done OVERALL (due date 17/06/2016)
-- catchErrors and display them if calls to FS fail
-- Errors on search to be changed to append
-- Fill implemented examples proposals + text
-
-# Content tasks
-- Fit proposals title section & page
-- Fit examples title section & page
-- Fit surname title section & page
-- Fit facts title section & page
-- Fit personSearch title section & page
-- Change content of LOGIN page to reflect that it's not entry point anymore
 
 # Other project ideas
 - Indexing visual recognition helper / assistant
@@ -37,3 +19,5 @@
 - List best collection / browse through documents / discover random document, etc. functionalities!! Use entry points collections
 - Localització al català dels recursos principals així com del portal web.
 - Transformar aplicacions d'escriptori d'heràldica en una API + estudi complementari de cognoms i heràldica
+
+http://www.randalolson.com/2015/06/15/144-years-of-marriage-and-divorce-in-1-chart/

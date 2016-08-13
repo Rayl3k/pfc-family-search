@@ -123,6 +123,15 @@ function printGraphs(i) {
 
     // Ensure canvas is ready
     $('#graphs').fadeIn('fast');
+    var fromTop =  $(document).scrollTop();
+    if(fromTop >= graphs-80) {
+        $("#controls-block").addClass('detached-top', true);
+        $('#graphs').css('margin-top', '109px');
+    }
+    else {
+        $("#controls-block").removeClass('detached-top', false);
+        $('#graphs').css('margin-top', '0px');
+    }
     $('#controls-block').fadeIn('fast');
 
     // Update geomap, barchart and yearControl
