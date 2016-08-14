@@ -124,8 +124,8 @@
 \contentsline {paragraph}{}{37}{section*.83}
 \contentsline {paragraph}{}{38}{section*.84}
 \contentsline {paragraph}{}{38}{section*.85}
-\contentsline {subsection}{\numberline {4.3.2}Format de dades FamilySearch}{39}{subsection.4.3.2}
-\contentsline {paragraph}{}{39}{section*.86}
+\contentsline {subsection}{\numberline {4.3.2}Format de dades FamilySearch}{38}{subsection.4.3.2}
+\contentsline {paragraph}{}{38}{section*.86}
 \contentsline {subsection}{\numberline {4.3.3}Format de dades Atom (o At\IeC {\`o}mic)}{39}{subsection.4.3.3}
 \contentsline {paragraph}{}{39}{section*.87}
 \contentsline {subsection}{\numberline {4.3.4}Codificacions dels formats de dades}{39}{subsection.4.3.4}
@@ -152,8 +152,8 @@
 \contentsline {paragraph}{}{45}{section*.100}
 \contentsline {subsection}{\numberline {4.5.5}Transfer\IeC {\`e}ncia de registres en grans quantitats}{45}{subsection.4.5.5}
 \contentsline {paragraph}{}{45}{section*.101}
-\contentsline {section}{\numberline {4.6}Eines de desenvolupament}{46}{section.4.6}
-\contentsline {paragraph}{}{46}{section*.102}
+\contentsline {section}{\numberline {4.6}Eines de desenvolupament}{45}{section.4.6}
+\contentsline {paragraph}{}{45}{section*.102}
 \contentsline {subsection}{\numberline {4.6.1}Els SDK de FamilySearch}{46}{subsection.4.6.1}
 \contentsline {paragraph}{}{46}{section*.103}
 \contentsline {subsection}{\numberline {4.6.2}Les aplicacions d'exemple}{47}{subsection.4.6.2}
@@ -165,3 +165,53 @@
 \contentsline {paragraph}{}{48}{section*.107}
 \contentsline {section}{\numberline {4.8}Diferents entorns de treball}{48}{section.4.8}
 \contentsline {paragraph}{}{48}{section*.108}
+\contentsline {chapter}{\numberline {5}Valoraci\IeC {\'o} final sobre la potencialitat de l'API}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}}{49}{section.5.1}
+\contentsline {paragraph}{}{49}{section*.109}
+\contentsline {section}{\numberline {5.2}Distribuci\IeC {\'o} geogr\IeC {\`a}fica de les dades}{49}{section.5.2}
+\contentsline {paragraph}{}{49}{section*.110}
+\contentsline {section}{\numberline {5.3}Dades contampor\IeC {\`a}nies}{50}{section.5.3}
+\contentsline {paragraph}{}{50}{section*.111}
+\contentsline {section}{\numberline {5.4}Recursos i funcionalitats}{51}{section.5.4}
+\contentsline {paragraph}{}{51}{section*.112}
+\contentsline {section}{\numberline {5.5}Naturalesa de l'API}{51}{section.5.5}
+\contentsline {paragraph}{}{51}{section*.113}
+\contentsline {section}{\numberline {5.6}Utilitzaci\IeC {\'o} de l'API en el marc d'un PFC}{52}{section.5.6}
+\contentsline {paragraph}{}{52}{section*.114}
+\contentsline {section}{\numberline {5.7}Conclusi\IeC {\'o}}{52}{section.5.7}
+\contentsline {paragraph}{}{52}{section*.115}
+\contentsline {chapter}{\numberline {6}Llista de propostes de projecte}{55}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}}{55}{section.6.1}
+\contentsline {paragraph}{}{55}{section*.116}
+\contentsline {section}{\numberline {6.2}Comparaci\IeC {\'o} sobre la popularitat de noms}{55}{section.6.2}
+\contentsline {paragraph}{}{55}{section*.117}
+\contentsline {section}{\numberline {6.3}Portal de cerca localitzat al Catal\IeC {\`a}}{56}{section.6.3}
+\contentsline {paragraph}{}{56}{section*.118}
+\contentsline {section}{\numberline {6.4}Geolocalitzaci\IeC {\'o} d'un cognom en diferents nivells}{57}{section.6.4}
+\contentsline {paragraph}{}{57}{section*.119}
+\contentsline {section}{\numberline {6.5}La recerca geneal\IeC {\`o}gica i l'her\IeC {\`a}ldica}{57}{section.6.5}
+\contentsline {paragraph}{}{57}{section*.120}
+\contentsline {section}{\numberline {6.6}Projectes d'indexaci\IeC {\'o}}{58}{section.6.6}
+\contentsline {paragraph}{}{58}{section*.121}
+\contentsline {section}{\numberline {6.7}La hist\IeC {\`o}ria de l'esgl\IeC {\'e}sia mormona a trav\IeC {\'e}s de FamilySearch}{58}{section.6.7}
+\contentsline {paragraph}{}{58}{section*.122}
+\contentsline {section}{\numberline {6.8}Diversitat geogr\IeC {\`a}fica d'un cognom: Els nostres avantpassats}{59}{section.6.8}
+\contentsline {paragraph}{}{59}{section*.123}
+\contentsline {section}{\numberline {6.9}Les col\IeC {\textperiodcentered }leccions de dades de FamilySearch}{59}{section.6.9}
+\contentsline {paragraph}{}{59}{section*.124}
+\contentsline {section}{\numberline {6.10}FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{60}{section.6.10}
+\contentsline {paragraph}{}{60}{section*.125}
+\contentsline {section}{\numberline {6.11}FamilySearch i la segona guerra mundial: Increment en els casaments}{60}{section.6.11}
+\contentsline {paragraph}{}{60}{section*.126}
+\contentsline {section}{\numberline {6.12}FamilySearch i la segona guerra mundial: La llista de Schindler}{61}{section.6.12}
+\contentsline {paragraph}{}{61}{section*.127}
+\contentsline {section}{\numberline {6.13}La gran recessi\IeC {\'o} o altres esdeveniments hist\IeC {\`o}rics}{62}{section.6.13}
+\contentsline {paragraph}{}{62}{section*.128}
+\contentsline {section}{\numberline {6.14}Comparacions amb els amics o seguidors de Facebook i Twitter}{62}{section.6.14}
+\contentsline {paragraph}{}{62}{section*.129}
+\contentsline {section}{\numberline {6.15}Comparaci\IeC {\'o} de dades geneal\IeC {\`o}giques reals amb FamilySearch}{63}{section.6.15}
+\contentsline {paragraph}{}{63}{section*.130}
+\contentsline {section}{\numberline {6.16}Estudi de profunditat dels arbres familiars}{63}{section.6.16}
+\contentsline {paragraph}{}{63}{section*.131}
+\contentsline {section}{\numberline {6.17}Algoritme de marcatge de duplicats}{64}{section.6.17}
+\contentsline {paragraph}{}{64}{section*.132}
