@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  14 AUG 2016 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  14 AUG 2016 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -972,7 +972,11 @@ Package glossaries Info: Writing glossary file main.glo on input line 28.
 Package glossaries Info: Writing glossary file main.acn on input line 28.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
+ (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux
+
+LaTeX Warning: Label `fig:familyTree' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -1001,8 +1005,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 47.
 LaTeX Info: Redefining \pageref on input line 47.
 LaTeX Info: Redefining \nameref on input line 47.
-
-(C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
+ (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
@@ -1073,24 +1076,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 200.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 215.
  (c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
-)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
+ [3])
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- (./sections/01/_introduction.tex [3] [4
-
-]
+ (./sections/01/_introduction.tex [4]
 Secci\IeC {\'o} 1.
 (./sections/01/01_intro.tex) (./sections/01/02_motivations.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]) (./sections/01/03_objectives.tex
+ [5
+
+]) (./sections/01/03_objectives.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
@@ -1098,12 +1101,12 @@ Overfull \hbox (17.11311pt too wide) in paragraph at lines 16--17
 []\T1/cmr/m/n/10.95 Escollir el ti-pus d'aplicació a de-sen-volu-par i es-tu-diar les tec-nolo-gies necessàries
  []
 
-) (./sections/01/04_planification.tex [7] <images/01/firstPlan.jpg, id=483, 743.77875pt x 310.15875pt>
+) (./sections/01/04_planification.tex [7] <images/01/firstPlan.jpg, id=519, 743.77875pt x 310.15875pt>
 File: images/01/firstPlan.jpg Graphic file (type jpg)
  <use images/01/firstPlan.jpg>
 Package pdftex.def Info: images/01/firstPlan.jpg used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 166.11076pt.
- [8 <./images/01/firstPlan.jpg>] <images/01/actualPlan.jpg, id=495, 1298.8525pt x 423.5825pt>
+ [8 <./images/01/firstPlan.jpg>] <images/01/actualPlan.jpg, id=530, 1298.8525pt x 423.5825pt>
 File: images/01/actualPlan.jpg Graphic file (type jpg)
  <use images/01/actualPlan.jpg>
 Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
@@ -1116,7 +1119,7 @@ LaTeX Warning: Float too large for page by 57.72852pt on input line 38.
 Secci\IeC {\'o} 2.
 (./sections/02/02_whatisit.tex [13
 
-]) (./sections/02/03_roleInHistory.tex [14]) (./sections/02/04_laws.tex [15]) (./sections/02/05_ethics.tex [16]) (./sections/02/06_process.tex [17] <images/02/researchProcess.jpg, id=557, 526.96875pt x 301.125pt>
+]) (./sections/02/03_roleInHistory.tex [14]) (./sections/02/04_laws.tex [15]) (./sections/02/05_ethics.tex [16]) (./sections/02/06_process.tex [17] <images/02/researchProcess.jpg, id=592, 526.96875pt x 301.125pt>
 File: images/02/researchProcess.jpg Graphic file (type jpg)
  <use images/02/researchProcess.jpg>
 Package pdftex.def Info: images/02/researchProcess.jpg used on input line 20.
@@ -1141,17 +1144,17 @@ Overfull \hbox (16.343pt too wide) in paragraph at lines 8--9
 []\T1/cmr/m/n/10.95 Per al-tra banda, les eines de cerca, con-stitueixen el prin-ci-pal atrac-tiu de l'organització
  []
 
-[25] <images/03/familyTree.jpg, id=611, 820.06375pt x 668.4975pt>
+[25] <images/03/familyTree.jpg, id=646, 820.06375pt x 668.4975pt>
 File: images/03/familyTree.jpg Graphic file (type jpg)
  <use images/03/familyTree.jpg>
 Package pdftex.def Info: images/03/familyTree.jpg used on input line 35.
 (pdftex.def)             Requested size: 328.01968pt x 267.39426pt.
- <images/03/fanChart.jpg, id=613, 601.24625pt x 639.38875pt>
+ <images/03/fanChart.jpg, id=648, 601.24625pt x 639.38875pt>
 File: images/03/fanChart.jpg Graphic file (type jpg)
  <use images/03/fanChart.jpg>
 Package pdftex.def Info: images/03/fanChart.jpg used on input line 49.
 (pdftex.def)             Requested size: 240.49423pt x 255.75096pt.
- [26] [27 <./images/03/familyTree.jpg>] [28 <./images/03/fanChart.jpg>]) (./sections/03/06_searchTools.tex [29] <images/03/searchForm.jpg, id=646, 576.1525pt x 739.76375pt>
+ [26] [27 <./images/03/familyTree.jpg>] [28 <./images/03/fanChart.jpg>]) (./sections/03/06_searchTools.tex [29] <images/03/searchForm.jpg, id=682, 576.1525pt x 739.76375pt>
 File: images/03/searchForm.jpg Graphic file (type jpg)
  <use images/03/searchForm.jpg>
 Package pdftex.def Info: images/03/searchForm.jpg used on input line 30.
@@ -1222,7 +1225,7 @@ Overfull \vbox (8.03087pt too high) has occurred while \output is active []
 
  [37] [38]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 128.
- [39]) (./sections/04/04_temporalEvolution.tex [40] <images/04/treeFoundationDistributed.jpg, id=777, 1029.8475pt x 468.75125pt>
+ [39]) (./sections/04/04_temporalEvolution.tex [40] <images/04/treeFoundationDistributed.jpg, id=813, 1029.8475pt x 468.75125pt>
 File: images/04/treeFoundationDistributed.jpg Graphic file (type jpg)
  <use images/04/treeFoundationDistributed.jpg>
 Package pdftex.def Info: images/04/treeFoundationDistributed.jpg used on input line 29.
@@ -1231,7 +1234,7 @@ Package pdftex.def Info: images/04/treeFoundationDistributed.jpg used on input l
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] <images/04/resourceRellocation.jpg, id=786, 1039.885pt x 442.65375pt>
+[41] <images/04/resourceRellocation.jpg, id=823, 1039.885pt x 442.65375pt>
 File: images/04/resourceRellocation.jpg Graphic file (type jpg)
  <use images/04/resourceRellocation.jpg>
 Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 43.
@@ -1239,7 +1242,7 @@ Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 43
 
 Underfull \vbox (badness 1028) has occurred while \output is active []
 
- [42 <./images/04/treeFoundationDistributed.jpg> <./images/04/resourceRellocation.jpg>] <images/04/phase1.jpg, id=793, 1051.93pt x 552.0625pt>
+ [42 <./images/04/treeFoundationDistributed.jpg> <./images/04/resourceRellocation.jpg>] <images/04/phase1.jpg, id=830, 1051.93pt x 552.0625pt>
 File: images/04/phase1.jpg Graphic file (type jpg)
  <use images/04/phase1.jpg>
 Package pdftex.def Info: images/04/phase1.jpg used on input line 51.
@@ -1257,11 +1260,50 @@ Overfull \hbox (15.20735pt too wide) in paragraph at lines 12--13
 []\T1/cmr/bx/n/10.95 Certificació d'escriptura: \T1/cmr/m/n/10.95 En cas que l'aplicació re-al-itzi op-era-cions d'escriptura,
  []
 
-[47]) (./sections/04/08_workingEnvironments.tex)) (./sections/06/_potential.tex [48]
+[47]) (./sections/04/08_workingEnvironments.tex)) (./sections/05/_deepDiveAPI.tex [48]
 Secci\IeC {\'o} 5.
-[49
+(./sections/05/01_resources.tex) (./sections/05/02_hypermedia.tex [49
+
+] <images/05/01_hypermedia.png, id=879, 321.45094pt x 417.81094pt>
+File: images/05/01_hypermedia.png Graphic file (type png)
+ <use images/05/01_hypermedia.png>
+Package pdftex.def Info: images/05/01_hypermedia.png used on input line 11.
+(pdftex.def)             Requested size: 257.16109pt x 334.2492pt.
+ [50 <./images/05/01_hypermedia.png>]) (./sections/05/03_familyTree.tex
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 11.
+ <images/05/02_overallModel.png, id=886, 375.804pt x 299.9205pt>
+File: images/05/02_overallModel.png Graphic file (type png)
+ <use images/05/02_overallModel.png>
+Package pdftex.def Info: images/05/02_overallModel.png used on input line 19.
+(pdftex.def)             Requested size: 375.80309pt x 299.91975pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[51] [52 <./images/05/02_overallModel.png>]) (./sections/05/04_personsBloc.tex <images/05/03_personsCore.png, id=898, 158.39175pt x 231.86626pt>
+File: images/05/03_personsCore.png Graphic file (type png)
+ <use images/05/03_personsCore.png>
+Package pdftex.def Info: images/05/03_personsCore.png used on input line 11.
+(pdftex.def)             Requested size: 158.39136pt x 231.86568pt.
+ [53 <./images/05/03_personsCore.png>] (./sections/05/01_persons/01_persona.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 26--26
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]) (./sections/05/01_persons/02_gender.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 20--20
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+))) (./sections/06/_potential.tex [55] [56
 
 ]
+Secci\IeC {\'o} 6.
+[57]
 Overfull \hbox (0.99191pt too wide) in paragraph at lines 39--40
 []\T1/cmr/m/n/10.95 Un al-tre fet que pot im-pactar a la quan-ti-tat de reg-istres con-tem-po-ra-nis disponibles
  []
@@ -1269,25 +1311,25 @@ Overfull \hbox (0.99191pt too wide) in paragraph at lines 39--40
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
+ [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51] [52]) (./sections/07/_proposals.tex [53] [54
+ [59] [60]) (./sections/07/_proposals.tex [61] [62
 
 ]
-Secci\IeC {\'o} 6.
+Secci\IeC {\'o} 7.
 (./sections/07/01_propIntro.tex
 Overfull \hbox (5.16946pt too wide) in paragraph at lines 8--9
 []\T1/cmr/m/n/10.95 Com es po-drà veure, moltes d'aquestes pro-postes giren al voltant d'estudis històrics
  []
 
-) (./sections/07/02_names.tex [55]) (./sections/07/03_catalanPortal.tex) (./sections/07/04_surnamesGeo.tex
+) (./sections/07/02_names.tex [63]) (./sections/07/03_catalanPortal.tex) (./sections/07/04_surnamesGeo.tex
 Underfull \vbox (badness 5475) has occurred while \output is active []
 
- [56]) (./sections/07/05_genealogyHeraldy.tex) (./sections/07/06_indexing.tex
+ [64]) (./sections/07/05_genealogyHeraldy.tex) (./sections/07/06_indexing.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
+ [65]
 Overfull \hbox (8.57137pt too wide) in paragraph at lines 8--9
 \T1/cmr/m/n/10.95 mat es-pecífic, al núvol. So-bre aquest reg-istre, im-ple-men-tar un sis-tema d'automatització
  []
@@ -1300,41 +1342,41 @@ Overfull \hbox (0.18396pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 4543) has occurred while \output is active []
 
- [58]) (./sections/07/09_collections.tex
+ [66]) (./sections/07/09_collections.tex
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 1.
 
 Overfull \hbox (35.35977pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10.95 6.8.  DIVERSITAT GEOGRÀFICA D'UN COGNOM: ELS NOSTRES AVANTPASSATS \T1/cmr/m/n/10.95 59
+\T1/cmr/m/sl/10.95 7.8.  DIVERSITAT GEOGRÀFICA D'UN COGNOM: ELS NOSTRES AVANTPASSATS \T1/cmr/m/n/10.95 67
  []
 
-[59]) (./sections/07/10_natalityMortality.tex) (./sections/07/11_marriages.tex) (./sections/07/12_schindler.tex [60]
+[67]) (./sections/07/10_natalityMortality.tex) (./sections/07/11_marriages.tex) (./sections/07/12_schindler.tex [68]
 Overfull \hbox (1.30893pt too wide) in paragraph at lines 6--7
 \T1/cmr/m/n/10.95 d'aquelles per-sones que van for-mar la llista de Schindler, i re-al-itzar un es-tudi d'aquests
  []
 
-<images/07/thePianist.jpg, id=912, 3079.505pt x 2064.71375pt>
+<images/07/thePianist.jpg, id=1004, 3079.505pt x 2064.71375pt>
 File: images/07/thePianist.jpg Graphic file (type jpg)
  <use images/07/thePianist.jpg>
 Package pdftex.def Info: images/07/thePianist.jpg used on input line 13.
 (pdftex.def)             Requested size: 398.33858pt x 267.06749pt.
 ) (./sections/07/13_crack29.tex
 Overfull \hbox (55.52287pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10.95 6.12.  FAMILYSEARCH I LA SEGONA GUERRA MUNDIAL: LA LLISTA DE SCHINDLER \T1/cmr/m/n/10.95 61
+\T1/cmr/m/sl/10.95 7.12.  FAMILYSEARCH I LA SEGONA GUERRA MUNDIAL: LA LLISTA DE SCHINDLER \T1/cmr/m/n/10.95 69
  []
 
-[61 <./images/07/thePianist.jpg>]) (./sections/07/14_friendsComparisons.tex) (./sections/07/15_fsvsreality.tex
+[69 <./images/07/thePianist.jpg>]) (./sections/07/14_friendsComparisons.tex) (./sections/07/15_fsvsreality.tex
 Underfull \vbox (badness 4193) has occurred while \output is active []
 
- [62]) (./sections/07/16_genealogies.tex) (./sections/07/17_duplicatesRemoval.tex
+ [70]) (./sections/07/16_genealogies.tex) (./sections/07/17_duplicatesRemoval.tex
 Overfull \hbox (34.20795pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10.95 6.15.  COMPARACIÓ DE DADES GENEALÒGIQUES REALS AMB FAMILYSEARCH \T1/cmr/m/n/10.95 63
+\T1/cmr/m/sl/10.95 7.15.  COMPARACIÓ DE DADES GENEALÒGIQUES REALS AMB FAMILYSEARCH \T1/cmr/m/n/10.95 71
  []
 
-[63])) [64]
+[71])) [72]
 No file main.gls.
 No file main.acr.
-[65
+[73
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
@@ -1343,14 +1385,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 23F466A1EA44B2A0CA446DB2F5D58FDD;6969.
+(rerunfilecheck)             Checksum: 69F96AE0425A19CD63FFE6BF1BA0DD90;7561.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 24824 strings out of 493013
- 437346 string characters out of 6136994
- 583837 words of memory out of 5000000
- 27386 multiletter control sequences out of 15000+600000
- 24123 words of font info for 54 fonts, out of 8000000 for 9000
+ 24921 strings out of 493013
+ 439024 string characters out of 6136994
+ 584402 words of memory out of 5000000
+ 27422 multiletter control sequences out of 15000+600000
+ 24378 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,64p,1951b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
@@ -1361,10 +1407,10 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist,
 
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (65 pages, 1845529 bytes).
+Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (73 pages, 1999379 bytes).
 PDF statistics:
- 1074 PDF objects out of 1200 (max. 8388607)
- 970 compressed objects within 10 object streams
- 337 named destinations out of 1000 (max. 500000)
- 751 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1173 PDF objects out of 1200 (max. 8388607)
+ 1057 compressed objects within 11 object streams
+ 366 named destinations out of 1000 (max. 500000)
+ 822 words of extra memory for PDF output out of 10000 (max. 10000000)
 
