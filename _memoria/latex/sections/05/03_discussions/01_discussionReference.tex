@@ -1,0 +1,23 @@
+\subsection{El recurs Referència a la Discussió (DiscussionsReference)}
+
+    \paragraph{}
+    Aquest recurs s'utilitza principalment perquè el recurs Persona puguin accedir al conjunt de discussions que tracten sobre ella i viceversa. En concret, existirà un enllaç per cada una de les discussions que reverenciïn a la mateixa persona.
+
+    Les dades contingudes per aquest recurs poden ser trobades a la taula~\ref{res:discussionReference} i també hereta els paràmetres dels recursos Enllaços Hypermedia i Dades Extensibles que poden ser trobats a l'apartat `Altres recursos interessants'.
+
+    \begin{center}
+             \csvreader[
+                separator=comma,
+                before table=\sffamily\small,
+                longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                table head={\caption{Paràmetres del recurs Referència a la Discussió}\label{res:discussionReference}\\\toprule%
+                    \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                    & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                    & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                late after line=\\\midrule,
+                late after last line=\\\bottomrule,
+             ]
+             {./tables/05/03_discussions/discussionReference.csv}
+             {param=\param,format=\format,desc=\desc}
+             {\param&\format&\desc}
+     \end{center}

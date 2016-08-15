@@ -1,0 +1,3 @@
+param,format,desc
+persons,[array of Resource\-Reference],Serveix per enllaçar les diferents persones relacionades amb una memòria en concret.
+source\-Descriptions,[Resource\-Reference],Informació sobre la memòria a la qual es fa referència.
