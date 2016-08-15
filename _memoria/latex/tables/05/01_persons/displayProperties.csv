@@ -1,0 +1,14 @@
+param,format,desc
+ascendancy\-Number,string,El nombre de generació en l'ascendència familiar en relació a les altres persones incloses a la consulta.
+birthDate,string,El text mostrable per la data de naixement de la persona.
+birthPlace,string,El text mostrable pel lloc de naixement de la persona.
+deathDate,string,El text mostrable per la data de defunció de la persona.
+deathPlace,string,El text mostrable pel lloc de defunció de la persona.
+descendancy\-Number,string,El nombre de generació en la descendència familiar en relació a les altres persones incloses a la consulta.
+families\-AsChild,[array of FamilyView],Els arbres genealògics en les que aquesta persona té el rol de fill.
+families\-AsParent,[array of FamilyView],Els arbres genealògics en les que aquesta persona té el rol de pare o mare.
+gender,string,El text mostrable pel gènere de la persona.
+lifespan,string,El text mostrable del període de temps en què la persona va viure.
+marriage\-Date,string,El text mostrable per la data de casament de la persona.
+marriage\-Place,string,El text mostrable pel lloc de casament de la persona.
+name,string,El nom mostrable de la persona.

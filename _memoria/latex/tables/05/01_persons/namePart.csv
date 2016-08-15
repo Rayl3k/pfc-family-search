@@ -1,0 +1,5 @@
+param,format,desc
+value,string,"El valor, com a text, de la part del nom."
+type,[namePartType],Indica a quina part del nom fa referència aquesta instància del recurs. Se'n descriuen els possibles valors a l'enumeració namePartType.
+fields,[array of Field],Camps utilitats com evidència.
+qualifiers,[array of Qualifier],"Els qualificadors associats a aquesta part del nom. No tenen per què ser valors numèrics. En aquests casos, poden ser considerats més aviat com a etiquetes."

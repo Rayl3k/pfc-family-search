@@ -1,0 +1,8 @@
+param,format,desc
+primary,boolean,Indicador de si aquest esdeveniment és el principal esdeveniment extret del registre on es trobava contingut.
+type,[factType],El tipus d'esdeveniment. Se'n descriuen els possibles valors a l'enumeració factType.
+date,[Date],La data en la que va succeir aquest esdeveniment.
+place,[PlaceReference],El lloc on va succeir aquest esdeveniment.
+value,string,El valor aportat per l'usuari.
+qualifier,[array of Qualifier],"Els qualificadors associats a aquesta part del nom. No tenen per què ser valors numèrics. En aquests casos, poden ser considerats més aviat com a etiquetes."
+fields,[array of Field],Els camps utilitzats com evidència.

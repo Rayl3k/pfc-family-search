@@ -1,0 +1,5 @@
+param,format,desc
+type,[nameType],El tipus de nom. Se'n descriuen els possibles valors a l'enumeració nameType.
+preferred,Boolean,Indicador sobre si és el nom preferit de cara a la impressió de dades.
+date,[Date],El primer dia en què el nom va ser aplicat o adoptat.
+nameForms,[array of NameForm],"Altres formes del nom. Forma romanitzada, forma sense caràcters llatins, etcètera."
