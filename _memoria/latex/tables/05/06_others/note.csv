@@ -1,0 +1,5 @@
+param,format,desc
+lang,string,La llengua en què està escrita la Nota.
+subject,string,El subjecte de la nota. Breu títol que descriu els continguts.
+text,string,El text de la nota.
+attribution,[Attribution],Meta dades d'atribució de la Nota.

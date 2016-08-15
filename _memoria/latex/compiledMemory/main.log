@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  15 AUG 2016 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  15 AUG 2016 19:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1079,37 +1079,37 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Underfull \vbox (badness 1436) has occurred while \output is active []
 
  [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 259.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 229.
  (c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 259.
-)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
+ [4])
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- (./sections/01/_introduction.tex [4]
+ (./sections/01/_introduction.tex [5] [6
+
+]
 Secci\IeC {\'o} 1.
 (./sections/01/01_intro.tex) (./sections/01/02_motivations.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5
-
-]) (./sections/01/03_objectives.tex
+ [7]) (./sections/01/03_objectives.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
+ [8]
 Overfull \hbox (17.11311pt too wide) in paragraph at lines 16--17
 []\T1/cmr/m/n/10.95 Escollir el ti-pus d'aplicació a de-sen-volu-par i es-tu-diar les tec-nolo-gies necessàries
  []
 
-) (./sections/01/04_planification.tex [7] <images/01/firstPlan.jpg, id=611, 743.77875pt x 310.15875pt>
+) (./sections/01/04_planification.tex [9] <images/01/firstPlan.jpg, id=705, 743.77875pt x 310.15875pt>
 File: images/01/firstPlan.jpg Graphic file (type jpg)
  <use images/01/firstPlan.jpg>
 Package pdftex.def Info: images/01/firstPlan.jpg used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 166.11076pt.
- [8 <./images/01/firstPlan.jpg>] <images/01/actualPlan.jpg, id=622, 1298.8525pt x 423.5825pt>
+ [10 <./images/01/firstPlan.jpg>] <images/01/actualPlan.jpg, id=716, 1298.8525pt x 423.5825pt>
 File: images/01/actualPlan.jpg Graphic file (type jpg)
  <use images/01/actualPlan.jpg>
 Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
@@ -1118,26 +1118,26 @@ Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
 
 LaTeX Warning: Float too large for page by 57.72852pt on input line 38.
 
-[9] [10 <./images/01/actualPlan.jpg>])) (./sections/02/_genealogy.tex [11] [12]
+[11] [12 <./images/01/actualPlan.jpg>])) (./sections/02/_genealogy.tex [13] [14]
 Secci\IeC {\'o} 2.
-(./sections/02/02_whatisit.tex [13
+(./sections/02/02_whatisit.tex [15
 
-]) (./sections/02/03_roleInHistory.tex [14]) (./sections/02/04_laws.tex [15]) (./sections/02/05_ethics.tex [16]) (./sections/02/06_process.tex [17] <images/02/researchProcess.jpg, id=685, 526.96875pt x 301.125pt>
+]) (./sections/02/03_roleInHistory.tex [16]) (./sections/02/04_laws.tex [17]) (./sections/02/05_ethics.tex [18]) (./sections/02/06_process.tex [19] <images/02/researchProcess.jpg, id=779, 526.96875pt x 301.125pt>
 File: images/02/researchProcess.jpg Graphic file (type jpg)
  <use images/02/researchProcess.jpg>
 Package pdftex.def Info: images/02/researchProcess.jpg used on input line 20.
 (pdftex.def)             Requested size: 316.18369pt x 180.67638pt.
-) (./sections/02/07_closing.tex)) (./sections/03/_fsOrganization.tex [18 <./images/02/researchProcess.jpg>]
+) (./sections/02/07_closing.tex)) (./sections/03/_fsOrganization.tex [20 <./images/02/researchProcess.jpg>]
 Secci\IeC {\'o} 3.
-(./sections/03/01_whatisit.tex [19
+(./sections/03/01_whatisit.tex [21
 
-]) (./sections/03/02_history.tex [20]) (./sections/03/03_mormons.tex [21]
+]) (./sections/03/02_history.tex [22]) (./sections/03/03_mormons.tex [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]) (./sections/03/04_organizationServices.tex
+ [24]) (./sections/03/04_organizationServices.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23] [24]
+ [25] [26]
 Overfull \hbox (9.83575pt too wide) in paragraph at lines 69--70
 \T1/cmr/m/n/10.95 ter-es-sada a posar les seves tec-nolo-gies a dis-posi-ció d'altres or-gan-itza-cions ge-nealògiques. 
  []
@@ -1147,29 +1147,29 @@ Overfull \hbox (16.343pt too wide) in paragraph at lines 8--9
 []\T1/cmr/m/n/10.95 Per al-tra banda, les eines de cerca, con-stitueixen el prin-ci-pal atrac-tiu de l'organització
  []
 
-[25] <images/03/familyTree.jpg, id=738, 820.06375pt x 668.4975pt>
+[27] <images/03/familyTree.jpg, id=832, 820.06375pt x 668.4975pt>
 File: images/03/familyTree.jpg Graphic file (type jpg)
  <use images/03/familyTree.jpg>
 Package pdftex.def Info: images/03/familyTree.jpg used on input line 35.
 (pdftex.def)             Requested size: 328.01968pt x 267.39426pt.
- <images/03/fanChart.jpg, id=740, 601.24625pt x 639.38875pt>
+ <images/03/fanChart.jpg, id=834, 601.24625pt x 639.38875pt>
 File: images/03/fanChart.jpg Graphic file (type jpg)
  <use images/03/fanChart.jpg>
 Package pdftex.def Info: images/03/fanChart.jpg used on input line 49.
 (pdftex.def)             Requested size: 240.49423pt x 255.75096pt.
- [26] [27 <./images/03/familyTree.jpg>] [28 <./images/03/fanChart.jpg>]) (./sections/03/06_searchTools.tex [29] <images/03/searchForm.jpg, id=775, 576.1525pt x 739.76375pt>
+ [28] [29 <./images/03/familyTree.jpg>] [30 <./images/03/fanChart.jpg>]) (./sections/03/06_searchTools.tex [31] <images/03/searchForm.jpg, id=869, 576.1525pt x 739.76375pt>
 File: images/03/searchForm.jpg Graphic file (type jpg)
  <use images/03/searchForm.jpg>
 Package pdftex.def Info: images/03/searchForm.jpg used on input line 30.
 (pdftex.def)             Requested size: 230.45691pt x 295.90025pt.
- [30 <./images/03/searchForm.jpg>]) (./sections/03/07_indexing.tex [31]) (./sections/03/08_conclusions.tex)) (./sections/04/_introAPI.tex [32]
+ [32 <./images/03/searchForm.jpg>]) (./sections/03/07_indexing.tex [33]) (./sections/03/08_conclusions.tex)) (./sections/04/_introAPI.tex [34]
 Secci\IeC {\'o} 4.
 (./sections/04/01_devsPortal.tex
 Overfull \hbox (9.57935pt too wide) in paragraph at lines 11--12
 []\T1/cmr/bx/n/10.95 Requisits tèc-nics: \T1/cmr/m/n/10.95 Con-junt d'informació necessària per com-pren-dre l'estructura
  []
 
-[33
+[35
 
 ]) (./sections/04/02_architecture.tex
 
@@ -1180,11 +1180,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 4.
 
-[34]
+[36]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 46.
  (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [35]
+) [37]
 Overfull \hbox (13.53764pt too wide) in paragraph at lines 74--75
 []\T1/cmr/bx/n/10.95 Explícit: \T1/cmr/m/n/10.95 Si és el servi-dor el que mana i posa les re-gles, par-lem d'emmagatzematge
  []
@@ -1194,7 +1194,7 @@ Overfull \hbox (1.0934pt too wide) in paragraph at lines 84--85
 \T1/cmr/m/n/10.95 s'ha de pre-ocu-par de comunicar-se amb el-e-ments o tec-nolo-gies es-pecí-fiques. D'aquesta
  []
 
-) (./sections/04/03_dataFormats.tex [36]
+) (./sections/04/03_dataFormats.tex [38]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 47.
  (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1206,6 +1206,16 @@ Underfull \hbox (badness 1448) in paragraph at lines 47--47
 
 Underfull \hbox (badness 10000) in paragraph at lines 47--47
 []|\T1/cmss/m/n/10 Gènere (GED-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\T1/cmss/m/n/10 Llista de Noms
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 47--47
+[]|\T1/cmss/m/n/10 OPCIONAL. Si més d'un
  []
 
 
@@ -1223,59 +1233,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
 \T1/cmss/m/n/10 d'Esdeveniments
  []
 
-
-Overfull \vbox (8.03087pt too high) has occurred while \output is active []
-
- [37] [38]
+[39] [40] [41]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 128.
- [39]) (./sections/04/04_temporalEvolution.tex [40] <images/04/treeFoundationDistributed.jpg, id=906, 1029.8475pt x 468.75125pt>
+ [42]) (./sections/04/04_temporalEvolution.tex [43] <images/04/treeFoundationDistributed.jpg, id=1007, 1029.8475pt x 468.75125pt>
 File: images/04/treeFoundationDistributed.jpg Graphic file (type jpg)
  <use images/04/treeFoundationDistributed.jpg>
 Package pdftex.def Info: images/04/treeFoundationDistributed.jpg used on input line 29.
 (pdftex.def)             Requested size: 360.45203pt x 164.06538pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[41] <images/04/resourceRellocation.jpg, id=915, 1039.885pt x 442.65375pt>
+ <images/04/resourceRellocation.jpg, id=1009, 1039.885pt x 442.65375pt>
 File: images/04/resourceRellocation.jpg Graphic file (type jpg)
  <use images/04/resourceRellocation.jpg>
 Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 43.
 (pdftex.def)             Requested size: 363.9652pt x 154.93112pt.
 
-Underfull \vbox (badness 1028) has occurred while \output is active []
 
- [42 <./images/04/treeFoundationDistributed.jpg> <./images/04/resourceRellocation.jpg>] <images/04/phase1.jpg, id=922, 1051.93pt x 552.0625pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/04/phase1.jpg, id=1011, 1051.93pt x 552.0625pt>
 File: images/04/phase1.jpg Graphic file (type jpg)
  <use images/04/phase1.jpg>
 Package pdftex.def Info: images/04/phase1.jpg used on input line 51.
 (pdftex.def)             Requested size: 368.18102pt x 193.22476pt.
-) (./sections/04/05_extraServices.tex
-Underfull \vbox (badness 6063) has occurred while \output is active []
+ [44 <./images/04/treeFoundationDistributed.jpg>]) (./sections/04/05_extraServices.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43 <./images/04/phase1.jpg>] [44]) (./sections/04/06_developmentTools.tex [45] [46]
+ [45 <./images/04/resourceRellocation.jpg> <./images/04/phase1.jpg>] [46] [47]) (./sections/04/06_developmentTools.tex [48]
 Overfull \hbox (12.38156pt too wide) in paragraph at lines 40--41
 []\T1/cmr/m/n/10.95 De la mateixa forma que els SDK, Fam-il-y-Search dis-posa de sis apli-ca-cions d'exemple,
  []
 
-) (./sections/04/07_certification.tex
+) (./sections/04/07_certification.tex [49]
 Overfull \hbox (15.20735pt too wide) in paragraph at lines 12--13
 []\T1/cmr/bx/n/10.95 Certificació d'escriptura: \T1/cmr/m/n/10.95 En cas que l'aplicació re-al-itzi op-era-cions d'escriptura,
  []
 
-[47]) (./sections/04/08_workingEnvironments.tex)) (./sections/05/_deepDiveAPI.tex [48]
-Secci\IeC {\'o} 5.
-(./sections/05/01_resources.tex) (./sections/05/02_hypermedia.tex [49
+) (./sections/04/08_workingEnvironments.tex [50])) (./sections/05/_deepDiveAPI.tex [51] [52
 
-] <images/05/01_hypermedia.png, id=972, 321.45094pt x 417.81094pt>
+]
+Secci\IeC {\'o} 5.
+(./sections/05/01_resources.tex) (./sections/05/02_hypermedia.tex [53] <images/05/01_hypermedia.png, id=1073, 321.45094pt x 417.81094pt>
 File: images/05/01_hypermedia.png Graphic file (type png)
  <use images/05/01_hypermedia.png>
 Package pdftex.def Info: images/05/01_hypermedia.png used on input line 11.
 (pdftex.def)             Requested size: 257.16109pt x 334.2492pt.
- [50 <./images/05/01_hypermedia.png>]) (./sections/05/03_familyTree.tex
+ [54 <./images/05/01_hypermedia.png>]) (./sections/05/03_familyTree.tex
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 11.
- <images/05/02_overallModel.png, id=979, 375.804pt x 299.9205pt>
+ <images/05/02_overallModel.png, id=1080, 375.804pt x 299.9205pt>
 File: images/05/02_overallModel.png Graphic file (type png)
  <use images/05/02_overallModel.png>
 Package pdftex.def Info: images/05/02_overallModel.png used on input line 19.
@@ -1284,25 +1288,22 @@ Package pdftex.def Info: images/05/02_overallModel.png used on input line 19.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51] [52 <./images/05/02_overallModel.png>]) (./sections/05/04_personsBloc.tex <images/05/03_personsCore.png, id=991, 158.39175pt x 231.86626pt>
+[55] [56 <./images/05/02_overallModel.png>]) (./sections/05/04_personsBloc.tex <images/05/03_personsCore.png, id=1093, 158.39175pt x 231.86626pt>
 File: images/05/03_personsCore.png Graphic file (type png)
  <use images/05/03_personsCore.png>
 Package pdftex.def Info: images/05/03_personsCore.png used on input line 11.
 (pdftex.def)             Requested size: 158.39136pt x 231.86568pt.
- [53 <./images/05/03_personsCore.png>] (./sections/05/01_persons/01_persona.tex
+ [57 <./images/05/03_personsCore.png>] (./sections/05/01_persons/01_persona.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 26--26
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54]) (./sections/05/01_persons/02_gender.tex
+[58]) (./sections/05/01_persons/02_gender.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 20--20
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
-) (./sections/05/01_persons/03_names.tex [55]
+) (./sections/05/01_persons/03_names.tex [59]
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 26--26
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1312,10 +1313,7 @@ Overfull \hbox (2.37462pt too wide) in paragraph at lines 68--68
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56]
+[60]
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 85--85
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1325,7 +1323,7 @@ Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
-[57]
+[61]
 Overfull \hbox (1.84267pt too wide) in paragraph at lines 47--47
 []|\T1/cmss/m/n/10 EducationEnrollment| 
  []
@@ -1345,10 +1343,7 @@ Overfull \hbox (0.7596pt too wide) in paragraph at lines 47--47
 []|\T1/cmss/m/n/10 DomesticPartnership| 
  []
 
-) (./sections/05/01_persons/05_date.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
+[62]) (./sections/05/01_persons/05_date.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1358,10 +1353,7 @@ Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
-) (./sections/05/01_persons/07_placeDescription.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
+[63]) (./sections/05/01_persons/07_placeDescription.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1391,7 +1383,15 @@ Overfull \hbox (0.72224pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/m/n/10 jurisdiction| 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 [PlaceDisplay-
+ []
+
 ) (./sections/05/01_persons/08_displayProperties.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1431,7 +1431,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 []|\T1/cmss/m/n/10 marriage-
  []
 
-[60]) (./sections/05/01_persons/09_familyView.tex
+) (./sections/05/01_persons/09_familyView.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1441,20 +1444,24 @@ Underfull \hbox (badness 1931) in paragraph at lines 24--24
 []|\T1/cmss/m/n/10 [array of Resource-
  []
 
-[61])) (./sections/05/05_relationshipsBloc.tex <images/05/04_relationshipsCore.png, id=1075, 353.52075pt x 98.769pt>
+)) (./sections/05/05_relationshipsBloc.tex <images/05/04_relationshipsCore.png, id=1174, 353.52075pt x 98.769pt>
 File: images/05/04_relationshipsCore.png Graphic file (type png)
  <use images/05/04_relationshipsCore.png>
 Package pdftex.def Info: images/05/04_relationshipsCore.png used on input line 13.
 (pdftex.def)             Requested size: 353.51988pt x 98.76874pt.
- (./sections/05/02_relationships/01_relation.tex [62 <./images/05/04_relationshipsCore.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[66] (./sections/05/02_relationships/01_relation.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
-) (./sections/05/02_relationships/02_parents.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+Overfull \vbox (15.93929pt too high) has occurred while \output is active []
+
+ [67 <./images/05/04_relationshipsCore.png>]) (./sections/05/02_relationships/02_parents.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1469,31 +1476,35 @@ Overfull \hbox (6.77632pt too wide) in paragraph at lines 24--24
 []|\T1/cmss/m/n/10 motherFacts| 
  []
 
-)) (./sections/05/06_discussions.tex <images/05/05_discussionsCore.png, id=1094, 179.4705pt x 60.82726pt>
+)) (./sections/05/06_discussions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68
+
+] <images/05/05_discussionsCore.png, id=1203, 179.4705pt x 60.82726pt>
 File: images/05/05_discussionsCore.png Graphic file (type png)
  <use images/05/05_discussionsCore.png>
 Package pdftex.def Info: images/05/05_discussionsCore.png used on input line 13.
 (pdftex.def)             Requested size: 179.47005pt x 60.8271pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[64] (./sections/05/03_discussions/01_discussionReference.tex
+ (./sections/05/03_discussions/01_discussionReference.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
-) (./sections/05/03_discussions/02_discussion.tex [65 <./images/05/05_discussionsCore.png>]
-Overfull \hbox (2.37462pt too wide) in paragraph at lines 26--26
+[69 <./images/05/05_discussionsCore.png>]) (./sections/05/03_discussions/02_discussion.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
 
-Overfull \hbox (1.19435pt too wide) in paragraph at lines 26--26
+Overfull \hbox (1.19435pt too wide) in paragraph at lines 24--24
 []|\T1/cmss/m/n/10 contributor| 
  []
 
 ) (./sections/05/03_discussions/03_comment.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70]
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1503,19 +1514,24 @@ Overfull \hbox (1.19435pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/m/n/10 contributor| 
  []
 
-)) (./sections/05/07_memories.tex [66
-
-] <images/05/06_memoriesCore.png, id=1122, 223.43475pt x 60.82726pt>
+)) (./sections/05/07_memories.tex <images/05/06_memoriesCore.png, id=1222, 223.43475pt x 60.82726pt>
 File: images/05/06_memoriesCore.png Graphic file (type png)
  <use images/05/06_memoriesCore.png>
 Package pdftex.def Info: images/05/06_memoriesCore.png used on input line 15.
 (pdftex.def)             Requested size: 223.4342pt x 60.8271pt.
- (./sections/05/04_memories/01_memoryReference.tex [67 <./images/05/06_memoriesCore.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[71] (./sections/05/04_memories/01_memoryReference.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
 
 ) (./sections/05/04_memories/02_memoryPersona.tex
+Overfull \vbox (89.83263pt too high) has occurred while \output is active []
+
+ [72 <./images/05/06_memoriesCore.png>]
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1535,7 +1551,7 @@ Overfull \hbox (5.99873pt too wide) in paragraph at lines 22--22
 \T1/cmss/m/n/10 Descriptions| 
  []
 
-) (./sections/05/04_memories/03_memory.tex [68]
+) (./sections/05/04_memories/03_memory.tex
 Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
 []|\T1/cmss/bx/n/10 Paràmetre|  
  []
@@ -1550,11 +1566,215 @@ Overfull \hbox (5.99873pt too wide) in paragraph at lines 24--24
 \T1/cmss/m/n/10 Descriptions| 
  []
 
-))) (./sections/06/_potential.tex [69] [70
+)) (./sections/05/08_sources.tex [73] <images/05/07_sourcesCore.png, id=1251, 375.804pt x 139.722pt>
+File: images/05/07_sourcesCore.png Graphic file (type png)
+ <use images/05/07_sourcesCore.png>
+Package pdftex.def Info: images/05/07_sourcesCore.png used on input line 13.
+(pdftex.def)             Requested size: 375.80309pt x 139.72165pt.
+ (./sections/05/05_sources/01_collection.tex
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 1.
+ [74 <./images/05/07_sourcesCore.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 24.
+LaTeX Font Info:    No file OMScmss.fd. on input line 24.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textperiodcentered' on input line 24.
+
+
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+) (./sections/05/05_sources/02_collectionContent.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Overfull \hbox (9.80336pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 completeness| 
+ []
+
+
+Overfull \hbox (9.72005pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 resourceType| 
+ []
+
+) (./sections/05/05_sources/03_attribution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75]
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Overfull \hbox (1.19435pt too wide) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/10 contributor| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/10 change-
+ []
+
+) (./sections/05/05_sources/04_sourceDescription.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 resource-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 [array of Source-
+ []
+
+
+Overfull \hbox (4.63795pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 component-
+ []
+
+
+Overfull \hbox (3.94368pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 descriptions| 
+ []
+
+
+Overfull \hbox (0.63893pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 replacedBy| 
+ []
+
+[76] [77]) (./sections/05/05_sources/05_sourceReference.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Overfull \hbox (8.05379pt too wide) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/10 descriptionId| 
+ []
+
+
+Overfull \vbox (6.4353pt too high) has occurred while \output is active []
+
+ [78])) (./sections/05/09_otherObjects.tex (./sections/05/06_other/01_subject.tex
+Overfull \hbox (17.35172pt too wide) in paragraph at lines 8--9
+[]\T1/cmr/m/n/10.95 La taula []5.31[] mostra al que ens referim quan par-lem d'aquesta agre-gació d'informació. 
+ []
+
+
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/10 [array of Evidence-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/10 [array of Source-
+ []
+
+[79]) (./sections/05/06_other/02_conclusion.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 [array of Source-
+ []
+
+) (./sections/05/06_other/03_hypermedia.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [80]
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+) (./sections/05/06_other/04_link.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 22--22
+[]|\T1/cmss/m/n/10 Metadades dels for-mats mul-ti-mè-dia disponibles de
+ []
+
+[81]) (./sections/05/06_other/05_extensibleData.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+) (./sections/05/06_other/06_note.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+[82]) (./sections/05/06_other/07_resourceReference.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 22--22
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+) (./sections/05/06_other/08_user.tex [83]) (./sections/05/06_other/09_change.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 26--26
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\T1/cmss/m/n/10 object-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\T1/cmss/m/n/10 [change-Object-
+ []
+
+[84]
+Overfull \vbox (9.40237pt too high) has occurred while \output is active []
+
+ [85]
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+[]|\T1/cmss/m/n/10 ChildAndParents-
+ []
+
+
+Overfull \hbox (5.59175pt too wide) in paragraph at lines 101--101
+[]|\T1/cmss/m/n/10 CommonLawMarriage| 
+ []
+
+) (./sections/05/06_other/10_agent.tex
+Overfull \hbox (2.37462pt too wide) in paragraph at lines 24--24
+[]|\T1/cmss/bx/n/10 Paràmetre|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/10 [array of Online-
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/10 [array of Resource-
+ []
+
+[86]))) (./sections/06/_potential.tex [87] [88
 
 ]
 Secci\IeC {\'o} 6.
-[71]
+[89]
 Overfull \hbox (0.99191pt too wide) in paragraph at lines 39--40
 []\T1/cmr/m/n/10.95 Un al-tre fet que pot im-pactar a la quan-ti-tat de reg-istres con-tem-po-ra-nis disponibles
  []
@@ -1562,10 +1782,10 @@ Overfull \hbox (0.99191pt too wide) in paragraph at lines 39--40
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
+ [90]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73] [74]) (./sections/07/_proposals.tex [75] [76
+ [91] [92]) (./sections/07/_proposals.tex [93] [94
 
 ]
 Secci\IeC {\'o} 7.
@@ -1574,13 +1794,13 @@ Overfull \hbox (5.16946pt too wide) in paragraph at lines 8--9
 []\T1/cmr/m/n/10.95 Com es po-drà veure, moltes d'aquestes pro-postes giren al voltant d'estudis històrics
  []
 
-) (./sections/07/02_names.tex [77]) (./sections/07/03_catalanPortal.tex) (./sections/07/04_surnamesGeo.tex
+) (./sections/07/02_names.tex [95]) (./sections/07/03_catalanPortal.tex) (./sections/07/04_surnamesGeo.tex
 Underfull \vbox (badness 5475) has occurred while \output is active []
 
- [78]) (./sections/07/05_genealogyHeraldy.tex) (./sections/07/06_indexing.tex
+ [96]) (./sections/07/05_genealogyHeraldy.tex) (./sections/07/06_indexing.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
+ [97]
 Overfull \hbox (8.57137pt too wide) in paragraph at lines 8--9
 \T1/cmr/m/n/10.95 mat es-pecífic, al núvol. So-bre aquest reg-istre, im-ple-men-tar un sis-tema d'automatització
  []
@@ -1593,41 +1813,41 @@ Overfull \hbox (0.18396pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 4543) has occurred while \output is active []
 
- [80]) (./sections/07/09_collections.tex
+ [98]) (./sections/07/09_collections.tex
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 1.
 
 Overfull \hbox (35.35977pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10.95 7.8.  DIVERSITAT GEOGRÀFICA D'UN COGNOM: ELS NOSTRES AVANTPASSATS \T1/cmr/m/n/10.95 81
+\T1/cmr/m/sl/10.95 7.8.  DIVERSITAT GEOGRÀFICA D'UN COGNOM: ELS NOSTRES AVANTPASSATS \T1/cmr/m/n/10.95 99
  []
 
-[81]) (./sections/07/10_natalityMortality.tex) (./sections/07/11_marriages.tex) (./sections/07/12_schindler.tex [82]
+[99]) (./sections/07/10_natalityMortality.tex) (./sections/07/11_marriages.tex) (./sections/07/12_schindler.tex [100]
 Overfull \hbox (1.30893pt too wide) in paragraph at lines 6--7
 \T1/cmr/m/n/10.95 d'aquelles per-sones que van for-mar la llista de Schindler, i re-al-itzar un es-tudi d'aquests
  []
 
-<images/07/thePianist.jpg, id=1227, 3079.505pt x 2064.71375pt>
+<images/07/thePianist.jpg, id=1453, 3079.505pt x 2064.71375pt>
 File: images/07/thePianist.jpg Graphic file (type jpg)
  <use images/07/thePianist.jpg>
 Package pdftex.def Info: images/07/thePianist.jpg used on input line 13.
 (pdftex.def)             Requested size: 398.33858pt x 267.06749pt.
 ) (./sections/07/13_crack29.tex
-Overfull \hbox (55.52287pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10.95 7.12.  FAMILYSEARCH I LA SEGONA GUERRA MUNDIAL: LA LLISTA DE SCHINDLER \T1/cmr/m/n/10.95 83
+Overfull \hbox (60.96681pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10.95 7.12.  FAMILYSEARCH I LA SEGONA GUERRA MUNDIAL: LA LLISTA DE SCHINDLER \T1/cmr/m/n/10.95 101
  []
 
-[83 <./images/07/thePianist.jpg>]) (./sections/07/14_friendsComparisons.tex) (./sections/07/15_fsvsreality.tex
+[101 <./images/07/thePianist.jpg>]) (./sections/07/14_friendsComparisons.tex) (./sections/07/15_fsvsreality.tex
 Underfull \vbox (badness 4193) has occurred while \output is active []
 
- [84]) (./sections/07/16_genealogies.tex) (./sections/07/17_duplicatesRemoval.tex
-Overfull \hbox (34.20795pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/10.95 7.15.  COMPARACIÓ DE DADES GENEALÒGIQUES REALS AMB FAMILYSEARCH \T1/cmr/m/n/10.95 85
+ [102]) (./sections/07/16_genealogies.tex) (./sections/07/17_duplicatesRemoval.tex
+Overfull \hbox (39.65189pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10.95 7.15.  COMPARACIÓ DE DADES GENEALÒGIQUES REALS AMB FAMILYSEARCH \T1/cmr/m/n/10.95 103
  []
 
-[85])) [86]
+[103])) [104]
 No file main.gls.
 No file main.acr.
-[87
+[105
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
@@ -1636,20 +1856,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5A7767BD8F7356CE61010C6D4E44C972;9398.
+(rerunfilecheck)             Checksum: 39D6CFC0220986A7A566B6CC69EE7432;10997.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25161 strings out of 493013
- 443450 string characters out of 6136994
- 599154 words of memory out of 5000000
- 27498 multiletter control sequences out of 15000+600000
- 24378 words of font info for 55 fonts, out of 8000000 for 9000
+ 25376 strings out of 493013
+ 447179 string characters out of 6136994
+ 604491 words of memory out of 5000000
+ 27559 multiletter control sequences out of 15000+600000
+ 24633 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,64p,1951b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,64p,1951b,1935s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
@@ -1658,10 +1881,10 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist,
 
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (87 pages, 2092859 bytes).
+Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (105 pages, 2155485 bytes).
 PDF statistics:
- 1413 PDF objects out of 1440 (max. 8388607)
- 1278 compressed objects within 13 object streams
- 448 named destinations out of 1000 (max. 500000)
- 981 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1654 PDF objects out of 1728 (max. 8388607)
+ 1498 compressed objects within 15 object streams
+ 527 named destinations out of 1000 (max. 500000)
+ 1122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

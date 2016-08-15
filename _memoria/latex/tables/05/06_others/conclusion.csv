@@ -1,0 +1,8 @@
+param,format,desc
+confidence,[confidence\-Level],El nivell de confiança que el contribuïdor te sobre la veracitat de les dades. Alt\, mitjà o baix.
+sortKey,string,Una clau per facilitar l'ordenació de cara la impressió de les dades.
+lang,string,El llenguatge en què està redactada la conclusió.
+attribution,[Attribution],Meta dades per l'atribució de les dades.
+sources,[array of Source\-Reference],Referències a les fonts de dades que donen suport a la conclusió.
+analysis,[Resource\-Reference],Referència al document d'anàlisis explicant l'anàlisi que s'ha portat a terme per tal arribar a la conclusió.
+notes,[array of Note],Notes sobre la persona.

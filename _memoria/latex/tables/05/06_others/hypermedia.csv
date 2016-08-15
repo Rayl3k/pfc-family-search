@@ -1,0 +1,2 @@
+param,format,desc
+links,[array of Links],Llista d'enllaços hypermedia als recursos relacionats al recurs consultat. Aquests enllaços són els que ens permeten navegar entre recursos sense haver de posar-los al codi de forma explícita.

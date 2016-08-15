@@ -1,0 +1,18 @@
+param,format,desc
+alternate\-Email,string,Adreça de correu alternativa.
+birth\-Date,string,Data de naixement.
+contact\-Name,string,Nom de contacte.
+country,string,País d'origen.
+display\-Name,string,Nom a mostrar.
+email,string,Correu electrònic de l'usuari.
+family\-Name,string,Cognom de l'usuari.
+full\-Name,string,Nom complet de l'usuari.
+gender,string,Gènere de l'usuari.
+given\-Name,string,Nom de l'usuari.
+helper\-Access\-Pin,string,Pin d'accés en cas de necessitat d'ajuda.
+mailing\-Address,string,Direcció postal.
+mobile\-Phone\-Number,string,Número de telèfon mòbil.
+personId,string,Identificador de l'usuari.
+phone\-Number,string,Número de telèfon.
+prefered\-Language,string,Llenguatge preferit.
+tree\-User\-Id,string,Identificador de l'usuari a l'arbre de FamilySearch.

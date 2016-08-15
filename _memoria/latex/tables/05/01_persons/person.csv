@@ -6,4 +6,4 @@ gender,[Gender],El gènere de la persona consultada.
 names,[array of Name],Els diferents noms pels que és coneix a la persona.
 facts,[array of Facts],Els esdeveniments relacionats amb la vida de la persona.
 fields,[array of Field],Camps que s'utilitzen com evidència.
-display,[DisplayProperties],"Recopilació d'informació bàsica, d'accés ràpid, sobre la persona, per que resulti accessible sense necessitat de navegar pels diferents recursos."
+display,[DisplayProperties],Recopilació d'informació bàsica\, d'accés ràpid\, sobre la persona\, per que resulti accessible sense necessitat de navegar pels diferents recursos.

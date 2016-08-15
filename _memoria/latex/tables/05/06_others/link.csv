@@ -1,0 +1,12 @@
+param,format,desc
+template,string,Una plantilla URI que segueix l'estàndard RFC 6570\, utilitzat per referenciar a un rang de URIs.
+allow,string,Metadades dels mètodes permissibles a l'hora de navegar entre un recurs i un altre.
+count,int,El nombre de recursos a la pàgina referenciada\, si és que aquest enllaç fa referència a una pàgina de recursos.
+accept,string,Metadades dels formats multimèdia acceptables.
+type,string,Metadades dels formats multimèdia disponibles de l'enllaç que és referència.
+hreflang,string,L'idioma en què es troba el recurs referenciat.
+title,string,Títol descriptiu de l'enllaç.
+results,int,El nombre total de resultats continguts a la pàgina enllaçada\, si és que el recurs enllaça a una pàgina de resultats. Per exemple\, la cerca de persones a l'arbre familiar.
+rel,string,La relació d'enllaç. És el paràmetre utilitzat per comprendre de quina relació es tracta.
+offset,int,Els resultats a saltar\, o resultat pel qual començarà la pàgina enllaçada\, si aquest enllaç fa referència a una pàgina de resultats.
+hreflang,anyURI,La direcció URI de l'enllaç.

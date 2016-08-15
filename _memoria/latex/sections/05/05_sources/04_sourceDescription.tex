@@ -1,0 +1,47 @@
+\subsection{El recurs Font de Dades (SourceDescription)}
+
+    \paragraph{}
+    Aquest recurs defineix una font de dades i n'emmagatzema tota la informació que la caracteritza. Les fonts de dades formen part d'una col·lecció i es troben relacionades a ella mitjançant enllaços hypermedia.
+
+    La millor forma d'explicar aquest recurs és comprendre'n els paràmetres i aquests s'exposen a la taula~\ref{res:sourceDescription}. El recurs Font de Dades també hereta els paràmetres dels recursos Enllaços Hypermedia i Dades Extensibles que poden ser trobats a l'apartat `Altres recursos interessants'.
+
+    \begin{center}
+             \csvreader[
+                separator=comma,
+                before table=\sffamily\small,
+                longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                table head={\caption{Paràmetres del recurs Font de Dades}\label{res:sourceDescription}\\\toprule%
+                    \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                    & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                    & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                late after line=\\\midrule,
+                late after last line=\\\bottomrule,
+             ]
+             {./tables/05/05_sources/sourceDescription.csv}
+             {param=\param,format=\format,desc=\desc}
+             {\param&\format&\desc}
+     \end{center}
+
+
+    \subsubsection{L'enumeració resourceType}
+
+    L'enumeració resourceType segueix l'estructura de definició GEDCOMX. Com a tal, els valors possibles per l'enumeració segueixen la pauta:\\\verb|http://gedcomx.org/ + `resourceType'|
+
+    La següent taula mostra els possibles valors per l'enumeració resourceType.
+
+    \begin{center}
+        \csvreader[
+           no head,
+           separator=comma,
+           table head={\caption{Valors possibles per l'enumeració resourceType}\label{enum:resourceType}},
+           before table=\sffamily\small,
+           longtable={|p{3cm}|p{3cm}|p{3cm}|},
+           column count=3,
+           late after head=\\\hline,
+           late after line=\\\hline,
+           late after last line=\\\hline,
+        ]
+        {./tables/05/05_sources/resourceType.csv}
+        {1=\one,2=\two,3=\three}
+        {\one&\two&\three}
+    \end{center}

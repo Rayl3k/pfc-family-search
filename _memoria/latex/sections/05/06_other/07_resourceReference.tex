@@ -1,0 +1,23 @@
+\subsection{El recurs Referència al Recurs (ResourceReference)}
+
+    \paragraph{}
+    Un altre recurs que ha sortit molt fins ara, com a recurs contingut dins dels altres recursos, és el de Referència al Recurs. Aquest objecte, s'utilitza per enllaçar mitjançant un contingut semàntic, representat per l'identificador del camp del recurs apuntat i la seva URI, un recurs amb un altre.
+
+    El seu format és molt simple i consta només dels dos paràmetres exposats a la taula~\ref{res:resourceReference}.
+
+    \begin{center}
+             \csvreader[
+                separator=comma,
+                before table=\sffamily\small,
+                longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                table head={\caption{Paràmetres del recurs Referència al Recurs}\label{res:resourceReference}\\\toprule%
+                    \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                    & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                    & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                late after line=\\\midrule,
+                late after last line=\\\bottomrule,
+             ]
+             {./tables/05/06_others/resourceReference.csv}
+             {param=\param,format=\format,desc=\desc}
+             {\param&\format&\desc}
+     \end{center}
