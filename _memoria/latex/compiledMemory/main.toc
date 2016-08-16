@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {1.3}Objectius}{9}{section.1.3}
 \contentsline {paragraph}{}{9}{section*.4}
 \contentsline {paragraph}{}{9}{section*.5}
-\contentsline {section}{\numberline {1.4}Planificaci\IeC {\'o}}{9}{section.1.4}
-\contentsline {paragraph}{}{9}{section*.6}
+\contentsline {section}{\numberline {1.4}Planificaci\IeC {\'o}}{10}{section.1.4}
+\contentsline {paragraph}{}{10}{section*.6}
 \contentsline {subsection}{\numberline {1.4.1}Planificaci\IeC {\'o} Febrer del 2014 -\ Juliol 2014}{10}{subsection.1.4.1}
 \contentsline {paragraph}{}{10}{section*.7}
 \contentsline {subsection}{\numberline {1.4.2}Planificaci\IeC {\'o} Febrer del 2016 -\ Setembre 2016}{10}{subsection.1.4.2}
@@ -23,8 +23,8 @@
 \contentsline {paragraph}{}{13}{section*.17}
 \contentsline {subsubsection}{Mes d'agost}{13}{section*.18}
 \contentsline {paragraph}{}{13}{section*.19}
-\contentsline {subsubsection}{Mes de setembre}{13}{section*.20}
-\contentsline {paragraph}{}{13}{section*.21}
+\contentsline {subsubsection}{Mes de setembre}{14}{section*.20}
+\contentsline {paragraph}{}{14}{section*.21}
 \contentsline {chapter}{\numberline {2}La genealogia}{15}{chapter.2}
 \contentsline {paragraph}{}{15}{section*.22}
 \contentsline {section}{\numberline {2.1}Qu\IeC {\`e} \IeC {\'e}s la genealogia?}{15}{section.2.1}
@@ -265,53 +265,74 @@
 \contentsline {paragraph}{}{86}{section*.165}
 \contentsline {subsection}{\numberline {5.9.10}El recurs Agent (Agent)}{86}{subsection.5.9.10}
 \contentsline {paragraph}{}{86}{section*.166}
-\contentsline {chapter}{\numberline {6}Valoraci\IeC {\'o} final sobre la potencialitat de l'API}{89}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}}{89}{section.6.1}
-\contentsline {paragraph}{}{89}{section*.167}
-\contentsline {section}{\numberline {6.2}Distribuci\IeC {\'o} geogr\IeC {\`a}fica de les dades}{89}{section.6.2}
-\contentsline {paragraph}{}{89}{section*.168}
-\contentsline {section}{\numberline {6.3}Dades contampor\IeC {\`a}nies}{90}{section.6.3}
-\contentsline {paragraph}{}{90}{section*.169}
-\contentsline {section}{\numberline {6.4}Recursos i funcionalitats}{91}{section.6.4}
-\contentsline {paragraph}{}{91}{section*.170}
-\contentsline {section}{\numberline {6.5}Naturalesa de l'API}{91}{section.6.5}
-\contentsline {paragraph}{}{91}{section*.171}
-\contentsline {section}{\numberline {6.6}Utilitzaci\IeC {\'o} de l'API en el marc d'un PFC}{92}{section.6.6}
-\contentsline {paragraph}{}{92}{section*.172}
-\contentsline {section}{\numberline {6.7}Conclusi\IeC {\'o}}{92}{section.6.7}
-\contentsline {paragraph}{}{92}{section*.173}
-\contentsline {chapter}{\numberline {7}Llista de propostes de projecte}{95}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introducci\IeC {\'o}}{95}{section.7.1}
-\contentsline {paragraph}{}{95}{section*.174}
-\contentsline {section}{\numberline {7.2}Comparaci\IeC {\'o} sobre la popularitat de noms}{95}{section.7.2}
+\contentsline {section}{\numberline {5.10}Camins d'acc\IeC {\'e}s a l'arbre familiar i operacions de cerca}{87}{section.5.10}
+\contentsline {paragraph}{}{87}{section*.167}
+\contentsline {subsection}{\numberline {5.10.1}L'acc\IeC {\'e}s directe a les dades}{87}{subsection.5.10.1}
+\contentsline {paragraph}{}{87}{section*.168}
+\contentsline {subsection}{\numberline {5.10.2}L'acc\IeC {\'e}s indirecte a les dades}{88}{subsection.5.10.2}
+\contentsline {paragraph}{}{88}{section*.169}
+\contentsline {subsection}{\numberline {5.10.3}Lectura de l'usuari identificat}{89}{subsection.5.10.3}
+\contentsline {paragraph}{}{89}{section*.170}
+\contentsline {subsection}{\numberline {5.10.4}Lectura de la persona relacionada a l'usuari identificat}{89}{subsection.5.10.4}
+\contentsline {subsection}{\numberline {5.10.5}Cerca de Persones a l'arbre familiar}{90}{subsection.5.10.5}
+\contentsline {paragraph}{}{90}{section*.171}
+\contentsline {subsubsection}{Cerca de persones duplicades}{91}{section*.172}
+\contentsline {paragraph}{}{91}{section*.173}
+\contentsline {subsection}{\numberline {5.10.6}Cerca de localitzacions}{92}{subsection.5.10.6}
+\contentsline {paragraph}{}{92}{section*.174}
+\contentsline {chapter}{\numberline {6}Valoraci\IeC {\'o} final sobre la potencialitat de l'API}{95}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}}{95}{section.6.1}
 \contentsline {paragraph}{}{95}{section*.175}
-\contentsline {section}{\numberline {7.3}Portal de cerca localitzat al Catal\IeC {\`a}}{96}{section.7.3}
-\contentsline {paragraph}{}{96}{section*.176}
-\contentsline {section}{\numberline {7.4}Geolocalitzaci\IeC {\'o} d'un cognom en diferents nivells}{97}{section.7.4}
-\contentsline {paragraph}{}{97}{section*.177}
-\contentsline {section}{\numberline {7.5}La recerca geneal\IeC {\`o}gica i l'her\IeC {\`a}ldica}{97}{section.7.5}
+\contentsline {section}{\numberline {6.2}Distribuci\IeC {\'o} geogr\IeC {\`a}fica de les dades}{95}{section.6.2}
+\contentsline {paragraph}{}{95}{section*.176}
+\contentsline {section}{\numberline {6.3}Dades contampor\IeC {\`a}nies}{96}{section.6.3}
+\contentsline {paragraph}{}{96}{section*.177}
+\contentsline {section}{\numberline {6.4}Recursos i funcionalitats}{97}{section.6.4}
 \contentsline {paragraph}{}{97}{section*.178}
-\contentsline {section}{\numberline {7.6}Projectes d'indexaci\IeC {\'o}}{98}{section.7.6}
-\contentsline {paragraph}{}{98}{section*.179}
-\contentsline {section}{\numberline {7.7}La hist\IeC {\`o}ria de l'esgl\IeC {\'e}sia mormona a trav\IeC {\'e}s de FamilySearch}{98}{section.7.7}
+\contentsline {section}{\numberline {6.5}Naturalesa de l'API}{97}{section.6.5}
+\contentsline {paragraph}{}{97}{section*.179}
+\contentsline {section}{\numberline {6.6}Utilitzaci\IeC {\'o} de l'API en el marc d'un PFC}{98}{section.6.6}
 \contentsline {paragraph}{}{98}{section*.180}
-\contentsline {section}{\numberline {7.8}Diversitat geogr\IeC {\`a}fica d'un cognom: Els nostres avantpassats}{99}{section.7.8}
-\contentsline {paragraph}{}{99}{section*.181}
-\contentsline {section}{\numberline {7.9}Les col\IeC {\textperiodcentered }leccions de dades de FamilySearch}{99}{section.7.9}
-\contentsline {paragraph}{}{99}{section*.182}
-\contentsline {section}{\numberline {7.10}FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{100}{section.7.10}
-\contentsline {paragraph}{}{100}{section*.183}
-\contentsline {section}{\numberline {7.11}FamilySearch i la segona guerra mundial: Increment en els casaments}{100}{section.7.11}
-\contentsline {paragraph}{}{100}{section*.184}
-\contentsline {section}{\numberline {7.12}FamilySearch i la segona guerra mundial: La llista de Schindler}{101}{section.7.12}
-\contentsline {paragraph}{}{101}{section*.185}
-\contentsline {section}{\numberline {7.13}La gran recessi\IeC {\'o} o altres esdeveniments hist\IeC {\`o}rics}{102}{section.7.13}
-\contentsline {paragraph}{}{102}{section*.186}
-\contentsline {section}{\numberline {7.14}Comparacions amb els amics o seguidors de Facebook i Twitter}{102}{section.7.14}
-\contentsline {paragraph}{}{102}{section*.187}
-\contentsline {section}{\numberline {7.15}Comparaci\IeC {\'o} de dades geneal\IeC {\`o}giques reals amb FamilySearch}{103}{section.7.15}
-\contentsline {paragraph}{}{103}{section*.188}
-\contentsline {section}{\numberline {7.16}Estudi de profunditat dels arbres familiars}{103}{section.7.16}
-\contentsline {paragraph}{}{103}{section*.189}
-\contentsline {section}{\numberline {7.17}Algoritme de marcatge de duplicats}{104}{section.7.17}
-\contentsline {paragraph}{}{104}{section*.190}
+\contentsline {section}{\numberline {6.7}Conclusi\IeC {\'o}}{98}{section.6.7}
+\contentsline {paragraph}{}{98}{section*.181}
+\contentsline {chapter}{\numberline {7}Llista de propostes de projecte}{101}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introducci\IeC {\'o}}{101}{section.7.1}
+\contentsline {paragraph}{}{101}{section*.182}
+\contentsline {section}{\numberline {7.2}Comparaci\IeC {\'o} sobre la popularitat de noms}{102}{section.7.2}
+\contentsline {paragraph}{}{102}{section*.183}
+\contentsline {section}{\numberline {7.3}Portal de cerca localitzat al Catal\IeC {\`a}}{102}{section.7.3}
+\contentsline {paragraph}{}{102}{section*.184}
+\contentsline {section}{\numberline {7.4}Geolocalitzaci\IeC {\'o} d'un cognom en diferents nivells}{103}{section.7.4}
+\contentsline {paragraph}{}{103}{section*.185}
+\contentsline {section}{\numberline {7.5}La recerca geneal\IeC {\`o}gica i l'her\IeC {\`a}ldica}{103}{section.7.5}
+\contentsline {paragraph}{}{103}{section*.186}
+\contentsline {section}{\numberline {7.6}Projectes d'indexaci\IeC {\'o}}{104}{section.7.6}
+\contentsline {paragraph}{}{104}{section*.187}
+\contentsline {section}{\numberline {7.7}La hist\IeC {\`o}ria de l'esgl\IeC {\'e}sia mormona a trav\IeC {\'e}s de FamilySearch}{104}{section.7.7}
+\contentsline {paragraph}{}{104}{section*.188}
+\contentsline {section}{\numberline {7.8}Diversitat geogr\IeC {\`a}fica d'un cognom: Els nostres avantpassats}{105}{section.7.8}
+\contentsline {paragraph}{}{105}{section*.189}
+\contentsline {section}{\numberline {7.9}Les col\IeC {\textperiodcentered }leccions de dades de FamilySearch}{106}{section.7.9}
+\contentsline {paragraph}{}{106}{section*.190}
+\contentsline {section}{\numberline {7.10}FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{106}{section.7.10}
+\contentsline {paragraph}{}{106}{section*.191}
+\contentsline {section}{\numberline {7.11}FamilySearch i la segona guerra mundial: Increment en els casaments}{107}{section.7.11}
+\contentsline {paragraph}{}{107}{section*.192}
+\contentsline {section}{\numberline {7.12}FamilySearch i la segona guerra mundial: La llista de Schindler}{107}{section.7.12}
+\contentsline {paragraph}{}{107}{section*.193}
+\contentsline {section}{\numberline {7.13}La gran recessi\IeC {\'o} o altres esdeveniments hist\IeC {\`o}rics}{107}{section.7.13}
+\contentsline {paragraph}{}{107}{section*.194}
+\contentsline {section}{\numberline {7.14}Comparacions amb els amics o seguidors de Facebook i Twitter}{108}{section.7.14}
+\contentsline {paragraph}{}{108}{section*.195}
+\contentsline {section}{\numberline {7.15}Comparaci\IeC {\'o} de dades geneal\IeC {\`o}giques reals amb FamilySearch}{109}{section.7.15}
+\contentsline {paragraph}{}{109}{section*.196}
+\contentsline {section}{\numberline {7.16}Estudi de profunditat dels arbres familiars}{110}{section.7.16}
+\contentsline {paragraph}{}{110}{section*.197}
+\contentsline {section}{\numberline {7.17}Algoritme de marcatge de duplicats}{110}{section.7.17}
+\contentsline {paragraph}{}{110}{section*.198}
+\contentsline {chapter}{\numberline {8}Estudi t\IeC {\`e}cnic de l'aplicaci\IeC {\'o} web}{111}{chapter.8}
+\contentsline {section}{\numberline {8.1}Decisi\IeC {\'o} del tipus d'aplicaci\IeC {\'o} a implementar}{111}{section.8.1}
+\contentsline {paragraph}{}{111}{section*.199}
+\contentsline {section}{\numberline {8.2}Tecnologies i patrons utilitzats per l'aplicaci\IeC {\'o} web}{112}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}El model: Model Vista Controlador}{112}{subsection.8.2.1}
+\contentsline {paragraph}{}{112}{section*.200}

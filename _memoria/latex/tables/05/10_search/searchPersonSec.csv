@@ -1,0 +1,24 @@
+param,desc
+name,El nom complet de la persona cercada.
+givenName,El nom de la persona cercada.
+surname,El cognom o nom de família de la persona cercada.
+gender,El gènere de la persona cercada.
+birthDate,La data en què la persona va néixer. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+birthPlace,La localització en què la persona va néixer.
+christeningDate,La data en què la persona va ser batejada. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+christeningPlace,La localització en què la persona va ser batejada.
+deathDate,La data en què la persona va morir. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+deathPlace,La localització en què la persona va morir.
+burialDate,La data en què la persona va ser enterrada. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+burialPlace,La localització en què la persona va ser enterrada.
+marriageDate,La data en què la persona es va casar. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+marriagePlace,La localització en què la persona es va casar.
+{relation}Name,El nom complet de la {relació} de la persona cercada.
+{relation}GivenName,El nom de la {relació} de la persona cercada.
+{relation}Surname,El cognom de la {relació} de la persona cercada.
+{relation}BirthDate,La data de naixement de la {relació} de la persona cercada. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+{relation}BirthPlace,El lloc de naixement de la {relació} de la persona cercada.
+{relation}DeathDate,La data de defunció de la {relació} de la persona cercada. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+{relation}DeathPlace,El lloc de defunció de la {relació} de la persona cercada.
+{relation}MarriageDate,La data de casament de la {relació} de la persona cercada. S'accepten rangs de dates mitjançant el caràcter `-' entremig.
+{relation}MarriagePlace,El lloc de casament de la {relació} de la persona cercada.

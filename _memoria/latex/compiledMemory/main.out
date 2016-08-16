@@ -100,29 +100,40 @@
 \BOOKMARK [2][-]{subsection.5.9.8}{El recurs Usuari \(User\)}{section.5.9}% 100
 \BOOKMARK [2][-]{subsection.5.9.9}{El recurs Canvi \(Change\)}{section.5.9}% 101
 \BOOKMARK [2][-]{subsection.5.9.10}{El recurs Agent \(Agent\)}{section.5.9}% 102
-\BOOKMARK [0][-]{chapter.6}{Valoraci\363 final sobre la potencialitat de l'API}{}% 103
-\BOOKMARK [1][-]{section.6.1}{Introducci\363}{chapter.6}% 104
-\BOOKMARK [1][-]{section.6.2}{Distribuci\363 geogr\340fica de les dades}{chapter.6}% 105
-\BOOKMARK [1][-]{section.6.3}{Dades contampor\340nies}{chapter.6}% 106
-\BOOKMARK [1][-]{section.6.4}{Recursos i funcionalitats}{chapter.6}% 107
-\BOOKMARK [1][-]{section.6.5}{Naturalesa de l'API}{chapter.6}% 108
-\BOOKMARK [1][-]{section.6.6}{Utilitzaci\363 de l'API en el marc d'un PFC}{chapter.6}% 109
-\BOOKMARK [1][-]{section.6.7}{Conclusi\363}{chapter.6}% 110
-\BOOKMARK [0][-]{chapter.7}{Llista de propostes de projecte}{}% 111
-\BOOKMARK [1][-]{section.7.1}{Introducci\363}{chapter.7}% 112
-\BOOKMARK [1][-]{section.7.2}{Comparaci\363 sobre la popularitat de noms}{chapter.7}% 113
-\BOOKMARK [1][-]{section.7.3}{Portal de cerca localitzat al Catal\340}{chapter.7}% 114
-\BOOKMARK [1][-]{section.7.4}{Geolocalitzaci\363 d'un cognom en diferents nivells}{chapter.7}% 115
-\BOOKMARK [1][-]{section.7.5}{La recerca geneal\362gica i l'her\340ldica}{chapter.7}% 116
-\BOOKMARK [1][-]{section.7.6}{Projectes d'indexaci\363}{chapter.7}% 117
-\BOOKMARK [1][-]{section.7.7}{La hist\362ria de l'esgl\351sia mormona a trav\351s de FamilySearch}{chapter.7}% 118
-\BOOKMARK [1][-]{section.7.8}{Diversitat geogr\340fica d'un cognom: Els nostres avantpassats}{chapter.7}% 119
-\BOOKMARK [1][-]{section.7.9}{Les col\267leccions de dades de FamilySearch}{chapter.7}% 120
-\BOOKMARK [1][-]{section.7.10}{FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{chapter.7}% 121
-\BOOKMARK [1][-]{section.7.11}{FamilySearch i la segona guerra mundial: Increment en els casaments}{chapter.7}% 122
-\BOOKMARK [1][-]{section.7.12}{FamilySearch i la segona guerra mundial: La llista de Schindler}{chapter.7}% 123
-\BOOKMARK [1][-]{section.7.13}{La gran recessi\363 o altres esdeveniments hist\362rics}{chapter.7}% 124
-\BOOKMARK [1][-]{section.7.14}{Comparacions amb els amics o seguidors de Facebook i Twitter}{chapter.7}% 125
-\BOOKMARK [1][-]{section.7.15}{Comparaci\363 de dades geneal\362giques reals amb FamilySearch}{chapter.7}% 126
-\BOOKMARK [1][-]{section.7.16}{Estudi de profunditat dels arbres familiars}{chapter.7}% 127
-\BOOKMARK [1][-]{section.7.17}{Algoritme de marcatge de duplicats}{chapter.7}% 128
+\BOOKMARK [1][-]{section.5.10}{Camins d'acc\351s a l'arbre familiar i operacions de cerca}{chapter.5}% 103
+\BOOKMARK [2][-]{subsection.5.10.1}{L'acc\351s directe a les dades}{section.5.10}% 104
+\BOOKMARK [2][-]{subsection.5.10.2}{L'acc\351s indirecte a les dades}{section.5.10}% 105
+\BOOKMARK [2][-]{subsection.5.10.3}{Lectura de l'usuari identificat}{section.5.10}% 106
+\BOOKMARK [2][-]{subsection.5.10.4}{Lectura de la persona relacionada a l'usuari identificat}{section.5.10}% 107
+\BOOKMARK [2][-]{subsection.5.10.5}{Cerca de Persones a l'arbre familiar}{section.5.10}% 108
+\BOOKMARK [2][-]{subsection.5.10.6}{Cerca de localitzacions}{section.5.10}% 109
+\BOOKMARK [0][-]{chapter.6}{Valoraci\363 final sobre la potencialitat de l'API}{}% 110
+\BOOKMARK [1][-]{section.6.1}{Introducci\363}{chapter.6}% 111
+\BOOKMARK [1][-]{section.6.2}{Distribuci\363 geogr\340fica de les dades}{chapter.6}% 112
+\BOOKMARK [1][-]{section.6.3}{Dades contampor\340nies}{chapter.6}% 113
+\BOOKMARK [1][-]{section.6.4}{Recursos i funcionalitats}{chapter.6}% 114
+\BOOKMARK [1][-]{section.6.5}{Naturalesa de l'API}{chapter.6}% 115
+\BOOKMARK [1][-]{section.6.6}{Utilitzaci\363 de l'API en el marc d'un PFC}{chapter.6}% 116
+\BOOKMARK [1][-]{section.6.7}{Conclusi\363}{chapter.6}% 117
+\BOOKMARK [0][-]{chapter.7}{Llista de propostes de projecte}{}% 118
+\BOOKMARK [1][-]{section.7.1}{Introducci\363}{chapter.7}% 119
+\BOOKMARK [1][-]{section.7.2}{Comparaci\363 sobre la popularitat de noms}{chapter.7}% 120
+\BOOKMARK [1][-]{section.7.3}{Portal de cerca localitzat al Catal\340}{chapter.7}% 121
+\BOOKMARK [1][-]{section.7.4}{Geolocalitzaci\363 d'un cognom en diferents nivells}{chapter.7}% 122
+\BOOKMARK [1][-]{section.7.5}{La recerca geneal\362gica i l'her\340ldica}{chapter.7}% 123
+\BOOKMARK [1][-]{section.7.6}{Projectes d'indexaci\363}{chapter.7}% 124
+\BOOKMARK [1][-]{section.7.7}{La hist\362ria de l'esgl\351sia mormona a trav\351s de FamilySearch}{chapter.7}% 125
+\BOOKMARK [1][-]{section.7.8}{Diversitat geogr\340fica d'un cognom: Els nostres avantpassats}{chapter.7}% 126
+\BOOKMARK [1][-]{section.7.9}{Les col\267leccions de dades de FamilySearch}{chapter.7}% 127
+\BOOKMARK [1][-]{section.7.10}{FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{chapter.7}% 128
+\BOOKMARK [1][-]{section.7.11}{FamilySearch i la segona guerra mundial: Increment en els casaments}{chapter.7}% 129
+\BOOKMARK [1][-]{section.7.12}{FamilySearch i la segona guerra mundial: La llista de Schindler}{chapter.7}% 130
+\BOOKMARK [1][-]{section.7.13}{La gran recessi\363 o altres esdeveniments hist\362rics}{chapter.7}% 131
+\BOOKMARK [1][-]{section.7.14}{Comparacions amb els amics o seguidors de Facebook i Twitter}{chapter.7}% 132
+\BOOKMARK [1][-]{section.7.15}{Comparaci\363 de dades geneal\362giques reals amb FamilySearch}{chapter.7}% 133
+\BOOKMARK [1][-]{section.7.16}{Estudi de profunditat dels arbres familiars}{chapter.7}% 134
+\BOOKMARK [1][-]{section.7.17}{Algoritme de marcatge de duplicats}{chapter.7}% 135
+\BOOKMARK [0][-]{chapter.8}{Estudi t\350cnic de l'aplicaci\363 web}{}% 136
+\BOOKMARK [1][-]{section.8.1}{Decisi\363 del tipus d'aplicaci\363 a implementar}{chapter.8}% 137
+\BOOKMARK [1][-]{section.8.2}{Tecnologies i patrons utilitzats per l'aplicaci\363 web}{chapter.8}% 138
+\BOOKMARK [2][-]{subsection.8.2.1}{El model: Model Vista Controlador}{section.8.2}% 139
