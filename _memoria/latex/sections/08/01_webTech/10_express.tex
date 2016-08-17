@@ -1,0 +1,25 @@
+\subsection{La tecnologia Express o Express js}
+
+    \paragraph{}
+    De la mateixa forma que descrivíem a Bootstrap com un marc de treball per les capes vista i controlador, Express és un marc de treball pel servidor de l'aplicació i en el nostre cas concret, per la tecnologia Node.js.
+
+    Així doncs, Express és un marc de treball minimalista i flexible pensat per crear aplicacions web i aplicacions mòbil simples, mitjançant Node.js. Express també està pensat per la creació d'APIs robustes.
+
+    Diem que Express és minimalista, perquè mitjançant l'aplicació d'una fina capa d'eines, destinades al desenvolupament web i situada per sobre de la tecnologia Node.js, s'aconsegueix una gran potencialitat sense la necessitat d'emmascarar o alterar les funcionalitats principals i simples per les quals Node.js destaca.
+
+    Molts altres marcs de treball o frameworks populars que han desitjat ampliar les possibilitats de Node.js, han nascut a partir de la base d'Express.
+
+    Podem justificar la utilització d'aquest entorn de treball per la nostra aplicació, ja que els  requisits que tenim pel back-end, després de decidir implementar la interacció amb l'API de FamilySearch a la capa del controlador,  són relativament simples.
+
+    Les funcionalitats o eines principals que proporciona Express són:
+
+    \begin{itemize}
+        \item \textbf{Eines d'encaminament:} L'encaminament recull el conjunt d'accions i processos que tenen lloc des que el servidor web rep la petició d'accés a una URL, fins que respon a la petició amb els recursos adequats.
+        \item \textbf{Eines middleware:} El concepte middleware serveix per referir-nos a aquelles peces de software que fan de pont entre dues parts o components d'un sistema. En el marc de treball en el qual ens estem referint, serveix per capturar les peticions al servidor per part de l'usuari i abans de servir-ne la resposta, realitzar algunes accions o comprovacions. Un exemple típic podria ser el de comprovar que un usuari té els permisos suficients per veure la pàgina demanada.
+        \item \textbf{Eines per la utilització de llenguatges plantilla:} Aquest conjunt d'eines són les que ens permeten configurar el servidor Node.js per comprendre i poder utilitzar, per exemple, el llenguatge de plantilles Mustache que hem descrit en aquest mateix apartat de la memòria.
+        \item \textbf{Eines per gestionar errors:} Eines específiques per gestionar els errors com a middleware.
+        \item \textbf{Eines de depuració:} Eines destinades a ajudar als desenvolupadors durant els moments de desenvolupament a detectar errors mitjançant, en gran part, la consola.
+        \item \textbf{Eines de connexió a bases de dades:} Conjunt d'eines per integrar de forma fàcil diferents bases de dades amb el servidor.
+    \end{itemize}
+
+    Donada la naturalesa de la nostra aplicació, les funcionalitats que ens interessen més són les tres primeres. Aquesta tecnologia, en tractar-se d'un framework de Node.js, s'utilitza, evidentment, en la part del back-end de la nostra aplicació.

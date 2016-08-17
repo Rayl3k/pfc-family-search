@@ -1,0 +1,32 @@
+\subsection{El SDK Javascript oficial de FamilySearch}
+
+    \paragraph{}
+    Una de les tecnologies principals sobre les quals feia falta prendre una decisió al més aviat possible, era la que marcaria com s'haurien de realitzar les comunicacions entre l’aplicació web i l’API de FamilySearch.
+
+    La primera opció de la qual disposàvem era realitzar una implementació directa contra l’API. Aquesta aproximació tenia tots els números de ser la més flexible de totes, ja que permetria realitzar les peticions a l’API de forma completament personalitzada.
+
+    Per contrapartida, s'haurien de tractar les respostes XML o JSON de l’API de forma manual, el que acostuma a resultar una tasca repetitiva i ineficient. A part, la codificació de les diferents URI per tal d’accedir als recursos de l’API, també hauria de ser realitzada de forma manual, amb la inseguretat afegida, de que qualsevol lleuger canvi en l’estructura de l’API, implicaria haver de canviar el codi de la nostra aplicació.
+
+    Després d'estudiar les funcionalitats i documentació disponible en el portal de desenvolupadors de FamilySearch, la idea d'utilitzar un SDK per la implementació de l’aplicació web, va anar cobrant força.
+
+    Els avantatges principals d’utilitzar un SDK eren el processat automàtic de les respostes de l’API i la utilització de funcions de conveniència, que simplificaven certes tasques i permetien accedir a la informació de forma fàcil i transparent. El desavantatge principal, una reducció en la flexibilitat a l'hora de demanar i navegar a través dels recursos de FamilySearch i el fet d’haver d'estudiar el funcionament d’una nova tecnologia.
+
+    Al cap de valorar-ho bastant, es va decidir realitzar la implementació dels exemples d'interacció amb l’API, mitjançant un SDK.
+
+    El benefici de tenir un cert grau de robustesa sobre els petits canvis als quals l’API es pogués veure sotmesa, més el fet de no haver de realitzar el tractament de dades de forma manual, compensava l'esforç d'estudiar el funcionament del SDK. A part, en primera instància, per tal de demostrar el propòsit i potencial general de l’API, no feia falta ser capaç de controlar totes les interaccions al més mínim detall.
+
+    Pel simple fet d'haver decidit implementar una aplicació web, eren tres els diferents SDK que podien ser utilitzats. El SDK de Python va quedar descartat des del començament, ja que no es trobava acabat i tampoc és un SDK oficial. Recordar, que els SDK oficials són desenvolupats per la mateixa organització de FamilySearch i per tant, més robusts de cara a possibles canvis de l’API.
+
+    La disputa doncs, quedava entre la utilització del SDK de Javascript o el de PHP. Després d’un estudi `superficial’ dels dos, ens vam acabar decantant pel Javascript SDK.
+
+    A pesar que la preferència inicial era utilitzar el SDK de PHP, ja que en el passat havia tocat una mica el llenguatge i tenia una idea aproximada de com es podia crear una aplicació web amb PHP, les funcionalitats d'aquest estaven molt per darrere de les que oferia el SDK de Javascript i l'extensa documentació del segon, també garantia una corba d'aprenentatge fàcil i ràpida.
+
+    Tot plegat, va fer que el SDK escollit per implementar els exemples fos el que va ser creat amb el llenguatge Javascript. Els detalls més tècnics d'aquest, així com el seu funcionament bàsic, seran explicats en la següent secció de la memòria, just abans de presentar l’aplicació web i els exemples implementats.
+
+    Finalment, esmentar que el SDK de Javascript, ens obria les portes a escollir si el volíem implementar a la capa del Model o a la capa del Controlador de l'arquitectura MVC.
+
+    La implementació més robusta i segura seria implementar-lo en la part del servidor, per tant, en el back-end. No obstant això, a causa del baix grau de dificultat de les operacions que es volien realitzar i la inexistent necessitat d’emmagatzemar informació en bases de dades, es va decidir implementar-lo a la capa del controlador.
+
+    D'aquesta forma, es reduïa al mínim la necessitat d’utilitzar la tecnologia Ajax, el que reduïa el nombre de tecnologies a estudiar i facilitava la impressió dels resultats provinents de les peticions a l’API al front-end de l'aplicació.
+
+    Al final del projecte i veient-ho amb la perspectiva del coneixement obtingut, probablement, l’opció d’implementar el SDK al back-end  de l’aplicació, no hauria esdevingut gaire més complicada. Tanmateix, cal recordar que el coneixement inicial a l’hora d’implementar una aplicació web, era pràcticament nul.

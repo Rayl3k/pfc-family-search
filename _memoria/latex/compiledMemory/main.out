@@ -137,3 +137,13 @@
 \BOOKMARK [1][-]{section.8.1}{Decisi\363 del tipus d'aplicaci\363 a implementar}{chapter.8}% 137
 \BOOKMARK [1][-]{section.8.2}{Tecnologies i patrons utilitzats per l'aplicaci\363 web}{chapter.8}% 138
 \BOOKMARK [2][-]{subsection.8.2.1}{El model: Model Vista Controlador}{section.8.2}% 139
+\BOOKMARK [2][-]{subsection.8.2.2}{Les tres capes del disseny web \(Front-end\)}{section.8.2}% 140
+\BOOKMARK [2][-]{subsection.8.2.3}{La tecnologia HTML 5}{section.8.2}% 141
+\BOOKMARK [2][-]{subsection.8.2.4}{La tecnologia CSS}{section.8.2}% 142
+\BOOKMARK [2][-]{subsection.8.2.5}{La tecnologia de plantilles Mustache}{section.8.2}% 143
+\BOOKMARK [2][-]{subsection.8.2.6}{Les tecnologies Javascript i jQuery}{section.8.2}% 144
+\BOOKMARK [2][-]{subsection.8.2.7}{La tecnologia Bootstrap}{section.8.2}% 145
+\BOOKMARK [2][-]{subsection.8.2.8}{El SDK Javascript oficial de FamilySearch}{section.8.2}% 146
+\BOOKMARK [2][-]{subsection.8.2.9}{La tecnologia Node.js}{section.8.2}% 147
+\BOOKMARK [2][-]{subsection.8.2.10}{La tecnologia Express o Express js}{section.8.2}% 148
+\BOOKMARK [2][-]{subsection.8.2.11}{Recapitulaci\363 de les tecnologies pel desenvolupament web}{section.8.2}% 149

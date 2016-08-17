@@ -1,0 +1,18 @@
+\subsection{La tecnologia Node.js}
+
+    \paragraph{}
+    Una de les poques tecnologies que ens quedaven per escollir, era la que faria funcionar el back-end o servidor de l'aplicació.
+
+    Aquest component de l'aplicació web generalment s'encarrega de gestionar les peticions de navegació i servir el contingut demanat als navegadors o usuaris. També s'encarrega de gestionar l'accés a les bases de dades (en cas que existeixin) i processar-ne la informació, per tal de servir-la d'una forma que la capa Controlador pugui comprendre i utilitzar.
+
+    Com que havíem escollit utilitzar el SDK de Javascript per realitzar les connexions a l'API de FamilySearch, es va decidir que era bona idea implementar el back-end amb una tecnologia que pogués fer funcionar el SDK, en cas que al final no volguéssim implementar la lògica de la connexió a la capa del controlador.
+
+    Després de buscar, l'única tecnologia que complia amb les condicions que buscàvem, era Node.js. Node.js ha estat implementat com un model basat en esdeveniments sense interrupcions, el que el converteix en un sistema en temps d'execució lleuger i eficient.
+
+    El paràgraf anterior, ve a significar que Node.js funciona mitjançant esdeveniments i de forma asíncrona, el que permet que moltes connexions siguin tractades de forma simultània. En el moment que una petició conclou, es dispara un esdeveniment de finalització, que s'encarrega d'activar una rutina que decidirà quina és la següent acció a realitzar. Aquest aspecte, converteix a Node.js, com una tecnologia molt escalable.
+
+    A més a més, el fet de tractar-se d'un software de codi obert que ha rebut una gran acceptació, ha propiciat que molts desenvolupadors s'hagin dedicat a crear paquets de software que n'amplien les funcionalitats inicials. Totes aquestes extensions, poden ser trobades al repositori de paquets, de l'ecosistema npm, el més gran del món en quant a llibreries de codi obert.
+
+    Comentarem més sobre aquesta tecnologia i com funciona, en els apartats específics d'implementació que apareixeran més endavant en aquesta memòria.
+
+    Aquesta tecnologia realitza el paper del Model en l'arquitectura MVC de la nostra aplicació o el que és el mateix, en el back-end d'aquesta.

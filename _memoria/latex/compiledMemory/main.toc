@@ -140,14 +140,14 @@
 \contentsline {paragraph}{}{43}{section*.94}
 \contentsline {subsection}{\numberline {4.4.2}Tree Foundation}{43}{subsection.4.4.2}
 \contentsline {paragraph}{}{43}{section*.95}
-\contentsline {section}{\numberline {4.5}Serveis extres oferts per l'API}{46}{section.4.5}
-\contentsline {paragraph}{}{46}{section*.96}
+\contentsline {section}{\numberline {4.5}Serveis extres oferts per l'API}{45}{section.4.5}
+\contentsline {paragraph}{}{45}{section*.96}
 \contentsline {subsection}{\numberline {4.5.1}Caching}{46}{subsection.4.5.1}
 \contentsline {paragraph}{}{46}{section*.97}
 \contentsline {subsection}{\numberline {4.5.2}Throttling}{46}{subsection.4.5.2}
 \contentsline {paragraph}{}{46}{section*.98}
-\contentsline {subsection}{\numberline {4.5.3}Sincronitzaci\IeC {\'o}}{47}{subsection.4.5.3}
-\contentsline {paragraph}{}{47}{section*.99}
+\contentsline {subsection}{\numberline {4.5.3}Sincronitzaci\IeC {\'o}}{46}{subsection.4.5.3}
+\contentsline {paragraph}{}{46}{section*.99}
 \contentsline {subsection}{\numberline {4.5.4}Internacionaltizaci\IeC {\'o}}{47}{subsection.4.5.4}
 \contentsline {paragraph}{}{47}{section*.100}
 \contentsline {subsection}{\numberline {4.5.5}Transfer\IeC {\`e}ncia de registres en grans quantitats}{47}{subsection.4.5.5}
@@ -165,174 +165,197 @@
 \contentsline {paragraph}{}{50}{section*.107}
 \contentsline {section}{\numberline {4.8}Diferents entorns de treball}{50}{section.4.8}
 \contentsline {paragraph}{}{50}{section*.108}
-\contentsline {chapter}{\numberline {5}Estudi en profunditat de l'API de FamilySearch}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Els recursos de FamilySearch}{53}{section.5.1}
-\contentsline {paragraph}{}{53}{section*.109}
-\contentsline {section}{\numberline {5.2}Enlla\IeC {\c c}os hypermedia, la navegaci\IeC {\'o} entre recursos}{53}{section.5.2}
-\contentsline {paragraph}{}{53}{section*.110}
-\contentsline {section}{\numberline {5.3}L'arbre geneal\IeC {\`o}gic de FamilySearch}{55}{section.5.3}
-\contentsline {paragraph}{}{55}{section*.111}
-\contentsline {section}{\numberline {5.4}Recursos principals del bloc Persones}{57}{section.5.4}
-\contentsline {paragraph}{}{57}{section*.112}
-\contentsline {subsection}{\numberline {5.4.1}El recurs Persona (Person)}{58}{subsection.5.4.1}
-\contentsline {paragraph}{}{58}{section*.113}
-\contentsline {subsection}{\numberline {5.4.2}El recurs G\IeC {\`e}nere (Gender)}{59}{subsection.5.4.2}
-\contentsline {paragraph}{}{59}{section*.114}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} genderType}{59}{section*.115}
-\contentsline {paragraph}{}{59}{section*.116}
-\contentsline {subsection}{\numberline {5.4.3}Els recursos Nom, Forma del Nom i Part del Nom (Name, NameForm, NamePart)}{59}{subsection.5.4.3}
-\contentsline {paragraph}{}{59}{section*.117}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} nameType}{60}{section*.118}
-\contentsline {paragraph}{}{60}{section*.119}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} namePartType}{61}{section*.120}
-\contentsline {paragraph}{}{61}{section*.121}
-\contentsline {subsection}{\numberline {5.4.4}El recurs Esdeveniment (Fact)}{61}{subsection.5.4.4}
-\contentsline {paragraph}{}{61}{section*.122}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} factType}{62}{section*.123}
-\contentsline {paragraph}{}{62}{section*.124}
-\contentsline {subsection}{\numberline {5.4.5}El recurs Data (Date)}{63}{subsection.5.4.5}
-\contentsline {paragraph}{}{63}{section*.125}
-\contentsline {subsection}{\numberline {5.4.6}El recurs Refer\IeC {\`e}ncia de localitzaci\IeC {\'o} (PlaceReference)}{63}{subsection.5.4.6}
-\contentsline {paragraph}{}{63}{section*.126}
-\contentsline {subsection}{\numberline {5.4.7}El recurs Descripci\IeC {\'o} de Localitzaci\IeC {\'o} (PlaceDescription)}{64}{subsection.5.4.7}
-\contentsline {paragraph}{}{64}{section*.127}
-\contentsline {subsection}{\numberline {5.4.8}El recurs Camps B\IeC {\`a}sics (DisplayProperties)}{65}{subsection.5.4.8}
-\contentsline {paragraph}{}{65}{section*.128}
-\contentsline {subsection}{\numberline {5.4.9}El recurs Vista de Fam\IeC {\'\i }lia (FamilyView)}{66}{subsection.5.4.9}
-\contentsline {paragraph}{}{66}{section*.129}
-\contentsline {section}{\numberline {5.5}Recursos principals del bloc Relacions Familiars}{66}{section.5.5}
-\contentsline {paragraph}{}{66}{section*.130}
-\contentsline {subsection}{\numberline {5.5.1}El recurs Relaci\IeC {\'o} (Relationship)}{67}{subsection.5.5.1}
-\contentsline {paragraph}{}{67}{section*.131}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} relationshipType}{68}{section*.132}
-\contentsline {paragraph}{}{68}{section*.133}
-\contentsline {subsection}{\numberline {5.5.2}El recurs Relaci\IeC {\'o} Pares i Fill (ChildAndParentsRelationship)}{68}{subsection.5.5.2}
-\contentsline {paragraph}{}{68}{section*.134}
-\contentsline {section}{\numberline {5.6}Recursos principals del bloc Discussions}{69}{section.5.6}
-\contentsline {paragraph}{}{69}{section*.135}
-\contentsline {subsection}{\numberline {5.6.1}El recurs Refer\IeC {\`e}ncia a la Discussi\IeC {\'o} (DiscussionsReference)}{69}{subsection.5.6.1}
-\contentsline {paragraph}{}{69}{section*.136}
-\contentsline {subsection}{\numberline {5.6.2}El recurs Discussi\IeC {\'o} (Discussion)}{70}{subsection.5.6.2}
-\contentsline {paragraph}{}{70}{section*.137}
-\contentsline {subsection}{\numberline {5.6.3}El recurs Comentari (Comment)}{71}{subsection.5.6.3}
-\contentsline {paragraph}{}{71}{section*.138}
-\contentsline {section}{\numberline {5.7}Recursos principals del bloc Mem\IeC {\`o}ries}{71}{section.5.7}
-\contentsline {paragraph}{}{71}{section*.139}
-\contentsline {subsection}{\numberline {5.7.1}El recurs Refer\IeC {\`e}ncia a la Mem\IeC {\`o}ria d'una Persona (Person Memory Reference)}{72}{subsection.5.7.1}
-\contentsline {paragraph}{}{72}{section*.140}
-\contentsline {subsection}{\numberline {5.7.2}El recurs Persones en una Mem\IeC {\`o}ria (MemoryPersona)}{72}{subsection.5.7.2}
-\contentsline {paragraph}{}{72}{section*.141}
-\contentsline {subsection}{\numberline {5.7.3}El recurs Mem\IeC {\`o}ria (Memory)}{73}{subsection.5.7.3}
-\contentsline {paragraph}{}{73}{section*.142}
-\contentsline {section}{\numberline {5.8}Recursos principals del bloc Fonts de Dades}{73}{section.5.8}
-\contentsline {paragraph}{}{73}{section*.143}
-\contentsline {subsection}{\numberline {5.8.1}El recurs Col\IeC {\textperiodcentered }lecci\IeC {\'o} (Collection)}{74}{subsection.5.8.1}
-\contentsline {paragraph}{}{74}{section*.144}
-\contentsline {subsection}{\numberline {5.8.2}El recurs Contingut de la Col\IeC {\textperiodcentered }lecci\IeC {\'o} (CollectionContent)}{75}{subsection.5.8.2}
-\contentsline {paragraph}{}{75}{section*.145}
-\contentsline {subsection}{\numberline {5.8.3}El recurs Atribuci\IeC {\'o} (Attribution)}{76}{subsection.5.8.3}
-\contentsline {paragraph}{}{76}{section*.146}
-\contentsline {subsection}{\numberline {5.8.4}El recurs Font de Dades (SourceDescription)}{76}{subsection.5.8.4}
-\contentsline {paragraph}{}{76}{section*.147}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} resourceType}{78}{section*.148}
-\contentsline {subsection}{\numberline {5.8.5}El recurs Refer\IeC {\`e}ncia a la Font de Dades (SourceReference)}{78}{subsection.5.8.5}
-\contentsline {paragraph}{}{78}{section*.149}
-\contentsline {section}{\numberline {5.9}Altres recursos interessants}{79}{section.5.9}
-\contentsline {paragraph}{}{79}{section*.150}
-\contentsline {subsection}{\numberline {5.9.1}El recurs Subjecte (Subject)}{79}{subsection.5.9.1}
-\contentsline {paragraph}{}{79}{section*.151}
-\contentsline {subsection}{\numberline {5.9.2}El recurs Conclusi\IeC {\'o} (Conclusion)}{80}{subsection.5.9.2}
-\contentsline {paragraph}{}{80}{section*.152}
-\contentsline {subsection}{\numberline {5.9.3}El recurs Enlla\IeC {\c c}os Hypermedia (Hypermedia Enabled Data)}{81}{subsection.5.9.3}
-\contentsline {paragraph}{}{81}{section*.153}
-\contentsline {subsection}{\numberline {5.9.4}El recurs Enlla\IeC {\c c} (Link)}{81}{subsection.5.9.4}
-\contentsline {paragraph}{}{81}{section*.154}
-\contentsline {subsection}{\numberline {5.9.5}El recurs Dades Extensibles (Extensible Data)}{82}{subsection.5.9.5}
-\contentsline {paragraph}{}{82}{section*.155}
-\contentsline {subsection}{\numberline {5.9.6}El recurs Nota (Note)}{82}{subsection.5.9.6}
-\contentsline {paragraph}{}{82}{section*.156}
-\contentsline {subsection}{\numberline {5.9.7}El recurs Refer\IeC {\`e}ncia al Recurs (ResourceReference)}{83}{subsection.5.9.7}
-\contentsline {paragraph}{}{83}{section*.157}
-\contentsline {subsection}{\numberline {5.9.8}El recurs Usuari (User)}{83}{subsection.5.9.8}
-\contentsline {paragraph}{}{83}{section*.158}
-\contentsline {subsection}{\numberline {5.9.9}El recurs Canvi (Change)}{84}{subsection.5.9.9}
-\contentsline {paragraph}{}{84}{section*.159}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} changeObjectModifier}{85}{section*.160}
-\contentsline {paragraph}{}{85}{section*.161}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} changeOperation}{85}{section*.162}
-\contentsline {paragraph}{}{85}{section*.163}
-\contentsline {subsubsection}{L'enumeraci\IeC {\'o} changeObjectType}{86}{section*.164}
-\contentsline {paragraph}{}{86}{section*.165}
-\contentsline {subsection}{\numberline {5.9.10}El recurs Agent (Agent)}{86}{subsection.5.9.10}
-\contentsline {paragraph}{}{86}{section*.166}
-\contentsline {section}{\numberline {5.10}Camins d'acc\IeC {\'e}s a l'arbre familiar i operacions de cerca}{87}{section.5.10}
-\contentsline {paragraph}{}{87}{section*.167}
-\contentsline {subsection}{\numberline {5.10.1}L'acc\IeC {\'e}s directe a les dades}{87}{subsection.5.10.1}
-\contentsline {paragraph}{}{87}{section*.168}
-\contentsline {subsection}{\numberline {5.10.2}L'acc\IeC {\'e}s indirecte a les dades}{88}{subsection.5.10.2}
-\contentsline {paragraph}{}{88}{section*.169}
-\contentsline {subsection}{\numberline {5.10.3}Lectura de l'usuari identificat}{89}{subsection.5.10.3}
-\contentsline {paragraph}{}{89}{section*.170}
-\contentsline {subsection}{\numberline {5.10.4}Lectura de la persona relacionada a l'usuari identificat}{89}{subsection.5.10.4}
-\contentsline {subsection}{\numberline {5.10.5}Cerca de Persones a l'arbre familiar}{90}{subsection.5.10.5}
-\contentsline {paragraph}{}{90}{section*.171}
-\contentsline {subsubsection}{Cerca de persones duplicades}{91}{section*.172}
-\contentsline {paragraph}{}{91}{section*.173}
-\contentsline {subsection}{\numberline {5.10.6}Cerca de localitzacions}{92}{subsection.5.10.6}
-\contentsline {paragraph}{}{92}{section*.174}
-\contentsline {chapter}{\numberline {6}Valoraci\IeC {\'o} final sobre la potencialitat de l'API}{95}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}}{95}{section.6.1}
-\contentsline {paragraph}{}{95}{section*.175}
-\contentsline {section}{\numberline {6.2}Distribuci\IeC {\'o} geogr\IeC {\`a}fica de les dades}{95}{section.6.2}
-\contentsline {paragraph}{}{95}{section*.176}
-\contentsline {section}{\numberline {6.3}Dades contampor\IeC {\`a}nies}{96}{section.6.3}
-\contentsline {paragraph}{}{96}{section*.177}
-\contentsline {section}{\numberline {6.4}Recursos i funcionalitats}{97}{section.6.4}
-\contentsline {paragraph}{}{97}{section*.178}
-\contentsline {section}{\numberline {6.5}Naturalesa de l'API}{97}{section.6.5}
-\contentsline {paragraph}{}{97}{section*.179}
-\contentsline {section}{\numberline {6.6}Utilitzaci\IeC {\'o} de l'API en el marc d'un PFC}{98}{section.6.6}
-\contentsline {paragraph}{}{98}{section*.180}
-\contentsline {section}{\numberline {6.7}Conclusi\IeC {\'o}}{98}{section.6.7}
-\contentsline {paragraph}{}{98}{section*.181}
-\contentsline {chapter}{\numberline {7}Llista de propostes de projecte}{101}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introducci\IeC {\'o}}{101}{section.7.1}
-\contentsline {paragraph}{}{101}{section*.182}
-\contentsline {section}{\numberline {7.2}Comparaci\IeC {\'o} sobre la popularitat de noms}{102}{section.7.2}
-\contentsline {paragraph}{}{102}{section*.183}
-\contentsline {section}{\numberline {7.3}Portal de cerca localitzat al Catal\IeC {\`a}}{102}{section.7.3}
-\contentsline {paragraph}{}{102}{section*.184}
-\contentsline {section}{\numberline {7.4}Geolocalitzaci\IeC {\'o} d'un cognom en diferents nivells}{103}{section.7.4}
-\contentsline {paragraph}{}{103}{section*.185}
-\contentsline {section}{\numberline {7.5}La recerca geneal\IeC {\`o}gica i l'her\IeC {\`a}ldica}{103}{section.7.5}
-\contentsline {paragraph}{}{103}{section*.186}
-\contentsline {section}{\numberline {7.6}Projectes d'indexaci\IeC {\'o}}{104}{section.7.6}
-\contentsline {paragraph}{}{104}{section*.187}
-\contentsline {section}{\numberline {7.7}La hist\IeC {\`o}ria de l'esgl\IeC {\'e}sia mormona a trav\IeC {\'e}s de FamilySearch}{104}{section.7.7}
-\contentsline {paragraph}{}{104}{section*.188}
-\contentsline {section}{\numberline {7.8}Diversitat geogr\IeC {\`a}fica d'un cognom: Els nostres avantpassats}{105}{section.7.8}
-\contentsline {paragraph}{}{105}{section*.189}
-\contentsline {section}{\numberline {7.9}Les col\IeC {\textperiodcentered }leccions de dades de FamilySearch}{106}{section.7.9}
-\contentsline {paragraph}{}{106}{section*.190}
-\contentsline {section}{\numberline {7.10}FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{106}{section.7.10}
-\contentsline {paragraph}{}{106}{section*.191}
-\contentsline {section}{\numberline {7.11}FamilySearch i la segona guerra mundial: Increment en els casaments}{107}{section.7.11}
-\contentsline {paragraph}{}{107}{section*.192}
-\contentsline {section}{\numberline {7.12}FamilySearch i la segona guerra mundial: La llista de Schindler}{107}{section.7.12}
-\contentsline {paragraph}{}{107}{section*.193}
-\contentsline {section}{\numberline {7.13}La gran recessi\IeC {\'o} o altres esdeveniments hist\IeC {\`o}rics}{107}{section.7.13}
-\contentsline {paragraph}{}{107}{section*.194}
-\contentsline {section}{\numberline {7.14}Comparacions amb els amics o seguidors de Facebook i Twitter}{108}{section.7.14}
-\contentsline {paragraph}{}{108}{section*.195}
-\contentsline {section}{\numberline {7.15}Comparaci\IeC {\'o} de dades geneal\IeC {\`o}giques reals amb FamilySearch}{109}{section.7.15}
-\contentsline {paragraph}{}{109}{section*.196}
-\contentsline {section}{\numberline {7.16}Estudi de profunditat dels arbres familiars}{110}{section.7.16}
-\contentsline {paragraph}{}{110}{section*.197}
-\contentsline {section}{\numberline {7.17}Algoritme de marcatge de duplicats}{110}{section.7.17}
-\contentsline {paragraph}{}{110}{section*.198}
-\contentsline {chapter}{\numberline {8}Estudi t\IeC {\`e}cnic de l'aplicaci\IeC {\'o} web}{111}{chapter.8}
-\contentsline {section}{\numberline {8.1}Decisi\IeC {\'o} del tipus d'aplicaci\IeC {\'o} a implementar}{111}{section.8.1}
-\contentsline {paragraph}{}{111}{section*.199}
-\contentsline {section}{\numberline {8.2}Tecnologies i patrons utilitzats per l'aplicaci\IeC {\'o} web}{112}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}El model: Model Vista Controlador}{112}{subsection.8.2.1}
-\contentsline {paragraph}{}{112}{section*.200}
+\contentsline {chapter}{\numberline {5}Estudi en profunditat de l'API de FamilySearch}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Els recursos de FamilySearch}{51}{section.5.1}
+\contentsline {paragraph}{}{51}{section*.109}
+\contentsline {section}{\numberline {5.2}Enlla\IeC {\c c}os hypermedia, la navegaci\IeC {\'o} entre recursos}{51}{section.5.2}
+\contentsline {paragraph}{}{51}{section*.110}
+\contentsline {section}{\numberline {5.3}L'arbre geneal\IeC {\`o}gic de FamilySearch}{53}{section.5.3}
+\contentsline {paragraph}{}{53}{section*.111}
+\contentsline {section}{\numberline {5.4}Recursos principals del bloc Persones}{55}{section.5.4}
+\contentsline {paragraph}{}{55}{section*.112}
+\contentsline {subsection}{\numberline {5.4.1}El recurs Persona (Person)}{56}{subsection.5.4.1}
+\contentsline {paragraph}{}{56}{section*.113}
+\contentsline {subsection}{\numberline {5.4.2}El recurs G\IeC {\`e}nere (Gender)}{57}{subsection.5.4.2}
+\contentsline {paragraph}{}{57}{section*.114}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} genderType}{57}{section*.115}
+\contentsline {paragraph}{}{57}{section*.116}
+\contentsline {subsection}{\numberline {5.4.3}Els recursos Nom, Forma del Nom i Part del Nom (Name, NameForm, NamePart)}{57}{subsection.5.4.3}
+\contentsline {paragraph}{}{57}{section*.117}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} nameType}{58}{section*.118}
+\contentsline {paragraph}{}{58}{section*.119}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} namePartType}{59}{section*.120}
+\contentsline {paragraph}{}{59}{section*.121}
+\contentsline {subsection}{\numberline {5.4.4}El recurs Esdeveniment (Fact)}{59}{subsection.5.4.4}
+\contentsline {paragraph}{}{59}{section*.122}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} factType}{60}{section*.123}
+\contentsline {paragraph}{}{60}{section*.124}
+\contentsline {subsection}{\numberline {5.4.5}El recurs Data (Date)}{61}{subsection.5.4.5}
+\contentsline {paragraph}{}{61}{section*.125}
+\contentsline {subsection}{\numberline {5.4.6}El recurs Refer\IeC {\`e}ncia de localitzaci\IeC {\'o} (PlaceReference)}{61}{subsection.5.4.6}
+\contentsline {paragraph}{}{61}{section*.126}
+\contentsline {subsection}{\numberline {5.4.7}El recurs Descripci\IeC {\'o} de Localitzaci\IeC {\'o} (PlaceDescription)}{62}{subsection.5.4.7}
+\contentsline {paragraph}{}{62}{section*.127}
+\contentsline {subsection}{\numberline {5.4.8}El recurs Camps B\IeC {\`a}sics (DisplayProperties)}{63}{subsection.5.4.8}
+\contentsline {paragraph}{}{63}{section*.128}
+\contentsline {subsection}{\numberline {5.4.9}El recurs Vista de Fam\IeC {\'\i }lia (FamilyView)}{64}{subsection.5.4.9}
+\contentsline {paragraph}{}{64}{section*.129}
+\contentsline {section}{\numberline {5.5}Recursos principals del bloc Relacions Familiars}{64}{section.5.5}
+\contentsline {paragraph}{}{64}{section*.130}
+\contentsline {subsection}{\numberline {5.5.1}El recurs Relaci\IeC {\'o} (Relationship)}{65}{subsection.5.5.1}
+\contentsline {paragraph}{}{65}{section*.131}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} relationshipType}{66}{section*.132}
+\contentsline {paragraph}{}{66}{section*.133}
+\contentsline {subsection}{\numberline {5.5.2}El recurs Relaci\IeC {\'o} Pares i Fill (ChildAndParentsRelationship)}{66}{subsection.5.5.2}
+\contentsline {paragraph}{}{66}{section*.134}
+\contentsline {section}{\numberline {5.6}Recursos principals del bloc Discussions}{67}{section.5.6}
+\contentsline {paragraph}{}{67}{section*.135}
+\contentsline {subsection}{\numberline {5.6.1}El recurs Refer\IeC {\`e}ncia a la Discussi\IeC {\'o} (DiscussionsReference)}{67}{subsection.5.6.1}
+\contentsline {paragraph}{}{67}{section*.136}
+\contentsline {subsection}{\numberline {5.6.2}El recurs Discussi\IeC {\'o} (Discussion)}{68}{subsection.5.6.2}
+\contentsline {paragraph}{}{68}{section*.137}
+\contentsline {subsection}{\numberline {5.6.3}El recurs Comentari (Comment)}{69}{subsection.5.6.3}
+\contentsline {paragraph}{}{69}{section*.138}
+\contentsline {section}{\numberline {5.7}Recursos principals del bloc Mem\IeC {\`o}ries}{69}{section.5.7}
+\contentsline {paragraph}{}{69}{section*.139}
+\contentsline {subsection}{\numberline {5.7.1}El recurs Refer\IeC {\`e}ncia a la Mem\IeC {\`o}ria d'una Persona (Person Memory Reference)}{70}{subsection.5.7.1}
+\contentsline {paragraph}{}{70}{section*.140}
+\contentsline {subsection}{\numberline {5.7.2}El recurs Persones en una Mem\IeC {\`o}ria (MemoryPersona)}{70}{subsection.5.7.2}
+\contentsline {paragraph}{}{70}{section*.141}
+\contentsline {subsection}{\numberline {5.7.3}El recurs Mem\IeC {\`o}ria (Memory)}{71}{subsection.5.7.3}
+\contentsline {paragraph}{}{71}{section*.142}
+\contentsline {section}{\numberline {5.8}Recursos principals del bloc Fonts de Dades}{71}{section.5.8}
+\contentsline {paragraph}{}{71}{section*.143}
+\contentsline {subsection}{\numberline {5.8.1}El recurs Col\IeC {\textperiodcentered }lecci\IeC {\'o} (Collection)}{72}{subsection.5.8.1}
+\contentsline {paragraph}{}{72}{section*.144}
+\contentsline {subsection}{\numberline {5.8.2}El recurs Contingut de la Col\IeC {\textperiodcentered }lecci\IeC {\'o} (CollectionContent)}{73}{subsection.5.8.2}
+\contentsline {paragraph}{}{73}{section*.145}
+\contentsline {subsection}{\numberline {5.8.3}El recurs Atribuci\IeC {\'o} (Attribution)}{74}{subsection.5.8.3}
+\contentsline {paragraph}{}{74}{section*.146}
+\contentsline {subsection}{\numberline {5.8.4}El recurs Font de Dades (SourceDescription)}{74}{subsection.5.8.4}
+\contentsline {paragraph}{}{74}{section*.147}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} resourceType}{76}{section*.148}
+\contentsline {subsection}{\numberline {5.8.5}El recurs Refer\IeC {\`e}ncia a la Font de Dades (SourceReference)}{76}{subsection.5.8.5}
+\contentsline {paragraph}{}{76}{section*.149}
+\contentsline {section}{\numberline {5.9}Altres recursos interessants}{77}{section.5.9}
+\contentsline {paragraph}{}{77}{section*.150}
+\contentsline {subsection}{\numberline {5.9.1}El recurs Subjecte (Subject)}{77}{subsection.5.9.1}
+\contentsline {paragraph}{}{77}{section*.151}
+\contentsline {subsection}{\numberline {5.9.2}El recurs Conclusi\IeC {\'o} (Conclusion)}{78}{subsection.5.9.2}
+\contentsline {paragraph}{}{78}{section*.152}
+\contentsline {subsection}{\numberline {5.9.3}El recurs Enlla\IeC {\c c}os Hypermedia (Hypermedia Enabled Data)}{79}{subsection.5.9.3}
+\contentsline {paragraph}{}{79}{section*.153}
+\contentsline {subsection}{\numberline {5.9.4}El recurs Enlla\IeC {\c c} (Link)}{79}{subsection.5.9.4}
+\contentsline {paragraph}{}{79}{section*.154}
+\contentsline {subsection}{\numberline {5.9.5}El recurs Dades Extensibles (Extensible Data)}{80}{subsection.5.9.5}
+\contentsline {paragraph}{}{80}{section*.155}
+\contentsline {subsection}{\numberline {5.9.6}El recurs Nota (Note)}{80}{subsection.5.9.6}
+\contentsline {paragraph}{}{80}{section*.156}
+\contentsline {subsection}{\numberline {5.9.7}El recurs Refer\IeC {\`e}ncia al Recurs (ResourceReference)}{81}{subsection.5.9.7}
+\contentsline {paragraph}{}{81}{section*.157}
+\contentsline {subsection}{\numberline {5.9.8}El recurs Usuari (User)}{81}{subsection.5.9.8}
+\contentsline {paragraph}{}{81}{section*.158}
+\contentsline {subsection}{\numberline {5.9.9}El recurs Canvi (Change)}{82}{subsection.5.9.9}
+\contentsline {paragraph}{}{82}{section*.159}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} changeObjectModifier}{83}{section*.160}
+\contentsline {paragraph}{}{83}{section*.161}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} changeOperation}{83}{section*.162}
+\contentsline {paragraph}{}{83}{section*.163}
+\contentsline {subsubsection}{L'enumeraci\IeC {\'o} changeObjectType}{84}{section*.164}
+\contentsline {paragraph}{}{84}{section*.165}
+\contentsline {subsection}{\numberline {5.9.10}El recurs Agent (Agent)}{84}{subsection.5.9.10}
+\contentsline {paragraph}{}{84}{section*.166}
+\contentsline {section}{\numberline {5.10}Camins d'acc\IeC {\'e}s a l'arbre familiar i operacions de cerca}{85}{section.5.10}
+\contentsline {paragraph}{}{85}{section*.167}
+\contentsline {subsection}{\numberline {5.10.1}L'acc\IeC {\'e}s directe a les dades}{85}{subsection.5.10.1}
+\contentsline {paragraph}{}{85}{section*.168}
+\contentsline {subsection}{\numberline {5.10.2}L'acc\IeC {\'e}s indirecte a les dades}{86}{subsection.5.10.2}
+\contentsline {paragraph}{}{86}{section*.169}
+\contentsline {subsection}{\numberline {5.10.3}Lectura de l'usuari identificat}{87}{subsection.5.10.3}
+\contentsline {paragraph}{}{87}{section*.170}
+\contentsline {subsection}{\numberline {5.10.4}Lectura de la persona relacionada a l'usuari identificat}{87}{subsection.5.10.4}
+\contentsline {subsection}{\numberline {5.10.5}Cerca de Persones a l'arbre familiar}{88}{subsection.5.10.5}
+\contentsline {paragraph}{}{88}{section*.171}
+\contentsline {subsubsection}{Cerca de persones duplicades}{89}{section*.172}
+\contentsline {paragraph}{}{89}{section*.173}
+\contentsline {subsection}{\numberline {5.10.6}Cerca de localitzacions}{90}{subsection.5.10.6}
+\contentsline {paragraph}{}{90}{section*.174}
+\contentsline {chapter}{\numberline {6}Valoraci\IeC {\'o} final sobre la potencialitat de l'API}{93}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}}{93}{section.6.1}
+\contentsline {paragraph}{}{93}{section*.175}
+\contentsline {section}{\numberline {6.2}Distribuci\IeC {\'o} geogr\IeC {\`a}fica de les dades}{93}{section.6.2}
+\contentsline {paragraph}{}{93}{section*.176}
+\contentsline {section}{\numberline {6.3}Dades contampor\IeC {\`a}nies}{94}{section.6.3}
+\contentsline {paragraph}{}{94}{section*.177}
+\contentsline {section}{\numberline {6.4}Recursos i funcionalitats}{95}{section.6.4}
+\contentsline {paragraph}{}{95}{section*.178}
+\contentsline {section}{\numberline {6.5}Naturalesa de l'API}{95}{section.6.5}
+\contentsline {paragraph}{}{95}{section*.179}
+\contentsline {section}{\numberline {6.6}Utilitzaci\IeC {\'o} de l'API en el marc d'un PFC}{96}{section.6.6}
+\contentsline {paragraph}{}{96}{section*.180}
+\contentsline {section}{\numberline {6.7}Conclusi\IeC {\'o}}{96}{section.6.7}
+\contentsline {paragraph}{}{96}{section*.181}
+\contentsline {chapter}{\numberline {7}Llista de propostes de projecte}{99}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introducci\IeC {\'o}}{99}{section.7.1}
+\contentsline {paragraph}{}{99}{section*.182}
+\contentsline {section}{\numberline {7.2}Comparaci\IeC {\'o} sobre la popularitat de noms}{100}{section.7.2}
+\contentsline {paragraph}{}{100}{section*.183}
+\contentsline {section}{\numberline {7.3}Portal de cerca localitzat al Catal\IeC {\`a}}{100}{section.7.3}
+\contentsline {paragraph}{}{100}{section*.184}
+\contentsline {section}{\numberline {7.4}Geolocalitzaci\IeC {\'o} d'un cognom en diferents nivells}{101}{section.7.4}
+\contentsline {paragraph}{}{101}{section*.185}
+\contentsline {section}{\numberline {7.5}La recerca geneal\IeC {\`o}gica i l'her\IeC {\`a}ldica}{101}{section.7.5}
+\contentsline {paragraph}{}{101}{section*.186}
+\contentsline {section}{\numberline {7.6}Projectes d'indexaci\IeC {\'o}}{102}{section.7.6}
+\contentsline {paragraph}{}{102}{section*.187}
+\contentsline {section}{\numberline {7.7}La hist\IeC {\`o}ria de l'esgl\IeC {\'e}sia mormona a trav\IeC {\'e}s de FamilySearch}{102}{section.7.7}
+\contentsline {paragraph}{}{102}{section*.188}
+\contentsline {section}{\numberline {7.8}Diversitat geogr\IeC {\`a}fica d'un cognom: Els nostres avantpassats}{103}{section.7.8}
+\contentsline {paragraph}{}{103}{section*.189}
+\contentsline {section}{\numberline {7.9}Les col\IeC {\textperiodcentered }leccions de dades de FamilySearch}{104}{section.7.9}
+\contentsline {paragraph}{}{104}{section*.190}
+\contentsline {section}{\numberline {7.10}FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{104}{section.7.10}
+\contentsline {paragraph}{}{104}{section*.191}
+\contentsline {section}{\numberline {7.11}FamilySearch i la segona guerra mundial: Increment en els casaments}{105}{section.7.11}
+\contentsline {paragraph}{}{105}{section*.192}
+\contentsline {section}{\numberline {7.12}FamilySearch i la segona guerra mundial: La llista de Schindler}{105}{section.7.12}
+\contentsline {paragraph}{}{105}{section*.193}
+\contentsline {section}{\numberline {7.13}La gran recessi\IeC {\'o} o altres esdeveniments hist\IeC {\`o}rics}{105}{section.7.13}
+\contentsline {paragraph}{}{105}{section*.194}
+\contentsline {section}{\numberline {7.14}Comparacions amb els amics o seguidors de Facebook i Twitter}{106}{section.7.14}
+\contentsline {paragraph}{}{106}{section*.195}
+\contentsline {section}{\numberline {7.15}Comparaci\IeC {\'o} de dades geneal\IeC {\`o}giques reals amb FamilySearch}{107}{section.7.15}
+\contentsline {paragraph}{}{107}{section*.196}
+\contentsline {section}{\numberline {7.16}Estudi de profunditat dels arbres familiars}{108}{section.7.16}
+\contentsline {paragraph}{}{108}{section*.197}
+\contentsline {section}{\numberline {7.17}Algoritme de marcatge de duplicats}{108}{section.7.17}
+\contentsline {paragraph}{}{108}{section*.198}
+\contentsline {chapter}{\numberline {8}Estudi t\IeC {\`e}cnic de l'aplicaci\IeC {\'o} web}{109}{chapter.8}
+\contentsline {paragraph}{}{109}{section*.199}
+\contentsline {section}{\numberline {8.1}Decisi\IeC {\'o} del tipus d'aplicaci\IeC {\'o} a implementar}{109}{section.8.1}
+\contentsline {paragraph}{}{109}{section*.200}
+\contentsline {section}{\numberline {8.2}Tecnologies i patrons utilitzats per l'aplicaci\IeC {\'o} web}{110}{section.8.2}
+\contentsline {paragraph}{}{110}{section*.201}
+\contentsline {subsection}{\numberline {8.2.1}El model: Model Vista Controlador}{110}{subsection.8.2.1}
+\contentsline {paragraph}{}{110}{section*.202}
+\contentsline {subsection}{\numberline {8.2.2}Les tres capes del disseny web (Front-end)}{112}{subsection.8.2.2}
+\contentsline {paragraph}{}{112}{section*.203}
+\contentsline {subsection}{\numberline {8.2.3}La tecnologia HTML 5}{113}{subsection.8.2.3}
+\contentsline {paragraph}{}{113}{section*.204}
+\contentsline {paragraph}{}{113}{section*.205}
+\contentsline {subsection}{\numberline {8.2.4}La tecnologia CSS}{114}{subsection.8.2.4}
+\contentsline {paragraph}{}{114}{section*.206}
+\contentsline {subsection}{\numberline {8.2.5}La tecnologia de plantilles Mustache}{115}{subsection.8.2.5}
+\contentsline {paragraph}{}{115}{section*.207}
+\contentsline {subsection}{\numberline {8.2.6}Les tecnologies Javascript i jQuery}{116}{subsection.8.2.6}
+\contentsline {paragraph}{}{116}{section*.208}
+\contentsline {subsection}{\numberline {8.2.7}La tecnologia Bootstrap}{117}{subsection.8.2.7}
+\contentsline {paragraph}{}{117}{section*.209}
+\contentsline {subsection}{\numberline {8.2.8}El SDK Javascript oficial de FamilySearch}{119}{subsection.8.2.8}
+\contentsline {paragraph}{}{119}{section*.210}
+\contentsline {subsection}{\numberline {8.2.9}La tecnologia Node.js}{121}{subsection.8.2.9}
+\contentsline {paragraph}{}{121}{section*.211}
+\contentsline {subsection}{\numberline {8.2.10}La tecnologia Express o Express js}{121}{subsection.8.2.10}
+\contentsline {paragraph}{}{121}{section*.212}
+\contentsline {subsection}{\numberline {8.2.11}Recapitulaci\IeC {\'o} de les tecnologies pel desenvolupament web}{122}{subsection.8.2.11}
+\contentsline {paragraph}{}{122}{section*.213}
