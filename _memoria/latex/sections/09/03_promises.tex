@@ -1,0 +1,14 @@
+\section{Implementació basada en Promeses}
+
+    \paragraph{}
+    Les promeses són els objectes retornats pels blocs de codi Javascript asíncrons, com per exemple, en la funció de l’apartat anterior, la promesa retornada seria la variable \emph{response}. Una promesa es troba sempre en un dels següents tres estats:
+
+    \begin{itemize}
+        \item Pendent: Estat inicial de la promesa.
+        \item Satisfeta: L'estat de la promesa representa una operació finalitzada amb èxit.
+        \item Rebutjada: L'estat de la promesa representa una operació fallida.
+    \end{itemize}
+
+    Tan bon punt una promesa rep l'estat de satisfeta o rebutjada, ja no pot tornar a canviar d'estat.
+
+    La gràcia de les promeses és que tan bon punt són resoltes, permeten executar una part del codi definida amb anterioritat (el que seria el cos de la funció de l'apartat anterior) i mentre aquestes no són satisfetes o rebutjades, la resta del codi pot seguir executant-se. Amb altres paraules, el codi no roman bloquejat mentre espera la resposta de la funció contra l’API.

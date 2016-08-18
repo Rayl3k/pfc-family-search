@@ -1,0 +1,12 @@
+\section{Implementació pensada per la programació orientada a objectes}
+
+    \paragraph{}
+    Les funcions de crida del SDK, retornen promeses, que no deixen de ser objectes Javascript. Aquests objectes, disposen de funcions de conveniència que permeten accedir als resultats de la resposta sense haver de navegar per objectes de format XML o JSON.
+
+    Per exemple, en la crida de fa dos apartats, podríem obtenir el nom de la Persona cercada, a través de l’objecte response, mitjançant la navegació al recurs de la persona i seguidament, demanant-ne el nom. El següent bloc de codi mostra aquest exemple.
+
+\begin{lstlisting}[style=rawOwn,caption={Example navagació per l'objecte \emph{response}}]
+client.getPerson('KW7S-VQJ', {persons:true}).then(function(response) {
+    console.log(response.getPrimaryPerson().getDisplayName());
+});
+\end{lstlisting}

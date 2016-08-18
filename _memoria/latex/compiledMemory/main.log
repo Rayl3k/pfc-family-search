@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  17 AUG 2016 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.9)  18 AUG 2016 21:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -979,22 +979,22 @@ LaTeX Warning: Label `fig:familyTree' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 91.
  (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1002,9 +1002,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count187
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 91.
+LaTeX Info: Redefining \pageref on input line 91.
+LaTeX Info: Redefining \nameref on input line 91.
  (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out) (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
@@ -1085,18 +1085,18 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
- [4])
+ [4] [5])
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- (./sections/01/_introduction.tex [5] [6
-
-]
+ (./sections/01/_introduction.tex [6]
 Secci\IeC {\'o} 1.
 (./sections/01/01_intro.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]) (./sections/01/02_motivations.tex) (./sections/01/03_objectives.tex
+ [7
+
+]) (./sections/01/02_motivations.tex) (./sections/01/03_objectives.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
@@ -1104,12 +1104,12 @@ Overfull \hbox (17.11311pt too wide) in paragraph at lines 17--18
 []\T1/cmr/m/n/10.95 Escollir el ti-pus d'aplicació a de-sen-volu-par i es-tu-diar les tec-nolo-gies necessàries
  []
 
-) (./sections/01/04_planification.tex [9] <images/01/firstPlan.jpg, id=809, 743.77875pt x 310.15875pt>
+) (./sections/01/04_planification.tex [9] <images/01/firstPlan.jpg, id=915, 743.77875pt x 310.15875pt>
 File: images/01/firstPlan.jpg Graphic file (type jpg)
  <use images/01/firstPlan.jpg>
 Package pdftex.def Info: images/01/firstPlan.jpg used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 166.11076pt.
- [10 <./images/01/firstPlan.jpg>] <images/01/actualPlan.jpg, id=821, 1298.8525pt x 423.5825pt>
+ [10 <./images/01/firstPlan.jpg>] <images/01/actualPlan.jpg, id=927, 1298.8525pt x 423.5825pt>
 File: images/01/actualPlan.jpg Graphic file (type jpg)
  <use images/01/actualPlan.jpg>
 Package pdftex.def Info: images/01/actualPlan.jpg used on input line 35.
@@ -1125,7 +1125,7 @@ Underfull \vbox (badness 1184) has occurred while \output is active []
 Secci\IeC {\'o} 2.
 (./sections/02/02_whatisit.tex [15
 
-]) (./sections/02/03_roleInHistory.tex [16]) (./sections/02/04_laws.tex [17]) (./sections/02/05_ethics.tex [18]) (./sections/02/06_process.tex [19] <images/02/researchProcess.jpg, id=885, 526.96875pt x 301.125pt>
+]) (./sections/02/03_roleInHistory.tex [16]) (./sections/02/04_laws.tex [17]) (./sections/02/05_ethics.tex [18]) (./sections/02/06_process.tex [19] <images/02/researchProcess.jpg, id=991, 526.96875pt x 301.125pt>
 File: images/02/researchProcess.jpg Graphic file (type jpg)
  <use images/02/researchProcess.jpg>
 Package pdftex.def Info: images/02/researchProcess.jpg used on input line 20.
@@ -1150,17 +1150,17 @@ Overfull \hbox (16.343pt too wide) in paragraph at lines 8--9
 []\T1/cmr/m/n/10.95 Per al-tra banda, les eines de cerca, con-stitueixen el prin-ci-pal atrac-tiu de l'organització
  []
 
-[27] <images/03/familyTree.jpg, id=938, 820.06375pt x 668.4975pt>
+[27] <images/03/familyTree.jpg, id=1043, 820.06375pt x 668.4975pt>
 File: images/03/familyTree.jpg Graphic file (type jpg)
  <use images/03/familyTree.jpg>
 Package pdftex.def Info: images/03/familyTree.jpg used on input line 35.
 (pdftex.def)             Requested size: 328.01968pt x 267.39426pt.
- <images/03/fanChart.jpg, id=940, 601.24625pt x 639.38875pt>
+ <images/03/fanChart.jpg, id=1045, 601.24625pt x 639.38875pt>
 File: images/03/fanChart.jpg Graphic file (type jpg)
  <use images/03/fanChart.jpg>
 Package pdftex.def Info: images/03/fanChart.jpg used on input line 49.
 (pdftex.def)             Requested size: 240.49423pt x 255.75096pt.
- [28] [29 <./images/03/familyTree.jpg>] [30 <./images/03/fanChart.jpg>]) (./sections/03/06_searchTools.tex [31] <images/03/searchForm.jpg, id=975, 576.1525pt x 739.76375pt>
+ [28] [29 <./images/03/familyTree.jpg>] [30 <./images/03/fanChart.jpg>]) (./sections/03/06_searchTools.tex [31] <images/03/searchForm.jpg, id=1081, 576.1525pt x 739.76375pt>
 File: images/03/searchForm.jpg Graphic file (type jpg)
  <use images/03/searchForm.jpg>
 Package pdftex.def Info: images/03/searchForm.jpg used on input line 30.
@@ -1238,12 +1238,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
 [39] [40] [41]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 128.
- [42]) (./sections/04/04_temporalEvolution.tex [43] <images/04/treeFoundationDistributed.jpg, id=1112, 1029.8475pt x 468.75125pt>
+ [42]) (./sections/04/04_temporalEvolution.tex [43] <images/04/treeFoundationDistributed.jpg, id=1218, 1029.8475pt x 468.75125pt>
 File: images/04/treeFoundationDistributed.jpg Graphic file (type jpg)
  <use images/04/treeFoundationDistributed.jpg>
 Package pdftex.def Info: images/04/treeFoundationDistributed.jpg used on input line 29.
 (pdftex.def)             Requested size: 360.45203pt x 164.06538pt.
- <images/04/resourceRellocation.jpg, id=1114, 1039.885pt x 442.65375pt>
+ <images/04/resourceRellocation.jpg, id=1220, 1039.885pt x 442.65375pt>
 File: images/04/resourceRellocation.jpg Graphic file (type jpg)
  <use images/04/resourceRellocation.jpg>
 Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 43.
@@ -1252,7 +1252,7 @@ Package pdftex.def Info: images/04/resourceRellocation.jpg used on input line 43
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/04/phase1.jpg, id=1116, 1051.93pt x 552.0625pt>
+<images/04/phase1.jpg, id=1222, 1051.93pt x 552.0625pt>
 File: images/04/phase1.jpg Graphic file (type jpg)
  <use images/04/phase1.jpg>
 Package pdftex.def Info: images/04/phase1.jpg used on input line 51.
@@ -1275,7 +1275,7 @@ Overfull \hbox (15.20735pt too wide) in paragraph at lines 12--13
 Secci\IeC {\'o} 5.
 (./sections/05/01_resources.tex) (./sections/05/02_hypermedia.tex [51
 
-] <images/05/01_hypermedia.png, id=1171, 321.45094pt x 417.81094pt>
+] <images/05/01_hypermedia.png, id=1277, 321.45094pt x 417.81094pt>
 File: images/05/01_hypermedia.png Graphic file (type png)
  <use images/05/01_hypermedia.png>
 Package pdftex.def Info: images/05/01_hypermedia.png used on input line 11.
@@ -1283,7 +1283,7 @@ Package pdftex.def Info: images/05/01_hypermedia.png used on input line 11.
  [52 <./images/05/01_hypermedia.png>]) (./sections/05/03_familyTree.tex
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 11.
- <images/05/02_overallModel.png, id=1178, 375.804pt x 299.9205pt>
+ <images/05/02_overallModel.png, id=1284, 375.804pt x 299.9205pt>
 File: images/05/02_overallModel.png Graphic file (type png)
  <use images/05/02_overallModel.png>
 Package pdftex.def Info: images/05/02_overallModel.png used on input line 19.
@@ -1292,7 +1292,7 @@ Package pdftex.def Info: images/05/02_overallModel.png used on input line 19.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53] [54 <./images/05/02_overallModel.png>]) (./sections/05/04_personsBloc.tex <images/05/03_personsCore.png, id=1190, 158.39175pt x 231.86626pt>
+[53] [54 <./images/05/02_overallModel.png>]) (./sections/05/04_personsBloc.tex <images/05/03_personsCore.png, id=1296, 158.39175pt x 231.86626pt>
 File: images/05/03_personsCore.png Graphic file (type png)
  <use images/05/03_personsCore.png>
 Package pdftex.def Info: images/05/03_personsCore.png used on input line 11.
@@ -1448,7 +1448,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 24--24
 []|\T1/cmss/m/n/10 [array of Resource-
  []
 
-)) (./sections/05/05_relationshipsBloc.tex <images/05/04_relationshipsCore.png, id=1273, 353.52075pt x 98.769pt>
+)) (./sections/05/05_relationshipsBloc.tex <images/05/04_relationshipsCore.png, id=1378, 353.52075pt x 98.769pt>
 File: images/05/04_relationshipsCore.png Graphic file (type png)
  <use images/05/04_relationshipsCore.png>
 Package pdftex.def Info: images/05/04_relationshipsCore.png used on input line 13.
@@ -1485,7 +1485,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66
 
-] <images/05/05_discussionsCore.png, id=1300, 179.4705pt x 60.82726pt>
+] <images/05/05_discussionsCore.png, id=1406, 179.4705pt x 60.82726pt>
 File: images/05/05_discussionsCore.png Graphic file (type png)
  <use images/05/05_discussionsCore.png>
 Package pdftex.def Info: images/05/05_discussionsCore.png used on input line 13.
@@ -1518,7 +1518,7 @@ Overfull \hbox (1.19435pt too wide) in paragraph at lines 22--22
 []|\T1/cmss/m/n/10 contributor| 
  []
 
-)) (./sections/05/07_memories.tex <images/05/06_memoriesCore.png, id=1320, 223.43475pt x 60.82726pt>
+)) (./sections/05/07_memories.tex <images/05/06_memoriesCore.png, id=1426, 223.43475pt x 60.82726pt>
 File: images/05/06_memoriesCore.png Graphic file (type png)
  <use images/05/06_memoriesCore.png>
 Package pdftex.def Info: images/05/06_memoriesCore.png used on input line 15.
@@ -1570,7 +1570,7 @@ Overfull \hbox (5.99873pt too wide) in paragraph at lines 24--24
 \T1/cmss/m/n/10 Descriptions| 
  []
 
-)) (./sections/05/08_sources.tex [71] <images/05/07_sourcesCore.png, id=1349, 375.804pt x 139.722pt>
+)) (./sections/05/08_sources.tex [71] <images/05/07_sourcesCore.png, id=1454, 375.804pt x 139.722pt>
 File: images/05/07_sourcesCore.png Graphic file (type png)
  <use images/05/07_sourcesCore.png>
 Package pdftex.def Info: images/05/07_sourcesCore.png used on input line 13.
@@ -1774,7 +1774,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 24--24
 []|\T1/cmss/m/n/10 [array of Resource-
  []
 
-[84])) (./sections/05/10_treeEntrances.tex <images/05/08_dataAccessPaths.png, id=1467, 660.066pt x 371.58826pt>
+[84])) (./sections/05/10_treeEntrances.tex <images/05/08_dataAccessPaths.png, id=1572, 660.066pt x 371.58826pt>
 File: images/05/08_dataAccessPaths.png Graphic file (type png)
  <use images/05/08_dataAccessPaths.png>
 Package pdftex.def Info: images/05/08_dataAccessPaths.png used on input line 16.
@@ -1851,7 +1851,7 @@ Overfull \hbox (1.30893pt too wide) in paragraph at lines 6--7
 \T1/cmr/m/n/10.95 d'aquelles per-sones que van for-mar la llista de Schindler, i re-al-itzar un es-tudi d'aquests
  []
 
-<images/07/thePianist.jpg, id=1599, 3079.505pt x 2064.71375pt>
+<images/07/thePianist.jpg, id=1705, 3079.505pt x 2064.71375pt>
 File: images/07/thePianist.jpg Graphic file (type jpg)
  <use images/07/thePianist.jpg>
 Package pdftex.def Info: images/07/thePianist.jpg used on input line 13.
@@ -1882,22 +1882,22 @@ Overfull \hbox (14.99799pt too wide) in paragraph at lines 16--17
 []\T1/cmr/m/n/10.95 La grà-cia d'aquest model és que l'usuari només dis-posa d'accés i per-misos d'interacció
  []
 
-<images/08/01_MVC.png, id=1641, 996.72375pt x 459.7175pt>
+<images/08/01_MVC.png, id=1747, 996.72375pt x 459.7175pt>
 File: images/08/01_MVC.png Graphic file (type png)
  <use images/08/01_MVC.png>
 Package pdftex.def Info: images/08/01_MVC.png used on input line 21.
 (pdftex.def)             Requested size: 398.33858pt x 183.7224pt.
- [111 <./images/08/01_MVC.png>] <images/08/02_webTechIni.png, id=1650, 602.25pt x 301.125pt>
+ [111 <./images/08/01_MVC.png>] <images/08/02_webTechIni.png, id=1755, 602.25pt x 301.125pt>
 File: images/08/02_webTechIni.png Graphic file (type png)
  <use images/08/02_webTechIni.png>
 Package pdftex.def Info: images/08/02_webTechIni.png used on input line 39.
 (pdftex.def)             Requested size: 240.89572pt x 120.44786pt.
-) (./sections/08/01_webTech/02_webLayers.tex [112 <./images/08/02_webTechIni.png>]) (./sections/08/01_webTech/03_html5.tex) (./sections/08/01_webTech/04_css.tex [113] [114]) (./sections/08/01_webTech/05_moustache.tex [115]) (./sections/08/01_webTech/06_jsjquery.tex [116]) (./sections/08/01_webTech/07_bootstrap.tex [117] <images/08/03_bootstrapGrid.png, id=1694, 889.3225pt x 248.93pt>
+) (./sections/08/01_webTech/02_webLayers.tex [112 <./images/08/02_webTechIni.png>]) (./sections/08/01_webTech/03_html5.tex) (./sections/08/01_webTech/04_css.tex [113] [114]) (./sections/08/01_webTech/05_moustache.tex [115]) (./sections/08/01_webTech/06_jsjquery.tex [116]) (./sections/08/01_webTech/07_bootstrap.tex [117] <images/08/03_bootstrapGrid.png, id=1803, 889.3225pt x 248.93pt>
 File: images/08/03_bootstrapGrid.png Graphic file (type png)
  <use images/08/03_bootstrapGrid.png>
 Package pdftex.def Info: images/08/03_bootstrapGrid.png used on input line 15.
 (pdftex.def)             Requested size: 398.33858pt x 111.49709pt.
- <images/08/04_gridDesktopMobile.png, id=1696, 892.33376pt x 511.9125pt>
+ <images/08/04_gridDesktopMobile.png, id=1805, 892.33376pt x 511.9125pt>
 File: images/08/04_gridDesktopMobile.png Graphic file (type png)
  <use images/08/04_gridDesktopMobile.png>
 Package pdftex.def Info: images/08/04_gridDesktopMobile.png used on input line 25.
@@ -1914,25 +1914,77 @@ Overfull \hbox (6.883pt too wide) in paragraph at lines 10--11
 []\T1/cmr/m/n/10.95 Després de bus-car, l'única tec-nolo-gia que com-plia amb les condi-cions que buscàvem,
  []
 
-) (./sections/08/01_webTech/10_express.tex [121]) (./sections/08/01_webTech/11_conclusion.tex [122] <images/08/05_techFinal.png, id=1727, 602.25pt x 301.125pt>
+) (./sections/08/01_webTech/10_express.tex [121]) (./sections/08/01_webTech/11_conclusion.tex
+Underfull \vbox (badness 4660) has occurred while \output is active []
+
+ [122] <images/08/05_techFinal.png, id=1835, 602.25pt x 301.125pt>
 File: images/08/05_techFinal.png Graphic file (type png)
  <use images/08/05_techFinal.png>
 Package pdftex.def Info: images/08/05_techFinal.png used on input line 13.
 (pdftex.def)             Requested size: 361.35278pt x 180.67638pt.
-)))
+)) (./sections/08/03_devTechnologies.tex
+Overfull \hbox (38.70596pt too wide) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 Tecnologies es-pecí-fiques pel de-sen-volu-pa-ment de l'aplicació 
+ []
+
+
+Overfull \hbox (42.15932pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10.95 8.3.  TECNOLOGIES ESPECÍFIQUES PEL DESENVOLUPAMENT DE L'APLICACIÓ \T1/cmr/m/n/10.95 123
+ []
+
+[123 <./images/08/05_techFinal.png>]
+Overfull \hbox (9.9423pt too wide) in paragraph at lines 17--18
+[]\T1/cmr/m/n/10.95 git clone https://github.com/sinh15/pfc-family-search.git pfc-family-search 
+ []
+
+[124])) (./sections/09/_sdk.tex
+Overfull \hbox (42.15932pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10.95 8.3.  TECNOLOGIES ESPECÍFIQUES PEL DESENVOLUPAMENT DE L'APLICACIÓ \T1/cmr/m/n/10.95 125
+ []
+
+[125] [126
+
+]
+Secci\IeC {\'o} 9.
+(./sections/09/01_intro.tex) (./sections/09/02_wrappers.tex [127]) (./sections/09/03_promises.tex
+Overfull \hbox (12.20094pt too wide) in paragraph at lines 14--1
+[]\T1/cmr/m/n/10.95 La vari-able \T1/cmr/m/it/10.95 client \T1/cmr/m/n/10.95 rep-re-senta una in-stàn-cia del SDK, l'operació, \T1/cmr/m/it/10.95 get-Per-son\T1/cmr/m/n/10.95 , l'operació
+ []
+
+) (./sections/09/04_objectOriented.tex
+Underfull \vbox (badness 3471) has occurred while \output is active []
+
+ [128]) (./sections/09/05_dataModel.tex <images/09/01_objectModel.png, id=1876, 651.43375pt x 493.845pt>
+File: images/09/01_objectModel.png Graphic file (type png)
+ <use images/09/01_objectModel.png>
+Package pdftex.def Info: images/09/01_objectModel.png used on input line 9.
+(pdftex.def)             Requested size: 398.33858pt x 301.98347pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/09/06_errors.tex) (./sections/09/07_retry.tex) (./sections/09/08_throttlingHandling.tex
+Overfull \hbox (66.18134pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10.95 9.4.  IMPLEMENTACIÓ PENSADA PER LA PROGRAMACIÓ ORIENTADA A OBJECTES \T1/cmr/m/n/10.95 129
+ []
+
+[129]) (./sections/09/09_authentication.tex
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+ [130 <./images/09/01_objectModel.png (PNG copy)>]) (./sections/09/10_automaticAuthenticator.tex) (./sections/09/11_tokenStorage.tex) (./sections/09/12_autoExpiry.tex) (./sections/09/13_flexibility.tex) (./sections/09/14_devSupport.tex [131]) (./sections/09/15_conclusion.tex))
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[123 <./images/08/05_techFinal.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+[132]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A4F77E33282ED7F2D0979584F82D2C3E;12899.
+(rerunfilecheck)             Checksum: 60A49CF4962CAE8A238516A9FB246A94;14706.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1942,25 +1994,25 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25579 strings out of 493013
- 451099 string characters out of 6136994
- 605452 words of memory out of 5000000
- 27622 multiletter control sequences out of 15000+600000
- 24633 words of font info for 56 fonts, out of 8000000 for 9000
+ 25735 strings out of 493013
+ 453784 string characters out of 6136994
+ 628610 words of memory out of 5000000
+ 27655 multiletter control sequences out of 15000+600000
+ 24948 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,64p,1951b,1947s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,67p,1951b,1965s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-{c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2016/texmf-dist/fon
-ts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (123 pages, 2504178 bytes).
+{c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfit0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2016/texmf-dist/fon
+ts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on C:\Users\Porras\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.pdf (132 pages, 2609007 bytes).
 PDF statistics:
- 1922 PDF objects out of 2073 (max. 8388607)
- 1733 compressed objects within 18 object streams
- 609 named destinations out of 1000 (max. 500000)
- 1320 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2124 PDF objects out of 2487 (max. 8388607)
+ 1922 compressed objects within 20 object streams
+ 677 named destinations out of 1000 (max. 500000)
+ 1493 words of extra memory for PDF output out of 10000 (max. 10000000)
 

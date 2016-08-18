@@ -357,5 +357,45 @@
 \contentsline {paragraph}{}{121}{section*.211}
 \contentsline {subsection}{\numberline {8.2.10}La tecnologia Express o Express js}{121}{subsection.8.2.10}
 \contentsline {paragraph}{}{121}{section*.212}
-\contentsline {subsection}{\numberline {8.2.11}Recapitulaci\IeC {\'o} de les tecnologies pel desenvolupament web}{122}{subsection.8.2.11}
-\contentsline {paragraph}{}{122}{section*.213}
+\contentsline {subsection}{\numberline {8.2.11}Recapitulaci\IeC {\'o} de les tecnologies pel desenvolupament web}{123}{subsection.8.2.11}
+\contentsline {paragraph}{}{123}{section*.213}
+\contentsline {section}{\numberline {8.3}Tecnologies espec\IeC {\'\i }fiques pel desenvolupament de l'aplicaci\IeC {\'o}}{123}{section.8.3}
+\contentsline {paragraph}{}{123}{section*.214}
+\contentsline {subsection}{\numberline {8.3.1}La tecnologia GitHub}{123}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Node.js i Express en l'\IeC {\`a}mbit local}{124}{subsection.8.3.2}
+\contentsline {paragraph}{}{124}{section*.215}
+\contentsline {subsection}{\numberline {8.3.3}Tecnologia NPM}{125}{subsection.8.3.3}
+\contentsline {paragraph}{}{125}{section*.216}
+\contentsline {subsection}{\numberline {8.3.4}Paquet Nodemon}{125}{subsection.8.3.4}
+\contentsline {paragraph}{}{125}{section*.217}
+\contentsline {chapter}{\numberline {9}Javascript SDK Oficial de FamilySearch}{127}{chapter.9}
+\contentsline {section}{\numberline {9.1}Introducci\IeC {\'o} al Javascript SDK}{127}{section.9.1}
+\contentsline {paragraph}{}{127}{section*.218}
+\contentsline {section}{\numberline {9.2}Emmascarant les crides REST a l'API de FamilySearch}{128}{section.9.2}
+\contentsline {paragraph}{}{128}{section*.219}
+\contentsline {section}{\numberline {9.3}Implementaci\IeC {\'o} basada en Promeses}{128}{section.9.3}
+\contentsline {paragraph}{}{128}{section*.220}
+\contentsline {section}{\numberline {9.4}Implementaci\IeC {\'o} pensada per la programaci\IeC {\'o} orientada a objectes}{129}{section.9.4}
+\contentsline {paragraph}{}{129}{section*.221}
+\contentsline {section}{\numberline {9.5}Model de dades quasi id\IeC {\`e}ntic a FamilySearch}{129}{section.9.5}
+\contentsline {paragraph}{}{129}{section*.222}
+\contentsline {section}{\numberline {9.6}Captura d'errors}{129}{section.9.6}
+\contentsline {paragraph}{}{129}{section*.223}
+\contentsline {section}{\numberline {9.7}Intentar de nou peticions GET fallides}{130}{section.9.7}
+\contentsline {paragraph}{}{130}{section*.224}
+\contentsline {section}{\numberline {9.8}Gesti\IeC {\'o} autom\IeC {\`a}tica del Throttling}{130}{section.9.8}
+\contentsline {paragraph}{}{130}{section*.225}
+\contentsline {section}{\numberline {9.9}Autentificaci\IeC {\'o} mitjan\IeC {\c c}ant un pop-up}{131}{section.9.9}
+\contentsline {paragraph}{}{131}{section*.226}
+\contentsline {section}{\numberline {9.10}Autentificaci\IeC {\'o} autom\IeC {\`a}tica}{131}{section.9.10}
+\contentsline {paragraph}{}{131}{section*.227}
+\contentsline {section}{\numberline {9.11}Emmagatzematge del Token en una cookie}{131}{section.9.11}
+\contentsline {paragraph}{}{131}{section*.228}
+\contentsline {section}{\numberline {9.12}Disparador autom\IeC {\`a}tic de la funci\IeC {\'o} d'expiraci\IeC {\'o}}{131}{section.9.12}
+\contentsline {paragraph}{}{131}{section*.229}
+\contentsline {section}{\numberline {9.13}Utilitzable des de diferents plataformes o capes}{132}{section.9.13}
+\contentsline {paragraph}{}{132}{section*.230}
+\contentsline {section}{\numberline {9.14}Suport en el desenvolupament}{132}{section.9.14}
+\contentsline {paragraph}{}{132}{section*.231}
+\contentsline {section}{\numberline {9.15}Conclusi\IeC {\'o} sobre el SDK}{132}{section.9.15}
+\contentsline {paragraph}{}{132}{section*.232}

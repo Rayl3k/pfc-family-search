@@ -1,0 +1,16 @@
+\section{Introducció al Javascript SDK}
+
+    \paragraph{}
+    Abans de procedir a explicar com funciona l'aplicació web desenvolupada, volíem presentar per sobre en què consisteix el SDK oficial Javascript de FamilySearch.
+
+    No explicarem la informació accessible a través d'aquest, perquè en realitat, es tracta gairebé de la mateixa que la presentada en la secció cinc d'aquesta memòria. No obstant això, creiem que pot resultar interessant presentar les principals funcionalitats que aquest SDK ofereix i exposar els diferents motius, pels que aquestes funcionalitats, compensen l’esforç d’estudiar-lo.
+
+    L’objectiu del SDK, per resumir-ho d’una forma simple, és facilitar el consum dels recursos accessibles a través de l'API de FamilySearch.
+
+    Per aconseguir-ho, el SDK envolta cada funció que realitza una crida a l’API amb una funció pròpia i afegeix funcions de conveniència a la resposta per tal de navegar pels resultats de forma còmoda. De totes maneres, el SDK no emmascara la resposta retornada per l’API i en conseqüència, els recursos JSON o XML retornats per aquesta, són accessibles en cas de voler accedir a una peça d'informació concreta que no hagi estat emmascarada en una funció de conveniència.
+
+    En cas que el SDK no estigués preparat per fer front a alguna de les peticions que l’API ofereix, aquest implementa un conjunt de funcions de plomeria que permeten a l'usuari realitzar amb comoditat les típiques crides GET, POST, DEL, etcètera, que es realitzarien contra l’API en cas d’una integració directa, mitjançant el SDK.
+
+    Per tant, el SDK ens ofereix una cobertura quasi completa de l’API oficial amb funcions de conveniència i en cas que alguna consulta no fos suportada, sempre es podria realitzar mitjançant la via tradicional a través del SDK.
+
+    A continuació, s'expliquen les principals funcionalitats d'aquest SDK i en què consisteixen.

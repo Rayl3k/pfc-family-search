@@ -18,7 +18,10 @@
     En aquest exemple, s'utilitzaria jQuery per detectar que el botó submit del HTML ha estat pressionat, Javascript per definir una nova variable de text i jQuery per imprimir el contingut d’aquesta nova variable al camp de text del HTML. El codi podria tenir un aspecte similar al que segueix:
 
 \begin{lstlisting}[style=rawOwn,caption={Example of jQuery and Javascript}]
-    asfasdfasdf
+$(`#submit').click(function () {
+	var newText = `next text to display';
+	$(`#textField').text(newText);
+});
 \end{lstlisting}
 
     Tot i ser un exemple molt bàsic, creiem que pot ajudar a comprendre perquè s'utilitzen aquestes tecnologies i com interactuen amb els elements de la pàgina web.

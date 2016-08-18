@@ -147,3 +147,24 @@
 \BOOKMARK [2][-]{subsection.8.2.9}{La tecnologia Node.js}{section.8.2}% 147
 \BOOKMARK [2][-]{subsection.8.2.10}{La tecnologia Express o Express js}{section.8.2}% 148
 \BOOKMARK [2][-]{subsection.8.2.11}{Recapitulaci\363 de les tecnologies pel desenvolupament web}{section.8.2}% 149
+\BOOKMARK [1][-]{section.8.3}{Tecnologies espec\355fiques pel desenvolupament de l'aplicaci\363}{chapter.8}% 150
+\BOOKMARK [2][-]{subsection.8.3.1}{La tecnologia GitHub}{section.8.3}% 151
+\BOOKMARK [2][-]{subsection.8.3.2}{Node.js i Express en l'\340mbit local}{section.8.3}% 152
+\BOOKMARK [2][-]{subsection.8.3.3}{Tecnologia NPM}{section.8.3}% 153
+\BOOKMARK [2][-]{subsection.8.3.4}{Paquet Nodemon}{section.8.3}% 154
+\BOOKMARK [0][-]{chapter.9}{Javascript SDK Oficial de FamilySearch}{}% 155
+\BOOKMARK [1][-]{section.9.1}{Introducci\363 al Javascript SDK}{chapter.9}% 156
+\BOOKMARK [1][-]{section.9.2}{Emmascarant les crides REST a l'API de FamilySearch}{chapter.9}% 157
+\BOOKMARK [1][-]{section.9.3}{Implementaci\363 basada en Promeses}{chapter.9}% 158
+\BOOKMARK [1][-]{section.9.4}{Implementaci\363 pensada per la programaci\363 orientada a objectes}{chapter.9}% 159
+\BOOKMARK [1][-]{section.9.5}{Model de dades quasi id\350ntic a FamilySearch}{chapter.9}% 160
+\BOOKMARK [1][-]{section.9.6}{Captura d'errors}{chapter.9}% 161
+\BOOKMARK [1][-]{section.9.7}{Intentar de nou peticions GET fallides}{chapter.9}% 162
+\BOOKMARK [1][-]{section.9.8}{Gesti\363 autom\340tica del Throttling}{chapter.9}% 163
+\BOOKMARK [1][-]{section.9.9}{Autentificaci\363 mitjan\347ant un pop-up}{chapter.9}% 164
+\BOOKMARK [1][-]{section.9.10}{Autentificaci\363 autom\340tica}{chapter.9}% 165
+\BOOKMARK [1][-]{section.9.11}{Emmagatzematge del Token en una cookie}{chapter.9}% 166
+\BOOKMARK [1][-]{section.9.12}{Disparador autom\340tic de la funci\363 d'expiraci\363}{chapter.9}% 167
+\BOOKMARK [1][-]{section.9.13}{Utilitzable des de diferents plataformes o capes}{chapter.9}% 168
+\BOOKMARK [1][-]{section.9.14}{Suport en el desenvolupament}{chapter.9}% 169
+\BOOKMARK [1][-]{section.9.15}{Conclusi\363 sobre el SDK}{chapter.9}% 170

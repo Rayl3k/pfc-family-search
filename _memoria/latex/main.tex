@@ -38,13 +38,55 @@
 %languages
 \lstdefinestyle{rawOwn}
 {
-    extendedchars=true,
-    basicstyle=\footnotesize\ttfamily,
-	showstringspaces=false,
-	frame=single,
-    tabsize=4,
-    literate={\$}{{\textcolor{blue}{\$}}}1
+    morecomment=[s]{/*}{*/},
+    morecomment=[l]//,
+    morestring=[b]',
+    morestring=[b]`
 }
+
+\lstdefinestyle{jQuery}
+{
+    morecomment=[s]{/*}{*/},
+    morecomment=[l]//,
+    morestring=[b]'',
+    morestring=[b]',
+    morestring=[b]`
+}
+
+% lstset
+\lstset{
+    %literate={\$}{{\textcolor{blue}{\$}}}1
+    basicstyle={\footnotesize\ttfamily},
+    extendedchars=true,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    breaklines=true,
+    frame=single
+}
+%\lstset{
+    % General design
+    %basicstyle={\small\ttfamily},
+    %frame=single,
+    % Numbers
+    %xleftmargin={0.75cm},
+    %numbers=left,
+    %stepnumber=1,
+    %firstnumber=1,
+    %numberfirstline=true,
+    % Code
+    %language=jQuery,
+    %tabsize=4,
+    %showtabs=false,
+    %showspaces=false,
+    %showstringspaces=false,
+    %breaklines=true,
+    %alsoletter={.},
+    % Literates
+    %literate={\$}{{\mbox{\textdollar}}}1
+%}
+
 
 \begin{document}
 
@@ -60,6 +102,7 @@
     \input{./sections/06/_potential}
     \input{./sections/07/_proposals}
     \input{./sections/08/_technologies}
+    \input{./sections/09/_sdk}
 
     % ending memory sections
     %\clearpage
