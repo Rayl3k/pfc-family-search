@@ -1,0 +1,40 @@
+name,desc
+app.js,Servidor Node.js. Aquest fitxer s'encarrega de gestionar totes les peticions HTTP i HTTPS i de configurar l'aplicació web. També manté la traçabilitat sobre l'estat actual de l'usuari i gestiona els ports de l'aplicació.
+package.json,Conté metadades sobre l’aplicació web així com les dependències d’aquesta. S'utilitza sobretot per indicar al servidor Node.js quins paquets han de ser instal·lats per assegurar el correcte funcionament de l'aplicació.
+Procfile,Fitxer utilitzat per indicar al proveïdor del servei d'hostalatge\, Heroku\, el tipus d'aplicació a configurar i el fitxer a executar per iniciar el servidor.
+README.md,Breu fitxer que descriu el motiu de creació del projecte i l'ús de cada un dels fitxers que el conformen.
+views/\-background.html,Fitxer HTML utilitzat per pintar la pàgina rerefons.
+views/\-exemples.html,Fitxer HTML utilitzat per pintar la pàgina d'exemples.
+views/\-facts.html,Fitxer HTML utilitzat per pintar la funcionalitat evolució d'esdeveniments.
+views/\-index.html,Fitxer HTML utilitzat per pintar la pàgina inicial de l'aplicació.
+views/\-login.html,Fitxer HTML utilitzat per pintar la pàgina d'identificació amb FamilySearch.
+views/\-proposals.html,Fitxer HTML utilitzat per pintar la pàgina que recull el conjunt de propostes de projecte per futurs estudiants.
+views/\-proposalsTemplate.html,Fitxer HTML utilitzat per pintar els detalls d'una proposta en concret. El contingut és variable segons la proposta seleccionada per l'usuari.
+views/\-search.html,Fitxer HTML utilitzat per pintar la funcionalitat de funcionalitat de cerca.
+views/\-surnames.html,Fitxer HTML utilitzat per pintar la funcionalitat d'expansió geogràfica d'un cognom.
+views/\-globals/\-footer.html,Fitxer HTML encarregat de pintar el footer de la pàgina (per aquelles pàgines que el contenen).
+views/\-globals/\-future-proposals.html,Fitxer HTML encarregat de pintar les propostes de projecte per futurs estudiants a la pàgina de propostes.
+views/\-globals/\-header.html,Fitxer HTML encarregat de pintar l'encapçalament de la web en totes les pàgines.
+views/\-globals/\-implemented-proposals.html,Fitxer HTML encarregat de pintar les caixes dels exemples implementats en les pàgines de recopilació de propostes i exemples.
+views/\-globals/\-javascripts.html,Fitxer HTML encarregat d’inserir els Javascripts comuns a totes les pàgines a cada pàgina.
+views/\-globals/\-navbar.html,Fitxer HTML encarregat de pintar la barra de navegació a cada pàgina en què vol ser mostrada.
+views/\-globals/\-pageTitle.html,Fitxer HTML encarregat de pintar la capçalera de secció de cada pàgina. Els continguts d'aquesta varien segons la pàgina seleccionada\, mitjançant els paràmetres enviats pel servidor.
+views/\-globals/\-searchFather.html,Fitxer HTML encarregat de pintar el formulari de cerca, pels camps del pare\, a l'exemple de cerca.
+views/\-globals/\-searchMainPerson.html,Fitxer HTML encarregat de pintar el formulari de cerca\, pels camps de l’usuari principal\, a l'exemple de cerca.
+views/\-globals/\-searchMother.html,Fitxer HTML encarregat de pintar el formulari de cerca\, pels camps de la mare\, a l'exemple de cerca.
+views/\-globals/\-searchSpouse.html,Fitxer HTML encarregat de pintar el formulari de cerca\, pels camps de la parella\, a l'exemple de cerca.
+assets/\-css/\-style.css,Fitxer CSS encarregat de modificar l'estil dels diferents  elements HTML\, classes i identificadors.
+assets/\-js/\-client.js,Fitxer Javascript que gestiona les funcions d'identificació\, tancament de sessió i establiment de la connexió amb l’API de FamilySearch.
+assets/\-js/\-cookies.js,Fitxer Javascript per gestionar les cookies per la banda del client (navegador). Fitxer de codi obert reutilitzat del web.
+assets/\-js/\-countryParameters.js,Fitxer Javascript per emmagatzemar la informació dels països continguts a cada continent. S'utilitza perquè el servidor pugui enviar al HTML els continguts i generar HTML dinàmic.
+assets/\-js/\-facts.js,Fitxer Javascript encarregat de gestionar totes les interaccions que l'usuari pot realitzar en l'exemple evolució d'esdeveniments i les connexions amb l’API d'aquesta funcionalitat.
+assets/\-js/\-formValidation.js,Fitxer Javascript per escapar els camps dels formularis i validar-ne el contingut.
+assets/\-js/\-gaTagging.js,Fitxer Javascript encarregat de configurar els esdeveniments de Google Analytics generals i llençar les crides de tots els esdeveniments.
+assets/\-js/\-geo-surnames.js,Fitxer Javascript encarregat de gestionar totes les interaccions que l'usuari pot realitzar en l'exemple d'evolució geogràfica d'un cognom i les connexions amb l’API de Familysearch d'aquesta funcionalitat.
+assets/\-js/\-index.js,Utilitzat per llençar la càrrega d'imatges quan l'usuari aterra a la pàgina principal de l'aplicació.
+assets/\-js/\-jquery.preload.min.js,Fitxer Javascript encarregat d'executar la precàrrega dels documents que s'enviïn contra el complement. En la nostra aplicació l'utilitzem per carregar les imatges de les capçaleres de secció abans que l'usuari les demani. (Fitxer de codi obert programat per Ben Lin\, 2011)
+assets/\-js/\-login.js,Fitxer Javascript encarregat de gestionar les interaccions d’usuari de la pàgina d'identificació i les connexions amb l’API de Familysearch realitzades des de la pàgina.
+assets/\-js/\-pageTitles.js,Fitxer Javascript que emmagatzema els paràmetres de configuració de totes les capçaleres de secció. El servidor l'utilitza per obtenir els valors específics de cada pàgina i utilitzar-los per personalitzar els continguts del fitxer pageTitle.html
+assets/\-js/\-projectProposals.js,Fitxer Javascript que emmagatzema els detalls de les diferents propostes de projecte. El servidor l'utilitza per obtenir els valors específics de la proposta demanada i utilitzar-los per personalitzar els continguts del fitxer proposalsTemplate.html
+assets/\-js/\-proposalExamplesLinks.js,Fitxer Javascript utilitzat per redirigir de forma correcta les caixes de les pàgines de propostes i exemples.
+assets/\-js/\-search.js,Fitxer Javascript encarregat de gestionar totes les interaccions que l'usuari pot realitzar en l'exemple de cerca i les connexions amb l'API de FamilySearch d'aquesta funcionalitat.

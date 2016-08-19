@@ -168,3 +168,36 @@
 \BOOKMARK [1][-]{section.9.13}{Utilitzable des de diferents plataformes o capes}{chapter.9}% 168
 \BOOKMARK [1][-]{section.9.14}{Suport en el desenvolupament}{chapter.9}% 169
 \BOOKMARK [1][-]{section.9.15}{Conclusi\363 sobre el SDK}{chapter.9}% 170
+\BOOKMARK [0][-]{chapter.10}{Introducci\363 a l'aplicaci\363 web}{}% 171
+\BOOKMARK [1][-]{section.10.1}{Acc\351s a l'aplicaci\363 web i codi de l'aplicaci\363}{chapter.10}% 172
+\BOOKMARK [1][-]{section.10.2}{Requisits de l'aplicaci\363 web}{chapter.10}% 173
+\BOOKMARK [2][-]{subsection.10.2.1}{Requisits funcionals}{section.10.2}% 174
+\BOOKMARK [2][-]{subsection.10.2.2}{Requisits no funcionals}{section.10.2}% 175
+\BOOKMARK [1][-]{section.10.3}{Estructura de l'aplicaci\363 web}{chapter.10}% 176
+\BOOKMARK [2][-]{subsection.10.3.1}{Introducci\363 a l'estructura de l'aplicaci\363}{section.10.3}% 177
+\BOOKMARK [2][-]{subsection.10.3.2}{Home o p\340gina principal}{section.10.3}% 178
+\BOOKMARK [2][-]{subsection.10.3.3}{Rerefons}{section.10.3}% 179
+\BOOKMARK [2][-]{subsection.10.3.4}{Propostes de projecte}{section.10.3}% 180
+\BOOKMARK [2][-]{subsection.10.3.5}{Detalls espec\355fics d'una proposta de projecte}{section.10.3}% 181
+\BOOKMARK [2][-]{subsection.10.3.6}{Identificaci\363 amb FamilySearch}{section.10.3}% 182
+\BOOKMARK [2][-]{subsection.10.3.7}{Exemples implementats}{section.10.3}% 183
+\BOOKMARK [2][-]{subsection.10.3.8}{Funcionalitats de cerca, expansi\363 geogr\340fica d'un cognom i evoluci\363 d'esdeveniments}{section.10.3}% 184
+\BOOKMARK [1][-]{section.10.4}{Fitxers de l'aplicaci\363 web i la seva funcionalitat}{chapter.10}% 185
+\BOOKMARK [1][-]{section.10.5}{Funcionament general de l'aplicaci\363 web}{chapter.10}% 186
+\BOOKMARK [2][-]{subsection.10.5.1}{Creaci\363 del servidor}{section.10.5}% 187
+\BOOKMARK [2][-]{subsection.10.5.2}{Acc\351s a una p\340gina del domini web}{section.10.5}% 188
+\BOOKMARK [2][-]{subsection.10.5.3}{Interacci\363 amb l'API de FamilySearch}{section.10.5}% 189
+\BOOKMARK [2][-]{subsection.10.5.4}{Interacci\363 amb elements del HTML}{section.10.5}% 190
+\BOOKMARK [2][-]{subsection.10.5.5}{Conclusi\363}{section.10.5}% 191
+\BOOKMARK [1][-]{section.10.6}{Certificant l'aplicaci\363 amb FamilySearch}{chapter.10}% 192
+\BOOKMARK [2][-]{subsection.10.6.1}{Certificat d'autentificaci\363}{section.10.6}% 193
+\BOOKMARK [2][-]{subsection.10.6.2}{Certificat de lectura}{section.10.6}% 194
+\BOOKMARK [2][-]{subsection.10.6.3}{Proc\351s de certificaci\363}{section.10.6}% 195
+\BOOKMARK [1][-]{section.10.7}{Google Analytics}{chapter.10}% 196
+\BOOKMARK [1][-]{section.10.8}{Optimitizaci\363 d'imatges}{chapter.10}% 197
+\BOOKMARK [1][-]{section.10.9}{Hosting de l'aplicaci\363}{chapter.10}% 198
+\BOOKMARK [2][-]{subsection.10.9.1}{F\340cil configuraci\363}{section.10.9}% 199
+\BOOKMARK [2][-]{subsection.10.9.2}{F\340cil desplegament al n\372vol}{section.10.9}% 200
+\BOOKMARK [2][-]{subsection.10.9.3}{Entorn de proves local}{section.10.9}% 201
+\BOOKMARK [2][-]{subsection.10.9.4}{Decent versi\363 gratuita}{section.10.9}% 202
+\BOOKMARK [2][-]{subsection.10.9.5}{F\340cil escalatge de l'aplicaci\363}{section.10.9}% 203
