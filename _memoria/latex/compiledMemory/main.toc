@@ -441,26 +441,65 @@
 \contentsline {section}{\numberline {10.6}Detalls espec\IeC {\'\i }fics de la implementaci\IeC {\'o}}{148}{section.10.6}
 \contentsline {subsection}{\numberline {10.6.1}Introducci\IeC {\'o} als detalls d'implementaci\IeC {\'o}}{148}{subsection.10.6.1}
 \contentsline {paragraph}{}{148}{section*.251}
-\contentsline {section}{\numberline {10.7}Certificant l'aplicaci\IeC {\'o} amb FamilySearch}{149}{section.10.7}
+\contentsline {subsection}{\numberline {10.6.2}Estructura general d'una p\IeC {\`a}gina HTML:\spacefactor \@m {}Mustache\spacefactor \@m {}I}{149}{subsection.10.6.2}
 \contentsline {paragraph}{}{149}{section*.252}
-\contentsline {subsection}{\numberline {10.7.1}Certificat d'autentificaci\IeC {\'o}}{149}{subsection.10.7.1}
+\contentsline {subsection}{\numberline {10.6.3}El fitxer header.html: Configuraci\IeC {\'o} de la p\IeC {\`a}gina}{149}{subsection.10.6.3}
 \contentsline {paragraph}{}{149}{section*.253}
-\contentsline {subsection}{\numberline {10.7.2}Certificat de lectura}{150}{subsection.10.7.2}
+\contentsline {subsection}{\numberline {10.6.4}El fitxer navbar.html: La barra de navegaci\IeC {\'o} adaptativa}{150}{subsection.10.6.4}
 \contentsline {paragraph}{}{150}{section*.254}
-\contentsline {subsection}{\numberline {10.7.3}Proc\IeC {\'e}s de certificaci\IeC {\'o}}{151}{subsection.10.7.3}
-\contentsline {section}{\numberline {10.8}Google Analytics}{151}{section.10.8}
+\contentsline {subsection}{\numberline {10.6.5}El fitxer pageTitle.html: Mustache II}{151}{subsection.10.6.5}
 \contentsline {paragraph}{}{151}{section*.255}
-\contentsline {section}{\numberline {10.9}Optimitizaci\IeC {\'o} d'imatges}{153}{section.10.9}
-\contentsline {paragraph}{}{153}{section*.256}
-\contentsline {section}{\numberline {10.10}Hosting de l'aplicaci\IeC {\'o}}{153}{section.10.10}
-\contentsline {paragraph}{}{153}{section*.257}
-\contentsline {subsection}{\numberline {10.10.1}F\IeC {\`a}cil configuraci\IeC {\'o}}{154}{subsection.10.10.1}
+\contentsline {subsection}{\numberline {10.6.6}El fitxer javascripts.html: C\IeC {\`a}rrega dels controladors}{152}{subsection.10.6.6}
+\contentsline {paragraph}{}{152}{section*.256}
+\contentsline {subsection}{\numberline {10.6.7}El fitxer index.html: El grid de Bootstrap I}{152}{subsection.10.6.7}
+\contentsline {paragraph}{}{152}{section*.257}
+\contentsline {subsection}{\numberline {10.6.8}El fitxer background.html: El grid de Bootstrap II}{154}{subsection.10.6.8}
 \contentsline {paragraph}{}{154}{section*.258}
-\contentsline {subsection}{\numberline {10.10.2}F\IeC {\`a}cil desplegament al n\IeC {\'u}vol}{154}{subsection.10.10.2}
+\contentsline {subsection}{\numberline {10.6.9}Els fitxers future-proposals.html i implemented-proposals.html: El grid de Bootstrap III i el component Thumbnail}{154}{subsection.10.6.9}
 \contentsline {paragraph}{}{154}{section*.259}
-\contentsline {subsection}{\numberline {10.10.3}Entorn de proves local}{154}{subsection.10.10.3}
-\contentsline {paragraph}{}{154}{section*.260}
-\contentsline {subsection}{\numberline {10.10.4}Decent versi\IeC {\'o} gratuita}{155}{subsection.10.10.4}
-\contentsline {paragraph}{}{155}{section*.261}
-\contentsline {subsection}{\numberline {10.10.5}F\IeC {\`a}cil escalatge de l'aplicaci\IeC {\'o}}{155}{subsection.10.10.5}
-\contentsline {paragraph}{}{155}{section*.262}
+\contentsline {subsection}{\numberline {10.6.10}El fitxer package.json: Complements de l'aplicaci\IeC {\'o}}{155}{subsection.10.6.10}
+\contentsline {paragraph}{}{155}{section*.260}
+\contentsline {subsection}{\numberline {10.6.11}El fitxer app.js: Funcionament del servidor}{156}{subsection.10.6.11}
+\contentsline {paragraph}{}{156}{section*.261}
+\contentsline {subsubsection}{Creaci\IeC {\'o} de variables}{156}{section*.262}
+\contentsline {paragraph}{}{156}{section*.263}
+\contentsline {subsection}{\numberline {10.6.12}Configuraci\IeC {\'o} del motor d'impressi\IeC {\'o} i carpetes}{157}{subsection.10.6.12}
+\contentsline {paragraph}{}{157}{section*.264}
+\contentsline {paragraph}{}{157}{section*.265}
+\contentsline {subsection}{\numberline {10.6.13}Configuraci\IeC {\'o} dels complements}{157}{subsection.10.6.13}
+\contentsline {paragraph}{}{157}{section*.266}
+\contentsline {subsection}{\numberline {10.6.14}Funcions de redirecci\IeC {\'o}}{158}{subsection.10.6.14}
+\contentsline {paragraph}{}{158}{section*.267}
+\contentsline {subsection}{\numberline {10.6.15}Processament de peticions POST}{159}{subsection.10.6.15}
+\contentsline {paragraph}{}{159}{section*.268}
+\contentsline {subsection}{\numberline {10.6.16}Validaci\IeC {\'o} d'identificaci\IeC {\'o}}{159}{subsection.10.6.16}
+\contentsline {paragraph}{}{159}{section*.269}
+\contentsline {subsection}{\numberline {10.6.17}Configuraci\IeC {\'o} del servidor}{159}{subsection.10.6.17}
+\contentsline {paragraph}{}{159}{section*.270}
+\contentsline {subsection}{\numberline {10.6.18}El fitxer gaTagging.js: Enviant esdeveniments}{160}{subsection.10.6.18}
+\contentsline {paragraph}{}{160}{section*.271}
+\contentsline {subsection}{\numberline {10.6.19}El fitxer style.css: Configurant elements i classes pr\IeC {\`o}pies}{160}{subsection.10.6.19}
+\contentsline {paragraph}{}{160}{section*.272}
+\contentsline {section}{\numberline {10.7}Certificant l'aplicaci\IeC {\'o} amb FamilySearch}{161}{section.10.7}
+\contentsline {paragraph}{}{161}{section*.273}
+\contentsline {subsection}{\numberline {10.7.1}Certificat d'autentificaci\IeC {\'o}}{162}{subsection.10.7.1}
+\contentsline {paragraph}{}{162}{section*.274}
+\contentsline {subsection}{\numberline {10.7.2}Certificat de lectura}{162}{subsection.10.7.2}
+\contentsline {paragraph}{}{162}{section*.275}
+\contentsline {subsection}{\numberline {10.7.3}Proc\IeC {\'e}s de certificaci\IeC {\'o}}{163}{subsection.10.7.3}
+\contentsline {section}{\numberline {10.8}Google Analytics}{163}{section.10.8}
+\contentsline {paragraph}{}{163}{section*.276}
+\contentsline {section}{\numberline {10.9}Optimitizaci\IeC {\'o} d'imatges}{165}{section.10.9}
+\contentsline {paragraph}{}{165}{section*.277}
+\contentsline {section}{\numberline {10.10}Hosting de l'aplicaci\IeC {\'o}}{166}{section.10.10}
+\contentsline {paragraph}{}{166}{section*.278}
+\contentsline {subsection}{\numberline {10.10.1}F\IeC {\`a}cil configuraci\IeC {\'o}}{166}{subsection.10.10.1}
+\contentsline {paragraph}{}{166}{section*.279}
+\contentsline {subsection}{\numberline {10.10.2}F\IeC {\`a}cil desplegament al n\IeC {\'u}vol}{167}{subsection.10.10.2}
+\contentsline {paragraph}{}{167}{section*.280}
+\contentsline {subsection}{\numberline {10.10.3}Entorn de proves local}{167}{subsection.10.10.3}
+\contentsline {paragraph}{}{167}{section*.281}
+\contentsline {subsection}{\numberline {10.10.4}Decent versi\IeC {\'o} gratuita}{167}{subsection.10.10.4}
+\contentsline {paragraph}{}{167}{section*.282}
+\contentsline {subsection}{\numberline {10.10.5}F\IeC {\`a}cil escalatge de l'aplicaci\IeC {\'o}}{168}{subsection.10.10.5}
+\contentsline {paragraph}{}{168}{section*.283}

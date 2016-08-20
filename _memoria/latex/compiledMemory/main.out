@@ -191,15 +191,33 @@
 \BOOKMARK [2][-]{subsection.10.5.5}{Conclusi\363}{section.10.5}% 191
 \BOOKMARK [1][-]{section.10.6}{Detalls espec\355fics de la implementaci\363}{chapter.10}% 192
 \BOOKMARK [2][-]{subsection.10.6.1}{Introducci\363 als detalls d'implementaci\363}{section.10.6}% 193
-\BOOKMARK [1][-]{section.10.7}{Certificant l'aplicaci\363 amb FamilySearch}{chapter.10}% 194
-\BOOKMARK [2][-]{subsection.10.7.1}{Certificat d'autentificaci\363}{section.10.7}% 195
-\BOOKMARK [2][-]{subsection.10.7.2}{Certificat de lectura}{section.10.7}% 196
-\BOOKMARK [2][-]{subsection.10.7.3}{Proc\351s de certificaci\363}{section.10.7}% 197
-\BOOKMARK [1][-]{section.10.8}{Google Analytics}{chapter.10}% 198
-\BOOKMARK [1][-]{section.10.9}{Optimitizaci\363 d'imatges}{chapter.10}% 199
-\BOOKMARK [1][-]{section.10.10}{Hosting de l'aplicaci\363}{chapter.10}% 200
-\BOOKMARK [2][-]{subsection.10.10.1}{F\340cil configuraci\363}{section.10.10}% 201
-\BOOKMARK [2][-]{subsection.10.10.2}{F\340cil desplegament al n\372vol}{section.10.10}% 202
-\BOOKMARK [2][-]{subsection.10.10.3}{Entorn de proves local}{section.10.10}% 203
-\BOOKMARK [2][-]{subsection.10.10.4}{Decent versi\363 gratuita}{section.10.10}% 204
-\BOOKMARK [2][-]{subsection.10.10.5}{F\340cil escalatge de l'aplicaci\363}{section.10.10}% 205
+\BOOKMARK [2][-]{subsection.10.6.2}{Estructura general d'una p\340gina HTML:MustacheI}{section.10.6}% 194
+\BOOKMARK [2][-]{subsection.10.6.3}{El fitxer header.html: Configuraci\363 de la p\340gina}{section.10.6}% 195
+\BOOKMARK [2][-]{subsection.10.6.4}{El fitxer navbar.html: La barra de navegaci\363 adaptativa}{section.10.6}% 196
+\BOOKMARK [2][-]{subsection.10.6.5}{El fitxer pageTitle.html: Mustache II}{section.10.6}% 197
+\BOOKMARK [2][-]{subsection.10.6.6}{El fitxer javascripts.html: C\340rrega dels controladors}{section.10.6}% 198
+\BOOKMARK [2][-]{subsection.10.6.7}{El fitxer index.html: El grid de Bootstrap I}{section.10.6}% 199
+\BOOKMARK [2][-]{subsection.10.6.8}{El fitxer background.html: El grid de Bootstrap II}{section.10.6}% 200
+\BOOKMARK [2][-]{subsection.10.6.9}{Els fitxers future-proposals.html i implemented-proposals.html: El grid de Bootstrap III i el component Thumbnail}{section.10.6}% 201
+\BOOKMARK [2][-]{subsection.10.6.10}{El fitxer package.json: Complements de l'aplicaci\363}{section.10.6}% 202
+\BOOKMARK [2][-]{subsection.10.6.11}{El fitxer app.js: Funcionament del servidor}{section.10.6}% 203
+\BOOKMARK [2][-]{subsection.10.6.12}{Configuraci\363 del motor d'impressi\363 i carpetes}{section.10.6}% 204
+\BOOKMARK [2][-]{subsection.10.6.13}{Configuraci\363 dels complements}{section.10.6}% 205
+\BOOKMARK [2][-]{subsection.10.6.14}{Funcions de redirecci\363}{section.10.6}% 206
+\BOOKMARK [2][-]{subsection.10.6.15}{Processament de peticions POST}{section.10.6}% 207
+\BOOKMARK [2][-]{subsection.10.6.16}{Validaci\363 d'identificaci\363}{section.10.6}% 208
+\BOOKMARK [2][-]{subsection.10.6.17}{Configuraci\363 del servidor}{section.10.6}% 209
+\BOOKMARK [2][-]{subsection.10.6.18}{El fitxer gaTagging.js: Enviant esdeveniments}{section.10.6}% 210
+\BOOKMARK [2][-]{subsection.10.6.19}{El fitxer style.css: Configurant elements i classes pr\362pies}{section.10.6}% 211
+\BOOKMARK [1][-]{section.10.7}{Certificant l'aplicaci\363 amb FamilySearch}{chapter.10}% 212
+\BOOKMARK [2][-]{subsection.10.7.1}{Certificat d'autentificaci\363}{section.10.7}% 213
+\BOOKMARK [2][-]{subsection.10.7.2}{Certificat de lectura}{section.10.7}% 214
+\BOOKMARK [2][-]{subsection.10.7.3}{Proc\351s de certificaci\363}{section.10.7}% 215
+\BOOKMARK [1][-]{section.10.8}{Google Analytics}{chapter.10}% 216
+\BOOKMARK [1][-]{section.10.9}{Optimitizaci\363 d'imatges}{chapter.10}% 217
+\BOOKMARK [1][-]{section.10.10}{Hosting de l'aplicaci\363}{chapter.10}% 218
+\BOOKMARK [2][-]{subsection.10.10.1}{F\340cil configuraci\363}{section.10.10}% 219
+\BOOKMARK [2][-]{subsection.10.10.2}{F\340cil desplegament al n\372vol}{section.10.10}% 220
+\BOOKMARK [2][-]{subsection.10.10.3}{Entorn de proves local}{section.10.10}% 221
+\BOOKMARK [2][-]{subsection.10.10.4}{Decent versi\363 gratuita}{section.10.10}% 222
+\BOOKMARK [2][-]{subsection.10.10.5}{F\340cil escalatge de l'aplicaci\363}{section.10.10}% 223

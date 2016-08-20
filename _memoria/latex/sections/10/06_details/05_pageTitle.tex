@@ -1,0 +1,40 @@
+\subsection{El fitxer pageTitle.html: Mustache II}
+
+    \paragraph{}
+    El fitxer \emph{pageTitle.html} resulta un dels fitxers HTML més interessant de l'aplicació. Com s'ha comentat en el primer apartat d'aquesta secció, quasi totes les pàgines de l'aplicació contenen el bloc de codi que hem anomenat `capçalera de secció'.
+
+    Aquesta capçalera consta d'una imatge de fons, amb un títol i subtítol superposats segons el dispositiu des del qual s'accedeix a la pàgina. Els paràmetres que marquen la imatge de fons, els texts, el color del ressaltat i si cal mostrar un botó de navegació o no, són enviats pel servidor i carregats de forma dinàmica segons la pàgina visitada.
+
+    Recordem que les etiquetes \emph{\{\{nomEtiqueta\}\}} són referències a codi Mustache i representen paràmetres dinàmics emplenats pel servidor abans de servir el HTML. En el bloc de codi que es mostrarà més endavant, es podran veure importats els paràmetres: backgroundImage, \emph{highlight}, \emph{title}, \emph{subtitleDesktop}, \emph{subtitleTabet} i \emph{button}.
+
+    Fixem-nos també en el fet que aquests paràmetres poder ser importants a qualsevol lloc del codi HTML. En alguns casos, s'importen com a classe d'un element HTML, indicant-ne l'estil i comportament esperat i altres, simplement, es tracta de contingut estàtic, com per exemple, el títol.
+
+    Destacar també, que pot resultat interessant fixar-se en com l'aplicació diferencia entre si s'ha de mostrar el subtítol per escriptori o tauleta gràfica, ja que la lògica és la mateixa per qualsevol altre component del domini web.
+
+    Els encarregats de gestionar aquest aspecte són les etiquetes de classe: \emph{hidden-sm} i \emph{hidden-xs}, en els subtítols d'escriptori i en contrapartida, l'etiqueta de classe: \emph{visible-sm}, en els subtítols de la tauleta gràfica. Aquestes etiquetes poden ser llegides de forma semàntica com: Si la pantalla que mostra la pàgina web és petita (tauletes gràfiques) o ultra reduïda (mòbils), no mostris el subtítol per escriptoris i si el de tablet.
+
+    Així doncs, el següent bloc de codi representa la configuració de la capçalera de secció per dispositius de pantalla petita o superiors (fixem-nos en l'etiqueta de classe de la primera línia que només amaga la secció per dispositius \emph{xs}).
+
+    \begin{lstlisting}[style=rawOwn,caption={Posicionament de paràmetres amb Mustache en el HTML}]
+<div class=`container-fluid {{backgroundImage}} hidden-xs'>
+	<!-- main title -->
+	<div class=`row'><h1 class=`{{highlight}}'>{{title}}</h1></div>
+
+	<!-- subtitle -->
+	<div class=`row'>
+		<!-- Subtitles: Desktop -->
+		<div class=`col-md-12 hidden-sm hidden-xs'>
+			<h2 class=`{{highlight}} text-italic'>{{subtitleDesktop}}</h2>
+		</div>
+		<!-- Subtitles: Tablet -->
+		<div class=`col-md-12  visible-sm'>
+			<h2 class=`{{highlight}} text-italic'>{{subtitleTablet}}</h2>
+		</div>
+	</div>
+
+	<!-- display button if required -->
+	 {{#button}} ... {{/button}}
+</div>
+    \end{lstlisting}
+
+    Al final del bloc de codi mostrat, en el fitxer original, s'inicia una capçalera similar per dispositius de pantalla extra reduïda. El motiu pel qual creem dues capçaleres diferents, és per mostrar una capçalera més petita en alçada i aprofitar així millor l'espai disponible en dispositius mòbils.

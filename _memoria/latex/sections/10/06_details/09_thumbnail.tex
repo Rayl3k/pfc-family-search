@@ -1,0 +1,28 @@
+\subsection{Els fitxers future-proposals.html i implemented-proposals.html: El grid de Bootstrap III i el component Thumbnail}
+
+    \paragraph{}
+    Aquests dos fitxers són utilitzats per crear el contingut principal de la pàgina propostes i exemples de l'aplicació web. En concret, s'encarreguen de crear les caixes formades per una imatge, un títol i una descripció, que representen una proposta de projecte o un projecte implementat.
+
+    Aquestes caixes, originalment tres per fila, s'adapten a dos per fila en tauletes gràfiques i a un per fila en dispositius mòbils. El comportament s'aconsegueix de forma similar a l'explicat en el fitxer index.html, però en aquest cas, considerant tres formats diferents en comptes de dos. Això es pot aconseguir mitjançant la línia de codi:
+
+    \begin{lstlisting}[style=rawOwn,caption={Multiples configuracions en un bloc de columnes}]
+<div class=`row'>
+    <div id=`proposal-box-1' class=`col-md-4 col-sm-6'> ... </div>
+</div>
+    \end{lstlisting}
+
+    D'aquesta forma, indiquem que en dispositius mitjans o més grans, volem que la capsa ocupi quatre de les dotze columnes, en dispositius petits, sis columnes i en dispositius extra reduïts, per omissió, dotze columnes.
+
+    Les caixes que conformen cada una de les propostes, han estat generades mitjançant el component \emph{Thumbnail} de Bootstrap. Aquests es caracteritzen per utilitzar imatges que s'adapten a la grandària del contenidor (\emph{img}) i la possibilitat d'incloure un títol i descripció a cada caixa (\emph{caption}). En el següent bloc de codi, és mostra l'esquelet principal d'una d'aquestes caixes.
+
+    \begin{lstlisting}[style=rawOwn,caption={Exemple de Bootstrap Thumbnail}]
+<div class="thumbnail">
+    <!-- image -->
+    <img src=`/images/thumbnails/search-min.png'>
+    <!-- title + text -->
+    <div class="caption">
+        <h3> ... </h3>
+        <p> ... </p>
+    </div>
+</div>
+    \end{lstlisting}

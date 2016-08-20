@@ -1,0 +1,29 @@
+\subsection{El fitxer style.css: Configurant elements i classes pròpies}
+
+    \paragraph{}
+    El fitxer style.css ha estat utilitzat principalment per controlar l'aparença de certs elements mostrats a l'aplicació web.
+
+    Els dos elements que han estat més manipulats són la font associada a cada element HTML, pel fet que les fonts per defecte de Bootstrap són bastant simples i manquen de personalitat i la creació d'unes noves classes destinades a controlar la distància entre línies del grid de Bootstrap, que per defecte, mostra les diferents línies pràcticament enganxades i com a conseqüència, la pàgina web no `respira'.
+
+    A continuació, mostrem un exemple d'assignació de font als elements HTML <h1>..<h6> i algun exemple dels espaiadors de classe, que hem creat, seguint la nomenclatura Bootstrap.
+
+    \begin{lstlisting}[style=rawOwn,caption={Assignant fonts a elements HTML i creació d'espaiadors}]
+// Fonts for html <h1> .. <h6>
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+// Spacers
+.xs-buffer { margin-top:10px; }
+.sm-buffer { margin-top:20px; }
+.md-buffer { margin-top:30px; }
+.xl-buffer { margin-top:40px; }
+.xxl-buffer { margin-top:50px; }
+.xxxl-buffer { margin-top: 60px; }
+    \end{lstlisting}
+
+    A part, també s'han creat diferents classes per tal de controlar aspectes, com la dissociació dels controls de les funcionalitats d'exemple, de la seva posició fixa, carregar les diferents imatges de fons en les capçaleres de secció, canvia l'estil dels enllaços URL, controlar la visibilitat inicial de certes zones del HTML que volem mantenir ocultes, estils de les taules, barres de progrés, camps del formulari, etcètera, etcètera.
+
+    Es recomana donar un cop d'ull al fitxer original: style.css, per tenir una idea més global de totes les petites configuracions que aquest realitza.
