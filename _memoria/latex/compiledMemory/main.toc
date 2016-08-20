@@ -438,26 +438,29 @@
 \contentsline {paragraph}{}{148}{section*.249}
 \contentsline {subsection}{\numberline {10.5.5}Conclusi\IeC {\'o}}{148}{subsection.10.5.5}
 \contentsline {paragraph}{}{148}{section*.250}
-\contentsline {section}{\numberline {10.6}Certificant l'aplicaci\IeC {\'o} amb FamilySearch}{148}{section.10.6}
+\contentsline {section}{\numberline {10.6}Detalls espec\IeC {\'\i }fics de la implementaci\IeC {\'o}}{148}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Introducci\IeC {\'o} als detalls d'implementaci\IeC {\'o}}{148}{subsection.10.6.1}
 \contentsline {paragraph}{}{148}{section*.251}
-\contentsline {subsection}{\numberline {10.6.1}Certificat d'autentificaci\IeC {\'o}}{149}{subsection.10.6.1}
+\contentsline {section}{\numberline {10.7}Certificant l'aplicaci\IeC {\'o} amb FamilySearch}{149}{section.10.7}
 \contentsline {paragraph}{}{149}{section*.252}
-\contentsline {subsection}{\numberline {10.6.2}Certificat de lectura}{149}{subsection.10.6.2}
+\contentsline {subsection}{\numberline {10.7.1}Certificat d'autentificaci\IeC {\'o}}{149}{subsection.10.7.1}
 \contentsline {paragraph}{}{149}{section*.253}
-\contentsline {subsection}{\numberline {10.6.3}Proc\IeC {\'e}s de certificaci\IeC {\'o}}{150}{subsection.10.6.3}
-\contentsline {section}{\numberline {10.7}Google Analytics}{150}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.2}Certificat de lectura}{150}{subsection.10.7.2}
 \contentsline {paragraph}{}{150}{section*.254}
-\contentsline {section}{\numberline {10.8}Optimitizaci\IeC {\'o} d'imatges}{152}{section.10.8}
-\contentsline {paragraph}{}{152}{section*.255}
-\contentsline {section}{\numberline {10.9}Hosting de l'aplicaci\IeC {\'o}}{153}{section.10.9}
+\contentsline {subsection}{\numberline {10.7.3}Proc\IeC {\'e}s de certificaci\IeC {\'o}}{151}{subsection.10.7.3}
+\contentsline {section}{\numberline {10.8}Google Analytics}{151}{section.10.8}
+\contentsline {paragraph}{}{151}{section*.255}
+\contentsline {section}{\numberline {10.9}Optimitizaci\IeC {\'o} d'imatges}{153}{section.10.9}
 \contentsline {paragraph}{}{153}{section*.256}
-\contentsline {subsection}{\numberline {10.9.1}F\IeC {\`a}cil configuraci\IeC {\'o}}{153}{subsection.10.9.1}
+\contentsline {section}{\numberline {10.10}Hosting de l'aplicaci\IeC {\'o}}{153}{section.10.10}
 \contentsline {paragraph}{}{153}{section*.257}
-\contentsline {subsection}{\numberline {10.9.2}F\IeC {\`a}cil desplegament al n\IeC {\'u}vol}{154}{subsection.10.9.2}
+\contentsline {subsection}{\numberline {10.10.1}F\IeC {\`a}cil configuraci\IeC {\'o}}{154}{subsection.10.10.1}
 \contentsline {paragraph}{}{154}{section*.258}
-\contentsline {subsection}{\numberline {10.9.3}Entorn de proves local}{154}{subsection.10.9.3}
+\contentsline {subsection}{\numberline {10.10.2}F\IeC {\`a}cil desplegament al n\IeC {\'u}vol}{154}{subsection.10.10.2}
 \contentsline {paragraph}{}{154}{section*.259}
-\contentsline {subsection}{\numberline {10.9.4}Decent versi\IeC {\'o} gratuita}{154}{subsection.10.9.4}
+\contentsline {subsection}{\numberline {10.10.3}Entorn de proves local}{154}{subsection.10.10.3}
 \contentsline {paragraph}{}{154}{section*.260}
-\contentsline {subsection}{\numberline {10.9.5}F\IeC {\`a}cil escalatge de l'aplicaci\IeC {\'o}}{155}{subsection.10.9.5}
+\contentsline {subsection}{\numberline {10.10.4}Decent versi\IeC {\'o} gratuita}{155}{subsection.10.10.4}
 \contentsline {paragraph}{}{155}{section*.261}
+\contentsline {subsection}{\numberline {10.10.5}F\IeC {\`a}cil escalatge de l'aplicaci\IeC {\'o}}{155}{subsection.10.10.5}
+\contentsline {paragraph}{}{155}{section*.262}
