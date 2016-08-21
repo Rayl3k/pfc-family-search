@@ -1,0 +1,27 @@
+\subsubsection{La funció de desconnexió amb FamilySearch}
+
+\paragraph{}
+Aquesta funció s'invoca de forma automàtica quan el `token' expira o quan l'usuari utilitza la funcionalitat de desconnexió situada a la barra de navegació.
+
+La funció de desconnexió amb FamilySearch, realitza el procés invers realitzat per les funcions \emph{getAccessToken()} i \emph{serverLogIn()} descrites a l'apartat anterior. Aquesta, invalida el `token' configurat en la instància del client, elimina el valor contingut a l'espai local del navegador i sincronitza l'estat amb el servidor mitjançant una crida AJAX com la de l'apartat anterior.
+
+\begin{lstlisting}[style=rawOwn,caption={Cridar AJAX al servidor per indicar que l'usuari s'ha desconnectat}]
+function serverLogOut() {
+    client.invalidateAccessToken();
+    localStorage.removeItem(`token');
+    $.ajax({
+        type: `POST',
+        url: `/token/logout',
+        ...
+    });
+}
+\end{lstlisting}
+
+Per la seva banda, el servidor elimina la galeta de sessió, simplement assignant-li el valor \emph{null} i demana al controlador que redirigeixi a l'usuari cap a la pàgina principal de l'aplicació.
+
+\begin{lstlisting}[style=rawOwn,caption={Petició POST de desconnexió processada pel servidor}]
+app.post(`/token/logout', function(req, res) {
+    req.session = null;
+    res.end(`{`redirect' : `/'}');
+});
+\end{lstlisting}

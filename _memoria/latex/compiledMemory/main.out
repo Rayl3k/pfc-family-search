@@ -221,3 +221,14 @@
 \BOOKMARK [2][-]{subsection.10.10.3}{Entorn de proves local}{section.10.10}% 221
 \BOOKMARK [2][-]{subsection.10.10.4}{Decent versi\363 gratuita}{section.10.10}% 222
 \BOOKMARK [2][-]{subsection.10.10.5}{F\340cil escalatge de l'aplicaci\363}{section.10.10}% 223
+\BOOKMARK [0][-]{chapter.11}{Funcionalitats d'exemple amb FamilySearch}{}% 224
+\BOOKMARK [1][-]{section.11.1}{Introducci\363 a les funcionalitats implementades}{chapter.11}% 225
+\BOOKMARK [1][-]{section.11.2}{Identificaci\363 i desconnexi\363 a l'API de FamilySearch}{chapter.11}% 226
+\BOOKMARK [2][-]{subsection.11.2.1}{Descripci\363 de les funcionalitats}{section.11.2}% 227
+\BOOKMARK [2][-]{subsection.11.2.2}{Detalls d'implementaci\363}{section.11.2}% 228
+\BOOKMARK [2][-]{subsection.11.2.3}{Aspectes d'usabilitat considerats}{section.11.2}% 229
+\BOOKMARK [1][-]{section.11.3}{Cerca de persones a l'arbre familiar}{chapter.11}% 230
+\BOOKMARK [2][-]{subsection.11.3.1}{Descripci\363 de la funcionalitat}{section.11.3}% 231
+\BOOKMARK [2][-]{subsection.11.3.2}{Recomenacions d'utilitzaci\363}{section.11.3}% 232
+\BOOKMARK [2][-]{subsection.11.3.3}{Detalls d'implementaci\363}{section.11.3}% 233
+\BOOKMARK [2][-]{subsection.11.3.4}{Aspectes d'usabilitat considerats}{section.11.3}% 234

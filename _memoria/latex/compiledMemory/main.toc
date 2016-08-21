@@ -503,3 +503,36 @@
 \contentsline {paragraph}{}{167}{section*.282}
 \contentsline {subsection}{\numberline {10.10.5}F\IeC {\`a}cil escalatge de l'aplicaci\IeC {\'o}}{168}{subsection.10.10.5}
 \contentsline {paragraph}{}{168}{section*.283}
+\contentsline {chapter}{\numberline {11}Funcionalitats d'exemple amb FamilySearch}{169}{chapter.11}
+\contentsline {section}{\numberline {11.1}Introducci\IeC {\'o} a les funcionalitats implementades}{169}{section.11.1}
+\contentsline {paragraph}{}{169}{section*.284}
+\contentsline {section}{\numberline {11.2}Identificaci\IeC {\'o} i desconnexi\IeC {\'o} a l'API de FamilySearch}{169}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Descripci\IeC {\'o} de les funcionalitats}{169}{subsection.11.2.1}
+\contentsline {paragraph}{}{169}{section*.285}
+\contentsline {subsection}{\numberline {11.2.2}Detalls d'implementaci\IeC {\'o}}{170}{subsection.11.2.2}
+\contentsline {subsubsection}{El client de FamilySearch}{170}{section*.286}
+\contentsline {paragraph}{}{170}{section*.287}
+\contentsline {subsubsection}{La funci\IeC {\'o} d'identificaci\IeC {\'o} amb FamilySearch}{172}{section*.288}
+\contentsline {paragraph}{}{172}{section*.289}
+\contentsline {subsubsection}{La funci\IeC {\'o} de desconnexi\IeC {\'o} amb FamilySearch}{173}{section*.290}
+\contentsline {paragraph}{}{173}{section*.291}
+\contentsline {subsection}{\numberline {11.2.3}Aspectes d'usabilitat considerats}{174}{subsection.11.2.3}
+\contentsline {paragraph}{}{174}{section*.292}
+\contentsline {section}{\numberline {11.3}Cerca de persones a l'arbre familiar}{175}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Descripci\IeC {\'o} de la funcionalitat}{175}{subsection.11.3.1}
+\contentsline {paragraph}{}{175}{section*.293}
+\contentsline {subsection}{\numberline {11.3.2}Recomenacions d'utilitzaci\IeC {\'o}}{175}{subsection.11.3.2}
+\contentsline {paragraph}{}{175}{section*.294}
+\contentsline {subsection}{\numberline {11.3.3}Detalls d'implementaci\IeC {\'o}}{176}{subsection.11.3.3}
+\contentsline {paragraph}{}{176}{section*.295}
+\contentsline {subsubsection}{Iniciant la cerca de persones}{176}{section*.296}
+\contentsline {paragraph}{}{176}{section*.297}
+\contentsline {subsubsection}{La funci\IeC {\'o} printPersonsToTable()}{177}{section*.298}
+\contentsline {paragraph}{}{177}{section*.299}
+\contentsline {subsubsection}{Mostrant els detalls d'una persona}{178}{section*.300}
+\contentsline {paragraph}{}{178}{section*.301}
+\contentsline {subsubsection}{Generaci\IeC {\'o} de taules din\IeC {\`a}miques amb informaci\IeC {\'o} sobre un recurs}{180}{section*.302}
+\contentsline {paragraph}{}{180}{section*.303}
+\contentsline {subsection}{\numberline {11.3.4}Aspectes d'usabilitat considerats}{181}{subsection.11.3.4}
+\contentsline {subsubsection}{Llargada del formulari}{181}{section*.304}
+\contentsline {paragraph}{}{181}{section*.305}
