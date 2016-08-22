@@ -536,3 +536,28 @@
 \contentsline {subsection}{\numberline {11.3.4}Aspectes d'usabilitat considerats}{181}{subsection.11.3.4}
 \contentsline {subsubsection}{Llargada del formulari}{181}{section*.304}
 \contentsline {paragraph}{}{181}{section*.305}
+\contentsline {subsubsection}{Validaci\IeC {\'o} del formulari}{182}{section*.306}
+\contentsline {paragraph}{}{182}{section*.307}
+\contentsline {subsubsection}{Animaci\IeC {\'o} de cerca mentre s'espera la resposta del SDK}{182}{section*.308}
+\contentsline {paragraph}{}{182}{section*.309}
+\contentsline {subsubsection}{Missatges d'error del SDK}{183}{section*.310}
+\contentsline {paragraph}{}{183}{section*.311}
+\contentsline {subsubsection}{Fletxes d'exploraci\IeC {\'o} pels resultats de cerca}{183}{section*.312}
+\contentsline {paragraph}{}{183}{section*.313}
+\contentsline {subsubsection}{Fletxes de retorn a l'inici dels detalls d'una persona}{184}{section*.314}
+\contentsline {paragraph}{}{184}{section*.315}
+\contentsline {subsubsection}{Navegaci\IeC {\'o} vertical animada}{184}{section*.316}
+\contentsline {paragraph}{}{184}{section*.317}
+\contentsline {subsubsection}{Representaci\IeC {\'o} de l'estat}{184}{section*.318}
+\contentsline {paragraph}{}{184}{section*.319}
+\contentsline {subsection}{\numberline {11.3.5}Principal inter\IeC {\'e}s d'\IeC {\'u}s}{185}{subsection.11.3.5}
+\contentsline {paragraph}{}{185}{section*.320}
+\contentsline {section}{\numberline {11.4}Evoluci\IeC {\'o} geogr\IeC {\`a}fica d'un cognom}{185}{section.11.4}
+\contentsline {subsection}{\numberline {11.4.1}Descripci\IeC {\'o} de la funcionalitat}{185}{subsection.11.4.1}
+\contentsline {paragraph}{}{185}{section*.321}
+\contentsline {subsection}{\numberline {11.4.2}Recomanacions d'utilitzaci\IeC {\'o}}{187}{subsection.11.4.2}
+\contentsline {paragraph}{}{187}{section*.322}
+\contentsline {subsection}{\numberline {11.4.3}Detalls d'implementaci\IeC {\'o}}{188}{subsection.11.4.3}
+\contentsline {paragraph}{}{188}{section*.323}
+\contentsline {subsubsection}{Validaci\IeC {\'o} del formulari de cerca}{188}{section*.324}
+\contentsline {paragraph}{}{188}{section*.325}

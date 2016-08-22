@@ -1,0 +1,15 @@
+\subsubsection{Representació de l'estat}
+
+\paragraph{}
+Una de les característiques principals de les quals s'ha intentat dotar l'aplicació és la capacitat de representar, en tot moment, l'estat actual de les funcionalitats independentment del que hagi passat anteriorment.
+
+Les diferents micro transicions d'estat, que succeeixen per aquesta funcionalitat i que no han quedat cobertes en les seccions anteriors, es llisten a continuació:
+
+\begin{itemize}
+    \item Quan es prem el botó de cercar, el text d'aquest canvia a `Searching now...' i passa a un estat de desactivació, que n'impedeix la utilització fins que l'estat actual és resolt. Quan la cerca finalitza o es produeix un error, l'estat del botó torna a la seva normalitat.
+    \item Quan es realitza una nova cerca, els resultats de la cerca anterior (si aquesta existia), són esborrats per evitar causar confusió.
+    \item Els missatges d'error provinents del SDK o validacions del formulari, desapareixen quan es realitza un nou intent de cerca.
+    \item Quan s'utilitzen les fletxes de navegació pels resultats de la cerca, la taula desapareix i tornar a aparèixer per indicar que els continguts han estat refrescats i s'actualitza el valor del bloc de persones mostrat.
+    \item Quan es selecciona una persona de la taula de resultats, per mostrar-ne els detalls, la secció de detalls pren el títol de `Loading information...', i el canvia a `Nom\_persona details', quan el SDK retorna la informació demanada.
+    \item En seleccionar una persona per mostrar-ne els detalls, quan una altra persona ja havia estat seleccionada amb anterioritat, els detalls de la primera persona seleccionada s’esborran per evitar causar confusió.
+\end{itemize}
