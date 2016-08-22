@@ -561,3 +561,15 @@
 \contentsline {paragraph}{}{188}{section*.323}
 \contentsline {subsubsection}{Validaci\IeC {\'o} del formulari de cerca}{188}{section*.324}
 \contentsline {paragraph}{}{188}{section*.325}
+\contentsline {subsubsection}{Regulaci\IeC {\'o} de les crides as\IeC {\'\i }ncrones}{190}{section*.326}
+\contentsline {paragraph}{}{190}{section*.327}
+\contentsline {subsubsection}{Impressi\IeC {\'o} dels gr\IeC {\`a}fics}{191}{section*.328}
+\contentsline {paragraph}{}{191}{section*.329}
+\contentsline {subsubsection}{Creaci\IeC {\'o} de les caselles de selecci\IeC {\'o} per cada continent}{193}{section*.330}
+\contentsline {paragraph}{}{193}{section*.331}
+\contentsline {subsection}{\numberline {11.4.4}Aspectes d'usabilitat considerats}{194}{subsection.11.4.4}
+\contentsline {paragraph}{}{194}{section*.332}
+\contentsline {subsubsection}{Impressi\IeC {\'o} dels gr\IeC {\`a}fics}{194}{section*.333}
+\contentsline {paragraph}{}{194}{section*.334}
+\contentsline {subsubsection}{Progressi\IeC {\'o} de la cerca}{195}{section*.335}
+\contentsline {paragraph}{}{195}{section*.336}

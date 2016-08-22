@@ -1,0 +1,46 @@
+\subsubsection{Regulació de les crides asíncrones}
+
+\paragraph{}
+En cas que es passi el procés de validació descrit en l'apartat anterior, significa que podem llençar la cerca contra el SDK i per extensió, contra l’API de FamilySearch.
+
+Recordant el fet, que ja hem introduït en les recomanacions d’utilització d’aquesta funcionalitat, llençarem una crida al SDK per cada combinació de país i any i aquestes peticions, pel fet de ser asíncrones, no esperaran a obtenir una resposta abans de llançar la següent petició cap al SDK.
+
+Per evitar que FamilySearch ens bloquegi per abús del servei, hem introduït una espera de dos segons entre crida i crida, mitjançant el paràmetre \emph{apiDELAY} i la funcionalitat \emph{setTimeout()} de Javascript. També s'han encapsulat les crides, en una funció, que conté la representació dels paràmetres any (\emph{i}) i país (\emph{k}), executats en aquella iteració.
+
+\begin{lstlisting}[style=rawOwn,caption={Separació manual de les crides asíncrones al SDK}]
+for (var i = 0; i < years.length; i++) {
+    ...
+    for(var k = 0; k < countries.length; k++) {
+        (function(k, i) {
+            setTimeout(function() {
+                client.getPersonSearch(params).then(function(searchResponse) { ... }
+            }, apiDELAY*k+(i*countries.length*apiDELAY));
+        } (k, i));
+    }
+}
+\end{lstlisting}
+
+El codi anterior, permet que totes les crides al SDK siguin configurades a la vegada i de forma quasi instantània, però que gràcies a la funcionalitat \emph{setTimeout()}, s'aniran executant una per una a intervals de dos segons.
+
+El fet que les crides siguin asíncrones, significa que els resultats retornats pel SDK es processaran en un moment incert i en conseqüència, les variables que emmagatzemen les dades retornades, necessiten ser globals per tal de poder ser accessibles des de qualsevol part del codi.
+
+En concret, s'han definit dues variables globals que emmagatzemen la mateixa informació, però de forma diferent. Una pels gràfics del mapa geogràfic i gràfic de barres i una altra pel gràfic de línies.
+
+El motiu principal pel qual s’utilitzen dues estructures diferents és que l'estructura de dades a passar, a l’API de Google per cada un dels gràfics, és diferent i resulta més còmode disposar de dues estructures. Els paràmetres \emph{i} i \emph{k}, passats a cada crida, s’encarreguen de guardar les dades de cada iteració, al lloc que els hi correspon, de les variables globals.
+
+El primer objecte global, la variable \emph{geomapCountries} és una matriu de dades on cada fila conté les dades d'un any i cada casella de la fila està formada per un vector de dos elements. El codi del país i el nombre de persones que compleixen les condicions de cerca per aquell país.
+
+Per altra banda, la variable global \emph{linechartRows} és una matriu on cada columna representa un país i cada fila un any de l'interval. Cada casella de la matriu conté només un valor, que indica el nombre de persones que compleixen els criteris de cerca pel país denotat en la columna i l’any denotat per la fila.
+
+A continuació, es mostra el bloc de codi que llança la cerca al SDK i  emmagatzema els resultats a les variables globals.
+
+\begin{lstlisting}[style=rawOwn,caption={Crida al SDK i actualització de variables globals}]
+client.getPersonSearch(params).then(function(searchResponse) {
+    // Get instances of people with name in country[k]
+    var total = searchResponse.getResultsCount();
+    ...
+    geomapCountries[i].push([countries[k].code, total]);
+    linechartRows[i].push(total);
+    ...
+}
+\end{lstlisting}
