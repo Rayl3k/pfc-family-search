@@ -178,7 +178,10 @@ $( document ).ready(function() {
 
         // Get data from family search
         for(var i = 0; i < 11; i++) {
-                        // Delay all calls to the API by apiDELAY param
+            // Initialize data to store results
+            linechartRows[i] = new Array();
+
+            // Delay all calls to the API by apiDELAY param
             (function(i) {
                 setTimeout(function() {
                     // Set params for search
@@ -190,15 +193,15 @@ $( document ).ready(function() {
                         var total = searchResponse.getResultsCount();
                         console.log("results total: " + total);
 
-                        // Update progress bar: We divide/10 instead of 1000 to multiply after*100
-                        //var pValue = Math.round((i+1)/11*100)
+                        // Update counter + progress bar
                         yearsConsulted = yearsConsulted + 1;
                         var pValue = Math.round(yearsConsulted/11*100);
                         $("#progress-value").css('width', pValue+'%');
                         $("#progress-text").text(pValue+'% completed');
 
                         // Add total
-                        linechartRows.push([String(firstYear+i), total]);
+                        linechartRows[i].push(String(firstYear+i));
+                        linechartRows[i].push(total);
 
                         // Check if year data should be printed
                         if(yearsConsulted == 11) printLinechart();
@@ -219,6 +222,17 @@ $( document ).ready(function() {
                             sendEvent('familysearch', 'facts', error);
                             gaError = 1;
                         }
+
+                        // Update counter + progress bar
+                        yearsConsulted = yearsConsulted + 1;
+                        var pValue = Math.round(yearsConsulted/11*100);
+                        $("#progress-value").css('width', pValue+'%');
+                        $("#progress-text").text(pValue+'% completed');
+                        linechartRows[i].push(String(firstYear+i));
+                        linechartRows[i].push(0);
+
+                        // Check if year data should be printed
+                        if(yearsConsulted == 11) printLinechart();
                     });
                 }, 2500*i);
             }(i));

@@ -1,0 +1,20 @@
+\subsection{Descripció de la funcionalitat}
+
+\paragraph{}
+La funcionalitat evolució temporal d'esdeveniments, permet als usuaris explorar el nombre d'instàncies de naixements, casaments i defuncions, enregistrades a les bases de dades de FamilySearch, per un país, al llarg d'un període d'onze anys.
+
+Aquesta funcionalitat, probablement la més simple de les tres implementades, doncs reutilitza molta part del codi de les funcionalitats anteriors, és també una de les més interessants de cara a les diferents utilitzacions que si li poden donar.
+
+Aquesta funcionalitat, de la mateixa forma que l'evolució geogràfica d'un cognom, utilitza la funció de conveniència del SDK, getResultsCount(), per millorar l’eficiència en l’obtenció de resultats i per tant, no entrarem a enumerar els seus avantatge una altre vegada.
+
+La funcionalitat, llançarà un total d’onze crides al SDK, una per cada any de l’interval a considerar.
+
+L'evolució temporal d'esdeveniments, permet a l'usuari configurar els següents tres paràmetres:
+
+\begin{itemize}
+    \item \textbf{Esdeveniment:} A seleccionar entre naixements, casaments o defuncions.
+    \item \textbf{Localització:} Localització en la qual seran cercades les instàncies de l'esdeveniment seleccionat.
+    \item \textbf{Any central:} Any central, del període d’onze anys, pel que es realitzarà la cerca. La funcionalitat genera l’interval +/- 5 anys, respecta l'any introduït. Així, per exemple, si introduïm l'any 1942, el rang d'anys utilitzat serà 1937-1947, ambdós inclosos.
+\end{itemize}
+
+Un cop el SDK retorna resultats per totes les consultes enviades, es pinta un gràfic de línies que mostra l'evolució del nombre d'instàncies de \emph{esdeveniment}, trobades al llarg del període seleccionat.

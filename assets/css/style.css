@@ -54,6 +54,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
 h1 {
     font-size: 54px;
     line-height: 1.8em;
@@ -187,7 +192,7 @@ li a, li a:hover, li a:focus {
     background-size: cover;
     border-bottom: 1px solid #333333;
     height: 400px;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .title-zone-index {

@@ -1,0 +1,35 @@
+\subsubsection{Regulació de les crides asíncrones}
+
+\paragraph{}
+De la mateixa forma que la funcionalitat expansió geogràfica d’un cognom, aquesta funcionalitat llança múltiples crides asíncrones contra el SDK de FamilySearch.
+
+En concret, aquesta funcionalitat, sempre llença onze crides que per evitar ser bloquejades per la funcionalitat de `throttling' de l’API de FamilySearch, han estat serialitzades imposant una pausa de dos segons i mig entre crida i crida.
+
+Aquesta serialització s'ha aconseguit, de forma anàloga a la descrita en detall a la funcionalitat anterior, mitjançant la funció \emph{setTimeout()} de jQuery i el paràmetre \emph{apiDELAY}, que s'encarrega d'indicar l'interval d'espera entre les diferents crides. També s'han encapsulat les crides en una funció, que emmagatzema com a paràmetre a quina de les onze crides correspon la iteració.
+
+A continuació, mostrem el bloc de codi reduït, que representa la serialització de les crides a l’API.
+
+\begin{lstlisting}[style=rawOwn,caption={Separació manual de les crides asíncrones al SDK}]
+for(var i = 0; i < 11; i++) {
+    ...
+    (function(i) {
+        setTimeout(function() {
+            ...
+            client.getPersonSearch(params).then(function(searchResponse) {
+            var total = searchResponse.getResultsCount();
+            linechartRows[i].push(String(firstYear+i));
+            linechartRows[i].push(total);
+            ...
+            });
+        }, apiDELAY*i);
+    }(i));
+}
+\end{lstlisting}
+
+Aquestes crides retornen al controlador una per una i encara que no podem garantir l'ordre de rebuda, s’espera que en la gran majoria dels casos, aquest es correspongui a l’ordre d’enviament. De totes maneres, gràcies al paràmetre \emph{i}, empaquetat en cada una de les crides, podem emmagatzemar les dades retornades pel SDK al lloc que els hi correspon de la matriu \emph{linechartRows}.
+
+La variable global encarregada de guardar els resultats de les diferents crides al SDK és la mateixa que la utilitzada pel gràfic de línies de la funcionalitat expansió geogràfica d'un cognom, però que en aquest cas, consisteix en una matriu d'una sola columna, on la columna representa la localització cercada i cada fila, el valor per un any concret.
+
+Explicar que utilitzem una matriu d'una sola columna, en comptes d'un vector, perquè aquest és el format que espera l'API de Google, si volem que el gràfic representi la quantitat d'instàncies trobades en l'eix vertical i els anys a l'eix horitzontal.
+
+La línia de codi responsable de guardar els valors per cada crida a l’API, ha estat mostrada en el bloc de codi anterior i en concret, a les files vuit i nou. Recordem, que el paràmetre \emph{i} fa referència a la iteració del bucle executada i per extensió, a quin any fan referència les dades respecta els onze anys de l’interval cercat.

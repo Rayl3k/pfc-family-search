@@ -409,9 +409,6 @@ $( document ).ready(function() {
 
                             // Update progress bar
                             var pValue = Math.round(countriesConsulted/searchDuration*100);
-
-                            // Update progress bar: We divide/10 instead of 1000 to multiply after*100
-                            //var pValue = Math.round((k+1+countries.length*i)/searchDuration*100);
                             $("#progress-value").css('width', pValue+'%');
                             $("#progress-text").text(pValue+'% completed');
 
@@ -425,6 +422,14 @@ $( document ).ready(function() {
                         })
                         // Catch errors
                         .catch(function(e) {
+                            // Process error also as counted
+                            countriesConsulted = countriesConsulted + 1;
+
+                            // Update progress bar
+                            var pValue = Math.round(countriesConsulted/searchDuration*100);
+                            $("#progress-value").css('width', pValue+'%');
+                            $("#progress-text").text(pValue+'% completed');
+
                             // Print error
                             $('#api-error-text').text(e.message);
                             $('#api-errors').fadeIn('slow');
@@ -439,6 +444,17 @@ $( document ).ready(function() {
                                 sendEvent('familysearch', 'surnames', error);
                                 gaError = 1;
                             }
+
+                            // Update counter + progress bar
+                            countriesConsulted = countriesConsulted + 1;
+                            var pValue = Math.round(countriesConsulted/searchDuration*100);
+                            $("#progress-value").css('width', pValue+'%');
+                            $("#progress-text").text(pValue+'% completed');
+                            geomapCountries[i].push([countries[k].code, 0]);
+                            linechartRows[i].push(0);
+
+                            // Check if year data should be printed
+                            if(countriesConsulted%countries.length == 0) yearGraphs(i);
                         });
                     }, apiDELAY*k+(i*countries.length*apiDELAY));
                 }(k, i));
