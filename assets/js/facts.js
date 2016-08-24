@@ -40,7 +40,7 @@ function printLinechart() {
     $('#linechart').fadeIn('slow');
     $('#search-title').text('Search for');
     $('#search-title-2').text('completed.');
-    $('#facts-submit').text('Lauch facts searcher');
+    $('#facts-submit').text('Launch facts searcher');
     $('#facts-submit').removeClass('disabled');
 
     // Bar remove active class & stripes
@@ -213,7 +213,7 @@ $( document ).ready(function() {
                         $('#api-errors').fadeIn('slow');
 
                         // Enable search button
-                        $('#facts-submit').text('Launch facts sesarch');
+                        $('#facts-submit').text('Launch facts search');
                         $('#facts-submit').removeClass('disabled');
 
                         // Send ga error
