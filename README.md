@@ -91,3 +91,9 @@ https://familysearch.org/developers/docs/certification
 
 ## conmpile latex
 http://tex.stackexchange.com/questions/6845/compile-latex-with-bibtex-and-glossaries
+
+## compile bibliography with biber
+pdflatex nameTexFile
+biber nameTexFile
+pdflatex nameTexFile
+pdflatex nameTexFile

@@ -2,6 +2,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[acronym,toc,xindy]{glossaries}
+\usepackage[style=numeric,backend=biber]{biblatex}
+\addbibresource{./mybib.bib}
 \usepackage[hidelinks]{hyperref}
 \usepackage{geometry}
     \geometry{
@@ -70,6 +72,8 @@
 }
 
 \begin{document}
+    % show everything on biblio
+    \nocite{*}
 
     % table of contents
     \tableofcontents{}
@@ -90,5 +94,8 @@
     % ending memory sections
     %\clearpage
 	%\printglossaries{}
+
+    % print Bibliography
+    \printbibliography{}
 
 \end{document}
