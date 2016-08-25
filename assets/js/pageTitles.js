@@ -4,8 +4,8 @@ function titleIndex() {
     var highlight = "lightbox-text";
     var title = "STUDY OF FAMILYSEARCH API POTENTIAL";
     var titleMobile = "FAMILY SEARCH API POTENTIAL";
-    var subtitleDesktop = "This project studies the genalogical data inside the FamilySearch API and provides some examples of what it could be used for.";
-    var subtitleTablet = "Possibilities study for the genealogical data.";
+    var subtitleDesktop = "This project studies the accessible genalogical data inside the FamilySearch API and provides some examples of its usages";
+    var subtitleTablet = "Study of the accessible genealogical data inside the FamilySearch API and possible usages";
     var button = false;
 
     // Return parameters
@@ -18,8 +18,8 @@ function titleBackground() {
     var highlight = "lightbox-text";
     var title = "PROJECT BACKGROUND";
     var titleMobile = "PROJECT BACK-GROUND";
-    var subtitleDesktop = "Short introduction to bjectives and motivations.";
-    var subtitleTablet = "Introduction to the objectives and motivations.";
+    var subtitleDesktop = "Short introduction to the project objectives and motivations";
+    var subtitleTablet = "Introduction to the objectives and motivations";
     var button = false;
 
     // Return parameters
@@ -32,8 +32,8 @@ function titleProposals() {
     var highlight = "lightbox-text";
     var title = "PROJECT PROPOSALS";
     var titleMobile = "PROJECT PROPOSALS";
-    var subtitleDesktop = "This area contains the possible project proposals with some considerations about each one and the feature details of the implemented examples.";
-    var subtitleTablet = "This area contains the possible project proposals with some considerations about each one.";
+    var subtitleDesktop = "Collection of project proposals that interact with the FamilySearch API for future students";
+    var subtitleTablet = "Collection of project proposals for future students";
     var button = false;
 
     // Return parameters
@@ -46,23 +46,9 @@ function titleExamples() {
     var highlight = "lightbox-text";
     var title = "IMPLEMENTED EXAMPLES";
     var titleMobile = "IMPLEMENTED EXAMPLES";
-    var subtitleDesktop = "Play with some examples that illustrate how data from the FamilySearch API can be accessed and played with";
-    var subtitleTablet = "Reduced subtitle just to fit the size and rock";
+    var subtitleDesktop = "Explore the FamilySearch accessible data and API potential through three examples"
+    var subtitleTablet = "Explore the Familysearch API through examples";
     var button = false;
-
-    // Return parameters
-    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
-}
-
-// titles: FACTS
-function titleFacts() {
-    var background = "exampleFacts";
-    var highlight = "lightbox-text";
-    var title = "FACTS EVOLUTION";
-    var titleMobile = "FS API STUDY";
-    var subtitleDesktop = "Check birth, marriage and death occurances around a specific year and place";
-    var subtitleTablet = "Reduced subtitle just to fit the size and rock";
-    var button = true;
 
     // Return parameters
     return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
@@ -72,10 +58,10 @@ function titleFacts() {
 function titleSearch() {
     var background = "exampleSearch";
     var highlight = "lightbox-text";
-    var title = "SEARCH EXAMPLE";
-    var titleMobile = "FS API STUDY";
-    var subtitleDesktop = "Explore the Family Search person search and the deta inside";
-    var subtitleTablet = "Reduced subtitle just to fit the size and rock";
+    var title = "PERSON SEARCH";
+    var titleMobile = "PERSON SEARCH";
+    var subtitleDesktop = "Explore the persons inside the Family Tree and check their genealogical data";
+    var subtitleTablet = "Explore the Family Tree";
     var button = true;
 
     // Return parameters
@@ -86,16 +72,29 @@ function titleSearch() {
 function titleSurnames() {
     var background = "exampleSurnames";
     var highlight = "lightbox-text";
-    var title = "SURNAME NEWBORNS";
-    var titleMobile = "FS API STUDY";
-    var subtitleDesktop = "Check how many people with a specific surname were born last year";
-    var subtitleTablet = "Reduced subtitle just to fit the size and rock";
+    var title = "SURNAMES EXPANSION";
+    var titleMobile = "SURNAMES EXPANSION";
+    var subtitleDesktop = "Study how many instances of a given surname can be found in a specific set of countries over the course of time";
+    var subtitleTablet = "Study the geographical evolution of a given surname";
     var button = true;
 
     // Return parameters
     return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
 }
 
+// titles: FACTS
+function titleFacts() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "FACTS EVOLUTION";
+    var titleMobile = "FACTS EVOLUTION";
+    var subtitleDesktop = "Check how birth, marriage and death occurances changed around a period of time for a specific country or location";
+    var subtitleTablet = "Evolution of birth, marriage and death occurances";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
 
 /* start: FUNCTION TO GET PAGE TITLES */
 var pageTitles = function () {
@@ -107,9 +106,9 @@ var pageTitles = function () {
         else if(keyword == "background") return titleBackground();
         else if(keyword == 'proposals') return titleProposals();
         else if(keyword == 'examples') return titleExamples();
-        else if(keyword == 'facts') return titleFacts();
         else if(keyword == 'search') return titleSearch();
         else if(keyword == 'surnames') return titleSurnames();
+        else if(keyword == 'facts') return titleFacts();
         else if(keyword == '/proposals/example1') return titleSurnames();
         else if(keyword == '/proposals/names-popularity') return titleFacts();
     };
