@@ -1,4 +1,3 @@
-
 // GEOMAP: Variables
 //    geomap => map to print on the HTML
 //    geomapOptions => global options for geomap
@@ -124,7 +123,7 @@ function printGraphs(i) {
     // Ensure canvas is ready
     $('#graphs').fadeIn('fast');
     var fromTop =  $(document).scrollTop();
-    if(fromTop >= graphs-80) {
+    if(fromTop >= $("#graphs").position().top-80) {
         $("#controls-block").addClass('detached-top', true);
         $('#graphs').css('margin-top', '109px');
     }
@@ -145,6 +144,10 @@ function printGraphs(i) {
 
     // Update current printed
     currentPrinted = i;
+    $('#previous-year').removeClass('disabled');
+    $('#next-year').removeClass('disabled');
+    if(currentPrinted == 0) $('#previous-year').addClass('disabled');
+    else if(currentPrinted == years.length-1) $('#next-year').addClass('disabled');
 }
 
 /* Function to print & update data */

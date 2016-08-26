@@ -565,6 +565,12 @@ function printPersonsToTable(pos) {
        start = searchResponse.getIndex();
        context = searchResponse.getContext();
 
+       // Update control commands
+       $('#previous-persons').removeClass('disabled');
+       $('#next-persons').removeClass('disabled');
+       if(start == 0) $('#previous-persons').addClass('disabled');
+       else if(start+15 >= count) $('#next-persons').addClass('disabled');
+
        // Ensure API errors are not displayed
        $('#api-errors').fadeOut('fast');
 
@@ -683,7 +689,7 @@ $( document ).ready(function() {
         $('#specific-trigger').trigger('click');
 
         // Launch the call to get the data and prin it when you get it.
-        client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {            
+        client.getPersonWithRelationships(personID, {persons: true}).then(function(personResponse) {
             // Ensure API errors are not displayed
             $('#api-errors').fadeOut('fast');
             // Get Main Person and print its data
