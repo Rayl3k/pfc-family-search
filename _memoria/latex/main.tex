@@ -29,6 +29,17 @@
 \loadglsentries{acronyms.tex}
 \makeglossaries{}
 
+% dedication environment
+\newenvironment{dedication}
+  {\cleardoublepage{}    % we want a new page
+   \thispagestyle{empty} % no header and footer
+   \vspace*{\stretch{1}} % some space at the top
+   \raggedleft{}         % flush to the right margin
+  }
+  {\par % end the paragraph
+   \vspace{\stretch{3}}  % space at bottom is three times that at the top
+  }
+
 % overall configurations
 \singlespacing{}
 \graphicspath{ {images/} }
@@ -80,6 +91,7 @@
 
     % LOAD FIRST PAGE
     \input{./sections/00/01_titlePage}
+    \input{./sections/00/02_dedication}
 
     % table of contents
     \tableofcontents{}
