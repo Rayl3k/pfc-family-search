@@ -1,0 +1,30 @@
+\section{Recursos principals del bloc Persones}
+
+    \paragraph{}
+    El centre d'aquest bloc de recursos és el recurs Persona. Aquest recurs, emmagatzema els detalls que identifiquen i caracteritzen a cada una de les persones de l'arbre així com la informació bàsica sobre els seus relatius més propers.
+
+    D'aquest recurs principal, pengen els enllaços cap als recursos que permeten obtenir informació sobre els relatius de la persona, els estudis realitzats sobre aquesta, l'historial de canvis, les fonts d'informació i les memòries afegides pels usuaris.
+
+    La imatge [ref] ofereix una visió de l'esquema que acabem de descriure i permet veure com el recurs Persona s'enllaça amb la resta de blocs que conformen l'arbre familiar~\ref{img:personsBloc}.
+
+    \begin{figure}[h]
+        \includegraphics{05/03_personsCore}
+        \centering
+        \caption{El bloc de l'arbre familiar relatiu a les Persones.}\label{img:personsBloc}
+    \end{figure}
+
+    Aquest bloc de recursos és el més gran de tots i pràcticament, emmagatzema tota la informació rellevant dels individus accessibles a través de l'API. En els següents subapartats s'exposaran els diferents recursos que conformen aquest bloc i quines són les peces d'informació utilitzables que aquests contenen.
+
+    Podreu observar, en les taules que representen l'estructura dels recursos, que a vegades, per la columna que marca el format de dades d'un paràmetre, aquest es troba especificat entre els caràcters `[' i `]'. Aquesta terminologia s'utilitza per indicar que aquest paràmetre és en realitat un recurs o objecte de dades diferent inclòs dins del recurs estudiat.
+
+    També s'observarà que sovint, els recursos exposats, hereten dades d'altres recursos i en els casos que aquests siguin rellevants, se n'exposarà l'estructura a l'apartat `Altres recursos interessants', més endavant en la memòria.
+
+    \input{./sections/05/01_persons/01_persona}
+    \input{./sections/05/01_persons/02_gender}
+    \input{./sections/05/01_persons/03_names}
+    \input{./sections/05/01_persons/04_fact}
+    \input{./sections/05/01_persons/05_date}
+    \input{./sections/05/01_persons/06_placeReference}
+    \input{./sections/05/01_persons/07_placeDescription}
+    \input{./sections/05/01_persons/08_displayProperties}
+    \input{./sections/05/01_persons/09_familyView}

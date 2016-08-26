@@ -1,0 +1,5 @@
+param,format,desc
+original,string,Data original tal com va ser introduïda per l'usuari.
+formal,string,El valor estandarditzat o normalitzat de la data.
+normalized,[array of TextValue],Llista de valors formalitzats per la data. Proporcionat principalment per facilitat d'ús a l'hora de mostrar les dates.
+fields,[array of Field],Camps utilitzat com evidència.

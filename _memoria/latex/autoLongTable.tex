@@ -1,0 +1,44 @@
+\documentclass[11pt,twoside,a4paper]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+     a4paper,
+     total={140mm,217mm},
+     left=35mm,
+     top=40mm,
+ }
+ \usepackage{longtable, array, booktabs}
+ \usepackage{csvsimple}
+
+ \begin{filecontents*}{exampleTable2.csv}
+     Name;Description;Format;Restrictions
+     Private;textext;boolean;optional
+     Gender;some more field;string;optional
+     Names;field;[array of String];restriction
+     Facts;field;[array of Facts];optional
+ \end{filecontents*}
+
+ \begin{filecontents*}{exampleTable3.csv}
+     Name;Description;Format;Restrictions
+     Prívate;textext;boolean;optional
+     Gender;some mòre field;string;optional
+     Names;field;[arrày of String];restriction
+     Facts;field;[array of Facts];optional
+ \end{filecontents*}
+
+\begin{document}
+
+    %printing table 2, NO SPANISH SPECIAL characters
+    \csvautobooklongtable[
+       separator=semicolon
+    ]
+    {exampleTable2.csv}
+
+    %printing table 3, YES SPANISH SPECIAL characters
+    \csvautobooklongtable[
+       separator=semicolon
+    ]
+    {exampleTable3.csv}
+
+\end{document}

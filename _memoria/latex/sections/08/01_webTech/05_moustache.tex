@@ -1,0 +1,32 @@
+\subsection{La tecnologia de plantilles Mustache}
+
+    \paragraph{}
+    Abans d'entrar en els detalls d'aquesta tecnologia, cal comprendre que és un llenguatge de plantilles. Els llenguatges de plantilles existeixen principalment per satisfer dos propòsits.
+
+    En primer lloc, reutilitzar i minimitzar la quantitat de codi HTML necessari. Els llenguatges de plantilles permeten la incorporació de documents HTML, dins d'altres documents HTML. D'aquesta forma, s'evita la creació de codi redundant o replicat.
+
+    Per exemple, si quasi totes les pàgines d'un domini web tenen la mateixa barra de navegació, seria poc eficient haver de replicar l'estructura HTML d'aquesta en totes i cada una de les pàgines. De forma contrària, s'utilitzen aquestes plantilles per definir-la un cop i utilitzar-la a tot arreu.
+
+    Aquests llenguatges també permeten crear bucles de codi HTML i iterar sobre ells. Imaginem que es volen crear 100 paràgrafs de text en un document HTML, en comptes de crear-los de forma manual, podem crear un bucle amb un llenguatge de plantilles, definir el contingut de només una de les iteracions i deixar que el codi s'encarregui de crear totes les línies de codi necessàries.
+
+    El segon propòsit dels llenguatges de plantilla, consisteix a introduir contingut dinàmic, als fitxers HTML, a través dels paràmetres servits pel servidor. D’aquesta forma, s’aconsegueix dotar als documents HTML de contingut personalitzat, abans d'enviar la pàgina cap al client o navegador.
+
+    Per la creació de la pàgina web, es van estudiar tres llenguatges de plantilles diferents: Mustache, Twig i EJS.
+
+    Mustache era el més simple dels tres i el que dotava al frontal de menys lògica. En el costat oposat, estava Twig, que permetia realitzat tota mena d'operacions en el frontal, fins al punt de permetre la creació de variables dins del HTML. EJS, es trobava en un punt intermedi i mai va acabar de resultar una opció a valorar.
+
+    Una de les altres diferències principals entre Mustache i Twig, és que Mustache pot ser utilitzat en quasi qualsevol llenguatge de programació, mentre que Twig és específic del llenguatge PHP. Al final, es va decidir utilitzar un servidor Node.js (com s'explicarà més endavant en aquesta secció de la memòria), fet que descartava la possibilitat d'utilitzar el llenguatge Twig i feia de Mustache l’opció escollida.
+
+    El fet que Mustache sigui un llenguatge de plantilles sense gaire lògica, no significa que sigui menys complet que els altres. Segueix podent complir amb les dues funcionalitats principals descrites en aquest apartat i només implica que les dades que volen ser utilitzades en el HTML, han de venir estructurades des del servidor.
+
+    Les tres operacions principals de Mustache són:
+
+    \begin{itemize}
+        \item \textbf{Utilitzar un paràmetre del servidor en el HTML:} Per invocar en el HTML un paràmetre del servidor, només cal utilitzar el nom del paràmetre envoltant dels caràcters `\{\{‘ i `\}\}’. Per exemple, \emph{\{\{parametreServer1\}\}}.
+        \item \textbf{Invocar el HTML d'un altre fitxer:} Això s'aconsegueix mitjançant la inclusió de la següent etiqueta en el codi HTML del fitxer desitjat: \emph{\{\{> navbar \}\}}. El codi anterior, importaria per exemple, el contingut del fitxer navbar.html, en el document HTML actual.
+        \item \textbf{Iteracions sobre blocs de codi:} Imaginem que el servidor retorna un vector de països, si volguéssim pintar el nom de cada país un en un paràgraf diferent, podríem definir el bucle Mustache de la següent forma: \emph{\{\{\#countries\}\} <p> \{\{name\}\} </p> \{\{/countries\}\}}. On \{\{\#countries\}\} .. \emph{\{\{/countries\}\}} representa el bloc de codi HTML a replicar a cada iteració i \emph{\{\{name\}\}}, el paràmetre a imprimir de cada país.
+    \end{itemize}
+
+    Resulta doncs, bastant palpable, la utilitat que poden arribar a ser aquests llenguatges de plantilles i perquè s'ha decidit utilitzar-ne un, en el desenvolupament de l'aplicació web.
+
+    Aquesta tecnologia pot esdevenir confusa de cara a comprendre en quin lloc de l’aplicació web treballa. Es podria pensar que és una tecnologia del front-end, ja que manipula el HTML, però en realitat, aplica al back-end, modificant el contingut del HTML, abans de servir-lo al client.

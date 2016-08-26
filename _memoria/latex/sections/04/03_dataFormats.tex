@@ -1,0 +1,174 @@
+\section{Formats de dades utilitzats pel Sistema}
+
+    \paragraph{}
+    FamilySearch utilitza tres formats de dades diferents per representar la informació emmagatzemada en les seves bases de dades i dos formats extres per codificar aquesta informació i enviar-la a través del núvol.
+
+    Els conjunts de dades utilitzats per representar els recursos són els que segueixen:
+
+    \begin{itemize}
+        \item Les dades genealògiques es representen mitjançant el format GEDCOM X.
+        \item Els recursos o objectes específics del model de FamilySearch, es representen mitjançant una extensió del model de dades GEDCOM X.
+        \item El format de dades Atom, o atòmic, s’utilitza per proporcionar un format simple per les meta-dades.
+    \end{itemize}
+
+
+    \subsection{El format de dades GEDCOM i GEDCOM X}
+
+        \paragraph{}
+        El terme \gls{GEDCOM}, és un acrònim de l'anglès Genealogical Data Communications.
+
+        El format GEDCOM consisteix en un conjunt de regles d'aplicació per tal de representar informació genealògica. Aquest format de dades, creat per FamilySearch l'any 1984, s'ha convertit en l'estàndard de la indústria.
+
+         Per simplificar-ho, podríem entedre un fitxer en format GEDCOM, com un fitxer de text que emmagatzema informació genealògica d’una persona i les metadades necessàries per poder enllaçar als diferents fitxers de la mateixa persona.
+
+         Tot i que l’última versió, datada del 1996, segueix sent molt utilitzada, FamilySearch va proposar durant l'any 2012, canviar aquest estàndard per la seva nova versió anomenada GEDCOM X.
+
+         El format de dades per la \gls{GEDCOM X}, representava un nou projecte de codi obert i es diferenciava del seu antecessor en la implementació d'un sistema que facilitava la inclusió d'arbres genealògics i fonts de dades als recursos ja existents.
+
+         Al mateix temps, el nou estàndard també donava suport a l'intercanvi i enllaçament de dades a través del núvol i es creava així la primera versió de l'API de FamilySearch.
+
+        En la taula~\ref{ref:personGedcom}, s'ofereix un petit exemple de com la part bàsica del recurs persona és codificat sota el format de dades GEDCOM X.
+
+        \begin{center}
+                 \csvreader[
+                    separator=comma,
+                    before table=\sffamily\small,
+                    longtable={p{1.5cm-2\tabcolsep}p{4.5cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{4.5cm-2\tabcolsep}},
+                    table head={\caption{Codificació GEDCOM X del recurs Persona}\label{ref:personGedcom}\\\toprule%
+                        \headentry{m{1.5cm-2\tabcolsep}}{Nom}
+                        & \headentry{m{4.5cm-2\tabcolsep}}{Descripció}
+                        & \headentry{m{3.5cm-2\tabcolsep}}{Format de dades}
+                        & \headentry{m{4.5cm-2\tabcolsep}}{Restriccions}\\\midrule},
+                    late after line=\\\midrule,
+                    late after last line=\\\bottomrule,
+                 ]
+                 {./tables/04/personGedcom.csv}
+                 {nom=\nom,desc=\desc,format=\format,rest=\rest}
+                 {\nom&\desc&\format&\rest}
+         \end{center}
+
+         \paragraph{}
+         Així doncs, podem veure com la instància del recurs Persona conté un camp booleà, que indica si aquesta pot ser utilitzada de forma pública o només en l'àmbit privat i tres camps que es troben codificats sota els estàndards del format GEDCOMX.
+
+         Per exemple, el format de dades \verb|http://gedcomx.org/v1/Gender|, representaria un recurs amb l’estructura que s’exposa a la taula~\ref{ref:genderGedcom} i els valors possibles per l’enumeració de gènere, s’indiquen en la taula~\ref{ref:genderEnum}.
+
+         \begin{center}
+                  \csvreader[
+                     separator=comma,
+                     before table=\sffamily\small,
+                     longtable={p{1.5cm-2\tabcolsep}p{4.5cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{4.5cm-2\tabcolsep}},
+                     table head={\caption{Codificació GEDCOM X del recurs Gènere}\label{ref:genderGedcom}\\\toprule%
+                         \headentry{m{1.5cm-2\tabcolsep}}{Nom}
+                         & \headentry{m{4.5cm-2\tabcolsep}}{Descripció}
+                         & \headentry{m{3.5cm-2\tabcolsep}}{Format de dades}
+                         & \headentry{m{4.5cm-2\tabcolsep}}{Restriccions}\\\midrule},
+                     late after line=\\\midrule,
+                     late after last line=\\\bottomrule,
+                  ]
+                  {./tables/04/genderGedcom.csv}
+                  {nom=\nom,desc=\desc,format=\format,rest=\rest}
+                  {\nom&\desc&\format&\rest}
+        \end{center}
+
+        \begin{center}
+                  \csvreader[
+                      separator=comma,
+                      before table=\sffamily\small,
+                      longtable={p{6cm-2\tabcolsep}p{4cm-2\tabcolsep}},
+                      table head={\caption{Valors enumeració type}\label{ref:genderEnum}\\\toprule%
+                          \headentry{m{6cm-2\tabcolsep}}{Gènere URI (Gedcom X)}
+                          & \headentry{m{4cm-2\tabcolsep}}{Descripció}\\\midrule},
+                      late after line=\\\midrule,
+                      late after last line=\\\bottomrule,
+                   ]
+                   {./tables/04/genderTypes.csv}
+                   {uri=\uri,desc=\desc}
+                   {\uri&\desc}
+         \end{center}
+
+         \paragraph{}
+         Com que l’objectiu del projecte no és estudiar la codificació GEDCOM o GEDCOM X, sinó comprendre quina informació es troba realment disponible a través de l'API de FamilySearch, no entrarem més en detall en aquests formats.
+
+         L’objectiu d’aquest apartat era explicar quin és l'estàndard de representació de dades genealògiques utilitzat per l'API. Per qualsevol informació extra que es vulgui consultar, s’adjunta a la bibliografia del projecte, l’enllaç a la documentació del model conceptual.
+
+
+     \subsection{Format de dades FamilySearch}
+
+        \paragraph{}
+        El format de dades FamilySearch, defineix el format d'aquells objectes específics relacionats amb la plataforma de dades pròpia de l'organització. Això implica que aquestes estructures no formen part de cap estàndard i manquen de sentit fora del context pel qual han estat definides.
+
+        L'estructura dels objectes específics de FamilySearch ha estat creada com una extensió de l'especificació GEDCOM X. Per tant, segueixen una estructura molt similar.
+
+
+    \subsection{Format de dades Atom (o Atòmic)}
+
+        \paragraph{}
+        Els formats de dades Atom, o atòmic, és utilitzat per proporcionar un format pel contingut web i les metadades.
+
+        Aquest format és utilitzat, entre altres llocs, en les col·leccions ordenades de resultats, com podrien, per exemple, les respostes a la funció de cerca de persones o l'obtenció del historial de canvis d’una persona.
+
+
+    \subsection{Codificacions dels formats de dades}
+
+        \paragraph{}
+        Els formats de dades que s’han exposat en els apartats anteriors no són més que unes convencions que marquen l'estructura a seguir per representar els diferents objectes o recursos utilitzats per l'API de FamilySearch.
+
+        Tanmateix, aquestes estructures han de ser codificades per tal de poder ser transmeses a través del núvol i en concret, FamilySearch, proporciona suport a les dues codificacions més comunes i utilitzades per aquesta finalitat. Els llenguatges XML i JSON.
+
+
+        \subsubsection{El llenguatge XML}
+
+        \paragraph{}
+        El \gls{XML}, és un llenguatge de marcatge que defineix un conjunt de regles a seguir per tal de codificar, documents i informació, en un format llegible i processable, tant per éssers humans, com màquines.
+
+        El llenguatge va ser definit pel Consorci World Wide Web i tracta d’emfatitzar la simplicitat, generalitat i usabilitat del model, per l'ús a través d'Internet.
+
+        Una versió reduïda de la representació en XML del recurs ‘Nota’, amb camps: subjecte, text i atribució, quedaria representat de la forma següent:
+
+        \begin{lstlisting}[style=rawOwn,caption={Representació bàsica en XML d'una Nota}]
+<Note xmlns='...'>
+    <subject>...</subject>
+    <text>...</text>
+    <attribution id='...'>
+        <contributor resourceId='...' resource='...'/>
+        <modified>...</modified>
+        <changeMessage>...</changeMessage>
+        <creator resourceId='...' resource='...'/>
+        <created>...</created>
+    </attribution>
+</Note>
+        \end{lstlisting}
+
+        \paragraph{}
+        Com es pot observar, cada camp, objecte o peça d'informació, es troba envoltada per dues etiquetes que en marquen l'inici i final. El text situat a l'interior d'aquestes etiquetes, indica de quin camp es tracta. Per exemple, pel camp subjecte, tenim les etiquetes \emph{<subject>} i \emph{</subject>}.
+
+
+        \subsubsection{El llenguatge JSON}
+
+        \paragraph{}
+        El llenguatge \gls{JSON}, és un estàndard de format obert que, de la mateixa forma que el llenguatge XML, pretén crear codificacions llegibles tant per éssers humans com màquines i al mateix temps, poder transmetre aquestes dades a través del núvol de forma ordenada.
+
+        Aquest format es basa en el concepte ‘clau -valor’. És a dir, cada camp d'un objecte a representar està format per una clau i un valor associat a aquesta clau.
+
+        El llenguatge JSON deriva del JavaScript. Al principi, només aquesta plataforma incorporava funcions per codificar i descodificar aquest llenguatge de marcatge.
+
+        Durant els últims anys, el format JSON s'ha vist convertit en l'estàndard de la indústria per l'intercanvi de dades a través d'Internet i en conseqüència, ha provocat que molts altres llenguatges de programació hagin incorporat les seves pròpies funcions de codificació i descodificació.
+
+        Una versió reduïda de la representació en JSON del recurs Nota, amb camps: subjecte, text i atribució, es representaria de la forma següent:
+
+        \begin{lstlisting}[style=rawOwn,caption={Representació bàsica en JSON d'una Nota}]
+{
+  `lang': `...',
+  `subject': `...',
+  `text': `...',
+  `attribution': {
+    `contributor': { },
+    `modified': `...',
+    `changeMessage': `...',
+    `creator': { },
+    `created': `...',
+    `id': `...'
+  },
+  `id': `...'
+}
+        \end{lstlisting}

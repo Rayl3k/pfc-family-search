@@ -1,0 +1,9 @@
+param,format,desc
+principal,boolean,Booleà per indicar si questa persona és la principal extreta d'un registre.
+private,boolean,Indicador de si l'accés a la informació d'aquesta persona és visible pel domini públic o nomes privat.
+living,boolean,Indicador sobre si la persona està viva o morta.
+gender,[Gender],El gènere de la persona consultada.
+names,[array of Name],Els diferents noms pels que és coneix a la persona.
+facts,[array of Facts],Els esdeveniments relacionats amb la vida de la persona.
+fields,[array of Field],Camps que s'utilitzen com evidència.
+display,[DisplayProperties],Recopilació d'informació bàsica\, d'accés ràpid\, sobre la persona\, per que resulti accessible sense necessitat de navegar pels diferents recursos.

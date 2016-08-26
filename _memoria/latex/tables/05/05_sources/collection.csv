@@ -1,0 +1,7 @@
+param,format,desc
+lang,string,El llenguatge en què es troba la descripció de la col·lecció.
+identifiers,[array of Identifier],Llista d'identificadors de les fonts de dades.
+title,string,Títol de la col·lecció.
+size,int,Les dimensions de la col·lecció en referència al nombre d'elements que conté.
+content,[array of Collection\-Content],Descripcions del contingut de la col·lecció.
+attribution,[Attribution],Metadades d'atribució referents a la col·lecció.

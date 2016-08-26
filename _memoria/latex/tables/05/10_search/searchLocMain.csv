@@ -1,0 +1,4 @@
+var,desc
+start,Indica l'índex del primer resultat desitjat\, de cara a la pàgina de resultats que serà retornada. Les localitzacions són retornades en blocs i el nombre de localitzacions en cada bloc\, depèn del paràmetre count. Així doncs\, aquest paràmetre ens permet fixar per quina pàgina de la resposta\, volem explorar els resultats.
+count,El nombre de resultats de cerca desitjats per pàgina.
+q,Aquest paràmetre és el que descriu les condicions de cerca. El nom del paràmetre i el valor desitjat per aquest\, són separats mitjançant dos punts\, mentre que els diferents paràmetres de cerca són separats per un espai en blanc. També es pot indicar que no busquem els valors exactes d'un paràmetre\, afegint el caràcter `~' al final d'una parella clau:valor. D'aquesta forma\, s'inclouran a la resposta persones amb valors similars pel camp senyalat i no només aquelles amb coincidències exactes.

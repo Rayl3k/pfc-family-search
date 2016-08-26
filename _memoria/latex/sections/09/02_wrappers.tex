@@ -1,0 +1,14 @@
+\section{Emmascarant les crides REST a l'API de FamilySearch}
+
+    \paragraph{}
+    Qualsevol crida que es pretengui realitzar contra l’API de FamilySearch, es realitzarà en el SDK mitjançant una funció Javascript asíncrona que l'emmascara. Això ens permet no haver de preocupar-nos per les URI dels recursos als quals volem accedir o haver d'afegir les capçaleres correctes a cada petició, ja que és el mateix SDK el que s'encarrega de fer-ho i mantenir el conjunt d'URIs als diferents recursos i operacions actualitzat.
+
+    Per exemple, si volem accedir a la persona amb identificador: `KW7S-VQJ', ho podríem fer mitjançant la següent funció.
+
+\begin{lstlisting}[style=rawOwn,caption={Exempla crida emmascarada a l'API de FamilySearch}]
+client.getPerson('KW7S-VQJ', {persons:true}).then(function(response) {
+    ...
+});
+\end{lstlisting}
+
+    La variable \emph{client} representa una instància del SDK, l’operació, \emph{getPerson}, l’operació del SDK que volem invocar, l’identificador \emph{KW7S-VQJ} i el JSON \emph{\{persons:true\}}, són els paràmetres a passar a la funció i la variable \emph{response}, és l’objecte que emmagatzemarà la resposta de l’API.

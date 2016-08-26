@@ -1,0 +1,23 @@
+\subsection{El recurs Persones en una Memòria (MemoryPersona)}
+
+    \paragraph{}
+    Aquest recurs s'utilitza com a pont per accedir a totes les persones que han estat marcades com a relacionades en una memòria. Per exemple, si una fotografia conté la imatge de diverses persones i es vol relacionar la memòria amb totes elles, aquest recurs ho fa possible sense la necessitat d'haver de pujar la imatge per cada usuari.
+
+    La taula~\ref{res:memoryPersona} mostra els paràmetres d'aquest recurs que també hereta els paràmetres dels recursos Enllaços Hypermedia i Dades Extensibles que poden ser trobats a l'apartat `Altres recursos interessants'.
+
+    \begin{center}
+             \csvreader[
+                separator=comma,
+                before table=\sffamily\small,
+                longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                table head={\caption{Paràmetres del recurs Persones en una memòria}\label{res:memoryPersona}\\\toprule%
+                    \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                    & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                    & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                late after line=\\\midrule,
+                late after last line=\\\bottomrule,
+             ]
+             {./tables/05/04_memories/memoryPersona.csv}
+             {param=\param,format=\format,desc=\desc}
+             {\param&\format&\desc}
+     \end{center}

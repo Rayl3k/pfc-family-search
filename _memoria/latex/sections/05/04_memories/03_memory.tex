@@ -1,0 +1,25 @@
+\subsection{El recurs Memòria (Memory)}
+
+    \paragraph{}
+    El recurs Memòria, com el seu nom indica, és el recurs principal utilitzat per emmagatzemar la informació relacionada amb un artefacte pujat per un usuari. Per fer-ho, s'utilitza el recurs Descripció de la Font de Dades, que s'especificarà més endavant a l'apartat de recursos relacionats amb el bloc de Fonts de Dades.
+
+    Aquest recurs també inclou instàncies dels comentaris que han estat associats a les memòries.
+
+    Els paràmetres d'aquest recurs es mostren a la taula~\ref{res:memory} i també hereta els paràmetres dels recursos Enllaços Hypermedia i Dades Extensibles que poden ser trobats a l'apartat `Altres recursos interessants'.
+
+    \begin{center}
+             \csvreader[
+                separator=comma,
+                before table=\sffamily\small,
+                longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                table head={\caption{Paràmetres del recurs Memòria}\label{res:memory}\\\toprule%
+                    \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                    & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                    & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                late after line=\\\midrule,
+                late after last line=\\\bottomrule,
+             ]
+             {./tables/05/04_memories/memory.csv}
+             {param=\param,format=\format,desc=\desc}
+             {\param&\format&\desc}
+     \end{center}

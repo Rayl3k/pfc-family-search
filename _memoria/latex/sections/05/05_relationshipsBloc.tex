@@ -1,0 +1,23 @@
+\section{Recursos principals del bloc Relacions Familiars}
+
+    \paragraph{}
+    Aquest bloc està format principalment per dos recursos que permeten la representació de relacions parentals i les relacions de parella.
+
+    S'utilitza el recurs Relació per representar les relacions de parella i el recurs Relació Pares i Fill per representar la relació entre dos pares i un fill, on un dels pares pot no ser especificat. Destaquem aquest fet, perquè antigament FamilySearch només suportava el conjunt de famílies nuclears. És a dir, aquelles formades per una parella completa i la seva descendència, si és que aquesta existia.
+
+    Així doncs, els recursos Relació i Relació Pares i Fill, proporcionen informació sobre les persones que en formen part i els esdeveniments associats a aquestes relacions. Per exemple, informació sobre el matrimoni.
+
+    Els dos recursos, que representen les dues relacions familiars de màxima proximitat, poden relacionar-se mitjançant enllaços hypermedia, amb els recursos Nota i Historial de Canvis. Aquests recursos contenen informació extra afegida pels usuaris i un historial complet de com la relació s'ha vist modificada al llarg del temps així com el motiu d'aquests canvis. La figura~\ref{img:relationshipsBloc} mostra l'esquema específic de l'estructura d'aquest bloc.
+
+    \begin{figure}[h]
+        \includegraphics{05/04_relationshipsCore}
+        \centering
+        \caption{El bloc de l'arbre familiar relatiu a les relacions}\label{img:relationshipsBloc}
+    \end{figure}
+
+    Podreu observar també, a les taules que representen l'estructura dels recursos, que a vegades, per la columna que marca el format de dades d'un paràmetre, aquest es troba especificat entre els caràcters `[' i `]'. Aquesta terminologia s'utilitza per indicar que aquest paràmetre és en realitat un recurs o objecte de dades diferent inclòs dins del recurs estudiat.
+
+    També s'observarà que sovint, els recursos exposats, hereten dades d'altres recursos i en els casos que aquests siguin rellevants, se n'exposarà l'estructura a l'apartat `Altres recursos interessants', més endavant en la memòria.
+
+    \input{./sections/05/02_relationships/01_relation}
+    \input{./sections/05/02_relationships/02_parents}

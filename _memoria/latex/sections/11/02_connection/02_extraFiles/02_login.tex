@@ -1,0 +1,39 @@
+\subsubsection{La funció d'identificació amb FamilySearch}
+
+\paragraph{}
+La funció d'identificació es realitza des de la pàgina \emph{login.html} de l'aplicació i el controlador que la gestiona està inclosa en el fitxer \emph{login.js}.
+
+Quan l'usuari pressiona el botó `Access FamilySearch', mostrat a la figura~\ref{fig:fsLogin}, el controlador executa la funció \emph{getAccessToken()}, proporcionada pel SDK de FamilySearch. Aquesta funció, obre un pop-up que permet a l'usuari identificar-se i n'espera la resposta de forma asíncrona.
+
+En cas que l'usuari s'identifiqui de forma correcta, s'emmagatzema el testTokenValue retornat pel SDK a l'espai local del navegador i és llença la funció \emph{serverLogIn(testTokenValue)}, que s'encarregarà de mantenir la concordança d'estat entre un token vàlid de FamilySearch i el nostre servidor.
+
+\begin{lstlisting}[style=rawOwn,caption={Petició al SDK de Javascript d'un token d'identificació}]
+client.getAccessToken().then(function(testTokenValue) {
+    localStorage.token = testTokenValue;
+    serverLogIn(testTokenValue);
+});
+\end{lstlisting}
+
+La funció \emph{serverLogIn()} està inclosa en el fitxer \emph{client.js}, que recordem, està inclòs a totes les pàgines del web. Aquesta funció, realitza una crida AJAX al servidor passant com a paràmetre el valor \emph{testTokenValue} retornat per l'API. Un cop el servidor ha processat la petició, la funció definida en el paràmetre \emph{success}, redirigeix l'aplicació a la pàgina indicada pel servidor.
+
+\begin{lstlisting}[style=rawOwn,caption={Crida AJAX al servidor amb el token retornat pel SDK}]
+function serverLogIn(apiToken) {
+    $.ajax({
+        type: `POST',
+        url: `/token/login',
+        data: JSON.stringify({token: apiToken}),
+        dataType: `json',
+        contentType: `application/json; charset=UTF-8',
+        success: function(data) { ... }
+    });
+}
+\end{lstlisting}
+
+El servidor, per la seva banda, en rebre la petició AJAX del client, crea una galeta de sessió segura i no modificable pel client amb el valor del paràmetre testTokenValue codificat. Mentre aquesta galeta existeixi, el servidor permetrà accedir a l'usuari a les pàgines d'exemples implementats.
+
+\begin{lstlisting}[style=rawOwn,caption={Petició POST d'identificació processada pel servidor}]
+app.post(`/token/login', function(req, res) {
+    req.session.logged = req.session.logged || req.body.token;
+    res.end(`{`redirect' : `/examples'}');
+});
+\end{lstlisting}

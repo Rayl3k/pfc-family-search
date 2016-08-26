@@ -1,0 +1,28 @@
+param,format,desc
+about,anyURI,La URI (si existeix) de l'actual font de dades.
+lang,string,L'idioma o llengua en què es troba la font de dades.
+mediaType,string,Pista sobre el format del document que la font de dades descriu.
+version,string,Versió del recurs.
+sortKey,string,Clau per identificar la posició relativa de la font de dades dins de la col·lecció.
+resource\-Type,[resourceType],El tipus de recurs descrit.
+citations,[array of SourceCitation],Les citacions bibliogràfiques de la font de dades.
+mediator,[ResourceReference],Referència a l'entitat que fa de mediadora entre FamilySearch i les dades.
+sources,[array of Source\-Reference],Referències a altres fonts de dades relacionades. Generalment aplicable quan una font de dades forma part de la categoria secundària d'una altra font de dades.
+analysis,[Resource\-Reference],Referència al document d'anàlisis realitzat per descriure la font de dades.
+component\-Of,[Source\-Reference],Referència a la font de dades de la que forma part el recurs (si existeix).
+titles,[array of TextValue],Llista de títols per la font de dades.
+titleLabel,[TextValue],Títol preferit per la descripció de la font de dades.
+notes,[array of Note],Notes relacionades amb la font de dades.
+attribution,[Attribution],Les metadades d'atribució per la font de dades.
+descriptions,[array of TextValue],Descripcions de la font de dades de forma redactada.
+identifiers,[array of Identifier],La llista d'identificadors de la font de dades.
+created,dateTime,La data i moment en què la font de dades va ser creada.
+modified,dateTime,La data i moment en què la font de dades va ser modificada per últim cop.
+coverage,[array of Coverage],Declaracions de l'abast cobert per la font de dades en termes de tipus de registre\, localització geogràfica i època .
+rights,array of string,Els drets sobre les dades contingudes en la Font de Dades.
+fields,[array of Field],Els camps utilitzats com evidència\, aplicables al recurs descrit.
+Repository,[Resource\-Reference],Referència a l'agent que descriu on pot ser trobada la font de dades.
+descriptor,[Resource\-Reference],Referència a una sèrie de descriptors que indiquen quines dades es poden esperar de la font de dades.
+replacedBy,string,La URI per la que aquest recurs s'ha reemplaçat.
+replaces,array of string,La llista de recursos als quals aquesta font de dades substitueix.
+statuses,array of string,La llista d'estats que pot tenir aquesta font de dades.

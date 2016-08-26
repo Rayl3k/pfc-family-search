@@ -1,0 +1,247 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363 al projecte}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introducci\363}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Motivaci\363 i context}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Objectius}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Planificaci\363}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.4.1}{Planificaci\363 Febrer del 2014 - Juliol 2014}{section.1.4}% 6
+\BOOKMARK [2][-]{subsection.1.4.2}{Planificaci\363 Febrer del 2016 - Setembre 2016}{section.1.4}% 7
+\BOOKMARK [0][-]{chapter.2}{La genealogia}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Qu\350 \351s la genealogia?}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{El paper de la genealogia en el transcurs de la hist\362ria}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Les lleis reguladores}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Els codis \350tics en la genealogia}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{El proc\351s de recerca geneal\362gica}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.6}{Conclusi\363}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{L'organitzaci\363 FamilySearch}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Qu\350 \351s FamilySearch?}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{La hist\362ria de FamilySearch}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{L'esgl\351sia mormona i la fam\355lia}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Serveis per organitzacions amb arxius geneal\362gics}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.4.1}{Captura d'imatges}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.2}{Conversi\363 de formats digital}{section.3.4}% 21
+\BOOKMARK [2][-]{subsection.3.4.3}{Indexaci\363 en l\355nea}{section.3.4}% 22
+\BOOKMARK [2][-]{subsection.3.4.4}{Acc\351s en l\355nea}{section.3.4}% 23
+\BOOKMARK [2][-]{subsection.3.4.5}{Preservaci\363 dels registres i fitxers f\355sics}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.6}{Conclusions sobre els serveis professionals}{section.3.4}% 25
+\BOOKMARK [1][-]{section.3.5}{Serveis per particulars i aficionats a la genealogia}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.5.1}{Eines geneal\362giques}{section.3.5}% 27
+\BOOKMARK [1][-]{section.3.6}{Recerca geneal\362gica}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.6.1}{Cerca de registres}{section.3.6}% 29
+\BOOKMARK [2][-]{subsection.3.6.2}{Cerca de genealogies}{section.3.6}% 30
+\BOOKMARK [2][-]{subsection.3.6.3}{Cerca per cat\340leg}{section.3.6}% 31
+\BOOKMARK [2][-]{subsection.3.6.4}{Cerca en llibres d'hist\362ria geneal\362gica}{section.3.6}% 32
+\BOOKMARK [2][-]{subsection.3.6.5}{Wiki de FamilySearch}{section.3.6}% 33
+\BOOKMARK [1][-]{section.3.7}{Projectes d'indexaci\363}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.8}{Conclusi\363 sobre les eines per particulars}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Introducci\363 a l'API de FamilySearch}{}% 36
+\BOOKMARK [1][-]{section.4.1}{El portal de desenvolupadors}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{L'arquitectura de l'API}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Qu\350 \351s una API?}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.2}{L'arquitectura REST}{section.4.2}% 40
+\BOOKMARK [1][-]{section.4.3}{Formats de dades utilitzats pel Sistema}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.3.1}{El format de dades GEDCOM i GEDCOM X}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.2}{Format de dades FamilySearch}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.3}{Format de dades Atom \(o At\362mic\)}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.4}{Codificacions dels formats de dades}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Evoluci\363 temporal de l'API}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.1}{Evolucions al llarg del temps}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.2}{Tree Foundation}{section.4.4}% 48
+\BOOKMARK [1][-]{section.4.5}{Serveis extres oferts per l'API}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.5.1}{Caching}{section.4.5}% 50
+\BOOKMARK [2][-]{subsection.4.5.2}{Throttling}{section.4.5}% 51
+\BOOKMARK [2][-]{subsection.4.5.3}{Sincronitzaci\363}{section.4.5}% 52
+\BOOKMARK [2][-]{subsection.4.5.4}{Internacionaltizaci\363}{section.4.5}% 53
+\BOOKMARK [2][-]{subsection.4.5.5}{Transfer\350ncia de registres en grans quantitats}{section.4.5}% 54
+\BOOKMARK [1][-]{section.4.6}{Eines de desenvolupament}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.6.1}{Els SDK de FamilySearch}{section.4.6}% 56
+\BOOKMARK [2][-]{subsection.4.6.2}{Les aplicacions d'exemple}{section.4.6}% 57
+\BOOKMARK [2][-]{subsection.4.6.3}{Altres eines intressants}{section.4.6}% 58
+\BOOKMARK [1][-]{section.4.7}{Proc\351s de certificaci\363}{chapter.4}% 59
+\BOOKMARK [1][-]{section.4.8}{Diferents entorns de treball}{chapter.4}% 60
+\BOOKMARK [0][-]{chapter.5}{Estudi en profunditat de l'API de FamilySearch}{}% 61
+\BOOKMARK [1][-]{section.5.1}{Els recursos de FamilySearch}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.2}{Enlla\347os hypermedia, la navegaci\363 entre recursos}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.3}{L'arbre geneal\362gic de FamilySearch}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.4}{Recursos principals del bloc Persones}{chapter.5}% 65
+\BOOKMARK [2][-]{subsection.5.4.1}{El recurs Persona \(Person\)}{section.5.4}% 66
+\BOOKMARK [2][-]{subsection.5.4.2}{El recurs G\350nere \(Gender\)}{section.5.4}% 67
+\BOOKMARK [2][-]{subsection.5.4.3}{Els recursos Nom, Forma del Nom i Part del Nom \(Name, NameForm, NamePart\)}{section.5.4}% 68
+\BOOKMARK [2][-]{subsection.5.4.4}{El recurs Esdeveniment \(Fact\)}{section.5.4}% 69
+\BOOKMARK [2][-]{subsection.5.4.5}{El recurs Data \(Date\)}{section.5.4}% 70
+\BOOKMARK [2][-]{subsection.5.4.6}{El recurs Refer\350ncia de localitzaci\363 \(PlaceReference\)}{section.5.4}% 71
+\BOOKMARK [2][-]{subsection.5.4.7}{El recurs Descripci\363 de Localitzaci\363 \(PlaceDescription\)}{section.5.4}% 72
+\BOOKMARK [2][-]{subsection.5.4.8}{El recurs Camps B\340sics \(DisplayProperties\)}{section.5.4}% 73
+\BOOKMARK [2][-]{subsection.5.4.9}{El recurs Vista de Fam\355lia \(FamilyView\)}{section.5.4}% 74
+\BOOKMARK [1][-]{section.5.5}{Recursos principals del bloc Relacions Familiars}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.5.1}{El recurs Relaci\363 \(Relationship\)}{section.5.5}% 76
+\BOOKMARK [2][-]{subsection.5.5.2}{El recurs Relaci\363 Pares i Fill \(ChildAndParentsRelationship\)}{section.5.5}% 77
+\BOOKMARK [1][-]{section.5.6}{Recursos principals del bloc Discussions}{chapter.5}% 78
+\BOOKMARK [2][-]{subsection.5.6.1}{El recurs Refer\350ncia a la Discussi\363 \(DiscussionsReference\)}{section.5.6}% 79
+\BOOKMARK [2][-]{subsection.5.6.2}{El recurs Discussi\363 \(Discussion\)}{section.5.6}% 80
+\BOOKMARK [2][-]{subsection.5.6.3}{El recurs Comentari \(Comment\)}{section.5.6}% 81
+\BOOKMARK [1][-]{section.5.7}{Recursos principals del bloc Mem\362ries}{chapter.5}% 82
+\BOOKMARK [2][-]{subsection.5.7.1}{El recurs Refer\350ncia a la Mem\362ria d'una Persona \(Person Memory Reference\)}{section.5.7}% 83
+\BOOKMARK [2][-]{subsection.5.7.2}{El recurs Persones en una Mem\362ria \(MemoryPersona\)}{section.5.7}% 84
+\BOOKMARK [2][-]{subsection.5.7.3}{El recurs Mem\362ria \(Memory\)}{section.5.7}% 85
+\BOOKMARK [1][-]{section.5.8}{Recursos principals del bloc Fonts de Dades}{chapter.5}% 86
+\BOOKMARK [2][-]{subsection.5.8.1}{El recurs Col\267lecci\363 \(Collection\)}{section.5.8}% 87
+\BOOKMARK [2][-]{subsection.5.8.2}{El recurs Contingut de la Col\267lecci\363 \(CollectionContent\)}{section.5.8}% 88
+\BOOKMARK [2][-]{subsection.5.8.3}{El recurs Atribuci\363 \(Attribution\)}{section.5.8}% 89
+\BOOKMARK [2][-]{subsection.5.8.4}{El recurs Font de Dades \(SourceDescription\)}{section.5.8}% 90
+\BOOKMARK [2][-]{subsection.5.8.5}{El recurs Refer\350ncia a la Font de Dades \(SourceReference\)}{section.5.8}% 91
+\BOOKMARK [1][-]{section.5.9}{Altres recursos interessants}{chapter.5}% 92
+\BOOKMARK [2][-]{subsection.5.9.1}{El recurs Subjecte \(Subject\)}{section.5.9}% 93
+\BOOKMARK [2][-]{subsection.5.9.2}{El recurs Conclusi\363 \(Conclusion\)}{section.5.9}% 94
+\BOOKMARK [2][-]{subsection.5.9.3}{El recurs Enlla\347os Hypermedia \(Hypermedia Enabled Data\)}{section.5.9}% 95
+\BOOKMARK [2][-]{subsection.5.9.4}{El recurs Enlla\347 \(Link\)}{section.5.9}% 96
+\BOOKMARK [2][-]{subsection.5.9.5}{El recurs Dades Extensibles \(Extensible Data\)}{section.5.9}% 97
+\BOOKMARK [2][-]{subsection.5.9.6}{El recurs Nota \(Note\)}{section.5.9}% 98
+\BOOKMARK [2][-]{subsection.5.9.7}{El recurs Refer\350ncia al Recurs \(ResourceReference\)}{section.5.9}% 99
+\BOOKMARK [2][-]{subsection.5.9.8}{El recurs Usuari \(User\)}{section.5.9}% 100
+\BOOKMARK [2][-]{subsection.5.9.9}{El recurs Canvi \(Change\)}{section.5.9}% 101
+\BOOKMARK [2][-]{subsection.5.9.10}{El recurs Agent \(Agent\)}{section.5.9}% 102
+\BOOKMARK [1][-]{section.5.10}{Camins d'acc\351s a l'arbre familiar i operacions de cerca}{chapter.5}% 103
+\BOOKMARK [2][-]{subsection.5.10.1}{L'acc\351s directe a les dades}{section.5.10}% 104
+\BOOKMARK [2][-]{subsection.5.10.2}{L'acc\351s indirecte a les dades}{section.5.10}% 105
+\BOOKMARK [2][-]{subsection.5.10.3}{Lectura de l'usuari identificat}{section.5.10}% 106
+\BOOKMARK [2][-]{subsection.5.10.4}{Lectura de la persona relacionada a l'usuari identificat}{section.5.10}% 107
+\BOOKMARK [2][-]{subsection.5.10.5}{Cerca de Persones a l'arbre familiar}{section.5.10}% 108
+\BOOKMARK [2][-]{subsection.5.10.6}{Cerca de localitzacions}{section.5.10}% 109
+\BOOKMARK [0][-]{chapter.6}{Valoraci\363 final sobre la potencialitat de l'API}{}% 110
+\BOOKMARK [1][-]{section.6.1}{Introducci\363}{chapter.6}% 111
+\BOOKMARK [1][-]{section.6.2}{Distribuci\363 geogr\340fica de les dades}{chapter.6}% 112
+\BOOKMARK [1][-]{section.6.3}{Dades contampor\340nies}{chapter.6}% 113
+\BOOKMARK [1][-]{section.6.4}{Recursos i funcionalitats}{chapter.6}% 114
+\BOOKMARK [1][-]{section.6.5}{Naturalesa de l'API}{chapter.6}% 115
+\BOOKMARK [1][-]{section.6.6}{Utilitzaci\363 de l'API en el marc d'un PFC}{chapter.6}% 116
+\BOOKMARK [1][-]{section.6.7}{Conclusi\363}{chapter.6}% 117
+\BOOKMARK [0][-]{chapter.7}{Llista de propostes de projecte}{}% 118
+\BOOKMARK [1][-]{section.7.1}{Introducci\363}{chapter.7}% 119
+\BOOKMARK [1][-]{section.7.2}{Comparaci\363 sobre la popularitat de noms}{chapter.7}% 120
+\BOOKMARK [1][-]{section.7.3}{Portal de cerca localitzat al Catal\340}{chapter.7}% 121
+\BOOKMARK [1][-]{section.7.4}{Geolocalitzaci\363 d'un cognom en diferents nivells}{chapter.7}% 122
+\BOOKMARK [1][-]{section.7.5}{La recerca geneal\362gica i l'her\340ldica}{chapter.7}% 123
+\BOOKMARK [1][-]{section.7.6}{Projectes d'indexaci\363}{chapter.7}% 124
+\BOOKMARK [1][-]{section.7.7}{La hist\362ria de l'esgl\351sia mormona a trav\351s de FamilySearch}{chapter.7}% 125
+\BOOKMARK [1][-]{section.7.8}{Diversitat geogr\340fica d'un cognom: Els nostres avantpassats}{chapter.7}% 126
+\BOOKMARK [1][-]{section.7.9}{Les col\267leccions de dades de FamilySearch}{chapter.7}% 127
+\BOOKMARK [1][-]{section.7.10}{FamilySearch i la segona guerra mundial: Natalitat i Defuncions}{chapter.7}% 128
+\BOOKMARK [1][-]{section.7.11}{FamilySearch i la segona guerra mundial: Increment en els casaments}{chapter.7}% 129
+\BOOKMARK [1][-]{section.7.12}{FamilySearch i la segona guerra mundial: La llista de Schindler}{chapter.7}% 130
+\BOOKMARK [1][-]{section.7.13}{La gran recessi\363 o altres esdeveniments hist\362rics}{chapter.7}% 131
+\BOOKMARK [1][-]{section.7.14}{Comparacions amb els amics o seguidors de Facebook i Twitter}{chapter.7}% 132
+\BOOKMARK [1][-]{section.7.15}{Comparaci\363 de dades geneal\362giques reals amb FamilySearch}{chapter.7}% 133
+\BOOKMARK [1][-]{section.7.16}{Estudi de profunditat dels arbres familiars}{chapter.7}% 134
+\BOOKMARK [1][-]{section.7.17}{Algoritme de marcatge de duplicats}{chapter.7}% 135
+\BOOKMARK [0][-]{chapter.8}{Estudi t\350cnic de l'aplicaci\363 web}{}% 136
+\BOOKMARK [1][-]{section.8.1}{Decisi\363 del tipus d'aplicaci\363 a implementar}{chapter.8}% 137
+\BOOKMARK [1][-]{section.8.2}{Tecnologies i patrons utilitzats per l'aplicaci\363 web}{chapter.8}% 138
+\BOOKMARK [2][-]{subsection.8.2.1}{El model: Model Vista Controlador}{section.8.2}% 139
+\BOOKMARK [2][-]{subsection.8.2.2}{Les tres capes del disseny web \(Front-end\)}{section.8.2}% 140
+\BOOKMARK [2][-]{subsection.8.2.3}{La tecnologia HTML 5}{section.8.2}% 141
+\BOOKMARK [2][-]{subsection.8.2.4}{La tecnologia CSS}{section.8.2}% 142
+\BOOKMARK [2][-]{subsection.8.2.5}{La tecnologia de plantilles Mustache}{section.8.2}% 143
+\BOOKMARK [2][-]{subsection.8.2.6}{Les tecnologies Javascript i jQuery}{section.8.2}% 144
+\BOOKMARK [2][-]{subsection.8.2.7}{La tecnologia Bootstrap}{section.8.2}% 145
+\BOOKMARK [2][-]{subsection.8.2.8}{El SDK Javascript oficial de FamilySearch}{section.8.2}% 146
+\BOOKMARK [2][-]{subsection.8.2.9}{La tecnologia Node.js}{section.8.2}% 147
+\BOOKMARK [2][-]{subsection.8.2.10}{La tecnologia Express o Express js}{section.8.2}% 148
+\BOOKMARK [2][-]{subsection.8.2.11}{Recapitulaci\363 de les tecnologies pel desenvolupament web}{section.8.2}% 149
+\BOOKMARK [1][-]{section.8.3}{Tecnologies espec\355fiques pel desenvolupament de l'aplicaci\363}{chapter.8}% 150
+\BOOKMARK [2][-]{subsection.8.3.1}{La tecnologia GitHub}{section.8.3}% 151
+\BOOKMARK [2][-]{subsection.8.3.2}{Node.js i Express en l'\340mbit local}{section.8.3}% 152
+\BOOKMARK [2][-]{subsection.8.3.3}{Tecnologia NPM}{section.8.3}% 153
+\BOOKMARK [2][-]{subsection.8.3.4}{Paquet Nodemon}{section.8.3}% 154
+\BOOKMARK [0][-]{chapter.9}{Javascript SDK Oficial de FamilySearch}{}% 155
+\BOOKMARK [1][-]{section.9.1}{Introducci\363 al Javascript SDK}{chapter.9}% 156
+\BOOKMARK [1][-]{section.9.2}{Emmascarant les crides REST a l'API de FamilySearch}{chapter.9}% 157
+\BOOKMARK [1][-]{section.9.3}{Implementaci\363 basada en Promeses}{chapter.9}% 158
+\BOOKMARK [1][-]{section.9.4}{Implementaci\363 pensada per la programaci\363 orientada a objectes}{chapter.9}% 159
+\BOOKMARK [1][-]{section.9.5}{Model de dades quasi id\350ntic a FamilySearch}{chapter.9}% 160
+\BOOKMARK [1][-]{section.9.6}{Captura d'errors}{chapter.9}% 161
+\BOOKMARK [1][-]{section.9.7}{Intentar de nou peticions GET fallides}{chapter.9}% 162
+\BOOKMARK [1][-]{section.9.8}{Gesti\363 autom\340tica del Throttling}{chapter.9}% 163
+\BOOKMARK [1][-]{section.9.9}{Autentificaci\363 mitjan\347ant un pop-up}{chapter.9}% 164
+\BOOKMARK [1][-]{section.9.10}{Autentificaci\363 autom\340tica}{chapter.9}% 165
+\BOOKMARK [1][-]{section.9.11}{Emmagatzematge del Token en una cookie}{chapter.9}% 166
+\BOOKMARK [1][-]{section.9.12}{Disparador autom\340tic de la funci\363 d'expiraci\363}{chapter.9}% 167
+\BOOKMARK [1][-]{section.9.13}{Utilitzable des de diferents plataformes o capes}{chapter.9}% 168
+\BOOKMARK [1][-]{section.9.14}{Suport en el desenvolupament}{chapter.9}% 169
+\BOOKMARK [1][-]{section.9.15}{Conclusi\363 sobre el SDK}{chapter.9}% 170
+\BOOKMARK [0][-]{chapter.10}{Introducci\363 a l'aplicaci\363 web}{}% 171
+\BOOKMARK [1][-]{section.10.1}{Acc\351s a l'aplicaci\363 web i codi de l'aplicaci\363}{chapter.10}% 172
+\BOOKMARK [1][-]{section.10.2}{Requisits de l'aplicaci\363 web}{chapter.10}% 173
+\BOOKMARK [2][-]{subsection.10.2.1}{Requisits funcionals}{section.10.2}% 174
+\BOOKMARK [2][-]{subsection.10.2.2}{Requisits no funcionals}{section.10.2}% 175
+\BOOKMARK [1][-]{section.10.3}{Estructura de l'aplicaci\363 web}{chapter.10}% 176
+\BOOKMARK [2][-]{subsection.10.3.1}{Introducci\363 a l'estructura de l'aplicaci\363}{section.10.3}% 177
+\BOOKMARK [2][-]{subsection.10.3.2}{Home o p\340gina principal}{section.10.3}% 178
+\BOOKMARK [2][-]{subsection.10.3.3}{Rerefons}{section.10.3}% 179
+\BOOKMARK [2][-]{subsection.10.3.4}{Propostes de projecte}{section.10.3}% 180
+\BOOKMARK [2][-]{subsection.10.3.5}{Detalls espec\355fics d'una proposta de projecte}{section.10.3}% 181
+\BOOKMARK [2][-]{subsection.10.3.6}{Identificaci\363 amb FamilySearch}{section.10.3}% 182
+\BOOKMARK [2][-]{subsection.10.3.7}{Exemples implementats}{section.10.3}% 183
+\BOOKMARK [2][-]{subsection.10.3.8}{Funcionalitats de cerca, expansi\363 geogr\340fica d'un cognom i evoluci\363 d'esdeveniments}{section.10.3}% 184
+\BOOKMARK [1][-]{section.10.4}{Fitxers de l'aplicaci\363 web i la seva funcionalitat}{chapter.10}% 185
+\BOOKMARK [1][-]{section.10.5}{Funcionament general de l'aplicaci\363 web}{chapter.10}% 186
+\BOOKMARK [2][-]{subsection.10.5.1}{Creaci\363 del servidor}{section.10.5}% 187
+\BOOKMARK [2][-]{subsection.10.5.2}{Acc\351s a una p\340gina del domini web}{section.10.5}% 188
+\BOOKMARK [2][-]{subsection.10.5.3}{Interacci\363 amb l'API de FamilySearch}{section.10.5}% 189
+\BOOKMARK [2][-]{subsection.10.5.4}{Interacci\363 amb elements del HTML}{section.10.5}% 190
+\BOOKMARK [2][-]{subsection.10.5.5}{Conclusi\363}{section.10.5}% 191
+\BOOKMARK [1][-]{section.10.6}{Detalls espec\355fics de la implementaci\363}{chapter.10}% 192
+\BOOKMARK [2][-]{subsection.10.6.1}{Introducci\363 als detalls d'implementaci\363}{section.10.6}% 193
+\BOOKMARK [2][-]{subsection.10.6.2}{Estructura general d'una p\340gina HTML:MustacheI}{section.10.6}% 194
+\BOOKMARK [2][-]{subsection.10.6.3}{El fitxer header.html: Configuraci\363 de la p\340gina}{section.10.6}% 195
+\BOOKMARK [2][-]{subsection.10.6.4}{El fitxer navbar.html: La barra de navegaci\363 adaptativa}{section.10.6}% 196
+\BOOKMARK [2][-]{subsection.10.6.5}{El fitxer pageTitle.html: Mustache II}{section.10.6}% 197
+\BOOKMARK [2][-]{subsection.10.6.6}{El fitxer javascripts.html: C\340rrega dels controladors}{section.10.6}% 198
+\BOOKMARK [2][-]{subsection.10.6.7}{El fitxer index.html: El grid de Bootstrap I}{section.10.6}% 199
+\BOOKMARK [2][-]{subsection.10.6.8}{El fitxer background.html: El grid de Bootstrap II}{section.10.6}% 200
+\BOOKMARK [2][-]{subsection.10.6.9}{Els fitxers future-proposals.html i implemented-proposals.html: El grid de Bootstrap III i el component Thumbnail}{section.10.6}% 201
+\BOOKMARK [2][-]{subsection.10.6.10}{El fitxer package.json: Complements de l'aplicaci\363}{section.10.6}% 202
+\BOOKMARK [2][-]{subsection.10.6.11}{El fitxer app.js: Funcionament del servidor}{section.10.6}% 203
+\BOOKMARK [2][-]{subsection.10.6.12}{Configuraci\363 del motor d'impressi\363 i carpetes}{section.10.6}% 204
+\BOOKMARK [2][-]{subsection.10.6.13}{Configuraci\363 dels complements}{section.10.6}% 205
+\BOOKMARK [2][-]{subsection.10.6.14}{Funcions de redirecci\363}{section.10.6}% 206
+\BOOKMARK [2][-]{subsection.10.6.15}{Processament de peticions POST}{section.10.6}% 207
+\BOOKMARK [2][-]{subsection.10.6.16}{Validaci\363 d'identificaci\363}{section.10.6}% 208
+\BOOKMARK [2][-]{subsection.10.6.17}{Configuraci\363 del servidor}{section.10.6}% 209
+\BOOKMARK [2][-]{subsection.10.6.18}{El fitxer gaTagging.js: Enviant esdeveniments}{section.10.6}% 210
+\BOOKMARK [2][-]{subsection.10.6.19}{El fitxer style.css: Configurant elements i classes pr\362pies}{section.10.6}% 211
+\BOOKMARK [1][-]{section.10.7}{Certificant l'aplicaci\363 amb FamilySearch}{chapter.10}% 212
+\BOOKMARK [2][-]{subsection.10.7.1}{Certificat d'autentificaci\363}{section.10.7}% 213
+\BOOKMARK [2][-]{subsection.10.7.2}{Certificat de lectura}{section.10.7}% 214
+\BOOKMARK [2][-]{subsection.10.7.3}{Proc\351s de certificaci\363}{section.10.7}% 215
+\BOOKMARK [1][-]{section.10.8}{Google Analytics}{chapter.10}% 216
+\BOOKMARK [1][-]{section.10.9}{Optimitizaci\363 d'imatges}{chapter.10}% 217
+\BOOKMARK [1][-]{section.10.10}{Hosting de l'aplicaci\363}{chapter.10}% 218
+\BOOKMARK [2][-]{subsection.10.10.1}{F\340cil configuraci\363}{section.10.10}% 219
+\BOOKMARK [2][-]{subsection.10.10.2}{F\340cil desplegament al n\372vol}{section.10.10}% 220
+\BOOKMARK [2][-]{subsection.10.10.3}{Entorn de proves local}{section.10.10}% 221
+\BOOKMARK [2][-]{subsection.10.10.4}{Decent versi\363 gratuita}{section.10.10}% 222
+\BOOKMARK [2][-]{subsection.10.10.5}{F\340cil escalatge de l'aplicaci\363}{section.10.10}% 223
+\BOOKMARK [0][-]{chapter.11}{Funcionalitats d'exemple amb FamilySearch}{}% 224
+\BOOKMARK [1][-]{section.11.1}{Introducci\363 a les funcionalitats implementades}{chapter.11}% 225
+\BOOKMARK [1][-]{section.11.2}{Identificaci\363 i desconnexi\363 a l'API de FamilySearch}{chapter.11}% 226
+\BOOKMARK [2][-]{subsection.11.2.1}{Descripci\363 de les funcionalitats}{section.11.2}% 227
+\BOOKMARK [2][-]{subsection.11.2.2}{Detalls d'implementaci\363}{section.11.2}% 228
+\BOOKMARK [2][-]{subsection.11.2.3}{Aspectes d'usabilitat considerats}{section.11.2}% 229
+\BOOKMARK [1][-]{section.11.3}{Cerca de persones a l'arbre familiar}{chapter.11}% 230
+\BOOKMARK [2][-]{subsection.11.3.1}{Descripci\363 de la funcionalitat}{section.11.3}% 231
+\BOOKMARK [2][-]{subsection.11.3.2}{Recomenacions d'utilitzaci\363}{section.11.3}% 232
+\BOOKMARK [2][-]{subsection.11.3.3}{Detalls d'implementaci\363}{section.11.3}% 233
+\BOOKMARK [2][-]{subsection.11.3.4}{Aspectes d'usabilitat considerats}{section.11.3}% 234
+\BOOKMARK [2][-]{subsection.11.3.5}{Principal inter\351s d'\372s}{section.11.3}% 235
+\BOOKMARK [1][-]{section.11.4}{Evoluci\363 geogr\340fica d'un cognom}{chapter.11}% 236
+\BOOKMARK [2][-]{subsection.11.4.1}{Descripci\363 de la funcionalitat}{section.11.4}% 237
+\BOOKMARK [2][-]{subsection.11.4.2}{Recomanacions d'utilitzaci\363}{section.11.4}% 238
+\BOOKMARK [2][-]{subsection.11.4.3}{Detalls d'implementaci\363}{section.11.4}% 239
+\BOOKMARK [2][-]{subsection.11.4.4}{Aspectes d'usabilitat considerats}{section.11.4}% 240
+\BOOKMARK [2][-]{subsection.11.4.5}{Principal inter\351s d'\372s}{section.11.4}% 241
+\BOOKMARK [1][-]{section.11.5}{Evoluci\363 temporal d'esdeveniments}{chapter.11}% 242
+\BOOKMARK [2][-]{subsection.11.5.1}{Descripci\363 de la funcionalitat}{section.11.5}% 243
+\BOOKMARK [2][-]{subsection.11.5.2}{Recomanacions d'utilitzaci\363}{section.11.5}% 244
+\BOOKMARK [2][-]{subsection.11.5.3}{Detalls d'implementaci\363}{section.11.5}% 245
+\BOOKMARK [2][-]{subsection.11.5.4}{Aspectes d'usabilitat considerats}{section.11.5}% 246
+\BOOKMARK [2][-]{subsection.11.5.5}{Principal inter\351s d'\372s}{section.11.5}% 247

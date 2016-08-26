@@ -1,0 +1,119 @@
+\documentclass[11pt,twoside,a4paper]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym,toc,xindy]{glossaries}
+\usepackage[style=numeric,backend=biber]{biblatex}
+\addbibresource{./mybib.bib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+    \geometry{
+     a4paper,
+     total={140mm,217mm},
+     left=35mm,
+     top=40mm,
+     }
+\usepackage{enumitem}
+\setlist{itemsep=1pt, topsep=1pt}
+\setlength{\parskip}{0.5em}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{todonotes}
+\usepackage{emptypage}
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage{longtable, array, booktabs}
+\usepackage{csvsimple}
+
+% configure glossary and acronyms
+\loadglsentries{glossary.tex}
+\loadglsentries{acronyms.tex}
+\makeglossaries{}
+
+% dedication environment
+\newenvironment{dedication}
+  {\cleardoublepage{}    % we want a new page
+   \thispagestyle{empty} % no header and footer
+   \vspace*{\stretch{1}} % some space at the top
+   \raggedleft{}         % flush to the right margin
+  }
+  {\par % end the paragraph
+   \vspace{\stretch{3}}  % space at bottom is three times that at the top
+  }
+
+% overall configurations
+\singlespacing{}
+\graphicspath{ {images/} }
+\newcommand{\porras}[1]{\todo[backgroundcolor=blue!25,inline]{#1}}
+\newcommand*{\headentry}[2]{\multicolumn{1}{#1}{\raggedright\arraybackslash\bfseries #2}}
+\renewcommand{\contentsname}{Continguts}
+\renewcommand{\chaptername}{Secció}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Taula}
+\renewcommand{\lstlistingname}{Codi}
+
+%languages
+\lstdefinestyle{rawOwn}
+{
+    morecomment=[s]{/*}{*/},
+    morecomment=[s]{<!--}{-->},
+    morecomment=[l]//,
+    morestring=[b]',
+    morestring=[b]",
+    morestring=[b]'',
+    morestring=[b]`
+}
+
+\lstdefinestyle{jQuery}
+{
+    morecomment=[s]{/*}{*/},
+    morecomment=[l]//,
+    morestring=[b]'',
+    morestring=[b]',
+    morestring=[b]`
+}
+
+% lstset
+\lstset{
+    %literate={\$}{{\textcolor{blue}{\$}}}1
+    basicstyle={\footnotesize\ttfamily},
+    extendedchars=true,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=2,
+    breaklines=true,
+    frame=single
+}
+
+\begin{document}
+    % show everything on biblio
+    \nocite{*}
+
+    % LOAD FIRST PAGE & DEDICATION
+    \input{./sections/00/01_titlePage}
+    \input{./sections/00/02_dedication}
+
+    % table of contents
+    \tableofcontents{}
+
+    % MAIN MEMORY PART
+    \input{./sections/01/_introduction}
+    \input{./sections/02/_genealogy}
+    \input{./sections/03/_fsOrganization}
+    \input{./sections/04/_introAPI}
+    \input{./sections/05/_deepDiveAPI}
+    \input{./sections/06/_potential}
+    \input{./sections/07/_proposals}
+    \input{./sections/08/_technologies}
+    \input{./sections/09/_sdk}
+    \input{./sections/10/_webApp}
+    \input{./sections/11/_functionalities}
+
+    % ending memory sections
+    %\clearpage
+	%\printglossaries{}
+
+    % PRINT BIBLIOGRAPHY
+    \printbibliography[title=Bibliografia]
+
+\end{document}

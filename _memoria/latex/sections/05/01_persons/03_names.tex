@@ -1,0 +1,111 @@
+\subsection{Els recursos Nom, Forma del Nom i Part del Nom (Name, NameForm, NamePart)}
+
+    \paragraph{}
+    Aquest conjunt de recursos s'utilitza per representar la informació relativa als noms d'una persona.  Contenen informació sobre si un nom és el preferit de cara a ser utilitzat com a nom principal, en quin moment la persona va adoptar aquest nom i diferents formes de representació.
+
+    Resulta útil poder accedir a diferents noms d'una mateixa persona, per poder així alternar, per exemple, entre el seu mot i el nom en el moment de naixement o defunció.
+
+    El recurs Nom està format pels paràmetres mostrats a la taula~\ref{res:name} i hereta també els paràmetres dels recursos Conclusió, Enllaços Hypermedia i Dades Extensibles que poden ser trobats a la secció `Altres recursos interessants'.
+
+    Per altre banda, els recursos Forma del Nom i Part del Nom, contenen els paràmetres mostrats a les taules~\ref{res:nameForm} i~\ref{res:namePart} respectivament i hereten els paràmetres del recurs Dades Extensibles descrit en l'apartat `Altres recursos interessants'.
+
+    \begin{center}
+             \csvreader[
+                separator=comma,
+                before table=\sffamily\small,
+                longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                table head={\caption{Paràmetres del recurs Nom}\label{res:name}\\\toprule%
+                    \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                    & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                    & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                late after line=\\\midrule,
+                late after last line=\\\bottomrule,
+             ]
+             {./tables/05/01_persons/name.csv}
+             {param=\param,format=\format,desc=\desc}
+             {\param&\format&\desc}
+     \end{center}
+
+
+     \subsubsection{L'enumeració nameType}
+
+     \paragraph{}
+     L'enumeració nameType segueix l'estructura de definició GEDCOMX. Com a tal, els valors possibles per l'enumeració segueixen la pauta:\\\verb|http://gedcomx.org/ + `nameType'|
+
+     La següent taula mostra els possibles valors de l'enumeració nameType.
+
+     \begin{center}
+         \csvreader[
+            no head,
+            separator=comma,
+            table head={\caption{Valors possibles per l'enumeració nameType}\label{enum:nameType}},
+            before table=\sffamily\small,
+            longtable={|p{3cm}|p{3cm}|p{3cm}|p{3cm}|},
+            column count=4,
+            late after head=\\\hline,
+            late after line=\\\hline,
+            late after last line=\\\hline,
+         ]
+         {./tables/05/01_persons/nameType.csv}
+         {1=\one,2=\two,3=\three,4=\four}
+         {\one&\two&\three&\four}
+     \end{center}
+
+     \begin{center}
+              \csvreader[
+                 separator=comma,
+                 before table=\sffamily\small,
+                 longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                 table head={\caption{Paràmetres del recurs Forma del Nom}\label{res:nameForm}\\\toprule%
+                     \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                     & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                     & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                 late after line=\\\midrule,
+                 late after last line=\\\bottomrule,
+              ]
+              {./tables/05/01_persons/nameForm.csv}
+              {param=\param,format=\format,desc=\desc}
+              {\param&\format&\desc}
+      \end{center}
+
+      \begin{center}
+               \csvreader[
+                  separator=comma,
+                  before table=\sffamily\small,
+                  longtable={p{2cm-2\tabcolsep}p{3.5cm-2\tabcolsep}p{8.5cm-2\tabcolsep}},
+                  table head={\caption{Paràmetres del recurs Part del Nom}\label{res:namePart}\\\toprule%
+                      \headentry{m{2cm-2\tabcolsep}}{Paràmetre}
+                      & \headentry{m{3.4cm-2\tabcolsep}}{Format de Dades}
+                      & \headentry{m{8.5cm-2\tabcolsep}}{Descripció}\\\midrule},
+                  late after line=\\\midrule,
+                  late after last line=\\\bottomrule,
+               ]
+               {./tables/05/01_persons/namePart.csv}
+               {param=\param,format=\format,desc=\desc}
+               {\param&\format&\desc}
+       \end{center}
+
+
+       \subsubsection{L'enumeració namePartType}
+
+       \paragraph{}
+       L'enumeració namePartType segueix l'estructura de definició GEDCOMX. Com a tal, els valors possibles per l'enumeració segueixen la pauta:\\\verb|http://gedcomx.org/ + `namePartType'|
+
+       La següent taula mostra els possibles valors de l'enumeració namePartType.
+
+       \begin{center}
+           \csvreader[
+              no head,
+              separator=comma,
+              table head={\caption{Valors possibles per l'enumeració namePartType}\label{enum:namePartType}},
+              before table=\sffamily\small,
+              longtable={|p{3cm}|p{3cm}|p{3cm}|p{3cm}|},
+              column count=4,
+              late after head=\\\hline,
+              late after line=\\\hline,
+              late after last line=\\\hline,
+           ]
+           {./tables/05/01_persons/namePartType.csv}
+           {1=\one,2=\two,3=\three,4=\four}
+           {\one&\two&\three&\four}
+       \end{center}

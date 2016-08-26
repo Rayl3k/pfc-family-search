@@ -1,0 +1,170 @@
+\subsection{El fitxer app.js: Funcionament del servidor}
+
+    \paragraph{}
+    El fitxer, \emph{app.json}, s'encarrega de configurar el servidor i gestionar les peticions HTTP, HTTPS i AJAX provinents del client. És un dels fitxers principals de l'aplicació i probablement un dels més interessants.
+
+    El fitxer es divideix en diferents seccions:
+
+    \begin{itemize}
+        \item Creació de variables
+        \item Configuració del motor d'impressió i carpetes
+        \item Configuració dels complements
+        \item Funcions de redirecció
+        \item Processament de peticions \emph{POST}
+        \item Validació d'identificació
+        \item Configuració del servidor
+    \end{itemize}
+
+
+    \subsubsection{Creació de variables}
+
+    \paragraph{}
+    En aquesta secció es declarà la utilització dels diferents complements i la creació de l'aplicació mitjançant el framework Express.
+
+    També es creen instàncies dels objectes amb funcions de conveniència emmascarats en els fitxers \emph{projectProposals.js}, \emph{pageTitles.js} i \emph{countryParameters.js}.
+
+    \begin{lstlisting}[style=rawOwn,caption={Declaració de variables en el servidor}]
+var express = require(`express'),
+    app = express(),
+    path = require(`path'),
+    mustacheExpress = require(`mustache-express'),
+    cookieSession = require(`cookie-session'),
+    bodyParser = require(`body-parser');
+
+var projectProposals = require(`./assets/js/projectProposals.js');
+var projectProposalsIns = new projectProposals();
+
+var pageTitles = require(`./assets/js/pageTitles.js');
+var pageTitlesIns = new pageTitles();
+
+var countryParameters = require(`./assets/js/countryParameters.js');
+var countryParametersIns = new countryParameters();
+    \end{lstlisting}
+
+
+    \subsection{Configuració del motor d'impressió i carpetes}
+
+    \paragraph{}
+    Aquest punt esdevé important, ja que indica a l'aplicació quina mena de fitxers ha de renderitzar. En el nostre cas, calia indicar a l'aplicació que els fitxers a pintar en el client eren del format HTML i que s'utilitzava el motor de plantilles Mustache com a complement.
+
+    \begin{lstlisting}[style=rawOwn,caption={Declaració del motor d'impressió}]
+app.set(`views', path.join(__dirname, `views'));
+app.use(`/assets', express.static(path.join(__dirname, `assets')));
+    \end{lstlisting}
+
+    \paragraph{}
+    De cara a què el servidor sigui capaç de resoldre on es troben localitzats, els diferents recursos o fitxers, cal també indicar-ne la ruta de forma relativa al servidor. Així doncs, s'emmascaren les carpetes \emph{views}, \emph{assets}, \emph{node\_modules} i \emph{images} de l'aplicació, de la següent forma.
+
+    \begin{lstlisting}[style=rawOwn,caption={Configuració de les rutes a les carpetes amb fitxers}]
+app.set(`views', path.join(__dirname, `views'));
+app.use(`/assets', express.static(path.join(__dirname, `assets')));
+app.use(`/node_modules', express.static(path.join(__dirname, `node_modules')));
+app.use(`/images', express.static(path.join(__dirname, `images')));
+    \end{lstlisting}
+
+
+    \subsection{Configuració dels complements}
+
+    \paragraph{}
+    En aquest apartat es configuren dos complements. L'encarregat de gestionar les galetes (\emph{cookie-session}) i l'encarregat d'interpretar els paràmetres enviats al servidor des del client (\emph{body-parser}).
+
+    El complement \emph{cookie-session} no cal configurar-lo gaire, ja que els paràmetres per defecte ja marquen les galetes a crear com a segures (transmesa si és possible a través de https) i httpOnly (no modificable pel client). Per tant, només hem d'indicar-ne el nom i un parell de claus amb les quals vulguem firmar i xifrar el contingut d'aquestes.
+
+    \begin{lstlisting}[style=rawOwn,caption={Configuració del complement \emph{cookie-session}}]
+app.use(cookieSession({
+    name: `session',
+    keys: [`misaholdrin', `tommarvoloriddle']
+}));
+    \end{lstlisting}
+
+    Per altra banda, el complement \emph{bodyParser}, es preparat per rebre paràmetres de l'URL i descodificar paràmetres JSON.
+
+    \begin{lstlisting}[style=rawOwn,caption={Configuració del complement \emph{bodyParser}}]
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+    \end{lstlisting}
+
+
+    \subsection{Funcions de redirecció}
+
+    \paragraph{}
+    Aquesta secció del fitxer s'encarrega de decidir i configurar els fitxers HTML, que han de ser retornats, segons les peticions realitzades pels usuaris al servidor.
+
+    La resposta a totes les peticions GET dels clients són solucionades de forma similar. Primer es capturen, després es recullen tots els paràmetres necessaris per emplenar els paràmetres amb Mustache i s'envia el HTML processat cap al client.
+
+    \begin{lstlisting}[style=rawOwn,caption={Respota del servidor davant la petició del recurs `/'}]
+app.get(`/', function(req, res){
+    var params = pageTitlesIns.getTitle(`index');
+    res.render(`index.html', {
+        backgroundImage: params[0],
+        highlight: params[1],
+        title: params[2],
+        titleMobile: params[3],
+        subtitleDesktop: params[4],
+        subtitleTablet: params[5],
+        button: params[6],
+        buttonHref: `'
+    });
+});
+    \end{lstlisting}
+
+    El codi anterior representa la resposta a la petició d'accés a la pàgina inicial de l'aplicació (/).
+
+    Un cop es captura la petició GET, denotada per l'URL `/',  es demana a l'objecte Javascript \emph{pageTitlesIns}, carregat a l'inici del servidor, els paràmetres a utilitzar per pintar el fitxer \emph{pageTitle.html}. Un cop rebuts aquests paràmetres, es processa el fitxer, \emph{index.html}, amb els paràmetres desitjats i s'envia al client.
+
+    Altres peticions GET més complexes, com per exemple, la de pintar els detalls d'una proposta de projecte específica, funcionen de forma similar però carregant més paràmetres a part dels de l'objecte \emph{pageTitleIns}. Aquest cas, conté una excepcionalitat més i és que es captura part de l'URL, tal com s'indica en el següent bloc de codi, per utilitzar-la com a paràmetre.
+
+    \begin{lstlisting}[style=rawOwn,caption={Exemple d'utilització com a paràmetre, d'una part de l'URL}]
+app.get(`/proposals/:project', function(req, res) {
+    var params = pageTitlesIns.getTitle(`index');
+    var proposal = projectProposalsIns.getExample(req.params.project);
+});
+    \end{lstlisting}
+
+
+    \subsection{Processament de peticions POST}
+
+    \paragraph{}
+    Les dues úniques peticions POST que l'aplicació està preparada per acceptar i respondre, són les crides AJAX que serveixen per indicar al servidor que l'usuari s'ha identificat o desconnectat de l'API de FamilySearch.
+
+    Quan es rep una d'aquestes peticions, s'actualitza la galeta de sessió amb el token retornat per l'API de FamilySearch o se n'esborra el contingut, segons la petició tractada. Un cop processada la informació, s'envia un paràmetre \emph{redirect} cap al navegador, que indica a la capa del controlador, a quina pàgina s'ha de redirigir a l'usuari.
+
+    És mostra a continuació, com a exemple, el processament de la petició POST d'identificació.
+
+    \begin{lstlisting}[style=rawOwn,caption={Resposta a la petició AJAX d'identificació}]
+app.post(`/token/login', function(req, res) {
+    req.session.logged = req.session.logged || req.body.token;
+    res.end(`{`redirect' : `/examples'}');
+});
+    \end{lstlisting}
+
+
+    \subsection{Validació d'identificació}
+
+    \paragraph{}
+    La validació d'identificació és una funció que s'utilitza per comprovar si un usuari disposa dels permisos suficients per visitar les pàgines d'exemples implementats.
+
+    Quan el servidor rep la petició de mostrar la pàgina d'exemples o un exemple en concret, realitza una crida a aquesta funció, que resoldrà si la petició ha de ser processada o no. Aquesta funció (\emph{isAuthenticated}), s'insereix com a \emph{middleware} a la capçalera de la petició de la forma seguent:
+
+    \begin{lstlisting}[style=rawOwn,caption={Inserció de \emph{middleware} en una petició del client}]
+app.get(`/examples', isAuthenticated, function(req, res) { ... });
+    \end{lstlisting}
+
+    La funció, \emph{isAuthenticated}, comprova si la galeta \emph{session} està configurada o no. En cas afirmatiu, es processa la petició inicial de l'usuari i en cas contrari, es mostra la pàgina d'identificació.
+
+    \begin{lstlisting}[style=rawOwn,caption={Comprovació de la galeta \emph{session}}]
+function isAuthenticated(req, res, next) {
+    if(req.session.isPopulated) next();
+    else res.redirect('/login');
+}
+    \end{lstlisting}
+
+
+    \subsection{Configuració del servidor}
+
+    \paragraph{}
+    La part de configuració del servidor consisteix, principalment, a indicar quin port ha de ser escoltat. La línia de codi utilitzada, permet alternar entre un valor per defecte o l'especificat en els paràmetres de configuració de l'entorn que desplegui el servidor.
+
+    \begin{lstlisting}[style=rawOwn,caption={Configuració del servidor}]
+var server = app.listen(process.env.PORT || 8080, process.env.IP, function () { ... });
+    \end{lstlisting}

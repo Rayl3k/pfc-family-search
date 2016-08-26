@@ -1,0 +1,28 @@
+\subsection{Estructura general d'una pàgina HTML:\@Mustache\@I}
+
+    \paragraph{}
+    A excepció de la pàgina d'identificació amb FamilySearch, la resta de pàgines de l'aplicació web segueixen la mateixa estructura, tal com s'ha exposat en l'apartat Estructura de l'aplicació web.
+
+    Per evitar la duplicació de codi entre les diferents pàgines, els elements compartits han estat creats en fitxers separats i són carregats a cada pàgina segons si volem mostrar-los o no. Recordem que la tecnologia utilitzada, que fa això possible, és el llenguatge de plantilles Mustache.
+
+    L'esquelet del codi d'una pàgina qualsevol del nostre web segueix la forma mostrada en el bloc de codi que segueix.
+
+    \begin{lstlisting}[style=rawOwn,caption={Exemple d'inclusió de fitxers HTML amb Mustache}]
+<!-- header includes -->
+{{> header }}
+{{> navbar }}
+{{> pageTitle }}
+<!-- specific page content -->
+...
+{{> javascripts }}
+<!-- specific javascripts for this file -->
+...
+<!-- footer -->
+{{> footer }}
+    \end{lstlisting}
+
+    Les etiquetes \emph{\{\{> fileName\}\}}, s'utilitzen per indicar que es vol importar, en aquesta posició, el codi HTML del fitxer \emph{fileName.html}.
+
+    Mitjançant aquesta estructura tenim el control absolut de quins components volem incloure a cada una de les pàgines. Per exemple, l'esquelet de la pàgina d'identificació, es diferencia de la resta en el fet que no s'inclouen els fitxers \emph{navbar}, \emph{pageTitle} ni  \emph{footer}.
+
+    També cal destacar que abans del \emph{footer}, deixem un espai en blanc, per incloure fitxers Javascript que són utilitzats únicament per la pàgina carregada, d'aquesta forma s'evita carregar tots els controladors a totes les pàgines, si aquests no han de ser utilitzats.

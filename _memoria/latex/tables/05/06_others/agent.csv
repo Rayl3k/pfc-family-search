@@ -1,0 +1,9 @@
+param,format,desc
+accounts,[array of Online\-Account],Els diferents comptes d'usuari que formen part de l'organització. Només la d'un usuari si es tracta d'un individu particular.
+addresses,[array of Address],Les adreces postals que pertanyen a la persona o membres de l'organització.
+emails,[array of Resource\-Reference],Els correus electrònics que pertanyen a l'individu o col·lectiu.
+homepage,[ResourceReference],La pàgina principal de l'organització. (Fora de FamilySearch)
+identifiers,Identifier,Llista d'identificadors del recurs.
+names,TextValue,La llista dels noms pels quals es coneix a l'agent.
+openid,[ResourceReference],L'identificador públic de la persona o organització.
+phones,[ResourceReference],Els números de telèfon que pertanyen a l'individu o col·lectiu.

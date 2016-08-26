@@ -1,0 +1,4 @@
+param,format,desc
+text,string,Text del comentari.
+created,dateTime,Data i moment de creació del comentari.
+contributor,[Resource\-Reference],Referència al recurs de l'usuari que va enviar el comentari.

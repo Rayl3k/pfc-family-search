@@ -1,0 +1,25 @@
+\subsection{El recurs Usuari (User)}
+
+    \paragraph{}
+    El recurs Usuari conté tota la informació relacionada a l'usuari que es troba identificat amb l'aplicació FamilySearch.
+
+    Aquesta informació pot resultar d'interès pels frontals de les aplicacions en cas de desitjar realitzar alguna mena de personalització del contingut o inclòs realitzar temes d'analítica web. També pot ser utilitzada per accedir a l'arbre genealògic de l'usuari o al recurs de la seva persona a l'arbre familiar.
+
+     Aquest recurs, com molts altres que ja hem exposat, també hereta els paràmetres dels recursos Enllaços Hypermedia i Dades Extensibles, que poden trobar-se en aquest mateix apartat de la memòria i té, per paràmetres propis, els que es mostren a la taula~\ref{res:user}.
+
+     \begin{center}
+              \csvreader[
+                 separator=comma,
+                 before table=\sffamily\small,
+                 longtable={p{4cm-2\tabcolsep}p{2cm-2\tabcolsep}p{8cm-2\tabcolsep}},
+                 table head={\caption{Paràmetres del recurs Usuari}\label{res:user}\\\toprule%
+                     \headentry{m{4cm-2\tabcolsep}}{Paràmetre}
+                     & \headentry{m{2cm-2\tabcolsep}}{Format de Dades}
+                     & \headentry{m{8cm-2\tabcolsep}}{Descripció}\\\midrule},
+                 late after line=\\\midrule,
+                 late after last line=\\\bottomrule,
+              ]
+              {./tables/05/06_others/user.csv}
+              {param=\param,format=\format,desc=\desc}
+              {\param&\format&\desc}
+      \end{center}

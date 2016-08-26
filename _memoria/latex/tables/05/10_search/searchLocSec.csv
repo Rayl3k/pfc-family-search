@@ -1,0 +1,10 @@
+param,desc
+name,El nom de la localització a cercar. Aquest paràmetre és subjecte a interpretació per part del sistema i ordena els resultats segons criteri propi. Permet la utilització dels caràcters `?' i `*' de les expressions regulars\, però no en primera posició. En cas de voler utilitzar els caràcters\, cal escapar-los.
+partialName,El nom parcial d'una localització. Aquest paràmetre s'utilitza per cercar la part parcial introduïda en el conjunt de localitzacions. Generalment\, s'utilitza en els casos en què es coneix el tipus de localització que es vol cercar. En cas de ser introduït\, el paràmetre\, nom\, és ignorat.
+date,La data o rang de dates. Suporta els operadors `+' i `-' al principi de la data o interval\, per incloure només resultats que es trobin per davant o darrere\, de l’any indicat.
+typeId,L’identificador d'una localització. Permet utilitzar els operadors `+' i `-'\, per obtenir només resultats que incloguin o excloguin els resultats de l’identificador especificat.
+typeGroupId,El tipus de localització. Per exemple\, país\, ciutat\, etcètera. Permet l'ús dels operadors `+' i `-'\, per incloure o excloure les localitzacions que compleixin els requisits de cerca.
+parentId,Paràmetre per indicar\, si es coneix\, la jurisdicció del pare de la localització. Permet l'ús dels caràcters `+' i `-'\,  per modificar el set de resultats retornat.
+latitude,La latitud del centroide que es vol cercar.
+longitude,La longitud del centroide que es vol cercar.
+distance,La distància màxima al centroide a la que es vol cercar. Les unitats poden ser especificades en quilometres o milles.

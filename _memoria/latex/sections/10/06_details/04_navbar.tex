@@ -1,0 +1,33 @@
+\subsection{El fitxer navbar.html: La barra de navegació adaptativa}
+
+    \paragraph{}
+    Com el nom del fitxer indica, aquest s'encarrega de configurar la barra de navegació. Aquesta ha estat creada mitjançant la potencialitat d'un dels components de Bootstrap.
+
+    Consta principalment de dos blocs de codi HTML. El primer, s'utilitza per indicar la capçalera de la barra de navegació, que conté el botó per expandir-la en dispositius mòbils, la icona de l'aplicació que es mostra només en dispositius d'escriptori i el nom de l'aplicació web.
+
+    La capçalera adaptativa de Bootstrap, per la barra de navegació, s'invoca mitjançant la classe \emph{navbar-header}.
+
+    \begin{lstlisting}[style=rawOwn,caption={Capçalera de la barra de navegació}]
+<div class=`navbar-header'>
+    <button class=`navbar-toggle collapsed'>...</button>
+    <a href=`/'><img src=`/images/littleIco.png'/></a>
+    <a class=`navbar-brand navbar-link' href=`/'>FamilySearch-PFC</a>
+</div>
+    \end{lstlisting}
+
+    El segon bloc, s'encarrega de generar els enllaços a les diferents seccions de l'aplicació i configurar el botó dedicat al tancament de la connexió amb FamilySearch, si aquesta està oberta.
+
+    Cada enllaç és estilitzat i configurat mitjançant la classe \emph{navbar-link}. Per decidir si un enllaç ha d'aparèixer per l'esquerra o dreta de la barra de navegació, es mira la inclusió de la classe navbar-righ en el contenidor dels enllaços.
+
+    \begin{lstlisting}[style=rawOwn,caption={Enllaços de la barra de navegació}]
+<div class=`collapse navbar-collapse' id=`...'>
+	<ul class=`nav navbar-nav'>
+		<li><a class=`navbar-link' href=`/background'>Background</a></li>
+		<li><a class=`navbar-link' href=`/proposals'>Proposals</a></li>
+		<li><a class=`navbar-link' href=`/examples'>Examples</a></li>
+	</ul>
+	<ul class=`nav navbar-nav navbar-right'>
+		<li><a id=`signOut' class=`navbar-link' href>Sign Out</a>
+	</ul>
+</div>
+    \end{lstlisting}
