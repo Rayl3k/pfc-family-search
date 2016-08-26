@@ -36,6 +36,9 @@
 \newcommand*{\headentry}[2]{\multicolumn{1}{#1}{\raggedright\arraybackslash\bfseries #2}}
 \renewcommand{\contentsname}{Continguts}
 \renewcommand{\chaptername}{Secció}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Taula}
+\renewcommand{\lstlistingname}{Codi}
 
 %languages
 \lstdefinestyle{rawOwn}
@@ -75,6 +78,9 @@
     % show everything on biblio
     \nocite{*}
 
+    % LOAD FIRST PAGE
+    \input{./sections/00/01_titlePage}
+
     % table of contents
     \tableofcontents{}
 
@@ -96,6 +102,6 @@
 	%\printglossaries{}
 
     % print Bibliography
-    \printbibliography{}
+    \printbibliography[title=Bibliografia]
 
 \end{document}

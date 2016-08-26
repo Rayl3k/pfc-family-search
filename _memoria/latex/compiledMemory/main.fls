@@ -331,8 +331,16 @@ INPUT c:/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT c:/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT ./sections/00/01_titlePage.tex
+INPUT ./sections/00/01_titlePage.tex
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm2488.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecbx2488.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
+OUTPUT C:\Users\Sergi\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.xdy
+INPUT c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT C:\Users\Sergi\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.toc
 INPUT C:\Users\Sergi\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.toc
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
@@ -347,8 +355,6 @@ INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT C:\Users\Sergi\Documents\GitHub\pfc-family-search\_memoria\latex\compiledMemory/main.xdy
-INPUT c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecsl1095.tfm
 INPUT c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
@@ -359,8 +365,6 @@ INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm2074.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecbx2074.tfm
 INPUT ./sections/01/01_intro.tex
 INPUT ./sections/01/01_intro.tex
-INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
-INPUT c:/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT ./sections/01/02_motivations.tex
 INPUT ./sections/01/02_motivations.tex
 INPUT ./sections/01/03_objectives.tex
@@ -996,6 +1000,7 @@ INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
+INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb
@@ -1004,6 +1009,8 @@ INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
+INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
+INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb
 INPUT c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb

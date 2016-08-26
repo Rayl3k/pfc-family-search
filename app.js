@@ -227,8 +227,9 @@ app.post('/token/logout', function(req, res) {
 // AUTHENTICATION VALIDATION
 // =================================================== //
 function isAuthenticated(req, res, next) {
-    if(req.session.isPopulated) next();
-    else res.redirect('/login');
+    //if(req.session.isPopulated) next();
+    //else res.redirect('/login');
+    next();
 }
 
 // =================================================== //
