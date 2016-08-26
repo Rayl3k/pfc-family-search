@@ -1,5 +1,0 @@
-param,format,desc
-lang,string,El llenguatge utilitzat. Representat segons els codis internacionals.
-fullText,string,El nom en la seva forma completa.
-parts,[array of NamePart],Les diferents parts del nom.
-fields,[array of Field],Camps utilitats com evidència.

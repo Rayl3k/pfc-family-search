@@ -1,9 +1,0 @@
-param,format,desc
-object\-Modifier,[change\-Object\-Modifier],Un modificador opcional per l'objecte al qual afecta l'operació de canvi. Per exemple\, en cas que el canvi sigui sobre un Esdeveniment\, es podria utilitzar aquest paràmetre per indicar que era un esdeveniment sobre una relació de parella o parental.
-operation,[change\-Operation],L'operació que s'ha realitzat.
-reason,string,La raó del canvi.
-objecType,[change\-Objec\-Type],El tipus d'objecte sobre el qual s'aplica l'operació.
-original,[Resource\-Reference],El subjecte o recurs tal com es trobava just abans de realitzar el canvi.
-parent,[Resource\-Reference],El canvi del recurs pare\, que\, al efectuar-se\, ha causat la pèrdua o introducció d'aquest canvi.
-removed,[Resource\-Reference],El subjecte o recurs que representa els valors esborrats que existien abans del canvi.
-resulting,[Resource\-Reference],El subjecte o recurs tal com ha quedat després del canvi.

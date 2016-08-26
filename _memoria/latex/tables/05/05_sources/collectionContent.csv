@@ -1,4 +1,0 @@
-param,format,desc
-completeness,float,Percentatge de dades ja migrades a FamilySearch.
-count,int,El nombre total d'elements que poden ser extrets de la col·lecció\, relacionats amb el resourceType definit en el següent paràmetre.
-resourceType,string,El tipus de recurs sobre el qual la col·lecció aporta informació.

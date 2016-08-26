@@ -1,4 +1,0 @@
-param,format,desc
-resourceId,string,El ID de la Discussió a la qual es fa referència.
-resource,anyURI,Direcció URI del recurs al què és fa referència.
-attribution,[Attribution],Metadades de l'atribució per aquest recurs.

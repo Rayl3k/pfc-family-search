@@ -1,3 +1,0 @@
-param,format,desc
-type,[genderType],El gènere de la persona relacionada al recurs. Se'n descriuen els possibles valors a l'enumeració genderType.
-fields,[array of Field],Camps que s'utilitzen com evidència.

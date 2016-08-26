@@ -1,6 +1,0 @@
-param,format,desc
-contributor,[Resource\-Reference],Referència al recurs del contribuïdor.
-modified,dateTime,El moment en què la dada va ser modificar per últim cop.
-change\-Message,string,El missatge que descriu el canvi realitzat i introduït pel contribuïdor.
-creator,[Resource\-Reference],Referència al creador de les dades atribuïdes. Pot ser diferent al contribuïdor si les dades s'han vist modificades des de la seva creació.
-craeted,datetime,El moment en què van ser creades les dades a les quals es fa referència.

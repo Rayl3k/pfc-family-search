@@ -1,3 +1,0 @@
-param,format,desc
-resourceId,string,Identificador del recurs referenciat. Utilitzat com una extensió de l'atribut quan no es pot resoldre el recurs.
-resourceId,anyURI,La URI del recurs apuntat.

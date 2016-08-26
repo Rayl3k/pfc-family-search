@@ -1,4 +1,0 @@
-param,format,desc
-parent1,[Resource\-Reference],Referència al primer pare de la família. La posició del pare 1 no és indicadora del rol d'aquest en la relació.
-parent2,[Resource\-Reference],Referència al segon pare de la família. La posició del pare 2 no és indicadora del rol d'aquest en la relació.
-children,[array of Resource\-Referece],Referències als fills de la relació parental.
