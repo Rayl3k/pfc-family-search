@@ -1,6 +1,0 @@
-param,format,desc
-type,[relationship\-Type],Descriu el tipus de relació.
-person1,[Resource\-Reference],Referència al recurs de la primera persona que participa en la relació.
-person2,[Resource\-Reference],Referència al recurs de la segona persona que participa en la relació.
-facts,[array of Fact],Els fets relacionats amb la relació.
-fields,[array of Fields],Llista de camps utilitzats com evidència.

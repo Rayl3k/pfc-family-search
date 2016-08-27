@@ -1,4 +1,0 @@
-param,format,desc
-resourceId,string,El ID de la memòria relacionada a una persona  de l'arbre familiar.
-resource,anyURI,Direcció URI del recurs al qual es fa referència.
-attribution,[Attribution],Metadades de l'atribució per aquest recurs.

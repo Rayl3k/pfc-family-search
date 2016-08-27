@@ -1,8 +1,0 @@
-param,format,desc
-title,string,Títol o breu descripció del tòpic a discutir.
-details,string,Text detallat introduït per l'usuari per tal d'iniciar la discussió.
-created,dateTime,La data i moment en què la discussió va ser creada.
-contributor,[Resource\-Reference],Referència al recurs del contribuïdor que va crear la discussió.
-modified,dateTime,Data i moment en què l'últim comentari o canvi\, va ser introduït a la discussió.
-numberOf\-Comments,int,Nombre de comentaris associats a la discussió.
-comments,[array of Comment],Vector amb els diferents comentaris que conformen la discussió.

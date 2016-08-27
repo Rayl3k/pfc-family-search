@@ -1,3 +1,0 @@
-param,format,desc
-source\-Descriptions,[Source\-Description],Informació de la memòria. Tipus de document\, dimensions\, contribuïdor\, descripció\, etcètera.
-comments,[array of Comment],Vector de comentaris.

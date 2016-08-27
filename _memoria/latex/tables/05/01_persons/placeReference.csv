@@ -1,5 +1,0 @@
-param,format,desc
-description,[PlaceDescription],Descripció del lloc al què fa referència el recurs.
-original,string,El valor original tal com va ser introduït per l'usuari.
-normalized,[array of TextValue],La llista de valors normalitzats sobre la localització.
-fields,[array of Field],Els camps utilitzats com evidència.

@@ -1,2 +1,0 @@
-nom,desc,format,rest
-type,Valor que indica el gènere de la persona.,Enumeració,REQUERIT. El gènere ha de ser especificat i es recomana utilitzar un valor dels acceptats per l'enumeració és recomanat.

@@ -1,5 +1,0 @@
-param,format,desc
-extracted,boolean,Indica si aquesta persona o localització està marcada com `extreta'. S'utilitza aquesta denominació quan la informació d'una persona o localització prové de la mateixa font de dades.
-evidence,[array of Evidence\-Reference],Referències a les evidències relacionades al subjecte. Cada evidència conté un enllaç al recurs que emmagatzema la informació.
-media,[array of Source\-Reference],Referències als arxius multimèdia associats al subjecte. Representen les memòries relacionades a la persona.
-identifiers,[array of Identifier],Llista d'identificadors relacionats amb la persona o localització.

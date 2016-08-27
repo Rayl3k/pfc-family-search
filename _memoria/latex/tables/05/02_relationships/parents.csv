@@ -1,6 +1,0 @@
-param,format,desc
-father,[Resource\-Reference],Referència al recurs del pare.
-mother,[Resource\-Reference],Referència al recurs de la mare.
-child,[Resource\-Reference],Referència al recurs del fill.
-fatherFacts,[array of Fact],Els esdeveniments relacionats amb el pare.
-motherFacts,[array of Fact],Els esdeveniments relacionats amb la mare.

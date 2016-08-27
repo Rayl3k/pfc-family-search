@@ -1,5 +1,0 @@
-param,format,desc
-description,string,Descripció de la font de dades referenciada.
-descriptionId,string,Identificador de la font de dades.
-attribution,[Attribution],Les metadades d'atribució per la font de dades.
-qualifiers,[array of Qualifier],Els qualificadors associats a aquesta part del nom. No tenen per què ser valors numèrics. En aquests casos\, poden ser considerats més aviat com a etiquetes.
