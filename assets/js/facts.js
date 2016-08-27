@@ -157,6 +157,7 @@ $( document ).ready(function() {
             $('#search-fact-place').text(" " + place + " ");
             $('#search-fact-year').text(" " + centralYear + " ");
             $('#linechart-title').text(" " + factSelected.toLowerCase() + " ");
+            $('#search-title-2').text('....');
 
             // Progress bar functions
             $("#progress-value").css('width', '0%');

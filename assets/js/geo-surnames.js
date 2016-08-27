@@ -492,13 +492,16 @@ $( document ).ready(function() {
             $("#submit-search").toggleClass('detached-bottom', false);
         }
 
+        console.log(fromTop + " " + graphs)
+
         // controls detach
         if(fromTop >= graphs-80) {
-            $("#controls-block").addClass('detached-top', true);
+            if($("#controls-block").hasClass('detached-top')) {}
+            $("#controls-block").toggleClass('detached-top', true);
             $('#graphs').css('margin-top', '109px');
         }
         else {
-            $("#controls-block").removeClass('detached-top', false);
+            $("#controls-block").toggleClass('detached-top', false);
             $('#graphs').css('margin-top', '0px');
         }
     });
