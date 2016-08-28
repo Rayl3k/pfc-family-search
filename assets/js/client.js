@@ -14,6 +14,19 @@ if(localStorage.token) {
     $('#signOut').css('display', 'block');
     $('#signOut').fadeIn('fast');
 }
+else {
+    // Kill server session
+    $.ajax({
+        type: "POST",
+        url: "/token/logout",
+        dataType: 'json',
+        contentType: 'application/json; charset=UTF-8',
+        success: function(data) {
+            // Send Event + redirect
+            sendEvent('', 'session', 'logout_noToken');
+        }
+    });
+}
 
 // Make log-in call
 function serverLogIn(apiToken) {
