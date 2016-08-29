@@ -82,7 +82,7 @@ var client = new FamilySearch({
             }
         });
     },
-    environment: 'sandbox'
+    environment: 'production'
 });
 
 // Function to logOut
