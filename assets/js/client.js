@@ -21,10 +21,6 @@ else {
         url: "/token/logout",
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
-        success: function(data) {
-            // Send Event + redirect
-            sendEvent('', 'session', 'logout_noToken');
-        }
     });
 }
 
@@ -47,8 +43,8 @@ function serverLogIn(apiToken) {
 // Function to log-out from everywhere
 function serverLogOut() {
     // Delete all local instances of the session
-    client.invalidateAccessToken();
     localStorage.removeItem('token');
+    client.invalidateAccessToken();
 
     // Kill server session
     $.ajax({
@@ -59,7 +55,7 @@ function serverLogOut() {
         success: function(data) {
             // Send Event + redirect
             sendEvent('', 'session', 'logout');
-            window.location.replace(document.location.protocol + '//' + document.location.host + data.redirect);
+            window.location.href = document.location.protocol + '//' + document.location.host + data.redirect;
         }
     });
 }
@@ -72,6 +68,7 @@ var client = new FamilySearch({
     access_token: token,
     auto_expire: true,
     auto_signin: true,
+    maxHttpRequestRetries: 2,
     expire_callback: function(data) {
         localStorage.removeItem('token');
         // Kill server session
@@ -81,7 +78,7 @@ var client = new FamilySearch({
             dataType: 'json',
             contentType: 'application/json; charset=UTF-8',
             success: function(data) {
-                window.location.replace(document.location.protocol + '//' + document.location.host + data.redirect);
+                window.location.href = document.location.protocol + '//' + document.location.host + data.redirect;
             }
         });
     },

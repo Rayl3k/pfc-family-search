@@ -214,13 +214,13 @@ app.get('/examples/search', isAuthenticated, function(req, res) {
 // Set req.session
 app.post('/token/login', function(req, res) {
     req.session.logged = req.session.logged || req.body.token;
-    res.end('{"redirect" : "/examples"}');
+    res.send({redirect : '/examples'});
 });
 
 // Delete req.session
 app.post('/token/logout', function(req, res) {
-    req.session = null;
-    res.end('{"redirect" : "/"}');
+    if(req.session.isPopulated) req.session = null;
+    res.send({redirect : '/'});
 });
 
 // =================================================== //

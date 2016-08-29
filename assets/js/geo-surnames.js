@@ -491,9 +491,7 @@ $( document ).ready(function() {
         else {
             $("#submit-search").toggleClass('detached-bottom', false);
         }
-
-        console.log(fromTop + " " + graphs)
-
+        
         // controls detach
         if(fromTop >= graphs-80) {
             if($("#controls-block").hasClass('detached-top')) {}
