@@ -24,8 +24,8 @@ $( document ).ready(function() {
 
     // START: Sign-in-back
     $('#sign-in-back').click(function() {
-        //if(document.referrer) history.back();
-        //else*/ window.location.replace(document.location.protocol + '//' + document.location.host + '/');
+        if(document.referrer) history.back();
+        else window.location.href = document.location.protocol + '//' + document.location.host + '/';
     });
 
     // START: sign-in button

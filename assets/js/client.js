@@ -78,7 +78,7 @@ var client = new FamilySearch({
             dataType: 'json',
             contentType: 'application/json; charset=UTF-8',
             success: function(data) {
-                window.location.href = document.location.protocol + '//' + document.location.host + data.redirect;
+                    window.location.href = document.location.protocol + '//' + document.location.host + data.redirect;
             }
         });
     },
