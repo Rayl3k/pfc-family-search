@@ -99,22 +99,18 @@ app.get('/proposals', function(req, res) {
 app.get('/proposals/:project', function(req, res) {
 
     var proposal = projectProposalsIns.getExample(req.params.project);
-    var goal = proposal[0];
-    var requirements = proposal[1];
-    var description = proposal[2];
-    var complexity = proposal[3];
+    var description = proposal[0];
+    var complexity = proposal[1];
     var complexityCSS = "width: " + complexity + "%";
     var complexityProgressBar = "";
 
-    if(complexity < 30) {complexity = "Low Complexity"; complexityProgressBar = "progress-bar progress-bar-info";}
-    else if(complexity < 70) {complexity = "Medium Complexity"; complexityProgressBar = "progress-bar progress-bar-warning";}
-    else {complexity = "High Complexity"; complexityProgressBar = "progress-bar progress-bar-danger";}
+    if(complexity < 40) {complexity = "Low Complexity (" + complexity + "%)"; complexityProgressBar = "progress-bar progress-bar-info";}
+    else if(complexity < 80) {complexity = "Medium Complexity (" + complexity + "%)"; complexityProgressBar = "progress-bar progress-bar-warning";}
+    else {complexity = "High Complexity (" + complexity + "%)"; complexityProgressBar = "progress-bar progress-bar-danger";}
 
     var params = pageTitlesIns.getTitle('/proposals/' + req.params.project);
 
     res.render('proposalsTemplate.html', {
-        goal: goal,
-        requirements : requirements,
         description : description,
         complexity : complexity,
         complexityCSS : complexityCSS,

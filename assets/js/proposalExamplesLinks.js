@@ -1,15 +1,13 @@
 $( document ).ready(function() {
 
     // reroute when clicked proposal box
-    /*
     $("#proposal-box-1").click(function() {
-        window.location = document.location.protocol + '//' + document.location.host + '/proposals/example1';
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/names-popularity';
     });
 
     $("#proposal-box-2").click(function() {
         window.location = document.location.protocol + '//' + document.location.host + '/proposals/names-popularity';
     });
-    */
 
 
     // reroute when clicked examplple box depending on current path
@@ -33,9 +31,9 @@ $( document ).ready(function() {
     });
     */
 
-    $(".proposal-box").click(function() {
+    /*$(".proposal-box").click(function() {
         alert("Specific view for proposals still not ni place!");
-    });
+    });*/
 
     $("#implemented-box-1").click(function() {
         var path = location.pathname.split('?')[0].slice(1);

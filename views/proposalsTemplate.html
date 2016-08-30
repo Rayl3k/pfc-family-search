@@ -7,35 +7,17 @@
 <!--         MAIN CONTENT        -->
 <!-- ########################### -->
 
-<!-- start: PROJECT GOALS -->
-<div class="container sm-buffer">
-    <div class="row">
-        <!-- section title: GOALS -->
-        <div class="col-md-12">
-            <h2>Project goal/goals</h2>
-        </div>
-    </div>
-    <div class="row">
-        <!-- loop: Goals list -->
-        <div class="col-md-12">
-            {{#goal}}
-            <p>{{.}}</p>
-            {{/goal}}
-        </div>
-    </div>
-</div> <!-- end: PROJECT GOALS -->
-
 <!-- start: EXAMPLE DESCRIPTION -->
 <div class="container sm-buffer">
     <div class="row">
         <!-- section title: DESCRIPTION -->
-        <div class="col-md-12">
-            <h2>Project description</h2>
+        <div class="col-md-8 col-md-offset-2">
+            <h2 class="example-section">Project description</h2>
         </div>
     </div>
     <div class="row">
         <!-- loop: Description paragraphs -->
-        <div class="col-md-12">
+        <div class="col-md-8 col-md-offset-2">
             {{#description}}
             <p>{{.}}</p>
             {{/description}}
@@ -43,37 +25,17 @@
     </div>
 </div> <!-- end: EXAMPLE DESCRIPTION -->
 
-<!-- start: REQUIREMENTS -->
-<div class="container sm-buffer">
-    <!-- section title: REQUIREMENTS -->
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Family Search and other requirements</h2>
-        </div>
-    </div>
-    <div class="row">
-        <!-- loop: Requirements bulletpoints -->
-        <div class="col-md-12">
-            <ul>
-            {{#requirements}}
-                <li>{{.}}</li>
-            {{/requirements}}
-            </ul>
-        </div>
-    </div>
-</div> <!-- end: REQUIREMENTS -->
-
 <!-- start: COMPLEXITY -->
 <div class="container sm-buffer">
     <!-- section title: COMPLEXITY BAR -->
     <div class="row">
-        <div class="col-md-12">
-            <h2>Project complexity</h2>
+        <div class="col-md-8 col-md-offset-2">
+            <h2 class="example-section">Estimated complexity</h2>
         </div>
     </div>
     <div class="row xs-buffer">
         <!-- Responsive complexity bar -->
-        <div class="col-md-12">
+        <div class="col-md-8 col-md-offset-2">
             <div class="progress">
               <div class="{{complexityProgressBar}}" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="{{complexityCSS}}">
                   {{complexity}}

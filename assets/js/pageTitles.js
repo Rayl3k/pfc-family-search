@@ -1,3 +1,7 @@
+/* ============================== */
+/*           MAIN PAGES           */
+/* ============================== */
+
 // titles: INDEX
 function titleIndex() {
     var background = "title-zone-index";
@@ -96,6 +100,18 @@ function titleFacts() {
     return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
 }
 
+
+/* ============================== */
+ /*           PROPOSALS           */
+/* ============================== */
+function namesPopularity() {
+
+}
+
+/* ============================== */
+ /*        RETURN PARAMS          */
+/* ============================== */
+
 /* start: FUNCTION TO GET PAGE TITLES */
 var pageTitles = function () {
     var self = this;
@@ -109,7 +125,6 @@ var pageTitles = function () {
         else if(keyword == 'search') return titleSearch();
         else if(keyword == 'surnames') return titleSurnames();
         else if(keyword == 'facts') return titleFacts();
-        else if(keyword == '/proposals/example1') return titleSurnames();
         else if(keyword == '/proposals/names-popularity') return titleFacts();
     };
 
