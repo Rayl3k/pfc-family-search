@@ -200,9 +200,10 @@ function duplicates() {
 
 function search() {
     var description = [
-        "This project is based on the duplication algorithm created by FamilySearch.",
-        "The main idea would be to search for persons and their duplicates and try to understand the most common causes of why they are marked as duplicates. Is it a lack of overall information? A common match on name and surname?",
-        "The goal of this project would be to understand the duplicity rules created by FamilySearch, understand how good they are and try to come up with some possible solutions, that could improve the duplication algorithms."
+        "This functionality enables you to search over all the available person instances included on the FamilyTree model from FamilySearch.",
+        "The goal of this functionality is to expose how the person’s search functionality works, which parameters can be used to filter the results and what data is easily accessed from the search response.",
+        "This functionality though, is not trying to expose all the accessible data through the response. If we were to print everything, for all the relatives of a given person, the load of information to be displayed would interfere with the main purpose of the tool, which is to clearly expose the main data related to the Person FamilySearch resource.",
+        "Additionally, this functionality features the search over the family tree as an exploration tool. Therefore, it only allows you to check the details of a person returned by the search functionality."
     ];
     var complexity = "50";
 
@@ -212,9 +213,9 @@ function search() {
 
 function surnames() {
     var description = [
-        "This project is based on the duplication algorithm created by FamilySearch.",
-        "The main idea would be to search for persons and their duplicates and try to understand the most common causes of why they are marked as duplicates. Is it a lack of overall information? A common match on name and surname?",
-        "The goal of this project would be to understand the duplicity rules created by FamilySearch, understand how good they are and try to come up with some possible solutions, that could improve the duplication algorithms."
+        "The surname functionality enables you to check how many instances of a given surname are registered on a set of countries in a specific set of years.",
+        "The goal of this feature is to understand how a surname expanded over the years on a set of different countries or continents. With this simple tool we aim to find were the ancestors of a given surname might have come from and how many different ethnicities have instances of that surname.",
+        "We do notice that this tool is far from solving the two questions on the above paragraph, but this feature is just a prototype of what could actually be implemented and might result helpful when trying to understand how global the world actually is."
     ];
     var complexity = "80";
 
@@ -224,9 +225,9 @@ function surnames() {
 
 function facts() {
     var description = [
-        "This project is based on the duplication algorithm created by FamilySearch.",
-        "The main idea would be to search for persons and their duplicates and try to understand the most common causes of why they are marked as duplicates. Is it a lack of overall information? A common match on name and surname?",
-        "The goal of this project would be to understand the duplicity rules created by FamilySearch, understand how good they are and try to come up with some possible solutions, that could improve the duplication algorithms."
+        "The Facts functionality enables you to check how many instances of one of the three most common facts in a person’s life were recorded around a certain year for a specific location.",
+        "The goal of this feature is to display if some global events could have affected the number of birth, marriages or death occurrences, for the populations that went through wars, epidemics and important political decisions.",
+        "You can search for Births, Marriages and Deaths occurrences on a certain place and around a given year."
     ];
     var complexity = "70";
 

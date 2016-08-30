@@ -105,8 +105,213 @@ function titleFacts() {
  /*           PROPOSALS           */
 /* ============================== */
 function namesPopularity() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "NAMES POPULARITY";
+    var titleMobile = "NAMES POPULARITY";
+    var subtitleDesktop = "Check how pupular names were around a certain time and location";
+    var subtitleTablet = "Check how pupular names were around a certain time and location";
+    var button = true;
 
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
 }
+
+function catalanPortal() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "CATALAN PORTAL";
+    var titleMobile = "CATALAN PORTAL";
+    var subtitleDesktop = "Create a search portal in Catalan and localize the genealogical data";
+    var subtitleTablet = "Create a search portal in Catalan and localize the genealogical data";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function surnameGeolocation() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "Surnames Geolocation";
+    var titleMobile = "Surnames Geolocation";
+    var subtitleDesktop = "Improve the surnames geolocation feature by accepting different region levels";
+    var subtitleTablet = "Allow for more region levels";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function genealogyHeraldy() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "GENEALOGY & HERALDY";
+    var titleMobile = "GENEALOGY & HERALDY";
+    var subtitleDesktop = "Reunite the two sciences that walked hand by hand on their origins";
+    var subtitleTablet = "Reunite the two sciences that walked hand by hand on their origins";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function indexingProjects() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "INDEXING PROJECTS";
+    var titleMobile = "INDEXING PROJECTS";
+    var subtitleDesktop = "Create tools to provide support during the indexing process of genealogical data";
+    var subtitleTablet = "Create tools to provide support during the indexing process of genealogical data";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function ldsChurch() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "LDS CHURCH";
+    var titleMobile = "LDS CHURCH";
+    var subtitleDesktop = "Study the church history through the accessible data from their API";
+    var subtitleTablet = "Study the church history through the accessible data from their API";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function ancestryDiversity() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "ANCESTRY DIVERSITY";
+    var titleMobile = "ANCESTRY DIVERSITY";
+    var subtitleDesktop = "Study the huge variety on races and ethnicities that have instances of a surname";
+    var subtitleTablet = "Study the huge variety on races and ethnicities that have instances of a surname";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function collections() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "COLLETIONS";
+    var titleMobile = "COLLETIONS";
+    var subtitleDesktop = "Given a location and period of time list all the collections that have related data";
+    var subtitleTablet = "Given a location and period of time list all the collections that have related data";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function natalityMortality() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "WW2: Natality & Mortality";
+    var titleMobile = "WW2: Natality & Mortality";
+    var subtitleDesktop = "Study the natality and mortality ratios of the WW2 involved countries";
+    var subtitleTablet = "Study the natality and mortality ratios of the WW2 ivolved countries";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function marriages() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "WW2: MARRIAGES";
+    var titleMobile = "WW2: MARRIAGES";
+    var subtitleDesktop = "Check if FamilySearch data also captures an increase of Marraiges prior the WW2";
+    var subtitleTablet = "Check if FamilySearch data also captures an increase of Marraiges prior the WW2";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function schindler() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "WW2: SCHINDLER'S LIST";
+    var titleMobile = "WW2: SCHINDLER'S LIST";
+    var subtitleDesktop = "Study the catastrophic war effects via the surnames found on the list";
+    var subtitleTablet = "Study the catastrophic war effects via the surnames found on the list";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function greatDepression() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "GREAT DEPRESSION";
+    var titleMobile = "GREAT DEPRESSION";
+    var subtitleDesktop = "Study how the United States and world were impacted by the great depression";
+    var subtitleTablet = "Study how the United States and world were impacted by the great depression";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function socialMedia() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "SOCIAL MEDIA";
+    var titleMobile = "SOCIAL MEDIA";
+    var subtitleDesktop = "Create funny comparisons between the users and their friends on the well known social networks";
+    var subtitleTablet = "Create funny comparisons between the users and their friends on the well known social networks";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function fsReality() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "FS vs REALITY";
+    var titleMobile = "FS vs REALITY";
+    var subtitleDesktop = "Study how accurate is the overall genealogical picture accessible through FamilySearch";
+    var subtitleTablet = "Study how accurate is the overall genealogical picture accessible through FamilySearch";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function genealogies() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "GENEALOGIES";
+    var titleMobile = "GENEALOGIES";
+    var subtitleDesktop = "Study the accessible genealogies and their most common characteristics";
+    var subtitleTablet = "Study the accessible genealogies and their most common characteristics";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
+function duplicates() {
+    var background = "exampleFacts";
+    var highlight = "lightbox-text";
+    var title = "DUPLICATES";
+    var titleMobile = "DUPLICATES";
+    var subtitleDesktop = "Study the reasons under which persons are marked as duplicates on the Family Tree";
+    var subtitleTablet = "Study the reasons under which persons are marked as duplicates on the Family Tree";
+    var button = true;
+
+    // Return parameters
+    return [background, highlight, title, titleMobile, subtitleDesktop, subtitleTablet, button];
+}
+
 
 /* ============================== */
  /*        RETURN PARAMS          */
@@ -125,22 +330,22 @@ var pageTitles = function () {
         else if(keyword == 'search') return titleSearch();
         else if(keyword == 'surnames') return titleSurnames();
         else if(keyword == 'facts') return titleFacts();
-        else if(keyword == 'names-popularity') return titleFacts();
-        else if(keyword == 'catalan-portal') return titleFacts();
-        else if(keyword == 'improved-surname-geo') return titleFacts();
-        else if(keyword == 'genealogy-heraldy') return titleFacts();
-        else if(keyword == 'indexing-projects') return titleFacts();
-        else if(keyword == 'lds-church') return titleFacts();
-        else if(keyword == 'ancestry-diversity') return titleFacts();
-        else if(keyword == 'collections') return titleFacts();
-        else if(keyword == 'natality-mortality') return titleFacts();
-        else if(keyword == 'marriages') return titleFacts();
-        else if(keyword == 'schindler') return titleFacts();
-        else if(keyword == 'great-depression') return titleFacts();
-        else if(keyword == 'social-media') return titleFacts();
-        else if(keyword == 'fs-vs-reality') return titleFacts();
-        else if(keyword == 'genealogies') return titleFacts();
-        else if(keyword == 'duplicates') return titleFacts();
+        else if(keyword == 'names-popularity') return namesPopularity();
+        else if(keyword == 'catalan-portal') return catalanPortal();
+        else if(keyword == 'improved-surname-geo') return surnameGeolocation();
+        else if(keyword == 'genealogy-heraldy') return genealogyHeraldy();
+        else if(keyword == 'indexing-projects') return indexingProjects();
+        else if(keyword == 'lds-church') return ldsChurch();
+        else if(keyword == 'ancestry-diversity') return ancestryDiversity();
+        else if(keyword == 'collections') return collections();
+        else if(keyword == 'natality-mortality') return natalityMortality();
+        else if(keyword == 'marriages') return marriages();
+        else if(keyword == 'schindler') return schindler();
+        else if(keyword == 'great-depression') return greatDepression();
+        else if(keyword == 'social-media') return socialMedia();
+        else if(keyword == 'fs-vs-reality') return fsReality();
+        else if(keyword == 'genealogies') return genealogies();
+        else if(keyword == 'duplicates') return duplicates();
     };
 
 }; /* end: FUNCTION TO RETURN PROPOSALS */
