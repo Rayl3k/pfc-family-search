@@ -6,7 +6,7 @@ $( document ).ready(function() {
     });
 
     $("#proposal-box-2").click(function() {
-        window.location = document.location.protocol + '//' + document.location.host + '/proposals/names-popularity';
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/ancestry-diversity';
     });
 
 

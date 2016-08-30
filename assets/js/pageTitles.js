@@ -126,6 +126,21 @@ var pageTitles = function () {
         else if(keyword == 'surnames') return titleSurnames();
         else if(keyword == 'facts') return titleFacts();
         else if(keyword == '/proposals/names-popularity') return titleFacts();
+        else if(keyword == '/proposals/catalan-portal') return titleFacts();
+        else if(keyword == '/proposals/improved-surname-geo') return titleFacts();
+        else if(keyword == '/proposals/genealogy-heraldy') return titleFactstitleFacts();
+        else if(keyword == '/proposals/indexing-projects') return titleFacts();
+        else if(keyword == '/proposals/lds-church') return titleFacts();
+        else if(keyword == '/proposals/ancestry-diversity') return titleFacts();
+        else if(keyword == '/proposals/collections') return titleFacts();
+        else if(keyword == '/proposals/natality-mortality') return natalityMortality();
+        else if(keyword == '/proposals/marriages') return marriages();
+        else if(keyword == '/proposals/schindler') return schindler();
+        else if(keyword == '/proposals/great-depression') return greatDepression();
+        else if(keyword == '/proposals/social-media') return socialMedia();
+        else if(keyword == '/proposals/fs-vs-reality') return fsReality();
+        else if(keyword == '/proposals/genealogies') return genealogies();
+        else if(keyword == '/proposals/duplicates') return duplicates();
     };
 
 }; /* end: FUNCTION TO RETURN PROPOSALS */
