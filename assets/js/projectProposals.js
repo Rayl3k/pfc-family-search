@@ -198,7 +198,41 @@ function duplicates() {
     return [description, complexity];
 }
 
+function search() {
+    var description = [
+        "This project is based on the duplication algorithm created by FamilySearch.",
+        "The main idea would be to search for persons and their duplicates and try to understand the most common causes of why they are marked as duplicates. Is it a lack of overall information? A common match on name and surname?",
+        "The goal of this project would be to understand the duplicity rules created by FamilySearch, understand how good they are and try to come up with some possible solutions, that could improve the duplication algorithms."
+    ];
+    var complexity = "50";
 
+    // Return parameters
+    return [description, complexity];
+}
+
+function surnames() {
+    var description = [
+        "This project is based on the duplication algorithm created by FamilySearch.",
+        "The main idea would be to search for persons and their duplicates and try to understand the most common causes of why they are marked as duplicates. Is it a lack of overall information? A common match on name and surname?",
+        "The goal of this project would be to understand the duplicity rules created by FamilySearch, understand how good they are and try to come up with some possible solutions, that could improve the duplication algorithms."
+    ];
+    var complexity = "80";
+
+    // Return parameters
+    return [description, complexity];
+}
+
+function facts() {
+    var description = [
+        "This project is based on the duplication algorithm created by FamilySearch.",
+        "The main idea would be to search for persons and their duplicates and try to understand the most common causes of why they are marked as duplicates. Is it a lack of overall information? A common match on name and surname?",
+        "The goal of this project would be to understand the duplicity rules created by FamilySearch, understand how good they are and try to come up with some possible solutions, that could improve the duplication algorithms."
+    ];
+    var complexity = "70";
+
+    // Return parameters
+    return [description, complexity];
+}
 
 /* start: FUNCTION TO RETURN PROPOSALS */
 var projectProposals = function () {
@@ -206,7 +240,10 @@ var projectProposals = function () {
 
     /* Get specific example */
     self.getExample = function (keyword) {
-        if(keyword == 'names-popularity') return namesPopularity();
+        if(keyword == 'search') return search();
+        else if(keyword == 'surnames') return surnames();
+        else if(keyword == 'facts') return facts();
+        else if(keyword == 'names-popularity') return namesPopularity();
         else if(keyword == 'catalan-portal') return catalanPortal();
         else if(keyword == 'improved-surname-geo') return improvedSurnameGeo();
         else if(keyword == 'genealogy-heraldy') return genealogyHeraldy();

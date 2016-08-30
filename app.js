@@ -108,7 +108,7 @@ app.get('/proposals/:project', function(req, res) {
     else if(complexity < 80) {complexity = "Medium Complexity (" + complexity + "%)"; complexityProgressBar = "progress-bar progress-bar-warning";}
     else {complexity = "High Complexity (" + complexity + "%)"; complexityProgressBar = "progress-bar progress-bar-danger";}
 
-    var params = pageTitlesIns.getTitle('/proposals/' + req.params.project);
+    var params = pageTitlesIns.getTitle(req.params.project);
 
     res.render('proposalsTemplate.html', {
         description : description,

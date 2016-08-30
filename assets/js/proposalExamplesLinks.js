@@ -16,12 +16,67 @@ $( document ).ready(function() {
     });
 
     $("#proposal-box-2").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/catalan-portal';
+    });
+
+    $("#proposal-box-3").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/improved-surname-geo';
+    });
+
+    $("#proposal-box-4").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/genealogy-heraldy';
+    });
+
+    $("#proposal-box-5").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/indexing-projects';
+    });
+
+    $("#proposal-box-6").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/lds-church';
+    });
+
+    $("#proposal-box-7").click(function() {
         window.location = document.location.protocol + '//' + document.location.host + '/proposals/ancestry-diversity';
+    });
+
+    $("#proposal-box-8").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/collections';
+    });
+
+    $("#proposal-box-9").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/natality-mortality';
+    });
+
+    $("#proposal-box-10").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/marriages';
+    });
+
+    $("#proposal-box-11").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/schindler';
+    });
+
+    $("#proposal-box-12").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/great-depression';
+    });
+
+    $("#proposal-box-13").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/social-media';
+    });
+
+    $("#proposal-box-14").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/fs-vs-reality';
+    });
+
+    $("#proposal-box-15").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/genealogies';
+    });
+
+    $("#proposal-box-16").click(function() {
+        window.location = document.location.protocol + '//' + document.location.host + '/proposals/duplicates';
     });
 
 
     // reroute when clicked examplple box depending on current path
-    /*
     $("#implemented-box-1").click(function() {
         var path = location.pathname.split('?')[0].slice(1);
         var redirect = path == "proposals" ? '/proposals/search' : '/examples/search';
@@ -39,11 +94,10 @@ $( document ).ready(function() {
         var redirect = path == "proposals" ? '/proposals/facts' : '/examples/facts';
         window.location = document.location.protocol + '//' + document.location.host + redirect;
     });
-    */
 
     /*$(".proposal-box").click(function() {
         alert("Specific view for proposals still not ni place!");
-    });*/
+    });
 
     $("#implemented-box-1").click(function() {
         var path = location.pathname.split('?')[0].slice(1);
@@ -64,5 +118,5 @@ $( document ).ready(function() {
         var redirect = path == "proposals" ? '' : '/examples/facts';
         if(redirect != '') window.location = document.location.protocol + '//' + document.location.host + redirect;
         else alert("Specific view for proposals still not ni place!");
-    });
+    });*/
 });
