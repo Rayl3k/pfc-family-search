@@ -1,5 +1,15 @@
 $( document ).ready(function() {
 
+    // Hover on thumbnail
+    $('.thumbnail').hover(
+       function(){
+           $(this).css('background-color', '#eff4f8');
+       },
+       function(){
+           $(this).css('background-color', '#FFF');
+       }
+   );
+
     // reroute when clicked proposal box
     $("#proposal-box-1").click(function() {
         window.location = document.location.protocol + '//' + document.location.host + '/proposals/names-popularity';

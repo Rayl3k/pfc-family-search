@@ -258,6 +258,10 @@ li a, li a:hover, li a:focus {
     background-image: url('/images/headers/search2-min.png');
 }
 
+.thumbnail:hover {
+    background-color: rgb(46, 109, 164, 0.4);
+}
+
 /* ============================= */
 /* TITLE SMARTPHONE              */
 /* ============================= */
