@@ -27,7 +27,7 @@ function catalanPortal() {
 
 function improvedSurnameGeo() {
     var description = [
-        "This functionality aims to improve the implemented surname geolocation feature implemented on this website.",
+        "This functionality aims to improve the surname geolocation feature implemented on this website.",
         "The implemented functionality only allows the user to check the surname presence or expansion over a group of countries, while it could be interesting to offer the same functionality at State level, continent level and etcetera.",
         "This project suggests a functionality that would enable the user to roll-up or roll-down the location level being searched and offered the surname presence picture at all those different levels."
     ];

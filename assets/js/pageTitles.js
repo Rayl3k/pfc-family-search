@@ -105,7 +105,7 @@ function titleFacts() {
  /*           PROPOSALS           */
 /* ============================== */
 function namesPopularity() {
-    var background = "exampleFacts";
+    var background = "namesPopularity";
     var highlight = "lightbox-text";
     var title = "NAMES POPULARITY";
     var titleMobile = "NAMES POPULARITY";
@@ -118,7 +118,7 @@ function namesPopularity() {
 }
 
 function catalanPortal() {
-    var background = "exampleFacts";
+    var background = "catalanPortal";
     var highlight = "lightbox-text";
     var title = "CATALAN PORTAL";
     var titleMobile = "CATALAN PORTAL";
@@ -131,7 +131,7 @@ function catalanPortal() {
 }
 
 function surnameGeolocation() {
-    var background = "exampleFacts";
+    var background = "surnamesGeolocation";
     var highlight = "lightbox-text";
     var title = "Surnames Geolocation";
     var titleMobile = "Surnames Geolocation";
@@ -144,10 +144,10 @@ function surnameGeolocation() {
 }
 
 function genealogyHeraldy() {
-    var background = "exampleFacts";
+    var background = "heraldry";
     var highlight = "lightbox-text";
-    var title = "GENEALOGY & HERALDY";
-    var titleMobile = "GENEALOGY & HERALDY";
+    var title = "GENEALOGY & HERALDRY";
+    var titleMobile = "GENEALOGY & HERALDRY";
     var subtitleDesktop = "Reunite the two sciences that walked hand by hand on their origins";
     var subtitleTablet = "Reunite the two sciences that walked hand by hand on their origins";
     var button = true;
@@ -157,7 +157,7 @@ function genealogyHeraldy() {
 }
 
 function indexingProjects() {
-    var background = "exampleFacts";
+    var background = "indexing";
     var highlight = "lightbox-text";
     var title = "INDEXING PROJECTS";
     var titleMobile = "INDEXING PROJECTS";
@@ -170,7 +170,7 @@ function indexingProjects() {
 }
 
 function ldsChurch() {
-    var background = "exampleFacts";
+    var background = "ldsChurch";
     var highlight = "lightbox-text";
     var title = "LDS CHURCH";
     var titleMobile = "LDS CHURCH";
@@ -183,12 +183,12 @@ function ldsChurch() {
 }
 
 function ancestryDiversity() {
-    var background = "exampleFacts";
+    var background = "ancestryDiversity";
     var highlight = "lightbox-text";
     var title = "ANCESTRY DIVERSITY";
     var titleMobile = "ANCESTRY DIVERSITY";
-    var subtitleDesktop = "Study the huge variety on races and ethnicities that have instances of a surname";
-    var subtitleTablet = "Study the huge variety on races and ethnicities that have instances of a surname";
+    var subtitleDesktop = "Study the different races and ethnicities that have instances of a given surname";
+    var subtitleTablet = "Study the different races and ethnicities that have instances of a given surname";
     var button = true;
 
     // Return parameters
@@ -196,12 +196,12 @@ function ancestryDiversity() {
 }
 
 function collections() {
-    var background = "exampleFacts";
+    var background = "proposalCollections";
     var highlight = "lightbox-text";
-    var title = "COLLETIONS";
-    var titleMobile = "COLLETIONS";
-    var subtitleDesktop = "Given a location and period of time list all the collections that have related data";
-    var subtitleTablet = "Given a location and period of time list all the collections that have related data";
+    var title = "COLLECTIONS";
+    var titleMobile = "COLLECTIONS";
+    var subtitleDesktop = "Given a location and period of time, list all the collections that have related data";
+    var subtitleTablet = "Given a location and period of time, list all the collections that have related data";
     var button = true;
 
     // Return parameters
@@ -209,7 +209,7 @@ function collections() {
 }
 
 function natalityMortality() {
-    var background = "exampleFacts";
+    var background = "natalityMortality";
     var highlight = "lightbox-text";
     var title = "WW2: Natality & Mortality";
     var titleMobile = "WW2: Natality & Mortality";
@@ -222,7 +222,7 @@ function natalityMortality() {
 }
 
 function marriages() {
-    var background = "exampleFacts";
+    var background = "marriages";
     var highlight = "lightbox-text";
     var title = "WW2: MARRIAGES";
     var titleMobile = "WW2: MARRIAGES";
@@ -235,12 +235,12 @@ function marriages() {
 }
 
 function schindler() {
-    var background = "exampleFacts";
+    var background = "schindler";
     var highlight = "lightbox-text";
     var title = "WW2: SCHINDLER'S LIST";
     var titleMobile = "WW2: SCHINDLER'S LIST";
-    var subtitleDesktop = "Study the catastrophic war effects via the surnames found on the list";
-    var subtitleTablet = "Study the catastrophic war effects via the surnames found on the list";
+    var subtitleDesktop = "Study the history via the surnames list";
+    var subtitleTablet = "Study the history via the surnames list";
     var button = true;
 
     // Return parameters
@@ -248,7 +248,7 @@ function schindler() {
 }
 
 function greatDepression() {
-    var background = "exampleFacts";
+    var background = "greatDepression";
     var highlight = "lightbox-text";
     var title = "GREAT DEPRESSION";
     var titleMobile = "GREAT DEPRESSION";
