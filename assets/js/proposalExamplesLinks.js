@@ -94,29 +94,5 @@ $( document ).ready(function() {
         var redirect = path == "proposals" ? '/proposals/facts' : '/examples/facts';
         window.location = document.location.protocol + '//' + document.location.host + redirect;
     });
-
-    /*$(".proposal-box").click(function() {
-        alert("Specific view for proposals still not ni place!");
-    });
-
-    $("#implemented-box-1").click(function() {
-        var path = location.pathname.split('?')[0].slice(1);
-        var redirect = path == "proposals" ? '' : '/examples/search';
-        if(redirect != '') window.location = document.location.protocol + '//' + document.location.host + redirect;
-        else alert("Specific view for proposals still not ni place!");
-    });
-
-    $("#implemented-box-2").click(function() {
-        var path = location.pathname.split('?')[0].slice(1);
-        var redirect = path == "proposals" ? '' : '/examples/surnames';
-        if(redirect != '') window.location = document.location.protocol + '//' + document.location.host + redirect;
-        else alert("Specific view for proposals still not ni place!");
-    });
-
-    $("#implemented-box-3").click(function() {
-        var path = location.pathname.split('?')[0].slice(1);
-        var redirect = path == "proposals" ? '' : '/examples/facts';
-        if(redirect != '') window.location = document.location.protocol + '//' + document.location.host + redirect;
-        else alert("Specific view for proposals still not ni place!");
-    });*/
+    
 });
