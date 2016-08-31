@@ -260,63 +260,85 @@ li a, li a:hover, li a:focus {
 
 /* 001 Names Popularity */
 .namesPopularity {
-    background-image: url('/images/headers/01_names.png');
+    background-image: url('/images/headers/01_names-min.png');
 }
 
 /* 002 Catalan portal */
 .catalanPortal {
-    background-image: url('/images/headers/02_catalan.png');
+    background-image: url('/images/headers/02_catalan-min.png');
 }
 
 /* 003 Surnames Geolocation */
 .surnamesGeolocation {
-    background-image: url('/images/headers/03_surnames.png');
+    background-image: url('/images/headers/03_surnames-min.png');
 }
 
 /* 004 heraldry */
 .heraldry {
-    background-image: url('/images/headers/04_heraldry.png');
+    background-image: url('/images/headers/04_heraldry-min.png');
 }
 
 /* 005 indexing */
 .indexing {
-    background-image: url('/images/headers/05_indexing.png');
+    background-image: url('/images/headers/05_indexing-min.png');
 }
 
 /* 006 lds church */
 .ldsChurch {
-    background-image: url('/images/headers/06_lds2.png');
+    background-image: url('/images/headers/06_lds2-min.png');
 }
 
 /* 007 ancestry diversity */
 .ancestryDiversity {
-    background-image: url('/images/headers/07_ancestry.png');
+    background-image: url('/images/headers/07_ancestry-min.png');
 }
 
 /* 008 Collections */
 .proposalCollections {
-    background-image: url('/images/headers/08_collections.png');
+    background-image: url('/images/headers/08_collections-min.png');
 }
 
 /* 009 Natality Mortality */
 .natalityMortality {
-    background-image: url('/images/headers/09_natalityMortality.png');
+    background-image: url('/images/headers/09_natalityMortality-min.png');
 }
 
 /* 010 Marriages */
 .marriages {
-    background-image: url('/images/headers/10_marriages.png');
+    background-image: url('/images/headers/10_marriages-min.png');
 }
 
 /* 011 Schindler */
 .schindler {
-    background-image: url('/images/headers/11_schindler.png');
+    background-image: url('/images/headers/11_schindler-min.png');
 }
 
 /* 012 Great Depression */
 .greatDepression {
-    background-image: url('/images/headers/12_29crack.png');
+    background-image: url('/images/headers/12_29crack-min.png');
 }
+
+/* 013 Social Media */
+.socialMedia {
+    background-image: url('/images/headers/13_socialMedia-min.png');
+}
+
+/* 013 Social Media */
+.fsReality {
+    background-image: url('/images/headers/14_fsReality-min.png');
+}
+
+
+/* 015 Genealogies */
+.genealogies {
+    background-image: url('/images/headers/15_genealogies-min.png');
+}
+
+/* 016 Duplicates */
+.duplicates {
+    background-image: url('/images/headers/16_duplicates-min.png');
+}
+
 
 /* PROPOSALS THUMBNAILS */
 .thumbnail:hover {

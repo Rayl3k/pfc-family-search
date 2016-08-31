@@ -261,7 +261,7 @@ function greatDepression() {
 }
 
 function socialMedia() {
-    var background = "exampleFacts";
+    var background = "socialMedia";
     var highlight = "lightbox-text";
     var title = "SOCIAL MEDIA";
     var titleMobile = "SOCIAL MEDIA";
@@ -274,7 +274,7 @@ function socialMedia() {
 }
 
 function fsReality() {
-    var background = "exampleFacts";
+    var background = "fsReality";
     var highlight = "lightbox-text";
     var title = "FS vs REALITY";
     var titleMobile = "FS vs REALITY";
@@ -287,7 +287,7 @@ function fsReality() {
 }
 
 function genealogies() {
-    var background = "exampleFacts";
+    var background = "genealogies";
     var highlight = "lightbox-text";
     var title = "GENEALOGIES";
     var titleMobile = "GENEALOGIES";
@@ -300,7 +300,7 @@ function genealogies() {
 }
 
 function duplicates() {
-    var background = "exampleFacts";
+    var background = "duplicates";
     var highlight = "lightbox-text";
     var title = "DUPLICATES";
     var titleMobile = "DUPLICATES";
