@@ -867,11 +867,26 @@ $( document ).ready(function() {
          $('#results-zone').fadeIn('fast');
          $('#results-trigger').trigger('click');
 
+         // Check gender
+         if(mainGender == "any") mainGender = '';
+
          // Append tilde if non-exact applies
-         if(mainExact != "exactYes") { mainName = mainName + '~'; mainSurname = mainSurname + '~'; }
-         if(spouseExact != "exactYes") { spouseName = spouseName + '~'; spouseSurname = spouseSurname + '~'; }
-         if(fatherExact != "exactYes") { fatherName = fatherName + '~'; fatherSurname = fatherSurname + '~'; }
-         if(motherExact != "exactYes") { motherName = motherName + '~'; motherSurname = motherSurname + '~'; }
+         if(mainExact != "exactYes") {
+             mainName = mainName != '' ? mainName + '~' : '';
+             mainSurname = mainSurname != '' ? mainSurname + '~' : '';
+         }
+         if(spouseExact != "exactYes") {
+             spouseName = spouseName != '' ? spouseName = spouseName + '~' : '';
+             spouseSurname = spouseSurname != '' ? spouseSurname = spouseSurname + '~' : '';
+         }
+         if(fatherExact != "exactYes") {
+             fatherName = fatherName != '' ? fatherName + '~' : '';
+             fatherSurname = fatherSurname != '' ? fatherSurname = fatherSurname + '~' : '';
+         }
+         if(motherExact != "exactYes") {
+             motherName = motherName != '' ? motherName = motherName + '~' : '';
+             motherSurname = motherSurname != '' ? motherSurname = motherSurname + '~' : '';
+         }
 
          // Populate params variable to get results
          params = {
