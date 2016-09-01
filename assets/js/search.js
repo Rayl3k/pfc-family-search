@@ -867,7 +867,7 @@ $( document ).ready(function() {
          $('#results-zone').fadeIn('fast');
          $('#results-trigger').trigger('click');
 
-         // Check gender
+         // Check gender. If any remove it from call
          if(mainGender == "any") mainGender = '';
 
          // Append tilde if non-exact applies
@@ -932,7 +932,8 @@ $( document ).ready(function() {
          context = '';
 
          // Send GA event
-         var label = 'personSearch_'+(Object.keys(params).length-2);
+         var modifier = mainGender == '' ? 2 : 1;
+         var label = 'personSearch_'+(Object.keys(params).length-modifier);
          sendEvent('familysearch', 'personSearch', label);
 
          // Print first batch of results
