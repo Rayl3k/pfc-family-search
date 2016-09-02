@@ -1,7 +1,7 @@
 // launch preload images
 $(window).load(function() {
     $.preload(
-      '/images/thumbnails/16_duplicates-min.png'
+      '/images/thumbnails/16_duplicates-min.png',
       '/images/thumbnails/15_genealogies-min.png',
       '/images/thumbnails/14_fsReality-min.png',
       '/images/thumbnails/13_socialMedia-min.png',
@@ -38,9 +38,9 @@ $(window).load(function() {
       '/images/headers/surnames2-min.png',
       '/images/headers/facts2-min.png',
       '/images/headers/search2-min.png',
-      '/images/headers/examples2-min.png'
+      '/images/headers/examples2-min.png',
       '/images/headers/proposals2-min.png',
       '/images/headers/projectBackground2-min.png',
-      '/images/familysearchLogo.png',
+      '/images/familysearchLogo.png'
     );
 });

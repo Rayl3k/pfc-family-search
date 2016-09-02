@@ -219,6 +219,12 @@ app.post('/token/logout', function(req, res) {
     res.send({redirect : '/'});
 });
 
+// Check if req.session exists
+app.post('/token/exists', function(req, res) {
+    if(typeof req.session != 'undefined') res.send({exists : 'yes'});
+    else res.send({exists : 'no'});
+});
+
 // =================================================== //
 // AUTHENTICATION VALIDATION
 // =================================================== //

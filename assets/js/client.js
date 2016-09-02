@@ -11,16 +11,21 @@ if (typeof(Storage) !== "undefined") {
 
 // Show signout if required
 if(localStorage.token) {
-    $('#signOut').css('display', 'block');
-    $('#signOut').fadeIn('fast');
-}
-else {
-    // Kill server session
     $.ajax({
         type: "POST",
-        url: "/token/logout",
+        url: "/token/exists",
         dataType: 'json',
         contentType: 'application/json; charset=UTF-8',
+        success: function(data) {
+            console.log("Returned: " + data.exists);
+            if(data.exists == "yes") {
+                $('#signOut').css('display', 'block');
+                $('#signOut').fadeIn('fast');
+            }
+            else {
+                localStorage.removeItem('token');
+            }
+        }
     });
 }
 
