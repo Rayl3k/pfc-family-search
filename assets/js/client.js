@@ -9,23 +9,14 @@ if (typeof(Storage) !== "undefined") {
     saveCookie = true;
 }
 
-// Show signout if required
-if(localStorage.token) {
+// Remove localStorage / session depending situation
+if(localStorage.token && $("#signOut").hasClass('hidden')) localStorage.removeItem('token');
+else if(!localStorage.token && $("#signOut").hasClass('visible')) {
     $.ajax({
         type: "POST",
-        url: "/token/exists",
+        url: "/token/logout",
         dataType: 'json',
-        contentType: 'application/json; charset=UTF-8',
-        success: function(data) {
-            console.log("Returned: " + data.exists);
-            if(data.exists == "yes") {
-                $('#signOut').css('display', 'block');
-                $('#signOut').fadeIn('fast');
-            }
-            else {
-                localStorage.removeItem('token');
-            }
-        }
+        contentType: 'application/json; charset=UTF-8'
     });
 }
 

@@ -54,6 +54,7 @@ app.get('/login', function(req, res) {
 // Serve index page
 app.get('/', function(req, res){
     var params = pageTitlesIns.getTitle('index');
+    var logged = isLogged(req);
     res.render('index.html', {
         backgroundImage: params[0],
         highlight: params[1],
@@ -62,12 +63,14 @@ app.get('/', function(req, res){
         subtitleDesktop: params[4],
         subtitleTablet: params[5],
         button: params[6],
-        buttonHref: ''
+        buttonHref: '',
+        logged
     });
 });
 
 app.get('/background', function(req, res) {
     var params = pageTitlesIns.getTitle('background');
+    var logged = isLogged(req);
     res.render('background.html', {
         backgroundImage: params[0],
         highlight: params[1],
@@ -76,13 +79,15 @@ app.get('/background', function(req, res) {
         subtitleDesktop: params[4],
         subtitleTablet: params[5],
         button: params[6],
-        buttonHref: ''
+        buttonHref: '',
+        logged
     });
 });
 
 // Get all proposals page
 app.get('/proposals', function(req, res) {
     var params = pageTitlesIns.getTitle('proposals');
+    var logged = isLogged(req);
     res.render('proposals.html', {
         backgroundImage: params[0],
         highlight: params[1],
@@ -91,14 +96,15 @@ app.get('/proposals', function(req, res) {
         subtitleDesktop: params[4],
         subtitleTablet: params[5],
         button: params[6],
-        buttonHref: ''
+        buttonHref: '',
+        logged
     });
 });
 
 // Get projectProposals page
 app.get('/proposals/:project', function(req, res) {
-
     var proposal = projectProposalsIns.getExample(req.params.project);
+    var logged = isLogged(req);
     var description = proposal[0];
     var complexity = proposal[1];
     var complexityCSS = "width: " + complexity + "%";
@@ -123,13 +129,15 @@ app.get('/proposals/:project', function(req, res) {
         subtitleTablet: params[5],
         button: params[6],
         buttonHref: '/proposals',
-        listKeyword: 'proposals'
+        listKeyword: 'proposals',
+        logged
     });
 });
 
 // Get all examples page
 app.get('/examples', isAuthenticated, function(req, res) {
     var params = pageTitlesIns.getTitle('examples');
+    var logged = isLogged(req);
     res.render('examples.html', {
         backgroundImage: params[0],
         highlight: params[1],
@@ -138,7 +146,8 @@ app.get('/examples', isAuthenticated, function(req, res) {
         subtitleDesktop: params[4],
         subtitleTablet: params[5],
         button: params[6],
-        buttonHref: ''
+        buttonHref: '',
+        logged
     });
 });
 
@@ -152,6 +161,7 @@ app.get('/examples/surnames', isAuthenticated, function(req, res) {
     var africa = countryParametersIns.getCountries("AF");
 
     var params = pageTitlesIns.getTitle('surnames');
+    var logged = isLogged(req);
 
     res.render('surnames.html', {
         europe : europe,
@@ -168,13 +178,15 @@ app.get('/examples/surnames', isAuthenticated, function(req, res) {
         subtitleTablet: params[5],
         button: params[6],
         buttonHref: '/examples',
-        listKeyword: 'examples'
+        listKeyword: 'examples',
+        logged
     });
 });
 
 // Facts example page
 app.get('/examples/facts', isAuthenticated, function(req, res) {
     var params = pageTitlesIns.getTitle('facts');
+    var logged = isLogged(req);
     res.render('facts.html', {
         backgroundImage: params[0],
         highlight: params[1],
@@ -184,13 +196,15 @@ app.get('/examples/facts', isAuthenticated, function(req, res) {
         subtitleTablet: params[5],
         button: params[6],
         buttonHref: '/examples',
-        listKeyword: 'examples'
+        listKeyword: 'examples',
+        logged
     });
 });
 
 // Search example page
 app.get('/examples/search', isAuthenticated, function(req, res) {
     var params = pageTitlesIns.getTitle('search');
+    var logged = isLogged(req);
     res.render('search.html', {
         backgroundImage: params[0],
         highlight: params[1],
@@ -200,7 +214,8 @@ app.get('/examples/search', isAuthenticated, function(req, res) {
         subtitleTablet: params[5],
         button: params[6],
         buttonHref: '/examples',
-        listKeyword: 'examples'
+        listKeyword: 'examples',
+        logged
     });
 })
 
@@ -219,18 +234,17 @@ app.post('/token/logout', function(req, res) {
     res.send({redirect : '/'});
 });
 
-// Check if req.session exists
-app.post('/token/exists', function(req, res) {
-    if(typeof req.session != 'undefined') res.send({exists : 'yes'});
-    else res.send({exists : 'no'});
-});
-
 // =================================================== //
 // AUTHENTICATION VALIDATION
 // =================================================== //
 function isAuthenticated(req, res, next) {
     if(req.session.isPopulated) next();
     else res.redirect('/login');
+}
+
+function isLogged(req) {
+    if(req.session.isPopulated) return 'visible';
+    else return 'hidden';
 }
 
 // =================================================== //
