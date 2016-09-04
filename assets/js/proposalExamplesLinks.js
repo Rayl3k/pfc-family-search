@@ -94,5 +94,30 @@ $( document ).ready(function() {
         var redirect = path == "proposals" ? '/proposals/facts' : '/examples/facts';
         window.location = document.location.protocol + '//' + document.location.host + redirect;
     });
-    
+
+});
+
+// launch preload images
+$(window).load(function() {
+    $.preload(
+      '/images/headers/16_duplicates-min.png',
+      '/images/headers/15_genealogies-min.png',
+      '/images/headers/14_fsReality-min.png',
+      '/images/headers/03_surnames-min.png',
+      '/images/headers/12_29crack-min.png',
+      '/images/headers/11_schindler-min.png',
+      '/images/headers/10_marriages-min.png',
+      '/images/headers/09_natalityMortality-min.png',
+      '/images/headers/08_collections-min.png',
+      '/images/headers/07_ancestry-min.png',
+      '/images/headers/06_lds2-min.png',
+      '/images/headers/05_indexing-min.png',
+      '/images/headers/04_heraldry-min.png',
+      '/images/headers/13_socialMedia-min.png',
+      '/images/headers/02_catalan-min.png',
+      '/images/headers/01_names-min.png',
+      '/images/headers/surnames2-min.png',
+      '/images/headers/facts2-min.png',
+      '/images/headers/search2-min.png'
+    );
 });
