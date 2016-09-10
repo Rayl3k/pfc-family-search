@@ -1,23 +1,104 @@
+# pfc-family-search
+## Family Search Dev name
+- sporras.89
+- Caps no 1
+
+## Heroku username
+- sergiporraspages
+
+## Localhost
+- Install in local the required dependencies on cmd
+```
+npm install
+```
+- Execute the following heroku command
+```
+heroku local web
+```
+- Enter to the following URL: http://localhost:5000
+
+## Adding on another computer the repository
+- Clone the repo in your computer
+```
+git clone https://github.com/sinh15/pfc-family-search.git pfc-family-search
+```
+- Add the heroku remote (you have to: "heroku login" before)
+```
+heroku git:remote -a pfc-family-search
+```
+- If you want the repo for heroku remote to have a different name than 'heroku', use the command
+```
+-r other_remote_name
+```
+
+## NODEMON
+```
+nodemon app.js
+```
+
+## Moustache Documentation
+- http://mustache.github.io/mustache.5.html
+
+## Add .js files to app.js
+- http://stackoverflow.com/questions/5797852/in-node-js-how-do-i-include-functions-from-my-other-files
+
+## other links
+https://thenounproject.com/
+
+## geocoding
+https://developers.google.com/maps/documentation/javascript/geocoding#GeocodingResults
+
+## google maps api
+https://developers.google.com/maps/documentation/javascript/reference#release-version
+
+## fitBounds
+http://stackoverflow.com/questions/19304574/center-set-zoom-of-map-to-cover-all-visible-markers
+
+## remove markers
+https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+## maps icon change
+http://stackoverflow.com/questions/2890670/google-maps-place-number-in-marker
+
+## more markers on google map
+https://code.google.com/p/google-maps-utility-library-v3/wiki/Libraries#MarkerWithLabel
+
+## marker with label
+https://www.npmjs.com/package/markerwithlabel
+
+## geomap
+https://developers.google.com/chart/interactive/docs/gallery/geomap#overview
+
+## geocharts
+https://developers.google.com/chart/interactive/docs/gallery/geochart#text-geocharts
+
+## barcharts
+https://developers.google.com/chart/interactive/docs/gallery/barchart
+
+## more code to include custom javascript in node.js
+https://howtonode.org/creating-custom-modules
+
+## darkbox / lightbox
+https://css-tricks.com/design-considerations-text-images/
+
+## count project lines
+https://gist.github.com/mandiwise/dc53cb9da00856d7cdbb
+
+
+## certification checklist
+https://familysearch.org/developers/docs/certification/authentication
+https://familysearch.org/developers/docs/certification
+
+## conmpile latex
+http://tex.stackexchange.com/questions/6845/compile-latex-with-bibtex-and-glossaries
+
 # fonts
 - https://www.google.com/fonts#UsePlace:use/Collection:Lora
 - https://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro
 
-# Other project ideas
-- Indexing visual recognition helper / assistant
-- Facebook tree generator from user profile based on names
-- Facebook app family / friends collaboration to import trees to family search?¿
-  and then populate with extra information somewhere of the surnames, etc, etc.
-- Where your friends surnames are from, where did they come from, etc. etc.
-- 2nd world war migrations (surnames schindler's list)
-- 2nd world war marriages in united states: Replicate Study?¿
-- 2nd world war countries implications based on registered deaths on surraunding
-  years
-- Names around the world and variants (using the name resource) + social media?
-- Estudi etnografic i demografic de cognoms propis i concrets: Emprant GEOAPI interna + decodificació tots els registres
-- Genealogies (reals): Study of diversity on ancestors. Relate to momondo campaign?
-- Gender related mortality / newborns based on countries & period of time.
-- List best collection / browse through documents / discover random document, etc. functionalities!! Use entry points collections
-- Localització al català dels recursos principals així com del portal web.
-- Transformar aplicacions d'escriptori d'heràldica en una API + estudi complementari de cognoms i heràldica
 
-http://www.randalolson.com/2015/06/15/144-years-of-marriage-and-divorce-in-1-chart/
+## compile bibliography with biber
+pdflatex nameTexFile
+biber nameTexFile
+pdflatex nameTexFile
+pdflatex nameTexFile

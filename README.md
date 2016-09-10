@@ -1,99 +1,23 @@
-# pfc-family-search
-## Family Search Dev name
-- sporras.89
-- Caps no 1
+# PFC-Family-Search
 
-## Heroku username
-- sergiporraspages
+## Open Source Version
+The open code repository, maintained by the community, can be found on the following link [API-EXAMPLE-USAGES][1].
 
-## Localhost
-- Install in local the required dependencies on cmd
-```
-npm install
-```
-- Execute the following heroku command
-```
-heroku local web
-```
-- Enter to the following URL: http://localhost:5000
+Visit that repository in order to see how to download & install & adapt the web application.
 
-## Adding on another computer the repository
-- Clone the repo in your computer
-```
-git clone https://github.com/sinh15/pfc-family-search.git pfc-family-search
-```
-- Add the heroku remote (you have to: "heroku login" before)
-```
-heroku git:remote -a pfc-family-search
-```
-- If you want the repo for heroku remote to have a different name than 'heroku', use the command
-```
--r other_remote_name
-```
+## Introduction
+This project was created for my university degree on computer engineering. For any doubt you may have related with this project, feel free to contact me through the GitHub repository or via email (*sporras89@gmail.com*).
 
-## NODEMON
-```
-nodemon app.js
-```
+The idea of this project was to explore the potential of the API offered by FamilySearch, create some project proposals for future students and implement an MVP of some functionalities.
 
-## Moustache Documentation
-- http://mustache.github.io/mustache.5.html
-
-## Add .js files to app.js
-- http://stackoverflow.com/questions/5797852/in-node-js-how-do-i-include-functions-from-my-other-files
-
-## other links
-https://thenounproject.com/
-
-## geocoding
-https://developers.google.com/maps/documentation/javascript/geocoding#GeocodingResults
-
-## google maps api
-https://developers.google.com/maps/documentation/javascript/reference#release-version
-
-## fitBounds
-http://stackoverflow.com/questions/19304574/center-set-zoom-of-map-to-cover-all-visible-markers
-
-## remove markers
-https://developers.google.com/maps/documentation/javascript/examples/marker-remove
-
-## maps icon change
-http://stackoverflow.com/questions/2890670/google-maps-place-number-in-marker
-
-## more markers on google map
-https://code.google.com/p/google-maps-utility-library-v3/wiki/Libraries#MarkerWithLabel
-
-## marker with label
-https://www.npmjs.com/package/markerwithlabel
-
-## geomap
-https://developers.google.com/chart/interactive/docs/gallery/geomap#overview
-
-## geocharts
-https://developers.google.com/chart/interactive/docs/gallery/geochart#text-geocharts
-
-## barcharts
-https://developers.google.com/chart/interactive/docs/gallery/barchart
-
-## more code to include custom javascript in node.js
-https://howtonode.org/creating-custom-modules
-
-## darkbox / lightbox
-https://css-tricks.com/design-considerations-text-images/
-
-## count project lines
-https://gist.github.com/mandiwise/dc53cb9da00856d7cdbb
+## Basic code files structure
+* **app.js:** Server of the web application.
+* **package.json:** Web application dependencies and basic information.
+* **/assets/css:** Css files for the project.
+* **/assets/js:** Javascript & jQuery code of the web application and server.
+* **/images:** Images used on the website.
+* **/views:** HTML files.
+* **/views/globals:** HTML template files.
 
 
-## certification checklist
-https://familysearch.org/developers/docs/certification/authentication
-https://familysearch.org/developers/docs/certification
-
-## conmpile latex
-http://tex.stackexchange.com/questions/6845/compile-latex-with-bibtex-and-glossaries
-
-## compile bibliography with biber
-pdflatex nameTexFile
-biber nameTexFile
-pdflatex nameTexFile
-pdflatex nameTexFile
+[1]: https://github.com/sinh15/api-example-usages
