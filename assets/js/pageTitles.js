@@ -8,8 +8,8 @@ function titleIndex() {
     var highlight = "lightbox-text";
     var title = "STUDY OF FAMILYSEARCH API POTENTIAL";
     var titleMobile = "FAMILY SEARCH API POTENTIAL";
-    var subtitleDesktop = "This project studies the accessible genalogical data inside the FamilySearch API and provides some examples of its usages";
-    var subtitleTablet = "Study of the accessible genealogical data inside the FamilySearch API and possible usages";
+    var subtitleDesktop = "This project studies the accessible genalogical data through the FamilySearch API and provides some examples of its usages";
+    var subtitleTablet = "Study of the accessible genealogical data through the FamilySearch API and possible usages";
     var button = false;
 
     // Return parameters
@@ -36,8 +36,8 @@ function titleProposals() {
     var highlight = "lightbox-text";
     var title = "PROJECT PROPOSALS";
     var titleMobile = "PROJECT PROPOSALS";
-    var subtitleDesktop = "Collection of project proposals that interact with the FamilySearch API for future students";
-    var subtitleTablet = "Collection of project proposals for future students";
+    var subtitleDesktop = "Collection of project proposals that interact with the FamilySearch API";
+    var subtitleTablet = "Collection of project proposals that use the API";
     var button = false;
 
     // Return parameters
@@ -79,7 +79,7 @@ function titleSurnames() {
     var title = "SURNAMES EXPANSION";
     var titleMobile = "SURNAMES EXPANSION";
     var subtitleDesktop = "Study how many instances of a given surname can be found in a specific set of countries over the course of time";
-    var subtitleTablet = "Study the geographical evolution of a given surname";
+    var subtitleTablet = "Study the geographical evolution of a given surname over a set of years";
     var button = true;
 
     // Return parameters
@@ -213,8 +213,8 @@ function natalityMortality() {
     var highlight = "lightbox-text";
     var title = "WW2: Natality & Mortality";
     var titleMobile = "WW2: Natality & Mortality";
-    var subtitleDesktop = "Study the natality and mortality ratios of the WW2 involved countries";
-    var subtitleTablet = "Study the natality and mortality ratios of the WW2 ivolved countries";
+    var subtitleDesktop = "Study the natality and mortality ratios for the WW2 involved countries";
+    var subtitleTablet = "Study the natality and mortality ratios for the WW2 ivolved countries";
     var button = true;
 
     // Return parameters
@@ -252,8 +252,8 @@ function greatDepression() {
     var highlight = "lightbox-text";
     var title = "GREAT DEPRESSION";
     var titleMobile = "GREAT DEPRESSION";
-    var subtitleDesktop = "Study how the United States and world were impacted by the great depression";
-    var subtitleTablet = "Study how the United States and world were impacted by the great depression";
+    var subtitleDesktop = "Study how the United States and the world were impacted by the great depression";
+    var subtitleTablet = "Study how the United States and the world were impacted by the great depression";
     var button = true;
 
     // Return parameters
@@ -265,8 +265,8 @@ function socialMedia() {
     var highlight = "lightbox-text";
     var title = "SOCIAL MEDIA";
     var titleMobile = "SOCIAL MEDIA";
-    var subtitleDesktop = "Create funny comparisons between the users and their friends on the well known social networks";
-    var subtitleTablet = "Create funny comparisons between the users and their friends on the well known social networks";
+    var subtitleDesktop = "Create funny comparisons between users and their friends on social media";
+    var subtitleTablet = "Create funny comparisons between users and their friends on social media";
     var button = true;
 
     // Return parameters
@@ -304,8 +304,8 @@ function duplicates() {
     var highlight = "lightbox-text";
     var title = "DUPLICATES";
     var titleMobile = "DUPLICATES";
-    var subtitleDesktop = "Study the reasons under which persons are marked as duplicates on the Family Tree";
-    var subtitleTablet = "Study the reasons under which persons are marked as duplicates on the Family Tree";
+    var subtitleDesktop = "Study the reasons under which persons are marked as duplicates";
+    var subtitleTablet = "Study the reasons under which persons are marked as duplicates";
     var button = true;
 
     // Return parameters
